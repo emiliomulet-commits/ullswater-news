@@ -13,6 +13,16 @@ Every build regenerates: home, article pages (`/YYYY/MM/slug/`), category pages,
 `feed.xml` (RSS), `sitemap.xml`, `news-sitemap.xml` (Google News, last 48 h), `robots.txt`,
 `llms.txt`, `llms-full.txt`, `404.html` and `CNAME`.
 
+## Call alerts (automatic)
+
+`src/calls.py` reads the Ullswater worker feed (EU Funding & Tenders Portal) and builds one page per call
+(`/calls/<identifier>/`), programme pages (`/calls/programme/<key>/`), the deadlines calendar
+(`/calls/deadlines/`) and `calls.txt`. `src/data/calls.json` keeps every call ever seen, so closed calls keep
+their page (marked Closed, noindex 90 days after the deadline) instead of returning 404.
+
+`.github/workflows/daily-build.yml` rebuilds and publishes the site every morning. If the feed fails, the
+build keeps the last good data. Build without network: `OFFLINE=1 python3 src/build.py`.
+
 ## Publishing a new article
 
 1. Add `src/articles/YYYY-MM-DD-slug.json`:
