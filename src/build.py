@@ -230,6 +230,8 @@ def build():
     OUT.mkdir()
     if (SRC / "assets").exists(): shutil.copytree(SRC / "assets", OUT / "assets")
     (OUT / "CNAME").write_text(SITE["domain"] + "\n")
+    from indexnow import KEY as INDEXNOW_KEY
+    (OUT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY)
     (OUT / ".nojekyll").write_text("")
     today = datetime.date.today().isoformat()
 
