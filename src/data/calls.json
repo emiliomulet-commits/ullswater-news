@@ -843,6 +843,25 @@
    "title": "Erasmus Charter for Higher Education",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2022-eche-cert-fp"
   },
+  "ERASMUS-EDU-2026-EUED": {
+   "budget": "€14M (topic total)",
+   "code": "ERASMUS-EDU-2026-EUED",
+   "deadline": "2027-02-18",
+   "first_seen": "2026-11-04",
+   "keywords": [
+    "Bachelor",
+    "Doctorate",
+    "European universities alliances",
+    "Master",
+    "PhD"
+   ],
+   "last_seen": "2026-11-04",
+   "listed": true,
+   "opens": "2026-11-05",
+   "status": "forthcoming",
+   "title": "European Degree Exploratory Action",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2026-eued"
+  },
   "ERASMUS-EDU-2027-EUR-UNIV": {
    "budget": "€218.4M (topic total)",
    "code": "ERASMUS-EDU-2027-EUR-UNIV",
@@ -6772,5 +6791,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-04T22:52:39.557Z"
+ "feed_updated": "2026-11-04T23:15:41.662Z"
 }

@@ -16,7 +16,7 @@ Key facts:
 
 ## EU funding calls (updated daily)
 
-- [All open and forthcoming calls](https://news.ullswaterinvestments.com/calls/): 418 calls with deadlines, budgets and official links.
+- [All open and forthcoming calls](https://news.ullswaterinvestments.com/calls/): 419 calls with deadlines, budgets and official links.
 - [Deadlines calendar](https://news.ullswaterinvestments.com/calls/deadlines/)
 - [Plain-text list of all open calls](https://news.ullswaterinvestments.com/calls.txt)
 - [Horizon Europe · Cluster 1 Health](https://news.ullswaterinvestments.com/calls/programme/he-cl1/): 18 calls
@@ -40,7 +40,7 @@ Key facts:
 - [Interregional Innovation Investments (I3)](https://news.ullswaterinvestments.com/calls/programme/i3/): 2 calls
 - [Creative Europe](https://news.ullswaterinvestments.com/calls/programme/crea/): 17 calls
 - [Citizens, Equality, Rights and Values (CERV)](https://news.ullswaterinvestments.com/calls/programme/cerv/): 11 calls
-- [Erasmus+](https://news.ullswaterinvestments.com/calls/programme/erasmus/): 2 calls
+- [Erasmus+](https://news.ullswaterinvestments.com/calls/programme/erasmus/): 3 calls
 - [Connecting Europe Facility](https://news.ullswaterinvestments.com/calls/programme/cef/): 1 calls
 - [Other EU programmes](https://news.ullswaterinvestments.com/calls/programme/other/): 17 calls
 
@@ -51,6 +51,9 @@ Key facts:
 ## Latest articles
 
 - [Open Research Europe becomes fee-free in 11 countries](https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/) (2026-11-03): Researchers in 11 countries can now publish on the Commission's open-access platform without publication fees, under a collective funding model.
+- [EU and Bpifrance plan €150 million guarantee for Ukraine partnerships](https://news.ullswaterinvestments.com/2026/11/bpifrance-eu-guarantees-ukraine-dual-use-partnerships/) (2026-11-03): The arrangement under the Ukraine Investment Framework targets French–Ukrainian industrial ties in defence and dual-use technology.
+- [Commission proposes €31.7 billion for Ukraine's defence industry](https://news.ullswaterinvestments.com/2026/10/ukraine-support-loan-2027-defence-industry/) (2026-10-30): The proposal covers 2027 under the €90 billion Ukraine Support Loan. The Council still has to adopt it before disbursements start.
+- [Canada joins EuroHPC as a Participating State](https://news.ullswaterinvestments.com/2026/10/canada-joins-eurohpc-supercomputing-network/) (2026-10-30): Agreed at the EU–Canada Summit in Montreal, the move opens Europe's public supercomputing, AI and quantum resources to Canada.
 - [First EIC defence equity call closes with nine applications](https://news.ullswaterinvestments.com/2026/10/eic-step-scale-up-defence-call-closes/) (2026-10-29): The EIC STEP Scale Up Defence call offered direct equity of up to €30 million per company; results are expected in early 2027.
 - [Guidelines on generative AI in research get their largest update](https://news.ullswaterinvestments.com/2026/10/generative-ai-research-guidelines-update/) (2026-10-16): The ERA Living Guidelines for researchers, research organisations and funders were updated on the same day the first 13 EOSC nodes went live.
 - [RAISE pledging initiative launched for AI in science](https://news.ullswaterinvestments.com/2026/10/raise-pledging-initiative-ai-in-science/) (2026-10-15): Companies and philanthropic organisations are invited to support researchers who use AI, mainly with models, computing capacity, software, data and training.

@@ -18,6 +18,70 @@ Why it matters (Ullswater Investments analysis): Open-access publication is mand
 
 ---
 
+## EU and Bpifrance plan €150 million guarantee for Ukraine partnerships
+URL: https://news.ullswaterinvestments.com/2026/11/bpifrance-eu-guarantees-ukraine-dual-use-partnerships/
+Date: 2026-11-03 · Category: EIC, Defence & Equity · Source: European Commission – Enlargement and Eastern Neighbourhood (https://enlargement.ec.europa.eu/news/bpifrance-et-la-commission-europeenne-signent-un-accord-pour-accelerer-les-partenariats-industriels-2026-11-03_en)
+
+The arrangement under the Ukraine Investment Framework targets French–Ukrainian industrial ties in defence and dual-use technology.
+
+- Instrument: Ukraine Investment Framework
+- EU support: €150 million in guarantees and €13 million in grants
+- Bpifrance target: More than €480 million in financial interventions over three years
+- Partnerships: 30 over three years, French companies and Ukrainian startups
+- Status: Envisaged; final legal agreements still pending
+
+Bpifrance and the European Commission's Directorate-General for Enlargement and Eastern Neighbourhood announced the arrangement during European Defence Week in Paris, which runs from 2 to 6 November 2026. Under the Ukraine Investment Framework, the EU would provide €150 million in guarantees and €13 million in grants, with Bpifrance aiming for more than €480 million in financial interventions over three years.
+The instruments would be aimed at French companies developing in Ukraine, Ukrainian companies buying French goods and equipment, and French firms partnering with local companies. Priority sectors include aerial, land and maritime drones, electronic protection, space, communications, navigation and critical components, with a focus on dual-use technologies. Energy, digital and industrial equipment are also covered.
+A non-financial strand foresees 30 partnerships over three years between French companies and Ukrainian startups in defence and dual-use technologies, supported by EuroQuity, Bpifrance's international matchmaking platform.
+The deal is not final. Legal agreements depend on the Commission's inter-service consultation being completed and on the contractual documentation being finalised.
+
+Why it matters (Ullswater Investments analysis): The scheme is reserved for French-linked operations, so most European applicants cannot use it directly. Its interest lies in the model: an EU guarantee channelled through a national promotional bank to support dual-use industrial partnerships with Ukraine. Companies elsewhere in Europe may want to ask their own national institutions whether similar routes exist. The announcement gives no detailed eligibility criteria, so French firms should wait for the final terms.
+
+---
+
+## Commission proposes €31.7 billion for Ukraine's defence industry
+URL: https://news.ullswaterinvestments.com/2026/10/ukraine-support-loan-2027-defence-industry/
+Date: 2026-10-30 · Category: EIC, Defence & Equity · Source: European Commission – Enlargement and Eastern Neighbourhood (https://enlargement.ec.europa.eu/news/commission-takes-key-step-forward-2027-financial-support-ukraine-2026-10-30_en)
+
+The proposal covers 2027 under the €90 billion Ukraine Support Loan. The Council still has to adopt it before disbursements start.
+
+- Proposal date: 30 October 2026
+- 2027 tranche: €45 billion remaining under the €90 billion loan
+- Defence industrial capacity 2027: €31.7 billion
+- Budget support 2027: Up to €13.3 billion
+- 2026 defence allocation: €28.3 billion, of which €15.8 billion disbursed for defence procurement
+- Next step: Council implementing decision; disbursements planned for early 2027
+
+The European Commission adopted a package on 30 October 2026 that asks the Council to approve the remaining €45 billion for 2027 under the €90 billion Ukraine Support Loan. Of that sum, €31.7 billion would go to Ukraine's defence industrial capacity and up to €13.3 billion to budget support, split equally between the Ukraine Facility and Macro-Financial Assistance.
+Across 2026 and 2027 the loan reserves €60 billion for defence capabilities and defence industrial capacity and €30 billion for budget support. The Council allocated €28.3 billion to defence industrial capacity for 2026 in a decision of 23 April 2026, and €15.8 billion of that has been disbursed for defence procurement.
+The package follows Ukraine's Financing Strategy, submitted on 26 October 2026 and assessed positively by the Commission. The Council must now adopt the implementing decision, after which Member States will decide the allocations. Disbursements are planned for early 2027 once the assistance is adopted. Budget support remains tied to conditions on the rule of law, anti-corruption, economic resilience and sustainability.
+
+Why it matters (Ullswater Investments analysis): This is a sizeable defence-industrial envelope, but it is not a grant call: nothing here opens for applications. Companies in defence and dual-use supply chains should treat it as a demand signal and watch the Council decision and the allocation stage. The practical question for suppliers is how procurement under the loan will be organised, so they should follow the official rules rather than assume access.
+
+---
+
+## Canada joins EuroHPC as a Participating State
+URL: https://news.ullswaterinvestments.com/2026/10/canada-joins-eurohpc-supercomputing-network/
+Date: 2026-10-30 · Category: Digital & AI · Source: European Commission – Shaping Europe's digital future (https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum)
+
+Agreed at the EU–Canada Summit in Montreal, the move opens Europe's public supercomputing, AI and quantum resources to Canada.
+
+- Announced: 30 October 2026, EU–Canada Summit, Montreal
+- New status: Canada is a Participating State in the EuroHPC JU
+- EuroHPC JU network: 12 supercomputers procured, 19 AI Factories, 13 AI Factory Antennas
+- Governing board: European Commission and 39 Participating States
+- Horizon Europe link: Canada associated since 2024
+- Legal basis of wider mandate: Council Regulation (EU) 2026/150
+
+Canada became a Participating State in the European High-Performance Computing Joint Undertaking (EuroHPC JU) on 30 October 2026, during the EU–Canada Summit in Montreal. The step gives Canada use of the joint undertaking's high-performance computing, AI and quantum resources, and lets Canadian scientists work alongside European counterparts.
+The two sides say they want closer cooperation across supercomputing, AI infrastructure and quantum technology, with a view to developing scientific applications and raising the innovation potential of companies. It builds on research cooperation going back to 1996; Canada has also been associated with Horizon Europe since 2024.
+EuroHPC JU has so far procured 12 supercomputers, oversees 19 AI Factories and 13 AI Factory Antennas, and is deploying a European quantum computing infrastructure. The European Commission and 39 Participating States sit on its governing board, and Council Regulation (EU) 2026/150 extended its mandate to AI Gigafactories and quantum technologies.
+The summit produced related digital outcomes: Destination Earth will take on Canadian cooperation in AI-powered climate modelling, and the parties discussed Arctic connectivity and the interoperability of EU and Canadian digital identities.
+
+Why it matters (Ullswater Investments analysis): For consortia in AI, HPC and quantum, Canadian partners now sit closer to the same compute ecosystem as their European counterparts, on top of the existing Horizon Europe association. That can make EU–Canada collaboration more practical to design into a proposal. Applicants should still check the access rules and eligibility conditions of each specific call before building a work plan around EuroHPC resources.
+
+---
+
 ## First EIC defence equity call closes with nine applications
 URL: https://news.ullswaterinvestments.com/2026/10/eic-step-scale-up-defence-call-closes/
 Date: 2026-10-29 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/overview-eic-step-scale-defence-call-submissions-2026-10-29_en)
