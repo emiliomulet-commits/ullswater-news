@@ -1,0 +1,30 @@
+# EU Funding News · Ullswater Investments
+
+> Daily, verified news on European funding for innovators, researchers and SMEs: Horizon Europe, EIC, Digital Europe, defence, cohesion funds and Spanish R&D grants, with links to the official sources. Published by Ullswater Investments S.L. (Madrid), EU funding advisors. Every article cites and links an official source.
+
+Key facts:
+- Publisher: Ullswater Investments S.L. · https://www.ullswaterinvestments.com
+- Contact: emilio.mulet@ullswaterinvestments.com · Calle Ramírez de Arellano, 17, 28043 Madrid, Spain
+- Language: English. Updated on working days.
+
+## Sections
+
+- [Horizon Europe](https://news.ullswaterinvestments.com/horizon-europe/): Calls, work programmes and results under Horizon Europe, the EU research and innovation programme.
+- [Digital & AI](https://news.ullswaterinvestments.com/digital-ai/): EU funding for artificial intelligence, data spaces, digital infrastructure and Digital Europe.
+- [EIC, Defence & Equity](https://news.ullswaterinvestments.com/eic-defence/): European Innovation Council, STEP, European Defence Fund and EU equity instruments.
+- [Research Policy](https://news.ullswaterinvestments.com/research-policy/): European Research Area, open science and the rules that shape EU-funded research.
+
+## Latest articles
+
+- [Open Research Europe becomes fee-free in 11 countries](https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/) (2026-11-03): Researchers in 11 countries can now publish on the Commission's open-access platform without publication fees, under a collective funding model.
+- [First EIC defence equity call closes with nine applications](https://news.ullswaterinvestments.com/2026/10/eic-step-scale-up-defence-call-closes/) (2026-10-29): The EIC STEP Scale Up Defence call offered direct equity of up to €30 million per company; results are expected in early 2027.
+- [Guidelines on generative AI in research get their largest update](https://news.ullswaterinvestments.com/2026/10/generative-ai-research-guidelines-update/) (2026-10-16): The ERA Living Guidelines for researchers, research organisations and funders were updated on the same day the first 13 EOSC nodes went live.
+- [RAISE pledging initiative launched for AI in science](https://news.ullswaterinvestments.com/2026/10/raise-pledging-initiative-ai-in-science/) (2026-10-15): Companies and philanthropic organisations are invited to support researchers who use AI, mainly with models, computing capacity, software, data and training.
+- [Horizon Europe Cluster 4 opens its 2027 calls](https://news.ullswaterinvestments.com/2026/10/cluster-4-opens-2027-calls/) (2026-10-13): Industry, two-stage and RAISE calls opened on 13 October; the digital call on federated and sustainable AI data processing opens on 17 November.
+- [New €230 million Horizon Europe call on nature](https://news.ullswaterinvestments.com/2026/10/horizon-europe-230-million-call-nature/) (2026-10-02): Ten topics to raise biodiversity spending across Pillar II of the 2026–2027 work programme, with most deadlines on 14 January 2027.
+
+## Optional
+
+- [Full text of recent articles](https://news.ullswaterinvestments.com/llms-full.txt)
+- [Editorial policy](https://news.ullswaterinvestments.com/about/)
+- [RSS feed](https://news.ullswaterinvestments.com/feed.xml)

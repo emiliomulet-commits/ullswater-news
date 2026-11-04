@@ -1,0 +1,121 @@
+# EU Funding News · Ullswater Investments — full text of recent articles
+
+## Open Research Europe becomes fee-free in 11 countries
+URL: https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/
+Date: 2026-11-03 · Category: Research Policy · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/eligibility-publish-open-research-europe-without-fees-expands-researchers-11-countries-2026-11-03_en)
+
+Researchers in 11 countries can now publish on the Commission's open-access platform without publication fees, under a collective funding model.
+
+- Platform: Open Research Europe (European Commission open-access publishing)
+- Change: No publication fees for researchers in 11 countries
+- Model: Collective funding
+- Details: Eligible countries and conditions in the official announcement
+
+Researchers in 11 countries can now publish in Open Research Europe, the European Commission's open-access publishing platform, without paying publication fees, under a collective funding model.
+The official announcement lists the eligible countries and the conditions.
+
+Why it matters (Ullswater Investments analysis): Open-access publication is mandatory for Horizon Europe results. A fee-free route reduces the dissemination costs that consortia must budget for, so it is worth checking eligibility before fixing the dissemination budget in a proposal.
+
+---
+
+## First EIC defence equity call closes with nine applications
+URL: https://news.ullswaterinvestments.com/2026/10/eic-step-scale-up-defence-call-closes/
+Date: 2026-10-29 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/overview-eic-step-scale-defence-call-submissions-2026-10-29_en)
+
+The EIC STEP Scale Up Defence call offered direct equity of up to €30 million per company; results are expected in early 2027.
+
+- Call: EIC STEP Scale Up Defence
+- Closed: 28 October 2026
+- Applications: 9 from 7 countries
+- Instrument: Direct equity, up to €30 million per company
+- Budget: €100 million
+- Results: Expected early 2027
+
+The first EIC STEP Scale Up Defence call closed on 28 October with nine applications from seven countries.
+It is the first EU funding instrument to offer direct equity, up to €30 million per company, to firms whose technologies serve primarily defence purposes, from air and missile defence to drones and counter-drone systems.
+The call has a €100 million budget and results are expected in early 2027. Dual-use innovators can apply through the EIC Accelerator and the general STEP Scale Up call.
+
+Why it matters (Ullswater Investments analysis): Defence is now an equity market for the EIC, not just a grant topic. Companies with dual-use technologies do not need a dedicated defence call: the EIC Accelerator and the general STEP Scale Up call remain open routes, and a well-prepared investment case matters as much as the technology.
+
+---
+
+## Guidelines on generative AI in research get their largest update
+URL: https://news.ullswaterinvestments.com/2026/10/generative-ai-research-guidelines-update/
+Date: 2026-10-16 · Category: Research Policy · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/era-living-guidelines-responsible-use-generative-ai-research-updated-2026-10-16_en)
+
+The ERA Living Guidelines for researchers, research organisations and funders were updated on the same day the first 13 EOSC nodes went live.
+
+- Document: ERA Living Guidelines on the responsible use of generative AI in research
+- Audience: Researchers, research organisations and funders
+- Change: Largest update so far
+- Same day: First 13 nodes of the European Open Science Cloud (EOSC) went live
+
+The European Commission published the largest update so far of the ERA Living Guidelines on the responsible use of generative AI in research, the shared recommendations for researchers, research organisations and funders.
+On the same day, the first 13 nodes of the European Open Science Cloud (EOSC) went live, expanding access to research data and digital services across Europe.
+
+Why it matters (Ullswater Investments analysis): Evaluators and funders increasingly expect applicants to explain how they use generative AI responsibly. Aligning a proposal's methodology and data management plan with these guidelines is a simple way to avoid weaknesses in the implementation criterion.
+
+---
+
+## RAISE pledging initiative launched for AI in science
+URL: https://news.ullswaterinvestments.com/2026/10/raise-pledging-initiative-ai-in-science/
+Date: 2026-10-15 · Category: Digital & AI · Source: European Commission – Press Corner (https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2175)
+
+Companies and philanthropic organisations are invited to support researchers who use AI, mainly with models, computing capacity, software, data and training.
+
+- Initiative: RAISE pledging initiative (Resource for AI Science in Europe)
+- Launched: European AI in Science Summit, Dublin
+- Who can pledge: Companies and philanthropic organisations
+- Type of support: Voluntary, mainly in kind: AI models, computing capacity, research software, data and training
+- Also announced: Mistral AI–CERN partnership on a physics foundation model; RAISE Hub, Forum and Observatory live
+- Review: Pledges reviewed every year
+
+At the European AI in Science Summit in Dublin, the European Commission launched the RAISE pledging initiative, inviting companies and philanthropic organisations to support researchers who use AI in science.
+Pledges are voluntary and mainly in kind: access to AI models, computing capacity, research software, data and training.
+Mistral AI and CERN announced a partnership to develop the largest foundation model in physics, and the RAISE Hub, Forum and Observatory went live. Pledges will be reviewed every year.
+
+Why it matters (Ullswater Investments analysis): RAISE is becoming the EU's umbrella for AI in science, and it already has its own Horizon Europe call in Cluster 4. For technology providers, a pledge is a low-cost way to gain visibility with research organisations and with the Commission ahead of future RAISE funding rounds.
+
+---
+
+## Horizon Europe Cluster 4 opens its 2027 calls
+URL: https://news.ullswaterinvestments.com/2026/10/cluster-4-opens-2027-calls/
+Date: 2026-10-13 · Category: Digital & AI · Source: HaDEA – European Health and Digital Executive Agency (https://hadea.ec.europa.eu/programmes/horizon-europe_en)
+
+Industry, two-stage and RAISE calls opened on 13 October; the digital call on federated and sustainable AI data processing opens on 17 November.
+
+- Programme: Horizon Europe, Cluster 4 “Digital, Industry and Space”
+- Industry call: HORIZON-CL4-2027-01 · €224.7 million · 11 topics
+- Opened: 13 October 2026 (CL4-2027-01, two-stage CL4-2027-02 and RAISE)
+- First deadline: 2 February 2027
+- Digital call: HORIZON-CL4-2027-04 · opens 17 November 2026 · deadline 18 March 2027
+- Next: €125 million Clean Industrial Deal call from 12 January 2027
+
+The 2027 calls of Horizon Europe Cluster 4 “Digital, Industry and Space” are rolling out.
+The industry call HORIZON-CL4-2027-01 (€224.7 million, 11 topics), the two-stage CL4-2027-02 and the RAISE call opened on 13 October with a first deadline of 2 February 2027.
+The digital call HORIZON-CL4-2027-04, including topics on federated and sustainable AI data processing, opens on 17 November with a deadline of 18 March 2027. A €125 million Clean Industrial Deal call follows on 12 January 2027.
+
+Why it matters (Ullswater Investments analysis): Cluster 4 is the main Horizon Europe entry point for industrial and digital companies. The topics on federated and sustainable AI data processing are directly relevant for organisations working on data spaces and sovereign AI. Two-stage calls lower the entry cost: a short first-stage proposal is enough to test the idea.
+
+---
+
+## New €230 million Horizon Europe call on nature
+URL: https://news.ullswaterinvestments.com/2026/10/horizon-europe-230-million-call-nature/
+Date: 2026-10-02 · Category: Horizon Europe · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/horizon-europe-launches-new-research-and-innovation-call-nature-2026-10-02_en)
+
+Ten topics to raise biodiversity spending across Pillar II of the 2026–2027 work programme, with most deadlines on 14 January 2027.
+
+- Programme: Horizon Europe, Pillar II (Work Programme 2026–2027)
+- Call: Transformative change towards a nature-positive economy and society
+- Budget: €230 million
+- Topics: 10, including PFAS effects on biodiversity, invasive species and biodiversity monitoring
+- Main deadline: 14 January 2027
+- Ocean observing action: €50 million innovation action, deadline 16 February 2027
+
+The European Commission published a new €230 million Horizon Europe call, “Transformative change towards a nature-positive economy and society”, to raise biodiversity spending across Pillar II of the 2026–2027 work programme.
+Its ten topics include the effects of PFAS on biodiversity and ecosystem services, invasive species and cost-effective biodiversity monitoring. Most topics close on 14 January 2027.
+A separate €50 million innovation action for a stronger Global Ocean Observing System closes on 16 February 2027.
+
+Why it matters (Ullswater Investments analysis): Biodiversity is no longer a niche for environmental research groups: topics on PFAS, monitoring and invasive species open the door to companies working on sensors, environmental data and analytical services. With most deadlines in mid-January, consortia that are not already formed need to start partner search now.
+
+---
