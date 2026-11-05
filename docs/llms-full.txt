@@ -1,5 +1,46 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EIC sets 19 November info day on its 2027 funding opportunities
+URL: https://news.ullswaterinvestments.com/2026/11/eic-2027-funding-info-day/
+Date: 2026-11-05 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/events/online-information-day-eic-funding-opportunities-2027-2026-11-19_en)
+
+The online session will present Work Programme 2027 scheme by scheme, from Pathfinder to STEP Defence. Registration closes on 18 November.
+
+- Event: EIC Work Programme 2027 online information day
+- Date: 19 November 2026, 09:30–15:40 CET
+- Registration closes: 18 November 2026, 09:30 CET
+- Format: Online, in English
+- Follow-up sessions: Accelerator Challenges, 20 November 2026; Advanced Innovation Challenges, 3 February 2027
+
+The European Innovation Council will present its 2027 funding opportunities at an online information day on 19 November 2026. The session, organised with its executive agency EISMEA and the Commission's research directorate-general, is held in English and will open with the main changes in Work Programme 2027.
+The agenda then goes through the schemes one at a time: Pathfinder, Transition, Accelerator, STEP and STEP Defence, followed by Business Acceleration Services, Access2EIC and EEN2EIC. Pathfinder and Transition get the longest slots, at 90 minutes each.
+Registration closes on 18 November at 09:30 CET. Two further sessions follow: one on the EIC Accelerator Challenges on 20 November 2026 and another on the EIC Advanced Innovation Challenges on 3 February 2027.
+
+Why it matters (Ullswater Investments analysis): Companies planning an EIC application next year should treat this as the first checkpoint. Rule changes between work programmes can affect eligibility, the shape of a proposal and the choice of scheme, so it is worth attending before drafting starts. Dual-use and defence companies should note that STEP Defence has its own place on the agenda. Applicants should base their plans on the published work programme rather than on the previous year's rules, and use the advance question channel to raise any points specific to their project.
+
+---
+
+## CDTI Innovación commits €12.75 million to 19 R&D+I projects
+URL: https://news.ullswaterinvestments.com/2026/11/cdti-council-19-projects-october/
+Date: 2026-11-04 · Category: Spain · Source: CDTI Innovación (https://www.cdti.es/noticias/consejo-cdti-innovacion-destina-mas-12-millones-euros-19-nuevos-proyectos-idi-empresarial)
+
+All 19 October approvals are loans. Ten companies get CDTI funding for the first time, 15 are SMEs and 13 operations are co-financed by POPE.
+
+- Approved: October 2026, CDTI Innovación governing council
+- Projects: 19, all in the loan modality
+- Total budget: €17.21 million
+- CDTI contribution: €12.75 million, including a €2.47 million non-reimbursable tranche
+- Companies: 19, of which 10 first-time recipients and 15 SMEs
+- EU co-financing: 13 operations under POPE 2021-2027
+
+The governing council of CDTI Innovación, the public business entity attached to Spain's Ministry of Science, Innovation and Universities, signed off 19 new business R&D+I projects in October. Their combined budget is €17.21 million, of which CDTI will contribute €12.75 million. Every project takes the form of a loan, and together they carry a non-reimbursable tranche of €2.47 million.
+Most of the money sits in the Línea Directa de Expansión, with 13 projects and a CDTI contribution of €8,926,650.13. The Línea Directa de Innovación accounts for four projects and €3,266,716.13, while the two Proyectos de I+D receive €561,233.83 and show the highest financing rate of the three, at 85%.
+Thirteen of the 19 operations are co-financed by the Programa Operativo Plurirregional de España (POPE) 2021-2027. That programme lets CDTI offer a non-reimbursable tranche of up to 30% on co-financed projects, whatever the size of the beneficiary. Murcia is the largest region in this round, with five operations and a CDTI contribution of €5,851,458.95.
+
+Why it matters (Ullswater Investments analysis): The profile of this round is encouraging for newcomers: most of the companies are SMEs, and just over half had never received CDTI money before. CDTI's direct lines are therefore a realistic entry point for firms without a funding track record. The POPE rule deserves attention at planning stage, because whether a project qualifies for co-financing can change how much of a loan does not need repaying, and that holds for larger companies as well as SMEs. Applicants should check eligibility for their region and instrument before settling on a financing structure.
+
+---
+
 ## Open Research Europe becomes fee-free in 11 countries
 URL: https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/
 Date: 2026-11-03 · Category: Research Policy · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/eligibility-publish-open-research-europe-without-fees-expands-researchers-11-countries-2026-11-03_en)

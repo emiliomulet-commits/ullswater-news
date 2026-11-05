@@ -13,10 +13,11 @@ Key facts:
 - [Digital & AI](https://news.ullswaterinvestments.com/digital-ai/): EU funding for artificial intelligence, data spaces, digital infrastructure and Digital Europe.
 - [EIC, Defence & Equity](https://news.ullswaterinvestments.com/eic-defence/): European Innovation Council, STEP, European Defence Fund and EU equity instruments.
 - [Research Policy](https://news.ullswaterinvestments.com/research-policy/): European Research Area, open science and the rules that shape EU-funded research.
+- [Spain](https://news.ullswaterinvestments.com/spain/): Spanish R&D and innovation funding: CDTI, AEI, Red.es, ENISA and NextGenerationEU.
 
 ## EU funding calls (updated daily)
 
-- [All open and forthcoming calls](https://news.ullswaterinvestments.com/calls/): 419 calls with deadlines, budgets and official links.
+- [All open and forthcoming calls](https://news.ullswaterinvestments.com/calls/): 418 calls with deadlines, budgets and official links.
 - [Deadlines calendar](https://news.ullswaterinvestments.com/calls/deadlines/)
 - [Plain-text list of all open calls](https://news.ullswaterinvestments.com/calls.txt)
 - [Horizon Europe · Cluster 1 Health](https://news.ullswaterinvestments.com/calls/programme/he-cl1/): 18 calls
@@ -25,7 +26,7 @@ Key facts:
 - [Horizon Europe · Cluster 4 Digital, Industry & Space](https://news.ullswaterinvestments.com/calls/programme/he-cl4/): 34 calls
 - [Horizon Europe · Cluster 5 Climate, Energy & Mobility](https://news.ullswaterinvestments.com/calls/programme/he-cl5/): 54 calls
 - [Horizon Europe · Cluster 6 Food, Bioeconomy & Environment](https://news.ullswaterinvestments.com/calls/programme/he-cl6/): 51 calls
-- [European Innovation Council (EIC)](https://news.ullswaterinvestments.com/calls/programme/he-eic/): 3 calls
+- [European Innovation Council (EIC)](https://news.ullswaterinvestments.com/calls/programme/he-eic/): 2 calls
 - [Horizon Europe · Marie Skłodowska-Curie Actions](https://news.ullswaterinvestments.com/calls/programme/he-msca/): 7 calls
 - [European Research Council (ERC)](https://news.ullswaterinvestments.com/calls/programme/he-erc/): 1 calls
 - [Horizon Europe · Research Infrastructures](https://news.ullswaterinvestments.com/calls/programme/he-infra/): 10 calls
@@ -50,6 +51,8 @@ Key facts:
 
 ## Latest articles
 
+- [EIC sets 19 November info day on its 2027 funding opportunities](https://news.ullswaterinvestments.com/2026/11/eic-2027-funding-info-day/) (2026-11-05): The online session will present Work Programme 2027 scheme by scheme, from Pathfinder to STEP Defence. Registration closes on 18 November.
+- [CDTI Innovación commits €12.75 million to 19 R&D+I projects](https://news.ullswaterinvestments.com/2026/11/cdti-council-19-projects-october/) (2026-11-04): All 19 October approvals are loans. Ten companies get CDTI funding for the first time, 15 are SMEs and 13 operations are co-financed by POPE.
 - [Open Research Europe becomes fee-free in 11 countries](https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/) (2026-11-03): Researchers in 11 countries can now publish on the Commission's open-access platform without publication fees, under a collective funding model.
 - [EU and Bpifrance plan €150 million guarantee for Ukraine partnerships](https://news.ullswaterinvestments.com/2026/11/bpifrance-eu-guarantees-ukraine-dual-use-partnerships/) (2026-11-03): The arrangement under the Ukraine Investment Framework targets French–Ukrainian industrial ties in defence and dual-use technology.
 - [Commission proposes €31.7 billion for Ukraine's defence industry](https://news.ullswaterinvestments.com/2026/10/ukraine-support-loan-2027-defence-industry/) (2026-10-30): The proposal covers 2027 under the €90 billion Ukraine Support Loan. The Council still has to adopt it before disbursements start.
