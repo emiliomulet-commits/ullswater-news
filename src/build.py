@@ -208,6 +208,10 @@ def build():
     write("/calendar/", page(f"EU funding events calendar · {SITE['short']}", "Calendar of upcoming EU funding events, by month, with a subscription file for your own calendar.", "/calendar/",
         f'<section class="hero"><div class="wrap"><p class="kicker">Calendar</p><h1>EU funding events calendar</h1><p class="lead">{len(up)} upcoming events by month. Add them all to Outlook, Google Calendar or Apple Calendar.</p><div class="actions"><a class="btn" href="/calendar.ics">Download calendar file</a></div></div></section><div class="wrap">{by_month(up)}</div>', cur="calendar"))
     write("/calendar.ics", ics(up))
+    # Machine-readable feed (used by calls.ullswaterinvestments.com to show events per call)
+    feed = [{k: e.get(k) for k in ("slug", "title", "start", "end", "type", "programme", "mode", "location", "organiser", "summary", "registration_url", "status")}
+            | {"url": SITE["url"] + e["path"]} for e in up]
+    write("/events.json", json.dumps({"updated": str(TODAY), "events": feed}, ensure_ascii=False, indent=1, default=str))
     write("/about/", page(f"About and editorial policy · {SITE['short']}", "How Ullswater Investments selects and checks the EU funding events listed on this site.", "/about/",
         f"""<div class="about"><h1>About EU Funding Events</h1><p>EU Funding Events is published by {E(SITE['org_legal'])}, a Madrid-based European funding advisory firm. It lists events that help companies, researchers and consortia prepare EU funding proposals.</p>
 <h2>How events are checked</h2><ul><li>Every event links to the organiser's page or to a recognised National Contact Point or partner source.</li><li>Dates, locations and formats are checked against that source before publication.</li><li>Our comments on why an event matters are analysis and add no new facts.</li><li>Always confirm details with the organiser before registering or travelling.</li></ul>
