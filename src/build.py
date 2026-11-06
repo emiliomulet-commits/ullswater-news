@@ -106,7 +106,7 @@ def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>{CSS}</style>{lds}</head><body>
 <header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding Events</span></a>
-<div class="top-links"><a href="{SITE['news_url']}/">News</a><a href="{SITE['news_url']}/calls/">Open calls</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
+<div class="top-links"><a href="{SITE['news_url']}/">News</a><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
 <nav class="cats" aria-label="Event types"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap"><div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · {E(SITE['address'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
