@@ -166,7 +166,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 </head>
 <body>
 <header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding News</span></a>
-<div class="top-links"><a href="/calls/">Open calls</a><a href="/calls/deadlines/">Deadlines</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
+<div class="top-links"><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="https://events.ullswaterinvestments.com/">Events</a><a href="/calls/deadlines/">Deadlines</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
 <nav class="cats" aria-label="Categories"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap">
