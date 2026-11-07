@@ -26,7 +26,7 @@ SITE = {
     "org_legal": "Ullswater Investments S.L.",
     "org_url": "https://www.ullswaterinvestments.com",
     "book_url": "https://www.ullswaterinvestments.com/investment-readiness",
-    "email": "emilio.mulet@ullswaterinvestments.com",
+    "email": "eufunding@ullswaterinvestments.com",
     "address": "Calle Ramírez de Arellano, 17, 28043 Madrid, Spain",
     "address_brussels": "Square de Meeûs 37, 1000 Brussels, Belgium",
     "description": "Daily, verified news on European funding for innovators, researchers and SMEs: Horizon Europe, EIC, Digital Europe, defence, cohesion funds and Spanish R&D grants, with links to the official sources.",
