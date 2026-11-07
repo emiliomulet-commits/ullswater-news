@@ -3,6 +3,7 @@ name: Build, publish and notify
 on:
   schedule:
     - cron: "17 5 * * *"   # every day ~06:17 Madrid (winter): refresh the calls feed
+    - cron: "47 12 * * *"  # backup run in case GitHub drops the morning schedule
   push:
     branches: [main]
     paths: ["src/**"]      # a new or corrected article was pushed
