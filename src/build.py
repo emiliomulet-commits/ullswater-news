@@ -16,7 +16,7 @@ SITE = dict(domain="events.ullswaterinvestments.com", url="https://events.ullswa
     name="EU Funding Events · Ullswater Investments", short="EU Funding Events", org="Ullswater Investments",
     org_legal="Ullswater Investments S.L.", org_url="https://www.ullswaterinvestments.com",
     news_url="https://news.ullswaterinvestments.com", book_url="https://www.ullswaterinvestments.com/investment-readiness",
-    email="emilio.mulet@ullswaterinvestments.com", address="Calle Ramírez de Arellano, 17, 28043 Madrid, Spain", address_brussels="Square de Meeûs 37, 1000 Brussels, Belgium",
+    email="eufunding@ullswaterinvestments.com", address="Calle Ramírez de Arellano, 17, 28043 Madrid, Spain", address_brussels="Square de Meeûs 37, 1000 Brussels, Belgium",
     description="Horizon Europe info days and brokerage events to build consortia and prepare proposals, with dates, locations and official links, checked by Ullswater Investments.")
 
 TYPES = {"info-day": ("Info days", "Info day", "Official briefings on EU funding calls and work programmes."),
