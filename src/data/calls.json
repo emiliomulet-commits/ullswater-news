@@ -280,7 +280,10 @@
    "code": "CREA-CROSS-2027-MFP",
    "deadline": "2027-01-27",
    "first_seen": "2026-11-04",
-   "keywords": [],
+   "keywords": [
+    "Journalism",
+    "Rapid Response Mechanism"
+   ],
    "last_seen": "2026-11-07",
    "listed": true,
    "opens": "2026-10-22",
@@ -6791,5 +6794,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-06T14:07:55.237Z"
+ "feed_updated": "2026-11-07T00:27:26.113Z"
 }
