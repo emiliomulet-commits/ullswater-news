@@ -16,7 +16,7 @@ SITE = dict(domain="events.ullswaterinvestments.com", url="https://events.ullswa
     name="EU Funding Events · Ullswater Investments", short="EU Funding Events", org="Ullswater Investments",
     org_legal="Ullswater Investments S.L.", org_url="https://www.ullswaterinvestments.com",
     news_url="https://news.ullswaterinvestments.com", book_url="https://www.ullswaterinvestments.com/investment-readiness",
-    email="emilio.mulet@ullswaterinvestments.com", address="Calle Ramírez de Arellano, 17, 28043 Madrid, Spain",
+    email="emilio.mulet@ullswaterinvestments.com", address="Calle Ramírez de Arellano, 17, 28043 Madrid, Spain", address_brussels="Square de Meeûs 37, 1000 Brussels, Belgium",
     description="Horizon Europe info days and brokerage events to build consortia and prepare proposals, with dates, locations and official links, checked by Ullswater Investments.")
 
 TYPES = {"info-day": ("Info days", "Info day", "Official briefings on EU funding calls and work programmes."),
@@ -109,7 +109,7 @@ def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"
 <div class="top-links"><a href="{SITE['news_url']}/">News</a><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
 <nav class="cats" aria-label="Event types"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
-<footer class="site"><div class="wrap"><div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · {E(SITE['address'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
+<footer class="site"><div class="wrap"><div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
 <div><a href="{SITE['org_url']}">ullswaterinvestments.com</a> · <a href="{SITE['news_url']}/">EU Funding News</a> · <a href="/about/">Editorial policy</a> · <a href="/sitemap.xml">Sitemap</a><br>© {TODAY.year} {E(SITE['org_legal'])}</div></div></footer>
 </body></html>"""
 
