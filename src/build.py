@@ -28,6 +28,7 @@ SITE = {
     "book_url": "https://www.ullswaterinvestments.com/investment-readiness",
     "email": "emilio.mulet@ullswaterinvestments.com",
     "address": "Calle Ramírez de Arellano, 17, 28043 Madrid, Spain",
+    "address_brussels": "Square de Meeûs 37, 1000 Brussels, Belgium",
     "description": "Daily, verified news on European funding for innovators, researchers and SMEs: Horizon Europe, EIC, Digital Europe, defence, cohesion funds and Spanish R&D grants, with links to the official sources.",
 }
 
@@ -128,6 +129,7 @@ def org_ld():
     return {"@type": "Organization", "@id": SITE["org_url"] + "/#org", "name": SITE["org"], "legalName": SITE["org_legal"],
             "url": SITE["org_url"], "email": SITE["email"],
             "address": {"@type": "PostalAddress", "streetAddress": "Calle Ramírez de Arellano, 17", "postalCode": "28043", "addressLocality": "Madrid", "addressCountry": "ES"},
+            "location": [{"@type": "Place", "name": "Ullswater Investments Brussels", "address": {"@type": "PostalAddress", "streetAddress": "Square de Meeûs 37", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}}],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
 def person_ld():
@@ -170,7 +172,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 <nav class="cats" aria-label="Categories"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap">
-<div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · {E(SITE['address'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
+<div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
 <div><a href="{SITE['org_url']}">ullswaterinvestments.com</a> · <a href="/about/">Editorial policy</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">Sitemap</a><br>© {year} {E(SITE['org_legal'])}</div>
 </div></footer>
 </body>
@@ -442,7 +444,7 @@ def build():
 
     # llms.txt + llms-full.txt (plain-text versions for AI assistants)
     llms = [f"# {SITE['name']}", "", f"> {SITE['description']} Published by {SITE['org_legal']} (Madrid), EU funding advisors. Every article cites and links an official source.", "",
-            "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · {SITE['address']}", "- Language: English. Updated on working days.", "",
+            "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", "- Language: English. Updated on working days.", "",
             "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming calls]({SITE['url']}/calls/): {len(live)} calls with deadlines, budgets and official links.", f"- [Deadlines calendar]({SITE['url']}/calls/deadlines/)", f"- [Plain-text list of all open calls]({SITE['url']}/calls.txt)"] + \
            [f"- [{GROUPS[k][0]}]({SITE['url']}/calls/programme/{k}/): {len(v)} calls" for k, v in groups_live.items() if v] + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
            [f"- [{a['title']}]({SITE['url']}{a['path']}) ({a['date']}): {a['dek']}" for a in arts[:50]] + ["", "## Optional", "", f"- [Full text of recent articles]({SITE['url']}/llms-full.txt)", f"- [Editorial policy]({SITE['url']}/about/)", f"- [RSS feed]({SITE['url']}/feed.xml)"]
