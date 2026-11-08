@@ -97,7 +97,7 @@ article.post h1{font-size:34px}
 .why{border-top:1px solid var(--line);margin-top:28px;padding-top:20px}
 .why h2,.src h2{font-size:20px;color:var(--navy);margin:0 0 8px}
 .src{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 20px;margin-top:24px}
-.src p{margin:0}
+.src p{margin:0}.act{margin:14px 0 0!important}.act .btn{display:inline-block}
 .cta{background:var(--navy);color:#fff;border-radius:10px;padding:22px 24px;margin-top:32px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .cta strong{font-size:18px}.cta p{margin:4px 0 0;color:#dbe2f5;font-size:15px}
 .btn{background:var(--gold);color:var(--navy);font-weight:700;text-decoration:none;padding:10px 18px;border-radius:6px;white-space:nowrap}
@@ -264,6 +264,8 @@ def build():
                 f'<meta property="article:section" content="{E(cat)}">')
         tags = "".join(f"<span>{E(t)}</span>" for t in a.get("tags", []))
         why = f'<section class="why"><h2>Why it matters</h2><p>{E(a["why"])}</p></section>' if a.get("why") else ""
+        act = a.get("action")  # optional {"label", "url"}: direct link to the official registration/application page
+        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act["label"])} ↗</a></p>' if act else ""
         rel = "".join(f'<li><a href="{b["path"]}">{E(b["title"])}</a> <span class="meta">· {nice(b["d"])}</span></li>' for b in related)
         html_ = f"""<article class="post">
 <div class="crumbs"><a href="/">News</a> › <a href="/{a['category']}/">{E(cat)}</a></div>
@@ -271,10 +273,10 @@ def build():
 <h1>{E(a['title'])}</h1>
 <p class="dek">{E(a['dek'])}</p>
 <div class="meta">Published <time datetime="{a['date']}">{nice(a['d'])}</time> · By <a href="{AUTHOR_PATH}">{AUTHOR['name']}</a> · Source: <a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a></div>
-{f'<section class="facts" aria-label="Key facts"><h2>Key facts</h2><dl>{facts}</dl></section>' if facts else ''}
+{f'<section class="facts" aria-label="Key facts"><h2>Key facts</h2><dl>{facts}</dl>{act_btn}</section>' if facts else act_btn}
 <div class="body">{body}</div>
 {why}
-<section class="src"><h2>Official source</h2><p><a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a> — always check eligibility, budgets and deadlines on the official page before applying.</p></section>
+<section class="src"><h2>Official source</h2><p><a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a> — always check eligibility, budgets and deadlines on the official page before applying.</p>{act_btn}</section>
 <div class="tags">{tags}</div>
 <aside class="cta"><div><strong>Preparing a proposal?</strong><p>Ullswater Investments helps companies match, prepare and submit EU funding applications.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
 <div class="author-card"><div class="avatar">EM</div><div><strong><a href="{AUTHOR_PATH}">{AUTHOR['name']}</a></strong><br><span class="meta">{E(AUTHOR['role'])}. EU funding advisor.</span></div></div>

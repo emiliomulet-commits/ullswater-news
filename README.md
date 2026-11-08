@@ -44,7 +44,7 @@ build keeps the last good data. Build without network: `OFFLINE=1 python3 src/bu
 ```
 
 Categories: `horizon-europe`, `digital-ai`, `eic-defence`, `research-policy`, `budget-policy`, `spain`, `climate-energy`, `health`.
-Optional: `"updated": "YYYY-MM-DD"` when an article is corrected.
+Optional: `"action": {"label": "Register for the info day", "url": "https://<official registration or application page>"}` adds a button with a direct link to the official registration/application form (only official pages; verify the link). Optional: `"updated": "YYYY-MM-DD"` when an article is corrected.
 
 2. Run `python3 src/build.py`.
 3. Commit and push. GitHub Pages republishes in about a minute.
