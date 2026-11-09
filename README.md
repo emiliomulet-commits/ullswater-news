@@ -13,15 +13,17 @@ Every build regenerates: home, article pages (`/YYYY/MM/slug/`), category pages,
 `feed.xml` (RSS), `sitemap.xml`, `news-sitemap.xml` (Google News, last 48 h), `robots.txt`,
 `llms.txt`, `llms-full.txt`, `404.html` and `CNAME`.
 
-## Call alerts (automatic)
+## Calls: moved to calls.ullswaterinvestments.com (Nov 2026)
 
-`src/calls.py` reads the Ullswater worker feed (EU Funding & Tenders Portal) and builds one page per call
-(`/calls/<identifier>/`), programme pages (`/calls/programme/<key>/`), the deadlines calendar
-(`/calls/deadlines/`) and `calls.txt`. `src/data/calls.json` keeps every call ever seen, so closed calls keep
-their page (marked Closed, noindex 90 days after the deadline) instead of returning 404.
+Call pages live only on **https://calls.ullswaterinvestments.com** (single source, avoids duplicate pages in search).
+`src/calls.py` still reads the feed, but every old address here (`/calls/<id>/`, `/calls/programme/<key>/`, `/calls/deadlines/`)
+is now a redirect page (`src/redirects.py`: canonical + meta refresh, noindex) to the matching call or theme page on the calls site,
+and none of them is in the sitemap. The "Closing soon" table on the home page links straight to the calls site.
 
-`.github/workflows/daily-build.yml` rebuilds and publishes the site every morning. If the feed fails, the
-build keeps the last good data. Build without network: `OFFLINE=1 python3 src/build.py`.
+## Links to calls and shared menu
+- Optional article field `"calls": ["<call id>"]` adds a "Related calls" box linking each call page on the calls site.
+- Each category links to its theme on the calls site (`CAT_CALLS` in `src/build.py`; reference list: calls site `/data/taxonomy.json`).
+- The header carries the shared network menu (Home · EU calls · News · Events · Projects · About), identical on www, calls, news and events.
 
 ## Publishing a new article
 

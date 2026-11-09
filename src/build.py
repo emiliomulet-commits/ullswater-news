@@ -11,7 +11,7 @@ Usage:  python3 src/build.py
 import json, html, datetime, pathlib, shutil, re, os, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from calls import load_calls, GROUPS
-from redirects import CALLS, live_ids, call_url, theme_url, stub
+from redirects import CALLS, calls_slug, live_ids, call_url, theme_url, stub
 from email.utils import format_datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -32,6 +32,16 @@ SITE = {
     "address_brussels": "Square de Meeûs 37, 1000 Brussels, Belgium",
     "description": "Daily, verified news on European funding for innovators, researchers and SMEs: Horizon Europe, EIC, Digital Europe, defence, cohesion funds and Spanish R&D grants, with links to the official sources.",
 }
+
+# Shared taxonomy (Nov 2026): news categories -> theme pages on calls.ullswaterinvestments.com
+# (reference list: https://calls.ullswaterinvestments.com/data/taxonomy.json)
+CAT_CALLS = {"digital-ai": ("/theme/digital-industry-space/", "Open digital and AI calls"), "eic-defence": ("/theme/eic/", "Open EIC calls"),
+             "climate-energy": ("/theme/climate-energy-mobility/", "Open climate, energy and mobility calls"), "health": ("/theme/health/", "Open health calls"),
+             "spain": ("/spain/", "Open Spanish national and regional calls"), "horizon-europe": ("/", "All open EU calls")}
+# Same network menu on www, calls, news and events
+NETWORK = [("Home", "https://www.ullswaterinvestments.com/"), ("EU calls", "https://calls.ullswaterinvestments.com/"), ("News", "https://news.ullswaterinvestments.com/"),
+           ("Events", "https://events.ullswaterinvestments.com/"), ("Projects", "https://www.ullswaterinvestments.com/projects/"), ("About", "https://www.ullswaterinvestments.com/about/")]
+def network(cur): return "".join(f'<a href="{u}"{" aria-current=page" if t == cur else ""}>{t}</a>' for t, u in NETWORK)
 
 AUTHOR = {
     "name": "Emilio Mulet",
@@ -169,7 +179,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 </head>
 <body>
 <header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding News</span></a>
-<div class="top-links"><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="https://events.ullswaterinvestments.com/">Events</a><a href="https://calls.ullswaterinvestments.com/closing-soon/">Deadlines</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
+<nav class="top-links" aria-label="Ullswater Investments sites">{network("News")}</nav></div></header>
 <nav class="cats" aria-label="Categories"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap">
@@ -214,6 +224,14 @@ def soon_block(live, days, n):
     if not soon: return ""
     return (f'<section class="section"><div class="soon"><h2>Closing in the next {days} days</h2><a href="https://calls.ullswaterinvestments.com/closing-soon/">All deadlines →</a></div>'
             + call_table(soon) + '</section>')
+
+def related_calls(a):
+    """Call pages (optional "calls": [ids]) and the open calls of the article's area, on calls.ullswaterinvestments.com."""
+    li = [f'<li><a href="{CALLS}/call/{calls_slug(c)}/">Call page: {E(c)}</a> (deadline, conditions and partners)</li>' for c in a.get("calls", [])]
+    if a["category"] in CAT_CALLS:
+        u, t = CAT_CALLS[a["category"]]
+        li.append(f'<li><a href="{CALLS}{u}">{E(t)}</a></li>')
+    return f'<section class="src"><h2>Related calls</h2><ul>{"".join(li)}</ul></section>' if li else ""
 
 def write(path, text):
     p = OUT / path.lstrip("/")
@@ -281,6 +299,7 @@ def build():
 <div class="body">{body}</div>
 {why}
 <section class="src"><h2>Official source</h2><p><a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a> — always check eligibility, budgets and deadlines on the official page before applying.</p>{act_btn}</section>
+{related_calls(a)}
 <div class="tags">{tags}</div>
 <aside class="cta"><div><strong>Preparing a proposal?</strong><p>Ullswater Investments helps companies match, prepare and submit EU funding applications.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
 <div class="author-card"><div class="avatar">EM</div><div><strong><a href="{AUTHOR_PATH}">{AUTHOR['name']}</a></strong><br><span class="meta">{E(AUTHOR['role'])}. EU funding advisor.</span></div></div>
