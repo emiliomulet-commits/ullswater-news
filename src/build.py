@@ -45,16 +45,13 @@ def call_title(cid):
         except Exception as e:
             print("calls titles unavailable:", e); _TITLES["_"] = ""
     return _TITLES.get(cid) or cid
-<<<<<<< HEAD
-=======
 # "Apply with our support" form (Google Form, see ullswater-calls/tools/support_request_setup.gs). CALL and PAGE are replaced per page.
-SUPPORT_FORM = ""
+SUPPORT_FORM = "https://docs.google.com/forms/d/e/1FAIpQLScK2yCvR62EAVc1pRxGHuv54TqkjV2zV7310pBoPqE0klQ94w/viewform?usp=pp_url&entry.841001766=CALL&entry.2085908736=PAGE"
 def support_link(label, page_url):
     from urllib.parse import quote
     if SUPPORT_FORM:
         return SUPPORT_FORM.replace("CALL", quote(label)).replace("PAGE", quote(page_url))
     return f"mailto:{SITE['email']}?subject={quote('Support request: ' + label)}&body={quote('Event/call: ' + label + chr(10) + 'Page: ' + page_url + chr(10) + chr(10) + 'Organisation, country and what you need:' + chr(10))}"
->>>>>>> 8bcd412 ("Apply with our support" button (support request form; mailto fallback until the form URL is set))
 def call_url(cid):
     import re
     return f"{CALLS}/call/{re.sub(r'[^a-z0-9]+', '-', cid.lower()).strip('-')}/"
@@ -239,11 +236,7 @@ def build():
         write(e["path"] + "event.ics", ics([e]))
         write(e["path"], page(f"{e['title']} · {span(e)}", e["summary"], e["path"],
             f"""<article class="post"><div class="crumbs"><a href="/">Events</a> › <a href="/type/{e['type']}/">{E(TYPES[e['type']][0])}</a></div><h1>{E(e['title'])}</h1><p class="dek">{E(e['summary'])}</p>{ended_note}
-<<<<<<< HEAD
-<section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions">{reg}<a class="btn ghost" href="{e['path']}event.ics">Add to calendar</a></div>
-=======
 <section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions">{reg}<a class="btn ghost" href="{e['path']}event.ics">Add to calendar</a><a class="btn ghost" href="{E(support_link((call_title(e['calls'][0]) if e.get('calls') else e['title']), SITE['url'] + e['path']))}" target="_blank" rel="noopener">Apply with our support</a></div>
->>>>>>> 8bcd412 ("Apply with our support" button (support request form; mailto fallback until the form URL is set))
 <div class="body" style="margin-top:24px">{''.join(f'<p>{E(p)}</p>' for p in e['details'])}</div>
 <section class="why"><h2>Why it matters for applicants</h2><p>{E(e['why'])}</p></section>{related(e, events)}
 <section class="src"><h2>Source</h2><p><a href="{E(e['source_url'])}" rel="noopener">{E(e['source_name'])}</a> — always confirm dates and registration on the organiser's page before you travel.</p></section>
