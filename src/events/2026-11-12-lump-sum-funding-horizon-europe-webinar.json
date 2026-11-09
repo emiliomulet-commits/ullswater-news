@@ -1,0 +1,27 @@
+{
+  "slug": "lump-sum-funding-horizon-europe-webinar",
+  "title": "Lump Sum Funding in Horizon Europe: How does it work? How to write a proposal?",
+  "start": "2026-11-12",
+  "end": "2026-11-12",
+  "type": "webinar",
+  "programme": "horizon-europe",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "European Commission",
+  "summary": "A two-hour Commission webinar explaining how lump sum grants work in Horizon Europe and what that means when writing a proposal.",
+  "details": [
+    "Part of the Commission's autumn series of webinars on Horizon Europe applications and project implementation, it is aimed at applicants and beneficiaries of lump sum grants. It runs from 10:00 to 12:00 CET and no registration is required."
+  ],
+  "why": "Lump sums change how the budget and work plan must be built, and errors there are hard to fix after submission. Teams preparing 2027 proposals under a lump sum topic should attend before finalising their budget.",
+  "tags": [
+    "Horizon Europe",
+    "Lump sum",
+    "Proposal writing",
+    "Budget"
+  ],
+  "registration_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261112.htm",
+  "source_name": "Horizon Europe NCP Türkiye (TÜBİTAK)",
+  "source_url": "https://ufukavrupa.org.tr/en/news/new-european-commission-webinars-horizon-europe-applications-and-project-implementation",
+  "status": "scheduled"
+}

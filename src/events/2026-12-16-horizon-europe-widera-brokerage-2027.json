@@ -1,0 +1,27 @@
+{
+  "slug": "horizon-europe-widera-brokerage-2027",
+  "title": "Horizon Europe WIDERA Brokerage Event 2027",
+  "start": "2026-12-16",
+  "end": "2026-12-16",
+  "type": "brokerage",
+  "programme": "widera",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "NCP_WIDERA.NET",
+  "summary": "An online knowledge day and brokerage event supporting the ERA 2027 call, free of charge with mandatory registration.",
+  "details": [
+    "Topics span research careers, research management, knowledge valorisation, open science, gender equality, science for policy and citizen engagement. Participants create profiles and arrange bilateral meetings. It is open to research and higher education institutions, industry and SMEs, third-sector organisations, authorities and other ERA stakeholders."
+  ],
+  "why": "Organisations looking at ERA topics can use it to find partners at low cost. Early registration leaves more time to arrange meetings.",
+  "tags": [
+    "Horizon Europe",
+    "WIDERA",
+    "ERA",
+    "Partner search"
+  ],
+  "registration_url": "https://www.b2match.com/e/horizon-widera2027",
+  "source_name": "NCP_WIDERA.NET",
+  "source_url": "https://www.b2match.com/e/horizon-widera2027",
+  "status": "scheduled"
+}
