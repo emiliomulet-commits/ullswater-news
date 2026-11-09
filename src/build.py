@@ -11,7 +11,7 @@ Usage:  python3 src/build.py
 import json, html, datetime, pathlib, shutil, re, os, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from calls import load_calls, GROUPS
-from redirects import CALLS, calls_slug, live_ids, call_url, theme_url, stub
+from redirects import CALLS, TITLES, calls_slug, live_ids, call_url, theme_url, stub
 from email.utils import format_datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -133,7 +133,7 @@ table.calls td.dl{white-space:nowrap;font-weight:600}
 .byline a{color:var(--muted)}
 .author-card{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-top:28px}
 .avatar{flex:0 0 56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
-@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:none}}
+@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}}
 """
 
 def org_ld():
@@ -227,7 +227,7 @@ def soon_block(live, days, n):
 
 def related_calls(a):
     """Call pages (optional "calls": [ids]) and the open calls of the article's area, on calls.ullswaterinvestments.com."""
-    li = [f'<li><a href="{CALLS}/call/{calls_slug(c)}/">Call page: {E(c)}</a> (deadline, conditions and partners)</li>' for c in a.get("calls", [])]
+    li = [f'<li><a href="{CALLS}/call/{calls_slug(c)}/">{E(TITLES.get(c) or c)}</a>: deadline, conditions and partners</li>' for c in a.get("calls", [])]
     if a["category"] in CAT_CALLS:
         u, t = CAT_CALLS[a["category"]]
         li.append(f'<li><a href="{CALLS}{u}">{E(t)}</a></li>')

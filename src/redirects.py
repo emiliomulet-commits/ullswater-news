@@ -17,6 +17,9 @@ GROUP_THEME = {
 }
 
 
+TITLES = {}  # call id -> title on the calls site, filled by live_ids()
+
+
 def calls_slug(code):
     return re.sub(r"[^a-z0-9]+", "-", code.lower()).strip("-")
 
@@ -28,6 +31,7 @@ def live_ids(offline=False):
     try:
         req = urllib.request.Request(CALLS + "/data/calls.json", headers={"User-Agent": "ullswater-news-builder/1.0"})
         d = json.load(urllib.request.urlopen(req, timeout=60))
+        TITLES.update({c["id"]: c["title"] for c in d["calls"]})
         return {calls_slug(c["id"]) for c in d["calls"]}
     except Exception as e:
         print("WARNING: calls site list unavailable:", e)
