@@ -24,5 +24,10 @@
   "registration_url": "https://eit-hei.eu/events/mel-framework-and-the-impact-domains-and-actions-call-2026-info-sessions/",
   "source_name": "EIT Higher Education Initiative",
   "source_url": "https://eit-hei.eu/funding-support/funding-opportunities/open-calls/call-for-proposals-2026/",
-  "status": "scheduled"
+  "status": "scheduled",
+  "calls": [
+    "EIT HEI-48939733"
+  ],
+  "series": "eit-hei-call-2026-info-sessions",
+  "series_title": "EIT HEI Call 2026 info sessions"
 }
