@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-08 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-09 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 EDF-EDIP-USI-2026-LS-IRA-MAB | Missiles, ammunition and bombs | Open | 2026-06-17 | 2026-11-10 | €180M (topic total) | https://news.ullswaterinvestments.com/calls/edf-edip-usi-2026-ls-ira-mab/
 EDF-EDIP-P-2026-2027-FNLC-SA-SEAP | Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools | Open | 2026-10-13 | 2026-11-12 | €10M (topic total) | https://news.ullswaterinvestments.com/calls/edf-edip-p-2026-2027-fnlc-sa-seap/

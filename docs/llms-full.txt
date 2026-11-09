@@ -1,5 +1,46 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EU and India conclude talks on India joining Horizon Europe
+URL: https://news.ullswaterinvestments.com/2026/11/india-horizon-europe-association-concluded/
+Date: 2026-11-06 · Category: Research Policy · Source: European Commission – EURAXESS India (https://euraxess.ec.europa.eu/worldwide/india/news/eu-india-eu-and-india-conclude-negotiations-association-horizon-europe)
+
+Association is envisaged for January 2027. Indian organisations would then be able to receive funding directly and lead Pillar II collaborative projects.
+
+- Programme: Horizon Europe (2021–2027), budget €93.5 billion
+- Association envisaged: January 2027
+- Negotiations: Exploratory talks from 6 February 2026; formal talks from 17 July 2026
+- Next step: Formal signature, once both sides complete their procedures
+
+The European Commission and India have finished negotiating India's association to Horizon Europe, the EU's research and innovation programme for 2021–2027. Association is the closest form of cooperation open to countries outside the EU, and it is envisaged to apply from January 2027.
+Once the agreement is in force, organisations based in India would be able to receive Horizon Europe funding directly and to lead collaborative projects under Pillar II, which covers global challenges and European industrial competitiveness. Areas highlighted for joint work include health, digital technologies, industry, space, climate, energy and the bioeconomy.
+The arrangements do not yet apply. Closing the negotiations clears the way for the agreement to be signed, which depends on both sides completing their internal procedures. The talks began with exploratory discussions on 6 February 2026, and formal negotiations opened on 17 July 2026.
+
+Why it matters (Ullswater Investments analysis): For European consortia, this widens the pool of partners that can take part on equal terms with EU organisations. Indian universities, research bodies and companies are likely to start appearing more often in Pillar II proposals, including as coordinators. Teams planning for 2027 calls should talk to Indian partners early, but should not count on the new terms until the agreement has entered into force. Until then, the current participation rules for India continue to apply.
+
+---
+
+## EIC 2027 work programme opens over €1.8 billion for deep tech
+URL: https://news.ullswaterinvestments.com/2026/11/eic-2027-work-programme-1-8-billion/
+Date: 2026-11-05 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/eic-funding-opportunities/eic-funding-opportunities-2027_en)
+
+The Commission has adopted the EIC's 2027 plan: €578 million for the Accelerator, €248 million for Pathfinder and €100 million for a defence equity call.
+
+- Total: Over €1.8 billion
+- EIC Accelerator: €578 million (grants below €2.5 million, investments €0.5–10 million)
+- EIC Pathfinder: €248 million (grants up to €4 million)
+- STEP Scale Up: €290 million (investments €10–30 million)
+- STEP Scale Up Defence: €100 million (up to €30 million direct equity)
+- Scaleup Europe Fund: €400 million
+
+The European Commission has adopted the European Innovation Council's work programme for 2027, which puts more than €1.8 billion on the table for strategic technologies and for companies that want to scale up. The money is spread across six main schemes, from early-stage research to large equity rounds.
+The EIC Accelerator remains the largest line at €578 million for start-ups and SMEs, combining grants below €2.5 million with investments of €0.5 million to €10 million. Pathfinder receives €248 million for multi-disciplinary research teams, with grants of up to €4 million, while Transition has €92 million and grants of up to €2.5 million to turn research results into innovation. A further €25 million goes to the Advanced Innovation Challenges, which pay a €300,000 lump sum.
+At the scale-up end, STEP Scale Up has €290 million for investments of €10 million to €30 million, and a dedicated STEP Scale Up Defence call has €100 million with up to €30 million in direct equity. The Scaleup Europe Fund receives €400 million for equity investments above €30 million, reaching up to several hundred million euro.
+According to the EIC, the 2027 programme completes the funding for three instruments introduced during 2026: the Scaleup Europe Fund (€1 billion), defence investments (€200 million) and the Advanced Innovation Challenges pilot (€25 million). A redesigned Women TechEU programme doubles its grants to €150,000 per start-up. The EIC will present its 2027 funding opportunities at an online information day on 19 November, followed by a session on the EIC Accelerator Challenges on 20 November.
+
+Why it matters (Ullswater Investments analysis): With the 2027 budget now fixed, applicants can plan their calendar against a known envelope rather than estimates. The Accelerator stays the main entry point for start-ups and SMEs, but the growing weight of equity instruments shows the EIC increasingly expects companies to arrive with an investment case, not only a technology case. Dual-use and defence companies now have a recurring, dedicated route. Teams should read the full work programme and call texts before choosing a scheme, as rules and evaluation steps can change from one year to the next.
+
+---
+
 ## EIC sets 19 November info day on its 2027 funding opportunities
 URL: https://news.ullswaterinvestments.com/2026/11/eic-2027-funding-info-day/
 Date: 2026-11-05 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/events/online-information-day-eic-funding-opportunities-2027-2026-11-19_en)
@@ -120,6 +161,27 @@ EuroHPC JU has so far procured 12 supercomputers, oversees 19 AI Factories and 1
 The summit produced related digital outcomes: Destination Earth will take on Canadian cooperation in AI-powered climate modelling, and the parties discussed Arctic connectivity and the interoperability of EU and Canadian digital identities.
 
 Why it matters (Ullswater Investments analysis): For consortia in AI, HPC and quantum, Canadian partners now sit closer to the same compute ecosystem as their European counterparts, on top of the existing Horizon Europe association. That can make EU–Canada collaboration more practical to design into a proposal. Applicants should still check the access rules and eligibility conditions of each specific call before building a work plan around EuroHPC resources.
+
+---
+
+## Horizon Europe opens 14 'Health' topics for 2027, due 17 February
+URL: https://news.ullswaterinvestments.com/2026/10/horizon-europe-health-2027-calls-open/
+Date: 2026-10-29 · Category: Health & Health Data · Source: European Health and Digital Executive Agency (HaDEA) (https://hadea.ec.europa.eu/news/2027-horizon-europe-health-calls-are-open-proposals-2026-10-29_en)
+
+HaDEA has published the 2027 'Health' calls, from antivirals and antimicrobials to AI biomarkers and point-of-care diagnostics. Info day on 26 November.
+
+- Programme: Horizon Europe, Cluster 1 'Health'
+- Topics: 14 topics in the 2027 calls
+- Deadline: 17 February 2027, 17:00 Brussels time
+- Info day: 26 November 2026
+- Next openings: Pandemic Preparedness Partnership (Phase 2) expected 10 February 2027; Cancer Mission calls February 2027
+
+The European Health and Digital Executive Agency (HaDEA) has announced that the 2027 Horizon Europe 'Health' calls are open on the EU Funding and Tenders Portal. Proposals must be submitted by 17 February 2027 at 17:00 Brussels time.
+The 14 topics cover a wide range. On infectious disease, they include new small-molecule antivirals for pathogens with epidemic potential, monoclonal antibodies against several virus families including Flaviviruses, and innovative antimicrobials against resistant pathogens. Other topics address non-communicable diseases, clinical trials for neurodegenerative diseases, chronic disease prevention in children and young people, disabilities and independent living, and the health effects of climate change.
+Several topics are aimed at technology developers: AI-based predictive biomarkers of disease progression and treatment response, cell-free protein synthesis platforms for biologicals, portable point-of-care diagnostics, and personalised approaches to reduce adverse drug reactions caused by multiple medications. Some of the topics run as two-stage calls.
+A Cluster 1 'Health' info day on 26 November 2026 will present the 2027 topics. HaDEA also signals further calls: the European Partnership for Pandemic Preparedness (Phase 2) is expected to open on 10 February 2027, EU Cancer Mission calls will open in February 2027, and additional calls will follow in June 2027.
+
+Why it matters (Ullswater Investments analysis): With a single February deadline, consortia have roughly three months to build partnerships and write proposals, which is tight for clinical and multi-country work. The two-stage topics lower the effort of a first submission but leave little room for a weak concept. The AI biomarker, diagnostics and protein-synthesis topics are a natural fit for health-tech and biotech SMEs that can bring an industrial angle to academic consortia. Applicants should check each topic's conditions on the Funding and Tenders Portal and use the info day to test their fit before committing.
 
 ---
 

@@ -14,6 +14,7 @@ Key facts:
 - [EIC, Defence & Equity](https://news.ullswaterinvestments.com/eic-defence/): European Innovation Council, STEP, European Defence Fund and EU equity instruments.
 - [Research Policy](https://news.ullswaterinvestments.com/research-policy/): European Research Area, open science and the rules that shape EU-funded research.
 - [Spain](https://news.ullswaterinvestments.com/spain/): Spanish R&D and innovation funding: CDTI, AEI, Red.es, ENISA and NextGenerationEU.
+- [Health & Health Data](https://news.ullswaterinvestments.com/health/): EU4Health, Horizon Europe Health and the European Health Data Space.
 
 ## EU funding calls (updated daily)
 
@@ -51,12 +52,15 @@ Key facts:
 
 ## Latest articles
 
+- [EU and India conclude talks on India joining Horizon Europe](https://news.ullswaterinvestments.com/2026/11/india-horizon-europe-association-concluded/) (2026-11-06): Association is envisaged for January 2027. Indian organisations would then be able to receive funding directly and lead Pillar II collaborative projects.
+- [EIC 2027 work programme opens over €1.8 billion for deep tech](https://news.ullswaterinvestments.com/2026/11/eic-2027-work-programme-1-8-billion/) (2026-11-05): The Commission has adopted the EIC's 2027 plan: €578 million for the Accelerator, €248 million for Pathfinder and €100 million for a defence equity call.
 - [EIC sets 19 November info day on its 2027 funding opportunities](https://news.ullswaterinvestments.com/2026/11/eic-2027-funding-info-day/) (2026-11-05): The online session will present Work Programme 2027 scheme by scheme, from Pathfinder to STEP Defence. Registration closes on 18 November.
 - [CDTI Innovación commits €12.75 million to 19 R&D+I projects](https://news.ullswaterinvestments.com/2026/11/cdti-council-19-projects-october/) (2026-11-04): All 19 October approvals are loans. Ten companies get CDTI funding for the first time, 15 are SMEs and 13 operations are co-financed by POPE.
 - [Open Research Europe becomes fee-free in 11 countries](https://news.ullswaterinvestments.com/2026/11/open-research-europe-fee-free-11-countries/) (2026-11-03): Researchers in 11 countries can now publish on the Commission's open-access platform without publication fees, under a collective funding model.
 - [EU and Bpifrance plan €150 million guarantee for Ukraine partnerships](https://news.ullswaterinvestments.com/2026/11/bpifrance-eu-guarantees-ukraine-dual-use-partnerships/) (2026-11-03): The arrangement under the Ukraine Investment Framework targets French–Ukrainian industrial ties in defence and dual-use technology.
 - [Commission proposes €31.7 billion for Ukraine's defence industry](https://news.ullswaterinvestments.com/2026/10/ukraine-support-loan-2027-defence-industry/) (2026-10-30): The proposal covers 2027 under the €90 billion Ukraine Support Loan. The Council still has to adopt it before disbursements start.
 - [Canada joins EuroHPC as a Participating State](https://news.ullswaterinvestments.com/2026/10/canada-joins-eurohpc-supercomputing-network/) (2026-10-30): Agreed at the EU–Canada Summit in Montreal, the move opens Europe's public supercomputing, AI and quantum resources to Canada.
+- [Horizon Europe opens 14 'Health' topics for 2027, due 17 February](https://news.ullswaterinvestments.com/2026/10/horizon-europe-health-2027-calls-open/) (2026-10-29): HaDEA has published the 2027 'Health' calls, from antivirals and antimicrobials to AI biomarkers and point-of-care diagnostics. Info day on 26 November.
 - [First EIC defence equity call closes with nine applications](https://news.ullswaterinvestments.com/2026/10/eic-step-scale-up-defence-call-closes/) (2026-10-29): The EIC STEP Scale Up Defence call offered direct equity of up to €30 million per company; results are expected in early 2027.
 - [Guidelines on generative AI in research get their largest update](https://news.ullswaterinvestments.com/2026/10/generative-ai-research-guidelines-update/) (2026-10-16): The ERA Living Guidelines for researchers, research organisations and funders were updated on the same day the first 13 EOSC nodes went live.
 - [RAISE pledging initiative launched for AI in science](https://news.ullswaterinvestments.com/2026/10/raise-pledging-initiative-ai-in-science/) (2026-10-15): Companies and philanthropic organisations are invited to support researchers who use AI, mainly with models, computing capacity, software, data and training.
