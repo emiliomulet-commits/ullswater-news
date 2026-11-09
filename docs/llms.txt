@@ -18,33 +18,9 @@ Key facts:
 
 ## EU funding calls (updated daily)
 
-- [All open and forthcoming calls](https://news.ullswaterinvestments.com/calls/): 392 calls with deadlines, budgets and official links.
-- [Deadlines calendar](https://news.ullswaterinvestments.com/calls/deadlines/)
-- [Plain-text list of all open calls](https://news.ullswaterinvestments.com/calls.txt)
-- [Horizon Europe · Cluster 1 Health](https://news.ullswaterinvestments.com/calls/programme/he-cl1/): 18 calls
-- [Horizon Europe · Cluster 2 Culture, Creativity & Inclusive Society](https://news.ullswaterinvestments.com/calls/programme/he-cl2/): 27 calls
-- [Horizon Europe · Cluster 3 Civil Security for Society](https://news.ullswaterinvestments.com/calls/programme/he-cl3/): 21 calls
-- [Horizon Europe · Cluster 4 Digital, Industry & Space](https://news.ullswaterinvestments.com/calls/programme/he-cl4/): 34 calls
-- [Horizon Europe · Cluster 5 Climate, Energy & Mobility](https://news.ullswaterinvestments.com/calls/programme/he-cl5/): 54 calls
-- [Horizon Europe · Cluster 6 Food, Bioeconomy & Environment](https://news.ullswaterinvestments.com/calls/programme/he-cl6/): 51 calls
-- [European Innovation Council (EIC)](https://news.ullswaterinvestments.com/calls/programme/he-eic/): 2 calls
-- [Horizon Europe · Marie Skłodowska-Curie Actions](https://news.ullswaterinvestments.com/calls/programme/he-msca/): 7 calls
-- [European Research Council (ERC)](https://news.ullswaterinvestments.com/calls/programme/he-erc/): 1 calls
-- [Horizon Europe · Research Infrastructures](https://news.ullswaterinvestments.com/calls/programme/he-infra/): 10 calls
-- [Horizon Europe · Widening & European Research Area](https://news.ullswaterinvestments.com/calls/programme/he-widera/): 10 calls
-- [Horizon Europe · EU Missions](https://news.ullswaterinvestments.com/calls/programme/he-miss/): 28 calls
-- [Horizon Europe · European Innovation Ecosystems](https://news.ullswaterinvestments.com/calls/programme/he-eie/): 3 calls
-- [Horizon Europe · Joint Undertakings & Partnerships](https://news.ullswaterinvestments.com/calls/programme/he-ju/): 7 calls
-- [Horizon Europe · RAISE (AI in science)](https://news.ullswaterinvestments.com/calls/programme/he-raise/): 4 calls
-- [Horizon Europe · Other calls](https://news.ullswaterinvestments.com/calls/programme/he-other/): 48 calls
-- [Digital Europe Programme](https://news.ullswaterinvestments.com/calls/programme/digital/): 12 calls
-- [European Defence Fund](https://news.ullswaterinvestments.com/calls/programme/edf/): 9 calls
-- [Interregional Innovation Investments (I3)](https://news.ullswaterinvestments.com/calls/programme/i3/): 2 calls
-- [Creative Europe](https://news.ullswaterinvestments.com/calls/programme/crea/): 17 calls
-- [Citizens, Equality, Rights and Values (CERV)](https://news.ullswaterinvestments.com/calls/programme/cerv/): 6 calls
-- [Erasmus+](https://news.ullswaterinvestments.com/calls/programme/erasmus/): 3 calls
-- [Connecting Europe Facility](https://news.ullswaterinvestments.com/calls/programme/cef/): 1 calls
-- [Other EU programmes](https://news.ullswaterinvestments.com/calls/programme/other/): 17 calls
+- [All open and forthcoming EU calls](https://calls.ullswaterinvestments.com/): one page per call with deadline, budget, partners and official links, updated daily.
+- [Closing soon](https://calls.ullswaterinvestments.com/closing-soon/)
+- [Calls by theme](https://calls.ullswaterinvestments.com/theme/)
 
 ## Author
 

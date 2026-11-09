@@ -11,6 +11,7 @@ Usage:  python3 src/build.py
 import json, html, datetime, pathlib, shutil, re, os, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from calls import load_calls, GROUPS
+from redirects import CALLS, live_ids, call_url, theme_url, stub
 from email.utils import format_datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -168,7 +169,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 </head>
 <body>
 <header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding News</span></a>
-<div class="top-links"><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="https://events.ullswaterinvestments.com/">Events</a><a href="/calls/deadlines/">Deadlines</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
+<div class="top-links"><a href="https://calls.ullswaterinvestments.com/">EU calls</a><a href="https://events.ullswaterinvestments.com/">Events</a><a href="https://calls.ullswaterinvestments.com/closing-soon/">Deadlines</a><a href="/about/">About</a><a href="/feed.xml">RSS</a><a href="{SITE['org_url']}">Main site</a></div></div></header>
 <nav class="cats" aria-label="Categories"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap">
@@ -200,7 +201,7 @@ def card(a):
             f'<p>{E(a["dek"])}</p></article>')
 
 def call_rows(cs):
-    return "".join(f'<tr><td><a href="{c["path"]}">{E(c["title"])}</a><span class="code">{E(c["code"])}</span></td>'
+    return "".join(f'<tr><td><a href="{c.get("href") or c["path"]}">{E(c["title"])}</a><span class="code">{E(c["code"])}</span></td>'
                    f'<td>{E(GROUPS[c["group"]][0])}</td><td class="dl"><time datetime="{c["deadline"][:10]}">{nice(c["dl"])}</time></td>'
                    f'<td><span class="st st-{c["state"]}">{c["state"]}</span></td></tr>' for c in cs)
 
@@ -211,7 +212,7 @@ def call_table(cs):
 def soon_block(live, days, n):
     soon = [c for c in live if c["status"] == "open" and 0 <= c["days"] <= days][:n]
     if not soon: return ""
-    return (f'<section class="section"><div class="soon"><h2>Closing in the next {days} days</h2><a href="/calls/deadlines/">All deadlines →</a></div>'
+    return (f'<section class="section"><div class="soon"><h2>Closing in the next {days} days</h2><a href="https://calls.ullswaterinvestments.com/closing-soon/">All deadlines →</a></div>'
             + call_table(soon) + '</section>')
 
 def write(path, text):
@@ -228,6 +229,9 @@ def build():
     TODAY = datetime.date.today()
     calls, feed_updated = load_calls(TODAY, offline=bool(os.environ.get("OFFLINE")))
     live = [c for c in calls if not c["closed"]]
+    ids = live_ids(offline=bool(os.environ.get("OFFLINE")))
+    for c in calls:
+        c["href"] = call_url(c, ids)
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir()
     if (SRC / "assets").exists(): shutil.copytree(SRC / "assets", OUT / "assets")
@@ -308,85 +312,14 @@ def build():
     # ---- Call alerts ----
     upd = f" · Feed updated {feed_updated[:10]}" if feed_updated else ""
     n_open = sum(1 for c in live if c["status"] == "open")
+    # Call pages live only on calls.ullswaterinvestments.com: every old /calls/... address becomes a redirect page.
     for c in calls:
-        g, gdesc = GROUPS[c["group"]]
-        prog = "Horizon Europe" if c["group"].startswith("he-") else g
-        when_open = nice(datetime.date.fromisoformat(c["opens"][:10])) if c.get("opens") else "see official page"
-        facts = [("Call identifier", c["code"]), ("Programme", g), ("Status", c["state"]),
-                 ("Opens", when_open), ("Deadline", nice(c["dl"]) + ("" if c["closed"] else f" ({c['days']} days left)"))]
-        if c.get("budget"): facts.append(("Budget", c["budget"]))
-        if c.get("keywords"): facts.append(("Keywords", ", ".join(c["keywords"][:6])))
-        fhtml = "".join(f"<dt>{E(k)}</dt><dd>{E(v)}</dd>" for k, v in facts)
-        if c["closed"]:
-            intro = f"{c['code']} is a {prog} call that closed on {nice(c['dl'])}. It is no longer accepting proposals; see the related calls below for open opportunities in the same programme."
-            notice = '<p class="notice">This call is closed. The page is kept for reference.</p>'
-        elif c["status"] == "open":
-            intro = f"{c['code']} — “{c['title']}” — is an open {prog} call. Proposals can be submitted on the EU Funding & Tenders Portal until {nice(c['dl'])}."
-            notice = ""
-        else:
-            intro = f"{c['code']} — “{c['title']}” — is a forthcoming {prog} call. It opens on {when_open} and the deadline is {nice(c['dl'])}."
-            notice = ""
-        budget_a = f"The published budget is {c['budget']}." if c.get("budget") else "The budget is not listed in our feed; check the official call page."
-        faqs = [(f"When is the deadline for {c['code']}?", f"The deadline is {nice(c['dl'])}. Funding & Tenders Portal deadlines usually close at 17:00 Brussels time; always confirm the exact time on the official call page."),
-                (f"What is the budget of {c['code']}?", budget_a),
-                (f"Where do I apply for {c['code']}?", "Proposals are submitted electronically through the EU Funding & Tenders Portal, using the link to the official call page on this page.")]
-        faq_html = "".join(f"<h3>{E(q)}</h3><p>{E(a)}</p>" for q, a in faqs)
-        related = [x for x in live if x["group"] == c["group"] and x["code"] != c["code"]][:8]
-        ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": f"{c['code']} · {c['title']}", "url": SITE["url"] + c["path"],
-               "dateModified": TODAY.isoformat(), "publisher": org_ld(),
-               "mainEntity": {"@type": "MonetaryGrant", "name": c["title"], "identifier": c["code"], "url": c.get("url"),
-                              "funder": {"@type": "GovernmentOrganization", "name": "European Commission", "url": "https://commission.europa.eu"},
-                              "description": intro}},
-              {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
-              {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-                  {"@type": "ListItem", "position": 1, "name": "Calls", "item": SITE["url"] + "/calls/"},
-                  {"@type": "ListItem", "position": 2, "name": g, "item": f"{SITE['url']}/calls/programme/{c['group']}/"},
-                  {"@type": "ListItem", "position": 3, "name": c["code"], "item": SITE["url"] + c["path"]}]}]
-        body = f"""<article class="post">
-<div class="crumbs"><a href="/calls/">Calls</a> › <a href="/calls/programme/{c['group']}/">{E(g)}</a></div>
-<p class="kicker">Call alert · {E(g)}</p>
-<h1>{E(c['title'])}</h1>
-<p class="dek"><span class="code" style="font-size:15px">{E(c['code'])}</span></p>
-<div class="meta"><span class="st st-{c['state']}">{c['state']}</span> · Deadline <time datetime="{c['deadline'][:10]}">{nice(c['dl'])}</time> · Data checked {nice(TODAY)} from the EU Funding &amp; Tenders Portal</div>
-{notice}
-<div class="body"><p>{E(intro)}</p></div>
-<section class="facts" aria-label="Key facts"><h2>Key facts</h2><dl>{fhtml}</dl></section>
-<section class="src"><h2>Official call page</h2><p><a href="{E(c.get('url') or 'https://ec.europa.eu/info/funding-tenders/opportunities/portal')}" rel="noopener">{E(c['code'])} on the EU Funding &amp; Tenders Portal</a> — eligibility conditions, topic description, expected outcomes and submission system.</p></section>
-<section class="why faq"><h2>Frequently asked questions</h2>{faq_html}</section>
-<aside class="cta"><div><strong>Thinking of applying?</strong><p>Ullswater Investments checks fit, builds the consortium and prepares the proposal.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
-{('<section class="why"><h2>Other open calls in ' + E(g) + '</h2>' + call_table(related) + '</section>') if related else ''}
-</article>"""
-        desc = (f"{c['code']}: {c['title']}. {c['state']} {prog} call, deadline {nice(c['dl'])}" + (f", budget {c['budget']}" if c.get("budget") else "") + ". Key facts and official link.")[:300]
-        write(c["path"], page(f"{c['code']} · {c['title']} – deadline {nice(c['dl'])}"[:150], desc, c["path"], body, ld, noindex=c["noindex"]))
-
+        write(c["path"], stub(c["href"], c["code"]))
     groups_live = {k: [c for c in live if c["group"] == k] for k in GROUPS}
-    chips = "".join(f'<a href="/calls/programme/{k}/">{E(GROUPS[k][0])} ({len(v)})</a>' for k, v in groups_live.items() if v)
-    idx = (f'<section class="hero"><div class="wrap"><p class="kicker">Call alerts</p><h1>Open and forthcoming EU funding calls</h1>'
-           f'<p class="lead">{len(live)} open and forthcoming calls from the EU Funding &amp; Tenders Portal ({n_open} open now), with deadlines, budgets and official links. Updated every day.</p>'
-           f'<p class="meta" style="margin-top:12px">Checked {nice(TODAY)}{upd}</p></div></section>'
-           f'<div class="wrap"><nav class="chips" aria-label="Programmes">{chips}</nav>' + soon_block(live, 30, 15)
-           + f'<section class="section"><h2>All open and forthcoming calls</h2>{call_table(live)}</section></div>')
-    write("/calls/", page(f"Open EU funding calls {TODAY.year}–{TODAY.year+1}: deadlines and budgets · {SITE['short']}",
-                          f"{len(live)} open and forthcoming EU funding calls (Horizon Europe, EIC, Digital Europe, European Defence Fund and more) with deadlines, budgets and official links, updated daily.",
-                          "/calls/", idx, [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Open EU funding calls", "url": SITE["url"] + "/calls/", "publisher": org_ld(),
-                                           "mainEntity": {"@type": "ItemList", "numberOfItems": len(live), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + c["path"], "name": c["code"]} for i, c in enumerate(live[:100])]}}]))
-    for k, v in groups_live.items():
-        if not v: continue
-        g, gdesc = GROUPS[k]
-        body = (f'<section class="hero"><div class="wrap"><p class="kicker">Call alerts</p><h1>{E(g)}: open calls</h1><p class="lead">{E(gdesc)} {len(v)} open and forthcoming calls, sorted by deadline.</p>'
-                f'<p class="meta" style="margin-top:12px">Checked {nice(TODAY)} · Source: EU Funding &amp; Tenders Portal</p></div></section>'
-                f'<div class="wrap"><section class="section">{call_table(v)}</section></div>')
-        write(f"/calls/programme/{k}/", page(f"{g} calls: deadlines and budgets · {SITE['short']}", f"{len(v)} open and forthcoming {g} calls with deadlines, budgets and official links, updated daily.", f"/calls/programme/{k}/", body,
-                                             [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{g} calls", "url": f"{SITE['url']}/calls/programme/{k}/", "publisher": org_ld()}]))
-    # deadlines calendar (next 120 days, by month)
-    cal = [c for c in live if c["status"] == "open" or c["days"] <= 120]
-    cal = [c for c in cal if c["days"] <= 120]
-    months = {}
-    for c in cal: months.setdefault((c["dl"].year, c["dl"].month), []).append(c)
-    cal_html = "".join(f'<section class="section"><h2>{MONTHS[m-1]} {y}</h2>{call_table(v)}</section>' for (y, m), v in sorted(months.items()))
-    write("/calls/deadlines/", page(f"EU funding deadlines calendar: next 120 days · {SITE['short']}", "Calendar of upcoming EU funding call deadlines for the next 120 days, grouped by month, with links to each call. Updated daily.", "/calls/deadlines/",
-          f'<section class="hero"><div class="wrap"><p class="kicker">Deadlines</p><h1>EU funding deadlines calendar</h1><p class="lead">{len(cal)} call deadlines in the next 120 days, grouped by month. Checked {nice(TODAY)}.</p></div></section><div class="wrap">{cal_html or "<p>No deadlines in the next 120 days.</p>"}</div>',
-          [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "EU funding deadlines calendar", "url": SITE["url"] + "/calls/deadlines/", "publisher": org_ld()}]))
+    write("/calls/", stub(CALLS + "/", "EU funding calls"))
+    for k in GROUPS:
+        write(f"/calls/programme/{k}/", stub(theme_url(k), GROUPS[k][0]))
+    write("/calls/deadlines/", stub(CALLS + "/closing-soon/", "EU funding deadlines"))
 
     # ---- Author ----
     my = [a for a in arts][:20]
@@ -428,9 +361,7 @@ def build():
 
     # Sitemaps (regular + Google News for the last 2 days)
     urls = [("/", arts[0]["updated"] if arts else today), ("/about/", today)] + [(f"/{k}/", next(a["updated"] for a in arts if a["category"] == k)) for k in CATEGORIES if k in ACTIVE] + [(a["path"], a["updated"]) for a in arts] \
-        + [("/calls/", TODAY.isoformat()), ("/calls/deadlines/", TODAY.isoformat()), (AUTHOR_PATH, arts[0]["updated"] if arts else today)] \
-        + [(f"/calls/programme/{k}/", TODAY.isoformat()) for k, v in groups_live.items() if v] \
-        + [(c["path"], c.get("last_seen", today)) for c in calls if not c["noindex"]]
+        + [(AUTHOR_PATH, arts[0]["updated"] if arts else today)]
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE['url']}{p}</loc><lastmod>{d}</lastmod></url>" for p, d in urls) + "</urlset>\n", encoding="utf-8")
     recent = [a for a in arts if (datetime.date.today() - a["d"]).days <= 2]
@@ -447,8 +378,7 @@ def build():
     # llms.txt + llms-full.txt (plain-text versions for AI assistants)
     llms = [f"# {SITE['name']}", "", f"> {SITE['description']} Published by {SITE['org_legal']} (Madrid), EU funding advisors. Every article cites and links an official source.", "",
             "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", "- Language: English. Updated on working days.", "",
-            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming calls]({SITE['url']}/calls/): {len(live)} calls with deadlines, budgets and official links.", f"- [Deadlines calendar]({SITE['url']}/calls/deadlines/)", f"- [Plain-text list of all open calls]({SITE['url']}/calls.txt)"] + \
-           [f"- [{GROUPS[k][0]}]({SITE['url']}/calls/programme/{k}/): {len(v)} calls" for k, v in groups_live.items() if v] + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
+            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
            [f"- [{a['title']}]({SITE['url']}{a['path']}) ({a['date']}): {a['dek']}" for a in arts[:50]] + ["", "## Optional", "", f"- [Full text of recent articles]({SITE['url']}/llms-full.txt)", f"- [Editorial policy]({SITE['url']}/about/)", f"- [RSS feed]({SITE['url']}/feed.xml)"]
     (OUT / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")
     full = [f"# {SITE['name']} — full text of recent articles", ""]
@@ -457,7 +387,7 @@ def build():
         full += [f"- {k}: {v}" for k, v in a.get("key_facts", [])] + [""] + a["body"] + ([""] + [f"Why it matters (Ullswater Investments analysis): {a['why']}"] if a.get("why") else []) + ["", "---", ""]
     (OUT / "llms-full.txt").write_text("\n".join(full), encoding="utf-8")
     (OUT / "calls.txt").write_text(f"# Open and forthcoming EU funding calls · {SITE['name']}\n# Checked {TODAY.isoformat()} from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page\n\n"
-        + "".join(f"{c['code']} | {c['title']} | {c['state']} | {(c.get('opens') or '')[:10]} | {c['deadline'][:10]} | {c.get('budget') or '-'} | {SITE['url']}{c['path']}\n" for c in live), encoding="utf-8")
+        + "".join(f"{c['code']} | {c['title']} | {c['state']} | {(c.get('opens') or '')[:10]} | {c['deadline'][:10]} | {c.get('budget') or '-'} | {c['href']}\n" for c in live), encoding="utf-8")
     print(f"Calls: {len(calls)} pages ({len(live)} live)")
     print(f"Built {len(arts)} articles, {len(CATEGORIES)} categories → {OUT}")
 
