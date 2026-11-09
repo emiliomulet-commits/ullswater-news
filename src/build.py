@@ -34,6 +34,17 @@ THEME = {"cluster-1": "health", "cluster-2": "culture-society", "cluster-3": "ci
          "cluster-5": "climate-energy-mobility", "cluster-6": "food-environment", "widera": "science-widening", "eic": "eic",
          "digital-europe": "digital-europe-defence", "other": "other-eu-programmes"}
 def theme_url(k): return f"{CALLS}/theme/{THEME[k]}/" if k in THEME else f"{CALLS}/"
+_TITLES = {}
+def call_title(cid):
+    """Call title from the calls site (falls back to the id when the feed is unavailable)."""
+    if not _TITLES:
+        try:
+            import urllib.request
+            req = urllib.request.Request(CALLS + "/data/calls.json", headers={"User-Agent": "UllswaterEventsBot/1.0"})
+            _TITLES.update({c["id"]: c["title"] for c in json.load(urllib.request.urlopen(req, timeout=30))["calls"]})
+        except Exception as e:
+            print("calls titles unavailable:", e); _TITLES["_"] = ""
+    return _TITLES.get(cid) or cid
 def call_url(cid):
     import re
     return f"{CALLS}/call/{re.sub(r'[^a-z0-9]+', '-', cid.lower()).strip('-')}/"
@@ -99,7 +110,7 @@ article.post{max-width:760px;margin:0 auto;padding:36px 20px 56px}article.post h
 .notice{background:#fff4d6;border-radius:8px;padding:12px 16px;margin:16px 0}
 .about{max-width:760px;margin:0 auto;padding:36px 20px 56px}.about p,.about li{font-size:17px}
 footer.site{background:var(--navy);color:#dbe2f5;font-size:14px}footer.site .wrap{padding:28px 20px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}footer.site a{color:#fff}
-@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:none}.ev{grid-template-columns:72px 1fr;gap:12px;padding:14px}.date b{font-size:18px}}
+@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}.ev{grid-template-columns:72px 1fr;gap:12px;padding:14px}.date b{font-size:18px}}
 """
 
 def org_ld():
@@ -176,7 +187,7 @@ def event_ld(e):
 
 def related(e, events):
     """Links to the call page(s), the programme's open calls and the other sessions of the same series."""
-    li = [f'<li><a href="{call_url(c)}">Call page: {E(c)}</a> (deadline, conditions and partners)</li>' for c in e.get("calls", [])]
+    li = [f'<li><a href="{call_url(c)}">{E(call_title(c))}</a>: deadline, conditions and partners</li>' for c in e.get("calls", [])]
     li.append(f'<li><a href="{theme_url(e["programme"])}">Open calls: {E(PROGS[e["programme"]])}</a></li>')
     if e.get("series"):
         li.append(f'<li><a href="/series/{e["series"]}/">All sessions of this series</a></li>')
