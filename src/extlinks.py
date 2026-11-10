@@ -62,7 +62,7 @@ def fix_anchor(m, label=LABEL["en"]):
     if 'class="uw-sr"' not in inner:
         # image/card links: no visible icon, only the screen-reader label
         sr = '<span class="uw-sr">%s</span>' % label
-        inner += ('<span class="uw-ext" aria-hidden="true">↗</span>' + sr) if not BLOCKY.search(inner) else sr
+        inner += ('<span class="uw-ext" aria-hidden="true">↗</span>' + sr) if not (BLOCKY.search(inner) or "↗" in inner) else sr
     return "<a%s>%s</a>" % (attrs, inner)
 
 
