@@ -5,7 +5,8 @@ Reads src/events/*.json and writes a complete static site to docs/.
 Same model as news.ullswaterinvestments.com: plain server-side HTML, no JavaScript.
 Usage: python3 src/build.py
 """
-import json, html, datetime, pathlib, shutil, os
+import json, html, datetime, pathlib, shutil, os, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / "src", ROOT / "docs"
@@ -59,6 +60,11 @@ def call_url(cid):
 NETWORK = [("Home", "https://www.ullswaterinvestments.com/"), ("EU calls", CALLS + "/"), ("News", "https://news.ullswaterinvestments.com/"),
            ("Events", "https://events.ullswaterinvestments.com/"), ("Projects", "https://www.ullswaterinvestments.com/projects/"), ("About", "https://www.ullswaterinvestments.com/about/")]
 def network(cur): return "".join(f'<a href="{u}"{" aria-current=page" if t == cur else ""}>{t}</a>' for t, u in NETWORK)
+# Webinar library (Nov 2026): recorded/past webinars with official slides, one JSON per item in src/webinars/
+TOPICS = {"proposal": ("Finding calls and writing a proposal", "Official sessions on finding calls and partners, the proposal template, evaluation criteria and lump sum budgets."),
+          "eligibility": ("Eligibility requirements", "Conditions an organisation must meet before it can take part."),
+          "grant": ("After selection: preparing the grant", "What to do between the invitation to prepare the grant and the signature."),
+          "management": ("Running the project", "Amendments, reporting, payments, dissemination, exploitation and intellectual property.")}
 MODES = {"online": "Online", "onsite": "In person", "hybrid": "Hybrid"}
 STATUS = {"scheduled": "", "applications-closed": "Applications closed", "cancelled": "Cancelled", "postponed": "Postponed"}
 
@@ -126,7 +132,7 @@ def org_ld():
 
 def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"):
     canon = SITE["url"] + path
-    items = [("/", "All events", "home")] + [(f"/type/{k}/", TYPES[k][0], k) for k in TYPES if k in USED] + [("/calendar/", "Calendar", "calendar"), ("/past/", "Past events", "past")]
+    items = [("/", "All events", "home")] + [(f"/type/{k}/", TYPES[k][0], k) for k in TYPES if k in USED and k != "webinar"] + [("/webinars/", "Webinars", "webinars"), ("/calendar/", "Calendar", "calendar"), ("/past/", "Past events", "past")]
     navs = "".join(f'<a href="{h}"{" aria-current=page" if k == cur else ""}>{E(t)}</a>' for h, t, k in items)
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (ld or []))
     return f"""<!DOCTYPE html>
@@ -155,13 +161,33 @@ def load():
         ev.append(e)
     return sorted(ev, key=lambda x: (x["s"], x["title"]))
 
+def load_webinars():
+    ws = []
+    for f in sorted((SRC / "webinars").glob("*.json")) if (SRC / "webinars").exists() else []:
+        w = json.loads(f.read_text(encoding="utf-8"))
+        w["d"] = datetime.date.fromisoformat(w["date"]); w["path"] = f"/webinars/{w['slug']}/"
+        ws.append(w)
+    return sorted(ws, key=lambda x: x["d"], reverse=True)
+
+def wcard(w):
+    note = '<span class="tag c">Older edition</span>' if w.get("superseded_by") else ""
+    return f"""<div class="ev"><div class="date"><b>{w['d'].day}</b><i>{MON[w['d'].month-1][:3]} {w['d'].year}</i></div>
+<div><div class="meta"><span class="tag">Library</span>{note}<span>{E(w['organiser'].split(',')[0])}</span><span>{E(PROGS[w['programme']])}</span></div>
+<h3><a href="{w['path']}">{E(w['title'])}</a></h3><p>{E(w['summary'])}</p><p class="meta">Available: {E(w['materials'])}</p></div></div>"""
+
+def webinar_ld(w):
+    return {"@context": "https://schema.org", "@type": "Event", "name": w["title"], "description": w["summary"], "startDate": w["date"], "endDate": w["date"],
+            "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "location": {"@type": "VirtualLocation", "url": w["official_url"]}, "isAccessibleForFree": True, "inLanguage": "en",
+            "organizer": {"@type": "Organization", "name": w["organiser"]}, "url": SITE["url"] + w["path"], "image": SITE["url"] + "/assets/og.png"}
+
 def badge(e):
     st = STATUS.get(e.get("status", "scheduled"), "")
     return f'<span class="tag c">{E(st)}</span>' if st else ""
 
 def card(e):
     return f"""<div class="ev"><div class="date"><b>{e['s'].day}{'–' + str(e['e'].day) if e['s'] != e['e'] and e['s'].month == e['e'].month else ''}</b><i>{MON[e['s'].month-1][:3]} {e['s'].year}</i></div>
-<div><div class="meta"><a class="tag{' b' if e['type'] == 'brokerage' else ''}" href="/type/{e['type']}/">{E(TYPES[e['type']][1])}</a>{badge(e)}<span>{E(e['location'])}</span><span>{E(PROGS[e['programme']])}</span></div>
+<div><div class="meta"><a class="tag{' b' if e['type'] == 'brokerage' else ''}" href="{'/webinars/' if e['type'] == 'webinar' else f"/type/{e['type']}/"}">{E(TYPES[e['type']][1])}</a>{badge(e)}<span>{E(e['location'])}</span><span>{E(PROGS[e['programme']])}</span></div>
 <h3><a href="{e['path']}">{E(e['title'])}</a></h3><p>{E(e['summary'])}</p></div></div>"""
 
 def by_month(evs):
@@ -213,6 +239,7 @@ def build():
     OUT.mkdir(); shutil.copytree(SRC / "assets", OUT / "assets")
     write("/.nojekyll", ""); write("/CNAME", SITE["domain"] + "\n"); write(f"/{KEY}.txt", KEY)
     USED.update(e["type"] for e in events)
+    webinars = load_webinars(); WEB = {w["slug"]: w for w in webinars}
     up = [e for e in events if e["e"] >= TODAY]; past = [e for e in reversed(events) if e["e"] < TODAY]
     cta = f'<div class="cta"><div><strong>Going to an event to build a consortium?</strong><p>Ullswater Investments helps SMEs, start-ups and technology centres prepare EU funding proposals.</p></div><a class="btn" href="{SITE["book_url"]}">Talk to us</a></div>'
     site_ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": SITE["name"], "url": SITE["url"] + "/", "description": SITE["description"], "publisher": org_ld(),
@@ -258,6 +285,36 @@ def build():
     feed = [{k: e.get(k) for k in ("slug", "title", "start", "end", "type", "programme", "mode", "location", "organiser", "summary", "registration_url", "status")}
             | {"url": SITE["url"] + e["path"], "theme": THEME.get(e["programme"]), "calls": e.get("calls", [])} for e in up]
     write("/events.json", json.dumps({"updated": str(TODAY), "events": feed}, ensure_ascii=False, indent=1, default=str))
+    # Webinars: upcoming live sessions (events of type webinar) + library of past sessions with official materials
+    live = [e for e in up if e["type"] == "webinar"]
+    lib = "".join(f'<section class="month" id="{k}"><h2>{E(t)}</h2><p style="color:var(--muted);margin:-6px 0 14px">{E(d)}</p>' + "".join(wcard(w) for w in webinars if w["topic"] == k) + "</section>"
+                  for k, (t, d) in TOPICS.items() if any(w["topic"] == k for w in webinars))
+    jump = "".join(f'<a href="#{k}">{E(t)}</a>' for k, (t, d) in TOPICS.items() if any(w["topic"] == k for w in webinars))
+    hub_ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "EU funding webinars", "url": SITE["url"] + "/webinars/", "publisher": org_ld(),
+               "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + x["path"], "name": x["title"]} for i, x in enumerate(live + webinars)]}}]
+    write("/webinars/", page(f"EU funding webinars: live sessions and official materials · {SITE['short']}",
+        "Upcoming EU funding webinars and a library of past European Commission webinars on Horizon Europe proposals, grant preparation and project management, with links to the official slides.", "/webinars/",
+        f"""<section class="hero"><div class="wrap"><p class="kicker">EU Funding Events</p><h1>EU funding webinars</h1>
+<p class="lead">Upcoming online sessions from the European Commission and other European bodies, and a library of past webinars whose agendas and slides remain available on the organisers' sites. Links checked {nice(TODAY)}.</p>
+<ul class="stats"><li><strong>{len(live)}</strong>upcoming webinars</li><li><strong>{len(webinars)}</strong>in the library</li></ul>
+<nav class="chips" aria-label="Library topics"><a href="#live">Upcoming</a>{jump}</nav></div></section>
+<div class="wrap"><section class="month" id="live"><h2>Upcoming webinars</h2>{"".join(card(e) for e in live) or "<p>No upcoming webinars listed right now. See the library below.</p>"}</section>
+<h2 style="color:var(--navy);font-size:28px;margin:36px 0 0">Webinar library</h2><p style="color:var(--muted);margin:4px 0 0">Past sessions, grouped by project stage. Each page summarises what was covered and links to the organiser's page with the agenda and slides.</p>{lib}{cta}</div>""", hub_ld, cur="webinars"))
+    for w in webinars:
+        newer = WEB.get(w.get("superseded_by", ""))
+        newer_note = f'<div class="notice">An updated edition is available: <a href="{newer["path"]}">{E(newer["title"])} ({nice(newer["d"])})</a>.</div>' if newer else ""
+        rows = [("Date", nice(w["d"])), ("Time", w["time"]), ("Format", "Online webinar (already held)"), ("Organiser", w["organiser"]), ("Programme", PROGS[w["programme"]]), ("Topic", TOPICS[w["topic"]][0]), ("Available", w["materials"])]
+        dl = "".join(f"<dt>{E(a)}</dt><dd>{E(b)}</dd>" for a, b in rows)
+        same = [x for x in webinars if x["topic"] == w["topic"] and x is not w][:4]
+        more = "".join(f'<li><a href="{x["path"]}">{E(x["title"])}</a> ({nice(x["d"])})</li>' for x in same)
+        write(w["path"], page(f"{w['title']} · Webinar, {nice(w['d'])}", w["summary"], w["path"],
+            f"""<article class="post"><div class="crumbs"><a href="/">Events</a> › <a href="/webinars/">Webinars</a> › <a href="/webinars/#{w['topic']}">{E(TOPICS[w['topic']][0])}</a></div><h1>{E(w['title'])}</h1><p class="dek">{E(w['summary'])}</p>{newer_note}
+<section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions"><a class="btn" href="{E(w['official_url'])}">Agenda and slides on the official page</a><a class="btn ghost" href="{E(support_link(w['title'], SITE['url'] + w['path']))}">Ask us about it</a></div>
+<div class="body" style="margin-top:24px"><h2 style="font-size:20px;color:var(--navy)">What it covers</h2><ul>{''.join(f'<li>{E(c)}</li>' for c in w['covers'])}</ul></div>
+<section class="why"><h2>Why it matters for applicants</h2><p>{E(w['why'])}</p></section>
+<section class="src"><h2>Related</h2><ul><li><a href="{theme_url(w['programme'])}">Open calls: {E(PROGS[w['programme']])}</a></li><li><a href="/webinars/#live">Upcoming webinars</a></li>{more}</ul></section>
+<section class="src"><h2>Source</h2><p><a href="{E(w['official_url'])}">Official event page</a> · listed by <a href="{E(w['source_url'])}">{E(w['source_name'])}</a>. Materials belong to the organiser and are linked, not copied.</p></section>
+<div class="tags">{''.join(f'<span>{E(t)}</span>' for t in w['tags'])}</div>{cta}</article>""", [webinar_ld(w)], cur="webinars", og="article"))
     write("/about/", page(f"About and editorial policy · {SITE['short']}", "How Ullswater Investments selects and checks the EU funding events listed on this site.", "/about/",
         f"""<div class="about"><h1>About EU Funding Events</h1><p>EU Funding Events is published by {E(SITE['org_legal'])}, a Madrid-based European funding advisory firm. It lists events that help companies, researchers and consortia prepare EU funding proposals.</p>
 <h2>How events are checked</h2><ul><li>Every event links to the organiser's page or to a recognised National Contact Point or partner source.</li><li>Dates, locations and formats are checked against that source before publication.</li><li>Our comments on why an event matters are analysis and add no new facts.</li><li>Always confirm details with the organiser before registering or travelling.</li></ul>
@@ -265,16 +322,17 @@ def build():
     write("/404.html", page(f"Page not found · {SITE['short']}", "Page not found.", "/404.html", '<div class="about"><h1>Page not found</h1><p><a href="/">See upcoming EU funding events</a>.</p></div>', noindex=True))
     urls = [("/", TODAY.isoformat()), ("/calendar/", TODAY.isoformat()), ("/about/", TODAY.isoformat())] + [(f"/type/{k}/", TODAY.isoformat()) for k in sorted(USED) if any(e["type"] == k for e in up)] + \
            [(f"/programme/{k}/", TODAY.isoformat()) for k in sorted({e["programme"] for e in up})] + [(f"/series/{k}/", TODAY.isoformat()) for k in sorted({e["series"] for e in up if e.get("series")})] + \
-           [(e["path"], TODAY.isoformat()) for e in events if not (e["e"] < TODAY and (TODAY - e["e"]).days > 90)]
+           [("/webinars/", TODAY.isoformat())] + [(w["path"], TODAY.isoformat()) for w in webinars] + [(e["path"], TODAY.isoformat()) for e in events if not (e["e"] < TODAY and (TODAY - e["e"]).days > 90)]
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{SITE['url']}{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls) + "</urlset>\n")
     bots = ["*", "Googlebot", "Bingbot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "ClaudeBot", "Claude-SearchBot", "Claude-User", "Google-Extended", "Applebot", "DuckDuckBot"]
     write("/robots.txt", f"# {SITE['name']}\n\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"Sitemap: {SITE['url']}/sitemap.xml\n")
-    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", ""]))
+    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Webinar library", "", f"- [EU funding webinars]({SITE['url']}/webinars/): upcoming webinars and past European Commission webinars with official slides."] + [f"- [{w['title']}]({SITE['url']}{w['path']}): {nice(w['d'])}, {w['organiser']}." for w in webinars] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", ""]))
     from email.utils import format_datetime
     now = format_datetime(datetime.datetime.now(datetime.timezone.utc))
     write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{E(SITE["name"])}</title><link>{SITE["url"]}/</link><description>{E(SITE["description"])}</description><language>en</language><lastBuildDate>{now}</lastBuildDate>' +
           "".join(f'<item><title>{E(e["title"])}</title><link>{SITE["url"]}{e["path"]}</link><guid>{SITE["url"]}{e["path"]}</guid><description>{E(span(e) + ". " + e["summary"])}</description></item>' for e in up) + "</channel></rss>\n")
-    print(f"Built {len(events)} events ({len(up)} upcoming) -> {OUT}")
+    import extlinks; extlinks.run(OUT)  # external links open in a new tab (shared rule, see src/extlinks.py)
+    print(f"Built {len(events)} events, {len(webinars)} library webinars ({len(up)} upcoming) -> {OUT}")
 
 if __name__ == "__main__":
     build()

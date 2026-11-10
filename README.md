@@ -16,3 +16,12 @@ Editorial rules: English only, own words, every date and place must appear in th
 - Optional fields: `calls` (list of call ids from calls.ullswaterinvestments.com, linked as "Call page"), `series` + `series_title` (groups sessions of the same programme under `/series/<series>/`).
 - `programme` keys map to theme pages of calls.ullswaterinvestments.com (`THEME` in `src/build.py`, reference list in `/data/taxonomy.json` of the calls site). `events.json` now also carries `theme` and `calls`.
 - The header carries the shared network menu (Home · EU calls · News · Events · Projects · About), identical on www, calls, news and events.
+
+## Webinars (Nov 2026)
+- `/webinars/` is the webinars hub: upcoming live webinars (events with `"type": "webinar"` in `src/events/`) plus a **library** of past sessions.
+- Library items: one file per webinar in `src/webinars/*.json` with `slug`, `title`, `date`, `time`, `topic` (proposal, eligibility, grant, management), `programme`, `organiser`, `summary`, `covers` (list), `materials`, `why`, `tags`, `official_url`, `source_name`, `source_url`, optional `superseded_by` (slug of a newer edition).
+- Editorial rules as for events: own words, every fact on the official page, materials are linked and never re-hosted.
+- Sources to scan for new webinars: Research & Innovation community platform (EC), Funding & Tenders Portal events, EIC/EISMEA, HaDEA, CINEA, REA, Digital Europe, NCP networks, Enterprise Europe Network, EUREKA/ITEA, Gaia-X and IDSA.
+
+## External links open in a new tab (Nov 2026)
+`src/extlinks.py` runs at the end of every build: links outside the Ullswater network get `target="_blank" rel="noopener noreferrer"`, a small ↗ icon and a hidden "(opens in a new tab)" label. Links between our own sites (`*.ullswaterinvestments.com`) stay in the same tab. Check any folder with `python3 src/extlinks.py docs --check`. The same file is used in www, calls, news and the project landings.
