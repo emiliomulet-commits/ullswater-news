@@ -829,7 +829,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-10",
-   "listed": false,
+   "listed": true,
    "opens": "2026-06-17",
    "status": "open",
    "title": "Missiles, ammunition and bombs",
@@ -4695,7 +4695,7 @@
    "first_seen": "2026-11-10",
    "keywords": [],
    "last_seen": "2026-11-10",
-   "listed": true,
+   "listed": false,
    "opens": "2026-11-10",
    "status": "open",
    "title": "Short proposal",
@@ -6854,5 +6854,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-10T21:02:56.876Z"
+ "feed_updated": "2026-11-10T12:29:48.373Z"
 }
