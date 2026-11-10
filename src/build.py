@@ -141,6 +141,7 @@ def org_ld():
             "url": SITE["org_url"], "email": SITE["email"],
             "address": {"@type": "PostalAddress", "streetAddress": "Calle Ramírez de Arellano, 17", "postalCode": "28043", "addressLocality": "Madrid", "addressCountry": "ES"},
             "location": [{"@type": "Place", "name": "Ullswater Investments Brussels", "address": {"@type": "PostalAddress", "streetAddress": "Square de Meeûs 37", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}}],
+            "sameAs": ["https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
 def person_ld():
