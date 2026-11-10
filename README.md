@@ -57,3 +57,6 @@ Optional: `"action": {"label": "Register for the info day", "url": "https://<off
 - Every figure, date and deadline must appear in the linked official source.
 - The `why` field is analysis and must not add facts that are not in the source.
 - Publish only after Emilio's OK.
+
+## External links open in a new tab (Nov 2026)
+`src/extlinks.py` runs at the end of every build: links outside the Ullswater network get `target="_blank" rel="noopener noreferrer"`, a small ↗ icon and a hidden "(opens in a new tab)" label. Links between our own sites (`*.ullswaterinvestments.com`) stay in the same tab. Check with `python3 src/extlinks.py docs --check`.

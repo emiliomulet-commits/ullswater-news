@@ -298,7 +298,7 @@ def build():
         tags = "".join(f"<span>{E(t)}</span>" for t in a.get("tags", []))
         why = f'<section class="why"><h2>Why it matters</h2><p>{E(a["why"])}</p></section>' if a.get("why") else ""
         act = a.get("action")  # optional {"label", "url"}: direct link to the official registration/application page
-        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act["label"])} ↗</a></p>' if act else ""
+        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act["label"])}</a></p>' if act else ""
         rel = "".join(f'<li><a href="{b["path"]}">{E(b["title"])}</a> <span class="meta">· {nice(b["d"])}</span></li>' for b in related)
         html_ = f"""<article class="post">
 <div class="crumbs"><a href="/">News</a> › <a href="/{a['category']}/">{E(cat)}</a></div>
@@ -419,6 +419,8 @@ def build():
     (OUT / "calls.txt").write_text(f"# Open and forthcoming EU funding calls · {SITE['name']}\n# Checked {TODAY.isoformat()} from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page\n\n"
         + "".join(f"{c['code']} | {c['title']} | {c['state']} | {(c.get('opens') or '')[:10]} | {c['deadline'][:10]} | {c.get('budget') or '-'} | {c['href']}\n" for c in live), encoding="utf-8")
     print(f"Calls: {len(calls)} pages ({len(live)} live)")
+    import sys; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    import extlinks; extlinks.run(OUT)  # external links open in a new tab (shared rule, see src/extlinks.py)
     print(f"Built {len(arts)} articles, {len(CATEGORIES)} categories → {OUT}")
 
 if __name__ == "__main__":
