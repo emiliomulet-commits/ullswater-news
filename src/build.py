@@ -122,7 +122,7 @@ footer.site{background:var(--navy);color:#dbe2f5;font-size:14px}footer.site .wra
 
 def org_ld():
     return {"@type": "Organization", "@id": SITE["org_url"] + "/#org", "name": SITE["org"], "legalName": SITE["org_legal"], "url": SITE["org_url"], "email": SITE["email"],
-            "sameAs": ["https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
+            "sameAs": ["https://www.wikidata.org/wiki/Q142106306", "https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
 def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"):
