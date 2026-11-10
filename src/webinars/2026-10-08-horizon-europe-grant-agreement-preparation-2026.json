@@ -1,0 +1,75 @@
+{
+  "slug": "horizon-europe-grant-agreement-preparation-2026",
+  "title": "Horizon Implementation Day: Grant Agreement Preparation in Horizon Europe (October 2026)",
+  "date": "2026-10-08",
+  "time": "09:30–12:45 CEST",
+  "topic": "grant",
+  "programme": "horizon-europe",
+  "organiser": "European Commission, DG Research and Innovation",
+  "summary": "The autumn 2026 edition of the Commission's session on what happens after a proposal is selected: the grant agreement preparation process, legal and financial validation, the Description of Action and the most common errors.",
+  "covers": [
+    "An overview of the grant agreement preparation (GAP) process",
+    "Legal validation and financial capacity assessment by the Research Executive Agency's Central Validation Service",
+    "Writing the scientific and technical Description of Action",
+    "Legal and financial aspects, and how to avoid common errors",
+    "Question-and-answer sessions after each block"
+  ],
+  "materials": "Video recording, agenda and presentation slides for each session",
+  "why": "Grant preparation runs on tight deadlines and errors delay the start of the project. Coordinators should watch it as soon as they receive an invitation to prepare the grant.",
+  "tags": [
+    "Horizon Europe",
+    "Grant agreement",
+    "Validation",
+    "Coordinators"
+  ],
+  "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261008.htm",
+  "source_name": "European Commission · Horizon Europe events and webinars",
+  "source_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261008.htm",
+  "videos": [
+    {
+      "youtube": "hPkDvb9x4zM",
+      "channel": "EU Science & Innovation",
+      "seconds": 11750,
+      "uploaded": "2026-10-08",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          138,
+          "Overview of the grant agreement preparation process"
+        ],
+        [
+          1599,
+          "Q&A on the process"
+        ],
+        [
+          2982,
+          "Legal validation and financial capacity assessment"
+        ],
+        [
+          4988,
+          "Q&A on validation"
+        ],
+        [
+          5707,
+          "From the proposal to the Description of Action"
+        ],
+        [
+          7754,
+          "Q&A on the Description of Action"
+        ],
+        [
+          8641,
+          "Legal and financial aspects: avoiding common errors"
+        ],
+        [
+          11062,
+          "Q&A on legal and financial aspects"
+        ]
+      ],
+      "chapters_source": "ullswater"
+    }
+  ]
+}

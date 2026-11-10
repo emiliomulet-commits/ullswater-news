@@ -13,7 +13,7 @@
     "The practical steps the LEAR completes in the Participant Register",
     "Examples of plans presented by two research organisations, followed by questions and answers"
   ],
-  "materials": "Presentation slides, the Horizon Europe guidance on gender equality plans and the Commission's page on the eligibility criterion",
+  "materials": "Video recording, presentation slides, the Horizon Europe guidance on gender equality plans and the Commission's page on the eligibility criterion",
   "why": "A missing or incomplete plan can make a university or research centre ineligible, regardless of the quality of the proposal. LEARs should check compliance well before the first deadline they target.",
   "tags": [
     "Horizon Europe",
@@ -23,5 +23,36 @@
   ],
   "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event220623.htm",
   "source_name": "European Commission · Research and innovation community platform (related webinars)",
-  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview"
+  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
+  "videos": [
+    {
+      "youtube": "0gZyhhnStX4",
+      "channel": "EU Science & Innovation",
+      "seconds": 7325,
+      "uploaded": "2022-06-23",
+      "chapters": [
+        [
+          58,
+          "Welcome by the Director-General for Research and Innovation"
+        ],
+        [
+          239,
+          "Presentation of the eligibility criterion"
+        ],
+        [
+          2172,
+          "Example: the plan of the Sarajevo School of Science and Technology"
+        ],
+        [
+          3471,
+          "Example: the plan of France's National Centre for Scientific Research (CNRS)"
+        ],
+        [
+          4556,
+          "Q&A"
+        ]
+      ],
+      "chapters_source": "official"
+    }
+  ]
 }

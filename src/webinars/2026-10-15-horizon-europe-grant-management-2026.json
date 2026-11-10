@@ -1,0 +1,70 @@
+{
+  "slug": "horizon-europe-grant-management-2026",
+  "title": "Horizon Implementation Day: Grant Management in Horizon Europe (October 2026)",
+  "date": "2026-10-15",
+  "time": "09:30–13:00 CEST",
+  "topic": "management",
+  "programme": "horizon-europe",
+  "organiser": "European Commission, DG Research and Innovation",
+  "summary": "The autumn 2026 edition of the Commission's session on running a Horizon Europe grant: amendments, reporting and payments, and fraud prevention, detection and corrections.",
+  "covers": [
+    "Amendments: the legal basis, the business process and the IT tool",
+    "Reporting and payments: the legal basis, common errors, the process and the IT tool",
+    "Fraud prevention, detection and corrections",
+    "Question-and-answer sessions on amendments and on reporting"
+  ],
+  "materials": "Video recording, agenda and presentation slides for each session",
+  "why": "Most problems in running projects come from amendments and periodic reports. Project managers and finance staff should know these rules before the first reporting period closes.",
+  "tags": [
+    "Horizon Europe",
+    "Grant management",
+    "Reporting",
+    "Amendments"
+  ],
+  "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261015.htm",
+  "source_name": "European Commission · Horizon Europe events and webinars",
+  "source_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261015.htm",
+  "videos": [
+    {
+      "youtube": "EBxWzE5lD1k",
+      "channel": "EU Science & Innovation",
+      "seconds": 11910,
+      "uploaded": "2026-10-15",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          168,
+          "Amendments: the legal basis"
+        ],
+        [
+          1453,
+          "Amendments: business process and IT tool"
+        ],
+        [
+          3248,
+          "Q&A on amendments"
+        ],
+        [
+          5220,
+          "Reporting and payments: legal basis and common errors"
+        ],
+        [
+          6411,
+          "Reporting and payments: business process and IT tool"
+        ],
+        [
+          9287,
+          "Q&A on reporting and payments"
+        ],
+        [
+          10775,
+          "Fraud prevention, detection and corrections"
+        ]
+      ],
+      "chapters_source": "ullswater"
+    }
+  ]
+}

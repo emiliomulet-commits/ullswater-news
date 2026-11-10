@@ -12,8 +12,8 @@
     "A panel discussion on practical experience with lump sum grants",
     "Questions and answers, wrap-up and next steps"
   ],
-  "materials": "Agenda, presentation slides and a pointer to the lump sum page of the Funding & Tenders Portal",
-  "why": "Kept for reference. The March 2025 edition covers the same subject with more recent material, so start there.",
+  "materials": "Video recording, agenda, presentation slides and a pointer to the lump sum page of the Funding & Tenders Portal",
+  "why": "Kept for reference. The June 2026 edition covers the same subject with more recent material, so start there.",
   "tags": [
     "Horizon Europe",
     "Lump sum",
@@ -22,5 +22,13 @@
   "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event221020.htm",
   "source_name": "European Commission · Research and innovation community platform (related webinars)",
   "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
-  "superseded_by": "lump-sum-funding-horizon-europe-2025"
+  "superseded_by": "lump-sum-funding-horizon-europe-2026",
+  "videos": [
+    {
+      "youtube": "6noOeNT-GbE",
+      "channel": "EU Science & Innovation",
+      "seconds": 7545,
+      "uploaded": "2022-10-20"
+    }
+  ]
 }

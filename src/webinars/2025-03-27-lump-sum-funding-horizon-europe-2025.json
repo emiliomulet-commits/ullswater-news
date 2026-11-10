@@ -1,6 +1,6 @@
 {
   "slug": "lump-sum-funding-horizon-europe-2025",
-  "title": "Lump Sum Funding in Horizon Europe: How does it work? How to write a proposal?",
+  "title": "Lump Sum Funding in Horizon Europe: How does it work? How to write a proposal? (2025 edition)",
   "date": "2025-03-27",
   "time": "10:00–12:00 CET",
   "topic": "proposal",
@@ -13,8 +13,8 @@
     "A panel discussion with invited guests on practical experience with lump sum grants",
     "Questions and answers"
   ],
-  "materials": "Agenda, presentation slides and a pointer to the lump sum page of the Funding & Tenders Portal",
-  "why": "Under a lump sum, payment depends on completing work packages, so the budget and the work plan have to be designed together from the start. Applicants to topics funded this way should review it before fixing their budget.",
+  "materials": "Video recording, agenda, presentation slides and a pointer to the lump sum page of the Funding & Tenders Portal",
+  "why": "Kept for reference. The June 2026 edition covers the same subject with more recent material, so start there.",
   "tags": [
     "Horizon Europe",
     "Lump sum",
@@ -23,5 +23,33 @@
   ],
   "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event250327.htm",
   "source_name": "European Commission · Research and innovation community platform (related webinars)",
-  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview"
+  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
+  "videos": [
+    {
+      "youtube": "b2OigY2edZc",
+      "channel": "EU Science & Innovation",
+      "seconds": 7990,
+      "uploaded": "2025-03-27",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          108,
+          "How lump sum funding works and how to write a lump sum proposal"
+        ],
+        [
+          3296,
+          "Panel: practical experience with lump sum grants"
+        ],
+        [
+          5930,
+          "Q&A"
+        ]
+      ],
+      "chapters_source": "official"
+    }
+  ],
+  "superseded_by": "lump-sum-funding-horizon-europe-2026"
 }

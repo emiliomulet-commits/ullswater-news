@@ -170,10 +170,92 @@ def load_webinars():
     return sorted(ws, key=lambda x: x["d"], reverse=True)
 
 def wcard(w):
-    note = '<span class="tag c">Older edition</span>' if w.get("superseded_by") else ""
+    note = ('<span class="tag b">Video</span>' if w.get("videos") else "") + ('<span class="tag c">Older edition</span>' if w.get("superseded_by") else "")
     return f"""<div class="ev"><div class="date"><b>{w['d'].day}</b><i>{MON[w['d'].month-1][:3]} {w['d'].year}</i></div>
 <div><div class="meta"><span class="tag">Library</span>{note}<span>{E(w['organiser'].split(',')[0])}</span><span>{E(PROGS[w['programme']])}</span></div>
 <h3><a href="{w['path']}">{E(w['title'])}</a></h3><p>{E(w['summary'])}</p><p class="meta">Available: {E(w['materials'])}</p></div></div>"""
+
+# Recorded webinars (Nov 2026): official YouTube recordings shown in our own page. Nothing loads from YouTube until the
+# visitor presses play (thumbnail served from our site, then a youtube-nocookie.com player). Each build checks with
+# YouTube's oEmbed service that the video is still public and embeddable; if not, the page falls back to the slides.
+_YT = {}
+def yt_ok(vid):
+    if vid not in _YT:
+        import urllib.request, urllib.error
+        try:
+            urllib.request.urlopen(urllib.request.Request(f"https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v={vid}", headers={"User-Agent": "UllswaterEventsBot/1.0"}), timeout=20)
+            _YT[vid] = True
+        except urllib.error.HTTPError as e:
+            _YT[vid] = e.code not in (401, 403, 404); print(f"video {vid}: HTTP {e.code}")
+        except Exception as e:
+            _YT[vid] = True; print(f"video {vid}: check skipped ({e})")
+    return _YT[vid]
+def yt_thumb(vid):
+    """Copy the thumbnail into our site so the page does not call Google before play."""
+    dest = OUT / "assets" / "video" / f"{vid}.jpg"
+    if not dest.exists():
+        try:
+            import urllib.request
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(urllib.request.urlopen(urllib.request.Request(f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg", headers={"User-Agent": "UllswaterEventsBot/1.0"}), timeout=20).read())
+        except Exception as e:
+            print(f"thumbnail {vid}: {e}"); return f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+    return f"/assets/video/{vid}.jpg"
+def hms(t):
+    h, r = divmod(int(t), 3600); m, s_ = divmod(r, 60)
+    return f"{h}:{m:02d}:{s_:02d}" if h else f"{m}:{s_:02d}"
+def dur_txt(t):
+    h, m = divmod(round(t / 60), 60)
+    return f"{h} h {m:02d} min" if h else f"{m} min"
+def iso_dur(t):
+    h, r = divmod(int(t), 3600); m, s_ = divmod(r, 60)
+    return f"PT{h}H{m}M{s_}S"
+def watch(vid, t=0): return f"https://www.youtube.com/watch?v={vid}" + (f"&t={int(t)}s" if t else "")
+def live_videos(w): return [v for v in w.get("videos", []) if yt_ok(v["youtube"])]
+
+VIDEO_CSS = """<style>.vid{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden;margin:20px 0 8px}
+.vid a.poster,.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.vid img{width:100%;height:100%;object-fit:cover;opacity:.85}.vid .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:54px;border-radius:14px;background:var(--gold);color:var(--navy);font-size:26px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.vid a.poster:hover .play,.vid a.poster:focus .play{background:#fff}.vid .note{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:13px;padding:22px 14px 10px}
+.vcredit{font-size:13px;color:var(--muted);margin:0 0 6px}.vlabel{font-weight:700;color:var(--navy);margin:24px 0 0}
+ol.chap{list-style:none;padding:0;margin:8px 0 0;border:1px solid var(--line);border-radius:8px}ol.chap li{border-top:1px solid var(--line)}ol.chap li:first-child{border-top:0}
+ol.chap a{display:flex;gap:14px;padding:8px 14px;text-decoration:none;font-size:15px}ol.chap a:hover{background:var(--bg)}ol.chap time{font-variant-numeric:tabular-nums;font-weight:700;min-width:62px;color:#8a6a1c}
+.chapnote{font-size:13px;color:var(--muted);margin:6px 0 0}</style>"""
+VIDEO_JS = """<script>document.addEventListener('click',function(e){var a=e.target.closest('[data-yt]');if(!a)return;e.preventDefault();
+var id=a.getAttribute('data-yt'),t=a.getAttribute('data-t')||0,box=document.getElementById('v-'+id);if(!box)return;
+box.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&start='+t+'" title="'+box.getAttribute('data-title')+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+if(a.closest('ol'))box.scrollIntoView({behavior:'smooth',block:'center'});});</script>"""
+
+def video_block(w):
+    vs = live_videos(w)
+    if not vs:
+        return '<div class="notice">The recording is no longer available on YouTube. The agenda and slides remain on the official page.</div>' if w.get("videos") else ""
+    out = []
+    for v in vs:
+        vid, title = v["youtube"], E(w["title"] + (" · " + v["label"] if v.get("label") else ""))
+        lab = f'<p class="vlabel">{E(v["label"])}</p>' if v.get("label") else ""
+        out.append(f"""{lab}<div class="vid" id="v-{vid}" data-title="{title}"><a class="poster" href="{watch(vid)}" data-yt="{vid}" data-noext target="_blank" rel="noopener noreferrer" aria-label="Play the recording: {title} ({dur_txt(v['seconds'])})">
+<img src="{yt_thumb(vid)}" alt="" width="480" height="360" loading="lazy"><span class="play" aria-hidden="true">▶</span><span class="note">Recording, {dur_txt(v['seconds'])}. The YouTube player loads only when you press play.</span></a></div>
+<p class="vcredit">Video: {E(w['organiser'])}, published on the YouTube channel {E(v['channel'])}. <a href="{watch(vid)}">Watch on YouTube</a></p>""")
+        if v.get("chapters"):
+            li = "".join(f'<li><a href="{watch(vid, t)}" data-yt="{vid}" data-t="{t}" data-noext target="_blank" rel="noopener noreferrer"><time>{hms(t)}</time><span>{E(c)}</span></a></li>' for t, c in v["chapters"])
+            src = "Chapters as published by the European Commission with the video." if v.get("chapters_source") == "official" else "Chapter index prepared by Ullswater Investments from the recording."
+            out.append(f'<h3 style="color:var(--navy);margin:18px 0 0;font-size:17px">Jump to a section</h3><ol class="chap">{li}</ol><p class="chapnote">{src}</p>')
+    return VIDEO_CSS + "".join(out) + VIDEO_JS
+
+def video_ld(w, page_url):
+    res = []
+    for v in live_videos(w):
+        vid = v["youtube"]
+        x = {"@context": "https://schema.org", "@type": "VideoObject", "name": w["title"] + (" · " + v["label"] if v.get("label") else ""), "description": w["summary"],
+             "thumbnailUrl": [f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"], "uploadDate": v["uploaded"], "duration": iso_dur(v["seconds"]),
+             "embedUrl": f"https://www.youtube-nocookie.com/embed/{vid}", "url": page_url, "inLanguage": "en", "isAccessibleForFree": True,
+             "publisher": {"@type": "Organization", "name": w["organiser"]}}
+        ch = v.get("chapters") or []
+        if ch:
+            x["hasPart"] = [{"@type": "Clip", "name": c, "startOffset": t, "endOffset": (ch[i + 1][0] if i + 1 < len(ch) else v["seconds"]), "url": watch(vid, t)} for i, (t, c) in enumerate(ch)]
+        res.append(x)
+    return res
 
 def webinar_ld(w):
     return {"@context": "https://schema.org", "@type": "Event", "name": w["title"], "description": w["summary"], "startDate": w["date"], "endDate": w["date"],
@@ -295,26 +377,26 @@ def build():
     write("/webinars/", page(f"EU funding webinars: live sessions and official materials · {SITE['short']}",
         "Upcoming EU funding webinars and a library of past European Commission webinars on Horizon Europe proposals, grant preparation and project management, with links to the official slides.", "/webinars/",
         f"""<section class="hero"><div class="wrap"><p class="kicker">EU Funding Events</p><h1>EU funding webinars</h1>
-<p class="lead">Upcoming online sessions from the European Commission and other European bodies, and a library of past webinars whose agendas and slides remain available on the organisers' sites. Links checked {nice(TODAY)}.</p>
-<ul class="stats"><li><strong>{len(live)}</strong>upcoming webinars</li><li><strong>{len(webinars)}</strong>in the library</li></ul>
+<p class="lead">Upcoming online sessions from the European Commission and other European bodies, and a library of past webinars you can watch here, with a summary, a chapter index and links to the official slides. Links checked {nice(TODAY)}.</p>
+<ul class="stats"><li><strong>{len(live)}</strong>upcoming webinars</li><li><strong>{len(webinars)}</strong>in the library</li><li><strong>{sum(1 for w in webinars if live_videos(w))}</strong>with video</li></ul>
 <nav class="chips" aria-label="Library topics"><a href="#live">Upcoming</a>{jump}</nav></div></section>
 <div class="wrap"><section class="month" id="live"><h2>Upcoming webinars</h2>{"".join(card(e) for e in live) or "<p>No upcoming webinars listed right now. See the library below.</p>"}</section>
-<h2 style="color:var(--navy);font-size:28px;margin:36px 0 0">Webinar library</h2><p style="color:var(--muted);margin:4px 0 0">Past sessions, grouped by project stage. Each page summarises what was covered and links to the organiser's page with the agenda and slides.</p>{lib}{cta}</div>""", hub_ld, cur="webinars"))
+<h2 style="color:var(--navy);font-size:28px;margin:36px 0 0">Webinar library</h2><p style="color:var(--muted);margin:4px 0 0">Past sessions, grouped by project stage. Each page shows the official recording, summarises what was covered and links to the organiser's page with the agenda and slides. Start with the most recent edition of each session.</p>{lib}{cta}</div>""", hub_ld, cur="webinars"))
     for w in webinars:
         newer = WEB.get(w.get("superseded_by", ""))
         newer_note = f'<div class="notice">An updated edition is available: <a href="{newer["path"]}">{E(newer["title"])} ({nice(newer["d"])})</a>.</div>' if newer else ""
-        rows = [("Date", nice(w["d"])), ("Time", w["time"]), ("Format", "Online webinar (already held)"), ("Organiser", w["organiser"]), ("Programme", PROGS[w["programme"]]), ("Topic", TOPICS[w["topic"]][0]), ("Available", w["materials"])]
+        rows = [("Date", nice(w["d"])), ("Time", w["time"]), ("Format", "Online webinar (already held)" + (", recording available" if live_videos(w) else "")), ("Organiser", w["organiser"]), ("Programme", PROGS[w["programme"]]), ("Topic", TOPICS[w["topic"]][0]), ("Available", w["materials"])]
         dl = "".join(f"<dt>{E(a)}</dt><dd>{E(b)}</dd>" for a, b in rows)
         same = [x for x in webinars if x["topic"] == w["topic"] and x is not w][:4]
         more = "".join(f'<li><a href="{x["path"]}">{E(x["title"])}</a> ({nice(x["d"])})</li>' for x in same)
         write(w["path"], page(f"{w['title']} · Webinar, {nice(w['d'])}", w["summary"], w["path"],
             f"""<article class="post"><div class="crumbs"><a href="/">Events</a> › <a href="/webinars/">Webinars</a> › <a href="/webinars/#{w['topic']}">{E(TOPICS[w['topic']][0])}</a></div><h1>{E(w['title'])}</h1><p class="dek">{E(w['summary'])}</p>{newer_note}
-<section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions"><a class="btn" href="{E(w['official_url'])}">Agenda and slides on the official page</a><a class="btn ghost" href="{E(support_link(w['title'], SITE['url'] + w['path']))}">Ask us about it</a></div>
+{video_block(w)}<section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions"><a class="btn" href="{E(w['official_url'])}">Agenda and slides on the official page</a><a class="btn ghost" href="{E(support_link(w['title'], SITE['url'] + w['path']))}">Ask us about it</a></div>
 <div class="body" style="margin-top:24px"><h2 style="font-size:20px;color:var(--navy)">What it covers</h2><ul>{''.join(f'<li>{E(c)}</li>' for c in w['covers'])}</ul></div>
 <section class="why"><h2>Why it matters for applicants</h2><p>{E(w['why'])}</p></section>
 <section class="src"><h2>Related</h2><ul><li><a href="{theme_url(w['programme'])}">Open calls: {E(PROGS[w['programme']])}</a></li><li><a href="/webinars/#live">Upcoming webinars</a></li>{more}</ul></section>
-<section class="src"><h2>Source</h2><p><a href="{E(w['official_url'])}">Official event page</a> · listed by <a href="{E(w['source_url'])}">{E(w['source_name'])}</a>. Materials belong to the organiser and are linked, not copied.</p></section>
-<div class="tags">{''.join(f'<span>{E(t)}</span>' for t in w['tags'])}</div>{cta}</article>""", [webinar_ld(w)], cur="webinars", og="article"))
+<section class="src"><h2>Source</h2><p><a href="{E(w['official_url'])}">Official event page</a> · listed by <a href="{E(w['source_url'])}">{E(w['source_name'])}</a>. Materials and recordings belong to the organiser: slides are linked and videos are shown with YouTube's official player, never copied.</p></section>
+<div class="tags">{''.join(f'<span>{E(t)}</span>' for t in w['tags'])}</div>{cta}</article>""", [webinar_ld(w)] + video_ld(w, SITE["url"] + w["path"]), cur="webinars", og="article"))
     write("/about/", page(f"About and editorial policy · {SITE['short']}", "How Ullswater Investments selects and checks the EU funding events listed on this site.", "/about/",
         f"""<div class="about"><h1>About EU Funding Events</h1><p>EU Funding Events is published by {E(SITE['org_legal'])}, a Madrid-based European funding advisory firm. It lists events that help companies, researchers and consortia prepare EU funding proposals.</p>
 <h2>How events are checked</h2><ul><li>Every event links to the organiser's page or to a recognised National Contact Point or partner source.</li><li>Dates, locations and formats are checked against that source before publication.</li><li>Our comments on why an event matters are analysis and add no new facts.</li><li>Always confirm details with the organiser before registering or travelling.</li></ul>

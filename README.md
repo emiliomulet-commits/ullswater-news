@@ -20,6 +20,8 @@ Editorial rules: English only, own words, every date and place must appear in th
 ## Webinars (Nov 2026)
 - `/webinars/` is the webinars hub: upcoming live webinars (events with `"type": "webinar"` in `src/events/`) plus a **library** of past sessions.
 - Library items: one file per webinar in `src/webinars/*.json` with `slug`, `title`, `date`, `time`, `topic` (proposal, eligibility, grant, management), `programme`, `organiser`, `summary`, `covers` (list), `materials`, `why`, `tags`, `official_url`, `source_name`, `source_url`, optional `superseded_by` (slug of a newer edition).
+- Optional `videos`: list of official recordings `{youtube, channel, seconds, uploaded, label?, chapters?: [[seconds, "title"]], chapters_source: "official" | "ullswater"}`. Only recordings from the organiser's own channel and linked from its event page. The page shows our thumbnail and loads the youtube-nocookie.com player only when the visitor presses play; chapters jump to that minute. Each build checks the video with YouTube oEmbed and falls back to the slides if it was removed or embedding was disabled. VideoObject + Clip structured data is generated for search engines.
+- Chapter indexes marked `ullswater` were prepared from the recording's transcript; `official` ones are copied from the video description.
 - Editorial rules as for events: own words, every fact on the official page, materials are linked and never re-hosted.
 - Sources to scan for new webinars: Research & Innovation community platform (EC), Funding & Tenders Portal events, EIC/EISMEA, HaDEA, CINEA, REA, Digital Europe, NCP networks, Enterprise Europe Network, EUREKA/ITEA, Gaia-X and IDSA.
 

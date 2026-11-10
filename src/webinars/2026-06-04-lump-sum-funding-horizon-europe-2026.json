@@ -1,0 +1,54 @@
+{
+  "slug": "lump-sum-funding-horizon-europe-2026",
+  "title": "Lump Sum Funding in Horizon Europe: How does it work? How to write a proposal? (June 2026)",
+  "date": "2026-06-04",
+  "time": "10:00–12:00 CEST",
+  "topic": "proposal",
+  "programme": "horizon-europe",
+  "organiser": "European Commission, DG Research and Innovation",
+  "summary": "The most recent edition of the Commission's lump sum webinar: how lump sum grants work, how to write a lump sum proposal, a panel of beneficiaries with practical experience and a long question-and-answer session.",
+  "covers": [
+    "How lump sum funding works in Horizon Europe",
+    "How to write a lump sum proposal",
+    "A panel discussion with invited guests on their practical experience with lump sum grants",
+    "Questions and answers collected through Slido"
+  ],
+  "materials": "Video recording, agenda, presentation slides and a pointer to the lump sum page of the Funding & Tenders Portal",
+  "why": "Under a lump sum, payment depends on completing work packages, so the budget and the work plan have to be designed together from the start. Applicants to topics funded this way should watch it before fixing their budget.",
+  "tags": [
+    "Horizon Europe",
+    "Lump sum",
+    "Budget",
+    "Proposal writing"
+  ],
+  "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260604.htm",
+  "source_name": "European Commission · Horizon Europe events and webinars",
+  "source_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260604.htm",
+  "videos": [
+    {
+      "youtube": "xmh8rIcftDs",
+      "channel": "EU Science & Innovation",
+      "seconds": 7179,
+      "uploaded": "2026-06-04",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          91,
+          "How lump sum funding works and how to write a lump sum proposal"
+        ],
+        [
+          3068,
+          "Panel: practical experience with lump sum grants"
+        ],
+        [
+          4411,
+          "Q&A"
+        ]
+      ],
+      "chapters_source": "ullswater"
+    }
+  ]
+}

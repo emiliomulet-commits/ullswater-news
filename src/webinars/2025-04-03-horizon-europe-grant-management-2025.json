@@ -1,6 +1,6 @@
 {
   "slug": "horizon-europe-grant-management-2025",
-  "title": "Horizon Implementation Day: Grant Management in Horizon Europe",
+  "title": "Horizon Implementation Day: Grant Management in Horizon Europe (2025 edition)",
   "date": "2025-04-03",
   "time": "09:30–13:00 CEST",
   "topic": "management",
@@ -13,8 +13,8 @@
     "Fraud prevention, detection and corrections",
     "Question-and-answer sessions on amendments and on reporting"
   ],
-  "materials": "Agenda and presentation slides for each session",
-  "why": "Most problems in running projects come from amendments and periodic reports. Project managers and finance staff should know these rules before the first reporting period closes.",
+  "materials": "Video recording, agenda and presentation slides for each session",
+  "why": "Kept for reference. The October 2026 edition covers the same subject with more recent material, so start there.",
   "tags": [
     "Horizon Europe",
     "Grant management",
@@ -23,5 +23,53 @@
   ],
   "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event250403.htm",
   "source_name": "European Commission · Research and innovation community platform (related webinars)",
-  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview"
+  "source_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
+  "videos": [
+    {
+      "youtube": "tIhFnJ2i8mo",
+      "channel": "EU Science & Innovation",
+      "seconds": 12429,
+      "uploaded": "2025-04-03",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          343,
+          "Amendments: the legal basis"
+        ],
+        [
+          1618,
+          "Amendments: business process and IT tool"
+        ],
+        [
+          3131,
+          "Q&A on amendments"
+        ],
+        [
+          5358,
+          "Reporting and payments: legal basis and common errors"
+        ],
+        [
+          6564,
+          "Reporting and payments: business process and IT tool"
+        ],
+        [
+          9315,
+          "Q&A on reporting and payments"
+        ],
+        [
+          10760,
+          "Fraud prevention, detection and corrections"
+        ],
+        [
+          12026,
+          "Q&A on fraud prevention"
+        ]
+      ],
+      "chapters_source": "official"
+    }
+  ],
+  "superseded_by": "horizon-europe-grant-management-2026"
 }
