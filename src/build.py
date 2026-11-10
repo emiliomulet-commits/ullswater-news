@@ -5,7 +5,7 @@ Reads src/events/*.json and writes a complete static site to docs/.
 Same model as news.ullswaterinvestments.com: plain server-side HTML, no JavaScript.
 Usage: python3 src/build.py
 """
-import json, html, datetime, pathlib, shutil, os
+import json, html, datetime, pathlib, shutil, os, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC, OUT = ROOT / "src", ROOT / "docs"
@@ -122,13 +122,23 @@ footer.site{background:var(--navy);color:#dbe2f5;font-size:14px}footer.site .wra
 
 def org_ld():
     return {"@type": "Organization", "@id": SITE["org_url"] + "/#org", "name": SITE["org"], "legalName": SITE["org_legal"], "url": SITE["org_url"], "email": SITE["email"],
+            "sameAs": ["https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
 def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"):
     canon = SITE["url"] + path
     items = [("/", "All events", "home")] + [(f"/type/{k}/", TYPES[k][0], k) for k in TYPES if k in USED] + [("/calendar/", "Calendar", "calendar"), ("/past/", "Past events", "past")]
     navs = "".join(f'<a href="{h}"{" aria-current=page" if k == cur else ""}>{E(t)}</a>' for h, t, k in items)
-    lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (ld or []))
+    ld = list(ld or [])
+    name = re.split(r" [·|] (EU Funding Events|Ullswater)", title)[0].strip()
+    if not noindex and not ld:
+        ld.append({"@context": "https://schema.org", "@type": "CollectionPage" if path.startswith(("/type/", "/series/", "/calendar/", "/past/")) else "WebPage",
+                   "name": name, "url": canon, "description": desc, "inLanguage": "en", "publisher": org_ld()})
+    if not noindex and path != "/" and not any(x.get("@type") == "BreadcrumbList" for x in ld):
+        ld.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "EU funding events", "item": SITE["url"] + "/"},
+            {"@type": "ListItem", "position": 2, "name": name, "item": canon}]})
+    lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">
@@ -269,7 +279,16 @@ def build():
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{SITE['url']}{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls) + "</urlset>\n")
     bots = ["*", "Googlebot", "Bingbot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "ClaudeBot", "Claude-SearchBot", "Claude-User", "Google-Extended", "Applebot", "DuckDuckBot"]
     write("/robots.txt", f"# {SITE['name']}\n\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"Sitemap: {SITE['url']}/sitemap.xml\n")
-    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", ""]))
+    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", "", "## Full text", "", f"- [llms-full.txt]({SITE['url']}/llms-full.txt): every upcoming event with dates, place, organiser and summary", ""]))
+    full = [f"# {SITE['name']}: full text of upcoming events", "", f"> {SITE['description']} Published by Ullswater Investments S.L., EU funding advisors in Madrid and Brussels ({SITE['org_url']}/).", ""]
+    for e in up:
+        full += [f"## {e['title']}", f"URL: {SITE['url']}{e['path']}", f"- When: {span(e)}", f"- Where: {e['location']}", f"- Organiser: {e['organiser']}"]
+        if e.get("registration_url"):
+            full.append(f"- Registration: {e['registration_url']}")
+        if e.get("source_url"):
+            full.append(f"- Official source: {e['source_url']}")
+        full += ["", e.get("summary", "")] + [d for d in (e.get("details") or []) if isinstance(d, str)] + ([f"Why it matters: {e['why']}"] if e.get("why") else []) + [""]
+    write("/llms-full.txt", "\n".join(full))
     from email.utils import format_datetime
     now = format_datetime(datetime.datetime.now(datetime.timezone.utc))
     write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{E(SITE["name"])}</title><link>{SITE["url"]}/</link><description>{E(SITE["description"])}</description><language>en</language><lastBuildDate>{now}</lastBuildDate>' +
