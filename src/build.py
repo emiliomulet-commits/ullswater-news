@@ -147,7 +147,7 @@ def org_ld():
 def person_ld():
     return {"@type": "Person", "@id": SITE["url"] + AUTHOR_PATH + "#person", "name": AUTHOR["name"], "jobTitle": AUTHOR["role"],
             "url": SITE["url"] + AUTHOR_PATH, "worksFor": {"@type": "Organization", "name": SITE["org"], "url": SITE["org_url"]},
-            "knowsAbout": AUTHOR["knows"]}
+            "knowsAbout": AUTHOR["knows"], "sameAs": ["https://www.linkedin.com/in/emilio-mulet-esade/"]}
 
 def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False):
     canon = SITE["url"] + path
@@ -356,7 +356,7 @@ def build():
     my = [a for a in arts][:20]
     auth = (f'<div class="about"><p class="kicker">Author</p><h1>{E(AUTHOR["name"])}</h1><p class="lead">{E(AUTHOR["role"])}</p>'
             + "".join(f"<p>{E(p)}</p>" for p in AUTHOR["bio"])
-            + f'<p>Contact: <a href="mailto:{SITE["email"]}">{SITE["email"]}</a> · <a href="{SITE["org_url"]}">ullswaterinvestments.com</a></p>'
+            + f'<p>Contact: <a href="mailto:{SITE["email"]}">{SITE["email"]}</a> · <a href="{SITE["org_url"]}">ullswaterinvestments.com</a> · <a href="https://www.linkedin.com/in/emilio-mulet-esade/" target="_blank" rel="noopener me">LinkedIn ↗</a></p>'
             + '<h2>Latest articles</h2><ul>' + "".join(f'<li><a href="{a["path"]}">{E(a["title"])}</a> <span class="meta">· {nice(a["d"])}</span></li>' for a in my) + '</ul></div>')
     write(AUTHOR_PATH, page(f"{AUTHOR['name']} · {AUTHOR['role']} · {SITE['short']}", f"{AUTHOR['name']}, {AUTHOR['role']}: EU funding advisor specialised in Horizon Europe, Spanish R&D grants and federated data spaces.", AUTHOR_PATH, auth,
                             [{"@context": "https://schema.org", "@type": "ProfilePage", "url": SITE["url"] + AUTHOR_PATH, "mainEntity": person_ld()}]))
