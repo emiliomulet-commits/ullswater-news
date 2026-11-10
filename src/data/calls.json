@@ -829,7 +829,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-10",
-   "listed": true,
+   "listed": false,
    "opens": "2026-06-17",
    "status": "open",
    "title": "Missiles, ammunition and bombs",
@@ -4688,6 +4688,19 @@
    "title": "Rising Innovators category",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2026-prize-wip-risinginnovators"
   },
+  "HORIZON-EIC-2027-ACCELERATOR-01": {
+   "budget": null,
+   "code": "HORIZON-EIC-2027-ACCELERATOR-01",
+   "deadline": "2027-12-16",
+   "first_seen": "2026-11-10",
+   "keywords": [],
+   "last_seen": "2026-11-10",
+   "listed": true,
+   "opens": "2026-11-10",
+   "status": "open",
+   "title": "Short proposal",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2027-accelerator-01"
+  },
   "HORIZON-EIC-2027-DEFENCE-01": {
    "budget": "≈ €10M–€30M / project",
    "code": "HORIZON-EIC-2027-DEFENCE-01",
@@ -6841,5 +6854,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-10T13:28:54.961Z"
+ "feed_updated": "2026-11-10T20:02:01.570Z"
 }

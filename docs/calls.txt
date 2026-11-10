@@ -1,7 +1,6 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-10 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-EDF-EDIP-USI-2026-LS-IRA-MAB | Missiles, ammunition and bombs | Open | 2026-06-17 | 2026-11-10 | €180M (topic total) | https://calls.ullswaterinvestments.com/theme/digital-europe-defence/
 EDF-EDIP-P-2026-2027-FNLC-SA-SEAP | Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools | Open | 2026-10-13 | 2026-11-12 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2026-2027-fnlc-sa-seap/
 I3-2026-INV1 | I3-2026-INV1 - Interregional Innovation Investments Strand 1 | Open | 2026-05-13 | 2026-11-12 | €28.2M (topic total) | https://calls.ullswaterinvestments.com/call/i3-2026-inv1/
 I3-2026-INV2a | I3-2026-INV2a - Interregional Innovation Investments Strand 2a | Open | 2026-05-13 | 2026-11-12 | €30.2M (topic total) | https://calls.ullswaterinvestments.com/call/i3-2026-inv2a/
@@ -393,6 +392,7 @@ HORIZON-NEB-2027-01-REGEN-01 | Combining conventional and innovative constructio
 HORIZON-NEB-2027-01-REGEN-02 | Sustainable, beautiful and healthy construction and renovation sites | Forthcoming | 2027-05-05 | 2027-12-01 | ≈ €4M / project | https://calls.ullswaterinvestments.com/call/horizon-neb-2027-01-regen-02/
 HORIZON-NEB-2027-01-REGEN-03-CANCELLED | Revitalising neighbourhoods around existing railway and motorway corridors | Forthcoming | 2027-05-05 | 2027-12-01 | - | https://calls.ullswaterinvestments.com/call/horizon-neb-2027-01-regen-03-cancelled/
 HORIZON-NEB-2027-01-REGEN-04 | Enabling environments for a sustainable and circular construction sector | Forthcoming | 2027-05-05 | 2027-12-01 | ≈ €4.5M / project | https://calls.ullswaterinvestments.com/call/horizon-neb-2027-01-regen-04/
+HORIZON-EIC-2027-ACCELERATOR-01 | Short proposal | Open | 2026-11-10 | 2027-12-16 | - | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-accelerator-01/
 HORIZON-CL4-2027-SPACE-07-83 | Space critical EEE components for EU non-dependence | Forthcoming | 2027-10-07 | 2028-01-20 | ≈ €3M–€4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-space-07-83/
 HORIZON-CL4-2027-SPACE-07-84 | Space critical equipment for EU non-dependence | Forthcoming | 2027-10-07 | 2028-01-20 | ≈ €3M–€4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-space-07-84/
 HUMA-2028-2034-PARTNERSHIP-CERT | EU Humanitarian Partnership Certificate 2028-2034 | Forthcoming | 2026-11-17 | 2033-06-30 | - | https://calls.ullswaterinvestments.com/call/huma-2028-2034-partnership-cert/
