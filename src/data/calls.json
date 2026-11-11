@@ -4716,6 +4716,23 @@
    "title": "EIC STEP Defence",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2027-defence-01"
   },
+  "HORIZON-EIC-2027-PATHFINDEROPEN-two-stage": {
+   "budget": "≈ €1M–€5M / project",
+   "code": "HORIZON-EIC-2027-PATHFINDEROPEN-two-stage",
+   "deadline": "2027-02-25",
+   "first_seen": "2026-11-11",
+   "keywords": [
+    "PATHFINDER",
+    "PATHFINDER OPEN",
+    "PATHFINDEROPEN"
+   ],
+   "last_seen": "2026-11-11",
+   "listed": true,
+   "opens": "2026-11-25",
+   "status": "forthcoming",
+   "title": "HORIZON-EIC-2027-PATHFINDEROPEN-two-stage",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2027-pathfinderopen-two-stage"
+  },
   "HORIZON-EIC-2027-STEP": {
    "budget": "≈ €10M–€30M / project",
    "code": "HORIZON-EIC-2027-STEP",
@@ -6854,5 +6871,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-11T07:20:21.832Z"
+ "feed_updated": "2026-11-11T19:52:43.229Z"
 }
