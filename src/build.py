@@ -133,6 +133,9 @@ table.calls td.dl{white-space:nowrap;font-weight:600}
 .byline a{color:var(--muted)}
 .author-card{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-top:28px}
 .avatar{flex:0 0 56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
+.vthumb{display:block;position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:44px;border-radius:12px;background:rgba(200,0,0,.9);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px}
+.player{position:relative;aspect-ratio:16/9;margin:20px 0;border-radius:10px;overflow:hidden;background:#000}.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 @media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}}
 """
 
@@ -152,6 +155,7 @@ def person_ld():
 def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False):
     canon = SITE["url"] + path
     navs = "".join(f'<a href="/{k}/"{" aria-current=\"page\"" if k == cur else ""}>{E(v[0])}</a>' for k, v in CATEGORIES.items() if k in ACTIVE)
+    if HAS_VIDEOS: navs += f'<a href="/videos/"{" aria-current=\"page\"" if cur == "videos" else ""}>Videos</a>'
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (ld or []))
     year = datetime.date.today().year
     return f"""<!DOCTYPE html>
@@ -204,6 +208,27 @@ def load():
     arts.sort(key=lambda a: (a["d"], a["slug"]), reverse=True)
     return arts
 
+def load_videos():
+    """src/videos/*.json: official videos embedded from YouTube (never downloaded or re-uploaded)."""
+    vids = []
+    for f in sorted((SRC / "videos").glob("*.json")) if (SRC / "videos").exists() else []:
+        v = json.loads(f.read_text(encoding="utf-8"))
+        for k in ("slug", "date", "title", "summary", "youtube_id", "channel_name", "channel_url"):
+            if not v.get(k): raise SystemExit(f"{f.name}: missing {k}")
+        v["d"] = datetime.date.fromisoformat(v["date"])
+        v["path"] = f"/videos/{v['slug']}/"
+        v["watch"] = f"https://www.youtube.com/watch?v={v['youtube_id']}"
+        v["thumb"] = f"https://i.ytimg.com/vi/{v['youtube_id']}/hqdefault.jpg"
+        vids.append(v)
+    vids.sort(key=lambda v: (v["d"], v["slug"]), reverse=True)
+    return vids
+
+def vcard(v):
+    return (f'<article class="card"><a class="vthumb" href="{v["path"]}" aria-label="Watch: {E(v["title"])}"><img src="{v["thumb"]}" alt="" loading="lazy" width="480" height="360"><span>▶</span></a>'
+            f'<h2><a href="{v["path"]}">{E(v["title"])}</a></h2>'
+            f'<div class="meta"><time datetime="{v["date"]}">{nice(v["d"])}</time> · {E(v["channel_name"])}</div>'
+            f'<p>{E(v["summary"])}</p></article>')
+
 def card(a):
     c = CATEGORIES[a["category"]][0]
     return (f'<article class="card"><div><a class="tag" href="/{a["category"]}/">{E(c)}</a></div>'
@@ -252,9 +277,13 @@ def write(path, text):
     p.write_text(text, encoding="utf-8")
 
 ACTIVE = set()
+HAS_VIDEOS = False
 
 def build():
+    global HAS_VIDEOS
     arts = load()
+    vids = load_videos()
+    HAS_VIDEOS = bool(vids)
     ACTIVE.update(a["category"] for a in arts)
     TODAY = datetime.date.today()
     calls, feed_updated = load_calls(TODAY, offline=bool(os.environ.get("OFFLINE")))
@@ -340,6 +369,45 @@ def build():
         ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{name} · {SITE['short']}", "url": f"{SITE['url']}/{k}/", "description": desc, "publisher": org_ld()}]
         write(f"/{k}/", page(f"{name} · {SITE['short']} | Ullswater Investments", desc, f"/{k}/", body, ld, cur=k))
 
+    # ---- Videos ----
+    if vids:
+        vdesc = "Official videos on EU research, innovation and funding: recordings of European Commission events and info days, selected by Ullswater Investments."
+        body = (f'<section class="hero"><div class="wrap"><p class="kicker">Videos</p><h1>EU Funding Videos</h1><p class="lead">{E(vdesc)}</p></div></section>'
+                f'<div class="wrap"><div class="grid">{"".join(vcard(v) for v in vids)}</div></div>')
+        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"Videos · {SITE['short']}", "url": SITE["url"] + "/videos/", "description": vdesc, "publisher": org_ld(),
+               "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + v["path"], "name": v["title"]} for i, v in enumerate(vids)]}}]
+        write("/videos/", page(f"Videos · {SITE['short']} | Ullswater Investments", vdesc, "/videos/", body, ld, cur="videos"))
+        for v in vids:
+            body = "".join(f"<p>{E(p)}</p>" for p in v.get("body", []))
+            why = f'<section class="why"><h2>Why watch it</h2><p>{E(v["why"])}</p></section>' if v.get("why") else ""
+            tags = "".join(f"<span>{E(t)}</span>" for t in v.get("tags", []))
+            ev = f' · Event: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>' if v.get("event_url") else ""
+            more = [w for w in vids if w is not v][:5]
+            rel = "".join(f'<li><a href="{w["path"]}">{E(w["title"])}</a> <span class="meta">· {nice(w["d"])}</span></li>' for w in more)
+            html_ = f"""<article class="post">
+<div class="crumbs"><a href="/">News</a> › <a href="/videos/">Videos</a></div>
+<p class="kicker">Video</p>
+<h1>{E(v['title'])}</h1>
+<p class="dek">{E(v['summary'])}</p>
+<div class="meta">Added <time datetime="{v['date']}">{nice(v['d'])}</time> · Video by <a href="{E(v['channel_url'])}" rel="noopener">{E(v['channel_name'])}</a>{ev}</div>
+<div class="player"><iframe src="https://www.youtube-nocookie.com/embed/{E(v['youtube_id'])}" title="{E(v['title'])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<p class="meta">Embedded from YouTube. <a href="{v['watch']}" rel="noopener">Watch on YouTube ↗</a></p>
+<div class="body">{body}</div>
+{why}
+<section class="src"><h2>Official source</h2><p>Video published by <a href="{E(v['channel_url'])}" rel="noopener">{E(v['channel_name'])}</a> on YouTube: <a href="{v['watch']}" rel="noopener">{v['watch']}</a>.{f' Event page: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>.' if v.get("event_url") else ""}</p></section>
+<div class="tags">{tags}</div>
+<aside class="cta"><div><strong>Preparing a proposal?</strong><p>Ullswater Investments helps companies match, prepare and submit EU funding applications.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
+{f'<section class="why"><h2>More videos</h2><ul>{rel}</ul></section>' if rel else ''}
+</article>"""
+            ld = [{"@context": "https://schema.org", "@type": "VideoObject", "name": v["title"], "description": v["summary"], "thumbnailUrl": [v["thumb"]],
+                   "uploadDate": v["date"], "embedUrl": f"https://www.youtube.com/embed/{v['youtube_id']}", "url": SITE["url"] + v["path"], "inLanguage": "en",
+                   "author": {"@type": "Organization", "name": v["channel_name"], "url": v["channel_url"]}},
+                  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                      {"@type": "ListItem", "position": 1, "name": "News", "item": SITE["url"] + "/"},
+                      {"@type": "ListItem", "position": 2, "name": "Videos", "item": SITE["url"] + "/videos/"},
+                      {"@type": "ListItem", "position": 3, "name": v["title"], "item": SITE["url"] + v["path"]}]}]
+            write(v["path"], page(f"{v['title']} · Video · {SITE['short']}", v["summary"], v["path"], html_, ld, "video.other", "", "videos"))
+
     # ---- Call alerts ----
     upd = f" · Feed updated {feed_updated[:10]}" if feed_updated else ""
     n_open = sum(1 for c in live if c["status"] == "open")
@@ -392,7 +460,8 @@ def build():
 
     # Sitemaps (regular + Google News for the last 2 days)
     urls = [("/", arts[0]["updated"] if arts else today), ("/about/", today)] + [(f"/{k}/", next(a["updated"] for a in arts if a["category"] == k)) for k in CATEGORIES if k in ACTIVE] + [(a["path"], a["updated"]) for a in arts] \
-        + [(AUTHOR_PATH, arts[0]["updated"] if arts else today)]
+        + [(AUTHOR_PATH, arts[0]["updated"] if arts else today)] \
+        + ([("/videos/", vids[0]["date"])] + [(v["path"], v["date"]) for v in vids] if vids else [])
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE['url']}{p}</loc><lastmod>{d}</lastmod></url>" for p, d in urls) + "</urlset>\n", encoding="utf-8")
     recent = [a for a in arts if (datetime.date.today() - a["d"]).days <= 2]
@@ -409,7 +478,7 @@ def build():
     # llms.txt + llms-full.txt (plain-text versions for AI assistants)
     llms = [f"# {SITE['name']}", "", f"> {SITE['description']} Published by {SITE['org_legal']} (Madrid), EU funding advisors. Every article cites and links an official source.", "",
             "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", "- Language: English. Updated on working days.", "",
-            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
+            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + (["", "## Videos", "", f"- [All videos]({SITE['url']}/videos/): official recordings of EU research, innovation and funding events."] + [f"- [{v['title']}]({SITE['url']}{v['path']}) ({v['date']}): {v['summary']}" for v in vids[:20]] if vids else []) + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
            [f"- [{a['title']}]({SITE['url']}{a['path']}) ({a['date']}): {a['dek']}" for a in arts[:50]] + ["", "## Optional", "", f"- [Full text of recent articles]({SITE['url']}/llms-full.txt)", f"- [Editorial policy]({SITE['url']}/about/)", f"- [RSS feed]({SITE['url']}/feed.xml)"]
     (OUT / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")
     full = [f"# {SITE['name']} — full text of recent articles", ""]
@@ -420,7 +489,7 @@ def build():
     (OUT / "calls.txt").write_text(f"# Open and forthcoming EU funding calls · {SITE['name']}\n# Checked {TODAY.isoformat()} from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page\n\n"
         + "".join(f"{c['code']} | {c['title']} | {c['state']} | {(c.get('opens') or '')[:10]} | {c['deadline'][:10]} | {c.get('budget') or '-'} | {c['href']}\n" for c in live), encoding="utf-8")
     print(f"Calls: {len(calls)} pages ({len(live)} live)")
-    print(f"Built {len(arts)} articles, {len(CATEGORIES)} categories → {OUT}")
+    print(f"Built {len(arts)} articles, {len(vids)} videos, {len(CATEGORIES)} categories → {OUT}")
 
 if __name__ == "__main__":
     build()

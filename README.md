@@ -51,6 +51,28 @@ Optional: `"action": {"label": "Register for the info day", "url": "https://<off
 2. Run `python3 src/build.py`.
 3. Commit and push. GitHub Pages republishes in about a minute.
 
+## Videos section (/videos/)
+
+Add `src/videos/YYYY-MM-DD-slug.json` to publish an official video at `/videos/<slug>/` (also listed on `/videos/`, in the sitemap and in llms.txt; a "Videos" link appears in the category bar):
+
+```json
+{
+  "slug": "short-url-slug",
+  "date": "2026-11-11",
+  "title": "Video title in English",
+  "summary": "One-sentence summary (meta description).",
+  "youtube_id": "WnqXluHPH0k",
+  "channel_name": "EU Science & Innovation (European Commission)",
+  "channel_url": "https://www.youtube.com/channel/...",
+  "event": "Optional event name", "event_url": "https://official-event-page",
+  "body": ["Context paragraph in our own words."],
+  "why": "Optional Ullswater note, no new facts.",
+  "tags": ["..."]
+}
+```
+
+Videos are embedded with the YouTube player (youtube-nocookie.com) and always credit and link the original channel: never download or re-upload them. Only official channels (Commission, EU agencies, Spanish public bodies) or Ullswater's own.
+
 ## Editorial rules (mandatory)
 
 - English only. Own words, never copied text.
