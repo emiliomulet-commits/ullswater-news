@@ -22,6 +22,26 @@ Why it matters (Ullswater Investments analysis): Ullswater Investments analysis:
 
 ---
 
+## EIB alliance channels over €10 billion into European scale-ups
+URL: https://news.ullswaterinvestments.com/2026/11/eib-tech-champions-alliance-10-billion-scale-ups/
+Date: 2026-11-09 · Category: EIC, Defence & Equity · Source: European Investment Bank (https://www.eib.org/en/press/all/2026-415-major-institutional-investors-join-eib-group-and-eu-member-states-to-channel-over-eur10-billion-into-european-scale-ups)
+
+Fifteen institutional investors and seven Member States join the EIB Group's European Tech Champions alliance, aiming to mobilise up to €80 billion.
+
+- Initiative: European Tech Champions alliance (builds on the European Tech Champions Initiative, ETCI)
+- Institutional investors: 15, with a declared intent of over €8 billion combined
+- Member States: 7 (incl. Spain), around €2 billion at first closing of the fund-of-funds
+- Mobilisation target: Up to €80 billion; average tickets of €200 million
+- Defence Equity Facility 2.0: €100 million from the Commission; €1 billion fundraising target
+
+The EIB Group has turned its European Tech Champions Initiative into a wider public-private alliance to finance European scale-ups. Fifteen institutional investors, among them pension funds, banks and insurers, have declared their intention to put in a combined total of more than €8 billion, and more are expected to join. Seven Member States – Bulgaria, Germany, Greece, Italy, Luxembourg, the Netherlands and Spain – are taking part in the first closing of the Tech Champions fund-of-funds with around €2 billion in commitments. The announcement came on the margins of the Eurogroup and ECOFIN meetings in Brussels.
+The alliance aims to mobilise up to €80 billion in total investment, with average tickets of €200 million, and the EIB expects first investment decisions within weeks. The investor group includes Banco Santander, BBVA and Grupo Mutua Madrileña from Spain, alongside APG, PGGM, ABN AMRO, Danske Bank Group, Compagnia di San Paolo, Uniqa Insurance Group and France's Tibi Initiative. Since its launch in 2023 by the EIB Group and six Member States, the initiative has backed 15 venture capital megafunds and supported more than 50 EU-based companies, 16 of which became unicorns.
+On the defence side, the European Commission is committing €100 million to the Defence Equity Facility 2.0, which aims to more than double the size of the first facility with a €1 billion fundraising target and a first closing expected soon. It will widen investment in defence technologies, space and cybersecurity. The first Defence Equity Facility, launched in 2024 with €175 million under InvestEU, is now almost fully invested. A new platform, DEF Exchange, will match public stakeholders with venture capital, private equity, private credit and infrastructure fund managers.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: this is not a grant call, and companies cannot apply to it directly. The money flows through large venture and growth funds, so the companies that benefit are scale-ups already raising late-stage rounds. For deep-tech firms that have received EIC or Horizon Europe grants, it signals more European capital for the step after public funding, and a grant track record is useful evidence when talking to these funds. Spanish companies should note that Spain is among the first Member States in the fund-of-funds and that three Spanish financial groups are in the investor alliance. Defence, space and cyber start-ups should watch which fund managers are selected under the Defence Equity Facility 2.0.
+
+---
+
 ## EU and India conclude talks on India joining Horizon Europe
 URL: https://news.ullswaterinvestments.com/2026/11/india-horizon-europe-association-concluded/
 Date: 2026-11-06 · Category: Research Policy · Source: European Commission – EURAXESS India (https://euraxess.ec.europa.eu/worldwide/india/news/eu-india-eu-and-india-conclude-negotiations-association-horizon-europe)
