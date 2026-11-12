@@ -6698,7 +6698,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-12",
-   "listed": true,
+   "listed": false,
    "opens": "2026-05-13",
    "status": "open",
    "title": "I3-2026-INV1 - Interregional Innovation Investments Strand 1",
@@ -6711,7 +6711,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-12",
-   "listed": true,
+   "listed": false,
    "opens": "2026-05-13",
    "status": "open",
    "title": "I3-2026-INV2a - Interregional Innovation Investments Strand 2a",
@@ -6896,12 +6896,12 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-12",
-   "listed": true,
+   "listed": false,
    "opens": "2026-09-02",
    "status": "open",
    "title": "SOCPL-2026-INFO-REPR",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-12T13:46:38.855Z"
+ "feed_updated": "2026-11-12T20:28:41.941Z"
 }
