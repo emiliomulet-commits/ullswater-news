@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-11 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-12 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 EDF-EDIP-P-2026-2027-FNLC-SA-SEAP | Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools | Open | 2026-10-13 | 2026-11-12 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2026-2027-fnlc-sa-seap/
 I3-2026-INV1 | I3-2026-INV1 - Interregional Innovation Investments Strand 1 | Open | 2026-05-13 | 2026-11-12 | €28.2M (topic total) | https://calls.ullswaterinvestments.com/call/i3-2026-inv1/
@@ -129,6 +129,7 @@ HORIZON-HLTH-2027-02-DISEASE-14-two-stage | Clinical trials for advancing innova
 HORIZON-HLTH-2027-02-IND-02-two-stage | Portable and versatile Point-of-care diagnostics | Open | 2026-10-29 | 2027-02-17 | ≈ €5M–€7M / project | https://calls.ullswaterinvestments.com/call/horizon-hlth-2027-02-ind-02-two-stage/
 HORIZON-HLTH-2027-02-TOOL-01-two-stage | Development of predictive biomarkers of disease progression and treatment response by using AI methodologies for chronic non-communicable diseases | Open | 2026-10-29 | 2027-02-17 | ≈ €6M–€8M / project | https://calls.ullswaterinvestments.com/call/horizon-hlth-2027-02-tool-01-two-stage/
 ERASMUS-EDU-2026-EUED | European Degree Exploratory Action | Open | 2026-11-05 | 2027-02-18 | €14M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2026-eued/
+EMFAF-2027-PIA-ScientificAdviceFisheries | Improving scientific knowledge to strengthen the science-basis of management decisions under the CFP | Open | 2026-11-12 | 2027-02-23 | €1.8M (topic total) | https://calls.ullswaterinvestments.com/
 CERV-2026-CITIZENS-REM-GENCRIME-1 | Strengthening the remembrance of Roma victims | Open | 2026-10-21 | 2027-02-24 | €28M (topic total) | https://calls.ullswaterinvestments.com/call/cerv-2026-citizens-rem-gencrime-1/
 CERV-2026-CITIZENS-REM-GENCRIME-2 | Strengthening the remembrance of LGBTIQ+ victims and other victims | Open | 2026-10-21 | 2027-02-24 | €28M (topic total) | https://calls.ullswaterinvestments.com/call/cerv-2026-citizens-rem-gencrime-2/
 CERV-2026-CITIZENS-REM-HISTMIGRATION | Fostering remembrance of the legacy of colonialism, slavery, and migration, and their impact on contemporary multicultural European societies. | Open | 2026-10-21 | 2027-02-24 | €28M (topic total) | https://calls.ullswaterinvestments.com/call/cerv-2026-citizens-rem-histmigration/
@@ -151,6 +152,7 @@ HORIZON-CL5-2027-01-D1-13 | Next generation scenarios for informing climate and 
 HORIZON-EURATOM-2027-01-01 | Key enabling technologies for fusion power plants (European Partnership on Fusion Energy) | Open | 2026-09-15 | 2027-03-04 | ≈ €10M / project | https://calls.ullswaterinvestments.com/call/horizon-euratom-2027-01-01/
 HORIZON-WIDERA-2027-04-WIDENING-01 | Excellence Hubs | Open | 2026-09-02 | 2027-03-04 | ≈ €1.5M–€4.5M / project | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-04-widening-01/
 JUST-2027-JTRA | Call for proposals for action grants to support transnational projects on judicial training covering civil law, criminal law or fundamental rights | Open | 2026-10-28 | 2027-03-04 | €4.1M (topic total) | https://calls.ullswaterinvestments.com/call/just-2027-jtra/
+ERC-2027-POC | Proof of Concept Grant | Open | 2026-11-12 | 2027-03-10 | ≈ €150k / project | https://calls.ullswaterinvestments.com/theme/science-widening/
 HORIZON-WIDERA-2027-05-ERA-01 | Pillar I: Facilitating development of institutional open access policies through the retention of intellectual property rights | Forthcoming | 2026-12-08 | 2027-03-11 | €2M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-05-era-01/
 HORIZON-WIDERA-2027-05-ERA-02 | Pillar II: Talent ecosystems for attractive early research careers | Forthcoming | 2026-12-08 | 2027-03-11 | ≈ €2M / project | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-05-era-02/
 HORIZON-WIDERA-2027-05-ERA-03 | Pillar III: Science comes to town 2029 | Forthcoming | 2026-12-08 | 2027-03-11 | €6M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-05-era-03/
