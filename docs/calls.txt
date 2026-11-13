@@ -1,7 +1,6 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-12 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-13 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-EDF-EDIP-P-2026-2027-FNLC-SA-SEAP | Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools | Open | 2026-10-13 | 2026-11-12 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2026-2027-fnlc-sa-seap/
 HORIZON-JU-EUROHPC-2026-NAPT-11-01 | Neutral-Atom Platform Technologies | Open | 2026-08-13 | 2026-11-17 | ≈ €19M–€20M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-napt-11-01/
 HORIZON-JU-EUROHPC-2026-NQKD-12-01 | Next-Generation QKD Systems | Open | 2026-08-13 | 2026-11-17 | ≈ €21M–€24M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-nqkd-12-01/
 HORIZON-JU-EUROHPC-2026-QEXP-14-01 | Quantum Experimental Pilot Lines for Quantum Technologies | Open | 2026-08-13 | 2026-11-17 | ≈ €14M–€15M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-qexp-14-01/
@@ -96,6 +95,7 @@ CREA-CROSS-2027-JOURPART-PLURALISM | NEWS - JOURNALISM PARTNERSHIPS - PLURALISM 
 CREA-MEDIA-2027-TVONLINE-1 | TV and online content Animation projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-1/
 CREA-MEDIA-2027-TVONLINE-2 | TV and online content Documentary projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-2/
 CREA-MEDIA-2027-TVONLINE-3 | TV and online content Fiction projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-3/
+EDF-EDIP-P-2026-2027-FNLC-SA-SEAP | Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools | Open | 2026-10-13 | 2027-02-16 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2026-2027-fnlc-sa-seap/
 EDF-EDIP-P-2027-FNLC-CPA-AMDS | Air and missile defence systems | Open | 2026-06-17 | 2027-02-16 | €150M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-fnlc-cpa-amds/
 EDF-EDIP-P-2027-FNLC-CPA-C5ISRS | C5ISR and other space-related products | Open | 2026-06-17 | 2027-02-16 | €150M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-fnlc-cpa-c5isrs/
 EDF-EDIP-P-2027-FNLC-CPA-GNPS | Ground and naval platforms and systems | Open | 2026-06-17 | 2027-02-16 | €150M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-fnlc-cpa-gnps/
