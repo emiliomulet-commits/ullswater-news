@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-13 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-14 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 HORIZON-JU-EUROHPC-2026-NAPT-11-01 | Neutral-Atom Platform Technologies | Open | 2026-08-13 | 2026-11-17 | ≈ €19M–€20M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-napt-11-01/
 HORIZON-JU-EUROHPC-2026-NQKD-12-01 | Next-Generation QKD Systems | Open | 2026-08-13 | 2026-11-17 | ≈ €21M–€24M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-nqkd-12-01/
