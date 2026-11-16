@@ -1,0 +1,108 @@
+{
+  "slug": "ehds-webinar-4-secondary-use-benefits-incentives",
+  "title": "EHDS support to stakeholders. Webinar 4: Stakeholder workshop on Benefits, challenges and incentives of EHDS secondary use",
+  "start": "2026-11-25",
+  "end": "2026-11-25",
+  "type": "webinar",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "European Commission (EHDS support to stakeholders), delivered by IDOM and IACS",
+  "summary": "An online workshop, part of the Commission's EHDS stakeholder support series, on how the secondary use of health data under the European Health Data Space creates value, and on its benefits, challenges and incentives for each stakeholder group.",
+  "details": [
+    "The fourth webinar of the EHDS support to stakeholders series runs on Wednesday 25 November 2026 from 11:00 to 12:30 CET, online. It aims to give participants a clear picture of how the EHDS can create value through more efficient, transparent and trustworthy access to health data, with a focus on the benefits that matter most to each group of stakeholders.",
+    "The session is open: anyone can watch and join, after registering on the event page on Microsoft Teams. Four moderators from the European health data, patient, research and clinical communities lead the discussion.",
+    "The event is presented under the HealthData@EU and MyHealth@EU brands, the two cross-border infrastructures of the EHDS for the secondary and primary use of health data."
+  ],
+  "speakers": [
+    {
+      "name": "Verena Thaler",
+      "role": "Senior Expert Digital Health",
+      "bio": "Works on the European health data ecosystem, especially data governance, interoperability and the European Health Data Space. Previously worked in healthcare policy and clinical IT, including at APCO Worldwide and the European Society of Radiology.",
+      "es": {
+        "role": "Experta sénior en salud digital",
+        "bio": "Trabaja en el ecosistema europeo de datos sanitarios, sobre todo en gobernanza de datos, interoperabilidad y el Espacio Europeo de Datos Sanitarios. Antes trabajó en política sanitaria y en sistemas de TI clínicos, entre otros en APCO Worldwide y en la Sociedad Europea de Radiología."
+      }
+    },
+    {
+      "name": "Yann Heyer",
+      "role": "Senior Policy Officer, European Patients' Forum (EPF)",
+      "bio": "Represents the patients' perspective in European health policy. His current work focuses on digital health and artificial intelligence, and on patient involvement in health policymaking across Europe.",
+      "es": {
+        "role": "Responsable sénior de políticas, Foro Europeo de Pacientes (EPF)",
+        "bio": "Representa la perspectiva de los pacientes en la política sanitaria europea. Su trabajo actual se centra en la salud digital y la inteligencia artificial, y en la participación de los pacientes en la elaboración de políticas sanitarias en Europa."
+      }
+    },
+    {
+      "name": "Valentina Colcelli",
+      "role": "Senior Researcher, National Research Council of Italy (CNR-IFAC)",
+      "bio": "Researches EU law on personal and non-personal data, technology transfer, legal and ethical issues in research and innovation, and the governance of health research data, including biobanks, AI and imaging databases.",
+      "es": {
+        "role": "Investigadora sénior, Consejo Nacional de Investigación de Italia (CNR-IFAC)",
+        "bio": "Investiga el Derecho de la UE sobre datos personales y no personales, la transferencia de tecnología, las cuestiones jurídicas y éticas de la investigación y la innovación y la gobernanza de los datos de investigación sanitaria, incluidos biobancos, IA y bases de datos de imagen."
+      }
+    },
+    {
+      "name": "Sarah Collen",
+      "role": "EU Policy Manager",
+      "bio": "Leads her organisation's engagement with EU health policy, including the European Health Data Space, Europe's Beating Cancer Plan, data protection, AI and medical devices. Previously worked at the NHS European Office.",
+      "es": {
+        "role": "Responsable de políticas de la UE",
+        "bio": "Dirige la relación de su organización con la política sanitaria de la UE, incluidos el Espacio Europeo de Datos Sanitarios, el Plan Europeo de Lucha contra el Cáncer, la protección de datos, la IA y los productos sanitarios. Antes trabajó en la Oficina Europea del NHS."
+      }
+    }
+  ],
+  "links": [
+    {
+      "label": "Register on the official event page (Microsoft Teams)",
+      "label_es": "Inscripción en la página oficial del evento (Microsoft Teams)",
+      "url": "https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13"
+    },
+    {
+      "label": "European Health Data Space Regulation (European Commission)",
+      "label_es": "Reglamento del Espacio Europeo de Datos Sanitarios (Comisión Europea)",
+      "url": "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en"
+    },
+    {
+      "label": "European Health Data Space overview (European Commission)",
+      "label_es": "Espacio Europeo de Datos Sanitarios (Comisión Europea)",
+      "url": "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en"
+    },
+    {
+      "label": "Regulation (EU) 2025/327 in EUR-Lex",
+      "label_es": "Reglamento (UE) 2025/327 en EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202500327"
+    }
+  ],
+  "why": "Secondary use of health data is where the EHDS opens new opportunities for research, innovation and health-data services, and also where data holders face the heaviest obligations. Hearing patients, researchers, clinicians and data experts discuss benefits and incentives side by side is useful for anyone designing a health data space, a data-holder service or an EU proposal on health data.",
+  "tags": [
+    "EHDS",
+    "Health data",
+    "Secondary use",
+    "HealthData@EU",
+    "Data spaces"
+  ],
+  "registration_url": "https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13",
+  "source_name": "European Commission · EHDS support to stakeholders (Microsoft Teams event page)",
+  "source_url": "https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13",
+  "status": "scheduled",
+  "es": {
+    "title": "Apoyo del EHDS a las partes interesadas. Webinario 4: taller sobre beneficios, retos e incentivos del uso secundario de datos en el EHDS",
+    "summary": "Taller en línea, dentro de la serie de apoyo de la Comisión a las partes interesadas del EHDS, sobre cómo el uso secundario de los datos sanitarios en el Espacio Europeo de Datos Sanitarios crea valor, y sobre sus beneficios, retos e incentivos para cada grupo de interés.",
+    "details": [
+      "El cuarto webinario de la serie «EHDS support to stakeholders» se celebra el miércoles 25 de noviembre de 2026, de 11:00 a 12:30 CET, en línea. Su objetivo es que los participantes entiendan con claridad cómo el EHDS puede crear valor gracias a un acceso a los datos sanitarios más eficiente, transparente y fiable, destacando los beneficios más relevantes para cada grupo de interés.",
+      "La sesión es abierta: cualquier persona puede verla y participar, tras inscribirse en la página del evento en Microsoft Teams. Cuatro moderadores de las comunidades europeas de datos sanitarios, pacientes, investigación y práctica clínica dirigen el debate.",
+      "El evento se presenta bajo las marcas HealthData@EU y MyHealth@EU, las dos infraestructuras transfronterizas del EHDS para el uso secundario y primario de los datos sanitarios."
+    ],
+    "why": "El uso secundario de los datos sanitarios es donde el EHDS abre nuevas oportunidades para la investigación, la innovación y los servicios de datos de salud, y también donde los titulares de datos asumen las obligaciones más exigentes. Escuchar a pacientes, investigadores, clínicos y expertos en datos debatir juntos sobre beneficios e incentivos es útil para quien diseña un espacio de datos sanitarios, un servicio para titulares de datos o una propuesta europea sobre datos de salud.",
+    "tags": [
+      "EHDS",
+      "Datos sanitarios",
+      "Uso secundario",
+      "HealthData@EU",
+      "Espacios de datos"
+    ],
+    "location": "En línea"
+  }
+}

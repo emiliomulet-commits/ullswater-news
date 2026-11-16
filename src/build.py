@@ -101,6 +101,8 @@ UI = {
     "Open calls": "Convocatorias abiertas", "All sessions of this series": "Todas las sesiones de esta serie", "See the related open calls →": "Ver las convocatorias abiertas relacionadas →",
     "Language": "Idioma", "Event types": "Tipos de evento", "Programmes": "Programas",
     "This event is only available in English for now.": "Este evento de momento solo está disponible en inglés.",
+    "Moderators and speakers": "Moderadores y ponentes", "Official links": "Enlaces oficiales", "Register for the event": "Inscríbete en el evento",
+    "Date and time": "Fecha y hora", "Who can join": "Quién puede participar",
 }
 def T(s): return UI.get(s, s) if ES() else s
 TYPES_ES = {"info-day": ("Jornadas informativas", "Jornada informativa", "Sesiones oficiales sobre convocatorias y programas de trabajo de la UE."),
@@ -167,6 +169,7 @@ article.post{max-width:760px;margin:0 auto;padding:36px 20px 56px}article.post h
 .cta strong{font-size:18px}.cta p{margin:4px 0 0;color:#dbe2f5;font-size:15px}
 .tags{margin-top:20px;display:flex;flex-wrap:wrap;gap:6px}.tags span{font-size:13px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--muted)}
 .crumbs{font-size:13px;color:var(--muted);margin-bottom:14px}.crumbs a{color:var(--muted)}
+.spk{list-style:none;padding:0;margin:0}.spk li{border-bottom:1px solid var(--line);padding:12px 0;font-size:16px}.spk li:last-child{border-bottom:0}
 .notice{background:#fff4d6;border-radius:8px;padding:12px 16px;margin:16px 0}
 .about{max-width:760px;margin:0 auto;padding:36px 20px 56px}.about p,.about li{font-size:17px}
 footer.site{background:var(--navy);color:#dbe2f5;font-size:14px}footer.site .wrap{padding:28px 20px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}footer.site a{color:#fff}
@@ -267,6 +270,21 @@ def related(e, events):
         li.append(f'<li><a href="{P("/series/" + e["series"] + "/")}">{T("All sessions of this series")}</a></li>')
     return f'<section class="src"><h2>{T("Related calls")}</h2><ul>{"".join(li)}</ul></section>'
 
+def speakers_block(e):
+    """Optional "speakers": [{"name", "role", "bio", "es": {"role", "bio"}}]."""
+    sp = e.get("speakers") or []
+    if not sp: return ""
+    def g(x, k): return ((x.get("es") or {}).get(k) if ES() else None) or x.get(k, "")
+    items = "".join(f'<li><strong>{E(x["name"])}</strong> · <span class="meta" style="display:inline">{E(g(x, "role"))}</span><br>{E(g(x, "bio"))}</li>' for x in sp)
+    return f'<section class="why"><h2>{T("Moderators and speakers")}</h2><ul class="spk">{items}</ul></section>'
+
+def links_block(e):
+    """Optional "links": [{"label", "url", "label_es"}] to the official pages."""
+    ls = e.get("links") or []
+    if not ls: return ""
+    items = "".join(f'<li><a href="{E(x["url"])}" rel="noopener" target="_blank">{E((x.get("label_es") if ES() else None) or x["label"])} ↗</a></li>' for x in ls)
+    return f'<section class="src"><h2>{T("Official links")}</h2><ul>{items}</ul></section>'
+
 def write(path, text):
     p = OUT / path.lstrip("/")
     if path.endswith("/"): p = p / "index.html"
@@ -312,7 +330,7 @@ def lang_pages(events, up, past):
         write(P(e["path"]), page(f"{F(e, 'title')} · {span(e)}", F(e, "summary"), e["path"],
             f"""<article class="post"><div class="crumbs"><a href="{P('/')}">{T('Events')}</a> › <a href="{P('/type/' + e['type'] + '/')}">{E(TY(e['type'])[0])}</a></div>{only_en}<h1>{E(F(e, 'title'))}</h1><p class="dek">{E(F(e, 'summary'))}</p>{ended_note}
 <section class="facts"><h2>{T('Key facts')}</h2><dl>{dl}</dl></section><div class="actions">{reg}<a class="btn ghost" href="{e['path']}event.ics">{T('Add to calendar')}</a><a class="btn ghost" href="{E(support_link((call_title(e['calls'][0]) if e.get('calls') else e['title']), SITE['url'] + P(e['path'])))}" target="_blank" rel="noopener">{T('Apply with our support')}</a></div>
-<div class="body" style="margin-top:24px">{''.join(f'<p>{E(p)}</p>' for p in F(e, 'details'))}</div>
+<div class="body" style="margin-top:24px">{''.join(f'<p>{E(p)}</p>' for p in F(e, 'details'))}</div>{speakers_block(e)}{links_block(e)}
 <section class="why"><h2>{T('Why it matters for applicants')}</h2><p>{E(F(e, 'why'))}</p></section>{related(e, events)}
 <section class="src"><h2>{T('Source')}</h2><p><a href="{E(e['source_url'])}" rel="noopener">{E(e['source_name'])}</a> {T("— always confirm dates and registration on the organiser's page before you travel.")}</p></section>
 <div class="tags">{''.join(f'<span>{E(t)}</span>' for t in F(e, 'tags', []))}</div>{cta}</article>""", [ld], cur=e["type"], noindex=noindex, og="article"))
