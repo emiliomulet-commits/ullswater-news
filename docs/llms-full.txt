@@ -1,5 +1,153 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EU launches first global alliance of climate and health funders
+URL: https://news.ullswaterinvestments.com/2026/11/global-climate-health-research-funders-alliance/
+Date: 2026-11-13 · Category: Health & Health Data · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-launches-first-global-alliance-climate-and-health-research-funding-cop31-2026-11-13_en)
+
+Launched at COP 31 with the Wellcome Trust, the initiative will align research funders' priorities. A secretariat starts work in January 2027.
+
+- Initiative: Multilateral Initiative on Climate & Health Research Funding
+- Founding support: European Commission and Wellcome Trust, with nine national public funders
+- Secretariat: From January 2027, hosted by ANR, ZonMw, IDRC and UEFISCDI
+- EU funding: Coordination and Support Action grant running until December 2029
+
+The European Commission used COP 31 to launch the Multilateral Initiative on Climate & Health Research Funding, together with the Wellcome Trust and public research funders from five continents. The Commission presents it as the first global alliance of funders focused on how climate change affects health. Its aim is to help funders coordinate their investment and research priorities, cut fragmentation and move results faster into policy, technology and practice.
+Throughout 2026 the initiative has been shaped by a Design Group made up of the Commission, the Wellcome Trust and nine national funders: NHMRC (Australia), IDRC (Canada), ANR (France), ZonMw (Netherlands), the Philippines Department of Health, UEFISCDI (Romania), SAMRC (South Africa), TSRI (Thailand) and UKRI (United Kingdom), in consultation with the World Health Organization and the wider research community.
+The alliance has five strategic goals, ranging from building a stronger global research community and making better use of funding to clearer pathways to impact. Once launched, membership will be open to any organisation that funds climate and health research. From January 2027 a permanent secretariat will be hosted by four Design Group members (ANR, ZonMw, IDRC and UEFISCDI), funded by a European Commission Coordination and Support Action grant running until December 2029.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: the alliance does not open a call, but it signals where funders intend to put coordinated effort. Climate and health research is likely to gain visibility in national and EU work programmes, and alignment between funders can lead to joint or complementary calls over time. Research teams and companies working on heat, infectious disease, air quality or health-system resilience should follow the initiative's work and frame their proposals around these shared priorities.
+
+---
+
+## CDTI opens €150 million INNTERCONECTA-STEP call on 17 November
+URL: https://news.ullswaterinvestments.com/2026/11/cdti-innterconecta-step-2026-150-million/
+Date: 2026-11-12 · Category: Spain · Source: Boletín Oficial del Estado (BOE) – CDTI call extract (https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-37016)
+
+Spain's regional R&D consortia call funds company-led projects in STEP technologies, with at least €10 million reserved for women's health.
+
+- Programme: Consorcios Regionales INNTERCONECTA-STEP 2026 (CDTI, co-financed by ERDF 2021-2027)
+- Budget: €150 million maximum; at least €10 million reserved for women's health
+- Applications: 17 November to 23 December 2026, 12:00 (peninsular time)
+- Project size: €1 million to €4 million eligible budget; at least €175,000 per company
+- Consortia: 2 to 6 companies, including at least one SME
+- Duration: Start 1 January 2027; end 31 December 2028 or 30 June 2029
+
+Spain's Official State Gazette (BOE) published on 12 November the extract of the 2026 INNTERCONECTA-STEP call, approved by the presidency of CDTI on 6 November. The call supports cooperative R&D projects led by companies in the strategic technology fields of the EU's STEP platform: digital technologies, clean and resource-efficient technologies, and biotechnologies. It has a maximum budget of €150 million and is co-financed by the European Regional Development Fund (ERDF) 2021-2027.
+This edition sets aside at least €10 million for proposals addressing women's health, specifically conditions with a greater impact on women. If there are not enough fundable proposals in that strand, the unused amount can be allocated to other eligible projects according to their ranking.
+Applicants must form groups of two to six companies, at least two of them independent from each other and at least one an SME. No company, or set of linked companies, may hold more than 70% of the eligible budget, and each entity may appear in no more than two applications. The group has no legal personality, so one member acts as coordinator, and the partners must sign an internal agreement before applying. At least 10% of the eligible budget must be subcontracted to research organisations.
+The work must take place in at least two of these regions: Andalucía, Illes Balears, Canarias, Castilla-La Mancha, Castilla y León, Comunidad Valenciana, Extremadura, Galicia and Región de Murcia. Projects are multi-year, with an eligible budget between €1 million and €4 million, a minimum of €175,000 per company, and a start date of 1 January 2027. Applications open on 17 November and close on 23 December 2026 at noon, peninsular time.
+
+Why it matters (Ullswater Investments analysis): With a short window between opening and closing, and a consortium agreement required before submission, the real constraint is partner building, not writing. Consortia need companies active in at least two of the eligible regions plus a research organisation ready to take a meaningful subcontract, so groups that already work together have a clear head start. The women's health reserve is worth a close look for medtech, biotech and digital health firms: a ring-fenced amount can mean less competition than in the general pool. Companies should also watch the limit of two applications per entity and the 70% ceiling per partner when deciding which consortia to join and how to split the budget.
+
+---
+
+## Australia signs deal to join Horizon Europe's Pillar II
+URL: https://news.ullswaterinvestments.com/2026/11/australia-signs-horizon-europe-association/
+Date: 2026-11-12 · Category: Research Policy · Source: European Commission – Press release (https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2418)
+
+Australian organisations will be able to join and lead Pillar II consortia, with transitional access to calls from January 2027.
+
+- Scope: Horizon Europe Pillar II, worth €52.4 billion
+- Signed: In Brussels, by Commissioner Ekaterina Zaharieva and Minister Tim Ayres
+- Transitional access: From January 2027 for Pillar II calls
+- Formal completion: Expected by mid-2027, after Australian parliamentary scrutiny
+- Associated countries: Australia becomes the 24th
+
+The EU and Australia have signed an agreement that associates Australia to Pillar II of Horizon Europe, the part of the programme that funds collaborative research in fields such as health, climate, energy and digital technologies. Pillar II is worth €52.4 billion. Commissioner for Startups, Research and Innovation Ekaterina Zaharieva and Australia's Minister for Industry and Innovation and Minister for Science, Tim Ayres, signed the text in Brussels.
+Under the agreement, Australian researchers and organisations can join and lead international consortia and receive funding on terms similar to those of EU participants. For the rest of the programme nothing changes: Australians keep their access to the parts of the Excellent Science pillar open to non-EU countries, such as the Marie Skłodowska-Curie Actions, and to the Innovative Europe pillar, depending on the conditions of each call.
+Transitional arrangements apply from January 2027. From then, Australian entities can apply to Pillar II calls and be evaluated as prospective beneficiaries. The Commission expects the association to be formally completed by mid-2027, once Australia's parliament has scrutinised it. Negotiations had concluded in June 2026, and Australia is now the 24th country associated with Horizon Europe.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: for consortia preparing Pillar II proposals for the 2027 calls, Australian universities, research organisations and companies become partners that can be funded and even lead projects. That makes it easier to add complementary expertise from outside Europe. Because the arrangements are transitional until the association is formally completed, coordinators should check the eligibility wording of each call and keep in close contact with Australian partners as the process moves forward.
+
+---
+
+## First EDIP Ukraine support call draws 58 defence proposals
+URL: https://news.ullswaterinvestments.com/2026/11/edip-ukraine-support-call-58-proposals/
+Date: 2026-11-11 · Category: EIC, Defence & Equity · Source: European Commission – Defence Industry and Space (https://defence-industry-space.ec.europa.eu/first-usi-ira-call-under-edip-attracts-high-number-proposals-member-states-and-ukraine-2026-11-11_en)
+
+The €184.5 million USI-IRA call on missiles, ammunition and bombs attracted bids from 11 Member States and Ukraine; results are due in March 2027.
+
+- Call: USI-IRA (EDIP Ukraine Support Instrument)
+- Proposals: 58, from 11 Member States and Ukraine
+- EU funding: €184.5 million
+- Per project: Up to €30 million, 100% of eligible costs
+- EU-Ukrainian consortia: 59% of proposals
+- Results: Planned for March 2027
+
+The first call under the Ukraine Support Instrument of the European Defence Industry Programme (EDIP) closed on 10 November 2026 at 17:00 with 58 proposals, the Commission's Directorate-General for Defence Industry and Space reported. Applicants came from 11 EU Member States and Ukraine.
+The call, which covers missiles, ammunition and bombs, aims to increase the capacity of Member States and Ukraine to produce key defence products and their subcomponents. Priority areas include air defence missiles and ammunition, including counter-UxS systems, deep strike capabilities, rockets, bombs and loitering munitions.
+Cooperation with Ukrainian industry was strong: 59% of the proposals were submitted by EU-Ukrainian consortia. The call offers €184.5 million in EU funding, with up to €30 million per project and coverage of 100% of eligible costs.
+The Commission will now evaluate the proposals and plans to publish results in March 2027. EDIP is a €1.5 billion programme to strengthen Europe's defence industry, and its Ukraine Support Instrument has a dedicated budget of €300 million for the recovery, reconstruction and modernisation of Ukraine's defence technological and industrial base.
+
+Why it matters (Ullswater Investments analysis): The share of joint EU-Ukrainian bids shows that partnering with Ukrainian manufacturers has become a practical route into EU defence-industrial funding, not just a political goal. With full coverage of eligible costs and large project sizes, these calls suit companies that can expand production capacity quickly. Firms in the defence supply chain that missed this round should track the next EDIP and Ukraine Support Instrument calls and start building cross-border partnerships well before the call opens.
+
+---
+
+## MEPs back €200 billion Horizon Europe for 2028–2034
+URL: https://news.ullswaterinvestments.com/2026/11/meps-back-200-billion-horizon-europe-2028-2034/
+Date: 2026-11-10 · Category: EU Budget & Policy · Source: European Parliament – Press room (https://www.europarl.europa.eu/news/en/press-room/20261109IPR48713/horizon-europe-meps-back-plans-to-strengthen-the-eu-s-scientific-base)
+
+Parliament's industry and research committee wants €200 billion for the next research programme, above the Commission's €175 billion proposal.
+
+- Committee: Industry, Research and Energy (ITRE)
+- Proposed budget: €200 billion in current prices (€177 billion in 2025 prices)
+- Commission proposal: €175 billion
+- Vote on the regulation: 67 in favour, 1 against, 18 abstentions
+- Transfers within pillars: Capped at 10% of the relevant appropriations
+- Rapporteurs: Christian Ehler (EPP, DE) and René Repasi (S&D, DE)
+
+The European Parliament's Committee on Industry, Research and Energy has adopted its position on Horizon Europe for 2028–2034, the next EU framework programme for research and innovation. MEPs are asking for €200 billion in current prices, equivalent to €177 billion in 2025 prices, compared with the €175 billion put forward by the Commission. They also want to rework how the programme connects to the proposed European Competitiveness Fund.
+On structure, the committee wants to keep the four existing areas of activity: excellent science, competitiveness and society, innovation, and the European Research Area. Each pillar would get its own budget line, and the Commission would only be able to move up to 10% of the relevant appropriations within a pillar. The European Research Council and the European Innovation Council would receive firm budget guarantees and protection of their independence.
+MEPs also propose a high-level council of at least 30 independent experts from science, industry and civil society to advise on priorities and help prepare calls for proposals. New schemes would include a 'fast track to excellence', a 'fast track to innovation', support for researchers at risk and similar measures for the social sciences, humanities and arts.
+The position on the regulation passed with 67 votes in favour, 1 against and 18 abstentions; the text on the Council Decision passed with 66 in favour, 1 against and 19 abstentions, and the mandate to open negotiations with 65 in favour, 18 against and 2 abstentions. The plenary is expected to confirm the mandate, and talks with member states can only start once the Council has adopted its own position, including the overall figures for the 2028–2034 long-term budget.
+
+Why it matters (Ullswater Investments analysis): This is not yet the budget applicants will compete for: the final figure depends on negotiations with member states over the whole long-term budget. Still, the Parliament's mandate sets the upper bound of the debate and signals what it will defend, namely separate, protected envelopes for each pillar and for the ERC and EIC. For companies and consortia, the proposed fast-track schemes and the tighter limit on moving money between pillars would make the programme more predictable to plan around. Organisations that want a say should follow the plenary vote and the Council's position over the coming months.
+
+---
+
+## Spain's Manza Energía tops first EU energy communities prize
+URL: https://news.ullswaterinvestments.com/2026/11/energy-communities-governance-prize-winners/
+Date: 2026-11-10 · Category: Climate & Energy · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ten-citizen-led-energy-communities-win-first-eu-prize-governance-innovations-energy-communities-2026-11-10_en)
+
+Ten citizen-led energy communities from six countries share €1 million in the first EU Prize for Governance Innovations in Energy Communities.
+
+- Prize: Prize for Governance Innovations in Energy Communities (first edition)
+- Total: €1 million, shared by 10 communities from 6 countries
+- Top three: Manza Energía (ES) €350,000 · Robin Powerhood (AT) €200,000 · Viver Telheiras (PT) €100,000
+- Other winners: €50,000 each, incl. CERCA and Manresa Il·lumina (ES)
+- Funding: Horizon Europe Cluster 5 (Climate, Energy and Mobility); managed by CINEA
+
+The European Commission awarded its first Prize for Governance Innovations in Energy Communities on 10 November 2026, during the European Research and Innovation Days in Brussels. Ten citizen-led communities from six countries share €1 million, after each finalist pitched its governance model to the audience.
+Manza Energía from Spain took the largest prize, €350,000, followed by Robin Powerhood from Austria with €200,000 and Viver Telheiras from Portugal with €100,000. Seven more communities receive €50,000 each: Ketelhuis WG (Netherlands), CERCA (Spain), brupower (Belgium), Manresa Il·lumina (Spain), ECoOB (Belgium), and Minoa Energeiaki and Hyperion (Greece). Spain is the country with the most winners, three of the ten.
+The prize was open to renewable and citizen energy communities as defined in EU law with up to 10,000 members. An independent jury scored how inclusive the governance structure is, the internal governance process, the links to the local and regional transition, and other innovative approaches. According to the Commission, the winners show communities that are open to everyone, give each member one vote in general assemblies and open leadership roles to women and young members.
+The prize is funded under Cluster 5 (Climate, Energy and Mobility) of Horizon Europe and managed by CINEA. The Commission plans to keep working with the ten winners so that other energy communities across Europe can learn from them, for example through lessons-learnt workshops.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: inducement prizes reward results already achieved rather than a project plan, so they suit organisations that have built something that works but would struggle with a full Horizon Europe proposal. Spain's strong showing confirms that Spanish energy communities can compete at EU level. Communities, cooperatives and municipalities with an inclusive governance model should keep an eye on future Horizon Europe prizes, and use this recognition as evidence of track record when applying to other EU or national calls on the energy transition.
+
+---
+
+## EIC Pathfinder Challenges 2026 draws record 1,138 proposals
+URL: https://news.ullswaterinvestments.com/2026/11/eic-pathfinder-challenges-2026-record-1138-proposals/
+Date: 2026-11-10 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/2026-eic-pathfinder-challenges-call-attracts-record-interest-breakthrough-innovators-2026-11-10_en)
+
+Submissions almost doubled on 2025 for an indicative €96 million budget across three challenges, with results expected in spring 2027.
+
+- Proposals: 1,138 (almost double 2025)
+- Participants: 5,107 from 58 countries
+- Indicative budget: €96 million
+- Grant size: Up to €4 million (TRL 3–4)
+- Deadline: 28 October 2026 (closed)
+- Results: Expected in spring 2027
+
+The European Innovation Council's 2026 Pathfinder Challenges call, which closed on 28 October 2026, received 1,138 project proposals, almost twice as many as in 2025. The applications involve 5,107 participants from 58 countries.
+Demand was spread unevenly across the three challenges. The challenge on deep reasoning, abstraction and planning for trustworthy cognitive AI systems (DeepRAP) attracted 450 proposals, biotechnology for healthy ageing received 427, and advanced materials for miniaturised energy harvesting systems received 261.
+The call has an indicative budget of €96 million, expected to be shared roughly equally between the three challenges. Pathfinder grants of up to €4 million fund early-stage research up to proof of concept or laboratory validation (TRL 3–4). Selected projects can also work with EIC Programme Managers and may receive additional funding to explore innovation potential or join portfolio activities.
+Evaluation has started and the EIC expects to announce results in spring 2027.
+
+Why it matters (Ullswater Investments analysis): A near doubling of applications for a fixed budget means much tougher competition, so a strong concept is no longer enough on its own: proposals need a clear fit with the specific challenge and a credible path from research to proof of concept. The AI and healthy-ageing challenges were the most crowded. Teams planning a Pathfinder bid in the next cycle should check the EIC 2027 work programme early and consider whether an open Pathfinder or a less contested challenge better matches their project.
+
+---
+
 ## EIT HEI Call 2026: up to €1.25M for university-led deep-tech consortia
 URL: https://news.ullswaterinvestments.com/2026/11/eit-hei-call-2026-universities-deep-tech/
 Date: 2026-11-09 · Category: Horizon Europe · Source: EIT Higher Education Initiative (https://eit-hei.eu/funding-support/funding-opportunities/open-calls/call-for-proposals-2026/)
