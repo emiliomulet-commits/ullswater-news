@@ -78,4 +78,4 @@ Videos are embedded with the YouTube player (youtube-nocookie.com) and always cr
 - English only. Own words, never copied text.
 - Every figure, date and deadline must appear in the linked official source.
 - The `why` field is analysis and must not add facts that are not in the source.
-- Publish only after Emilio's OK.
+- Publish only after verification against the official source. Emilio gave standing approval (16 Nov 2026) for the daily news agent to publish verified articles directly; anything that cannot be verified stays in a drafts/ branch.
