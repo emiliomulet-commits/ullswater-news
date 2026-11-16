@@ -21,5 +21,18 @@
   "registration_url": "https://research-and-innovation.ec.europa.eu/events/european-research-and-innovation-days_en",
   "source_name": "European Commission – Research and Innovation",
   "source_url": "https://research-and-innovation.ec.europa.eu/events/european-research-and-innovation-days_en",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Días Europeos de la Investigación y la Innovación 2026",
+    "summary": "Séptima edición del gran evento de investigación e innovación de la Comisión, que reúne a responsables políticos, investigadores, innovadores, directivos y sociedad civil.",
+    "details": [
+      "Las dos jornadas se centran en cómo la investigación y la innovación pueden reforzar la competitividad, la resiliencia y la soberanía tecnológica de Europa. Ekaterina Zaharieva, comisaria europea de Startups, Investigación e Innovación, figura como ponente inaugural."
+    ],
+    "why": "Un evento útil para entender la orientación de la política europea de investigación, más que para preparar una propuesta concreta. Los solicitantes pueden aprovecharlo para contrastar ideas y conocer posibles socios.",
+    "tags": [
+      "Horizonte Europa",
+      "Política de investigación"
+    ],
+    "location": "Bruselas y en línea"
+  }
 }

@@ -22,5 +22,19 @@
   "registration_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
   "source_name": "CCAM Partnership",
   "source_url": "https://www.ccam.eu/?p=18304",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Evento presencial de brokerage del Clúster 5 de Horizonte Europa",
+    "summary": "Sesión presencial de networking y brokerage tras la jornada informativa del Clúster 5, de 16:00 a 19:00 en el mismo lugar.",
+    "details": [
+      "Solo pueden participar los asistentes admitidos de forma presencial en la jornada informativa, y las plazas presenciales son limitadas."
+    ],
+    "why": "Merece la pena planificarlo junto con la jornada informativa si necesitas un socio para una propuesta de 2027. Como el acceso depende de tener plaza presencial, revisa primero tu inscripción en la jornada.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 5",
+      "Búsqueda de socios"
+    ],
+    "location": "Charlemagne, Bruselas"
+  }
 }

@@ -23,5 +23,20 @@
   "registration_url": "https://www.b2match.com/e/horizon-widera2027",
   "source_name": "NCP_WIDERA.NET",
   "source_url": "https://www.b2match.com/e/horizon-widera2027",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Evento de brokerage WIDERA 2027 de Horizonte Europa",
+    "summary": "Jornada de conocimiento y evento de brokerage en línea en apoyo de la convocatoria ERA 2027, gratuito y con inscripción obligatoria.",
+    "details": [
+      "Los temas abarcan las carreras investigadoras, la gestión de la investigación, la valorización del conocimiento, la ciencia abierta, la igualdad de género, la ciencia para las políticas públicas y la participación ciudadana. Los participantes crean perfiles y concertan reuniones bilaterales. Está abierto a centros de investigación e instituciones de educación superior, industria y pymes, organizaciones del tercer sector, administraciones y otros actores del Espacio Europeo de Investigación."
+    ],
+    "why": "Las organizaciones interesadas en los temas ERA pueden usarlo para encontrar socios con poco coste. Inscribirse pronto deja más tiempo para concertar reuniones.",
+    "tags": [
+      "Horizonte Europa",
+      "WIDERA",
+      "ERA",
+      "Búsqueda de socios"
+    ],
+    "location": "En línea"
+  }
 }

@@ -23,5 +23,20 @@
   ],
   "registration_url": "https://www.go-eit.eu/eit-israel-hub/bridges-health/",
   "source_name": "EIT Hub Israel",
-  "source_url": "https://www.go-eit.eu/eit-israel-hub/bridges-health/"
+  "source_url": "https://www.go-eit.eu/eit-israel-hub/bridges-health/",
+  "es": {
+    "title": "Bridges Health: formación y matchmaking para consorcios de Horizonte Europa",
+    "summary": "Programa presencial de dos días con clases magistrales, matchmaking moderado y redacción de propuestas para consorcios de Horizonte Europa Salud y de la Misión Cáncer.",
+    "details": [
+      "Está dirigido a organizaciones con experiencia de la UE y de países asociados a Horizonte Europa. EIT Health participa como socio del ecosistema. La asistencia es para participantes seleccionados, y el plazo de solicitud publicado terminó el 16 de septiembre de 2026."
+    ],
+    "why": "Se incluye como referencia porque las solicitudes ya están cerradas. Las organizaciones interesadas en consorcios de salud pueden seguir a los organizadores para próximas ediciones.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 1",
+      "Salud",
+      "Misión Cáncer"
+    ],
+    "location": "Salónica, Grecia"
+  }
 }

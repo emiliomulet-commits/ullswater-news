@@ -29,5 +29,22 @@
     "EIT HEI-48939733"
   ],
   "series": "eit-hei-call-2026-info-sessions",
-  "series_title": "EIT HEI Call 2026 info sessions"
+  "series_title": "EIT HEI Call 2026 info sessions",
+  "es": {
+    "title": "Sesión informativa de la convocatoria EIT HEI 2026: EIT KIC Discovery Day",
+    "summary": "Sesión informativa en línea de la convocatoria 2026 de la Iniciativa de Educación Superior del EIT, centrada en las Comunidades de Conocimiento e Innovación (KIC) del EIT y en cómo crear sinergias con ellas.",
+    "details": [
+      "La sesión es de 10:00 a 12:15 CET y forma parte de la serie de sesiones informativas de la convocatoria 2026. La convocatoria financia consorcios liderados por instituciones de educación superior con hasta 1,25 millones de euros por proyecto, y el plazo de presentación termina el 13 de enero de 2027 a las 17:00 CET.",
+      "Las grabaciones y presentaciones de las sesiones anteriores se publican en la página oficial de la convocatoria."
+    ],
+    "why": "Útil para las universidades que piensan coordinar una propuesta y para las empresas que quieren sumarse a una como uno de los dos socios empresariales obligatorios. Asistir antes de redactar ayuda a alinear el plan de acción y el presupuesto con lo que esperan los evaluadores.",
+    "tags": [
+      "EIT",
+      "EIT HEI",
+      "Educación superior",
+      "Deep tech"
+    ],
+    "location": "En línea",
+    "series_title": "Sesiones informativas de la convocatoria EIT HEI 2026"
+  }
 }

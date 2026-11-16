@@ -9,10 +9,13 @@ Cloudflare Pages settings: production branch `events-site`, build command `pytho
 
 Fields: `slug`, `title`, `start`, `end`, `type` (info-day, brokerage, conference, training, webinar), `programme`, `mode` (online, onsite, hybrid), `city`, `location`, `organiser`, `status` (scheduled, applications-closed, cancelled, postponed), `summary`, `details`, `why`, `tags`, `registration_url`, `source_name`, `source_url`.
 
-Editorial rules: English only, own words, every date and place must appear in the linked source, `why` adds no facts, publish only after Emilio's OK.
+Editorial rules: English source text plus a Spanish translation (see below), own words, every date and place must appear in the linked source, `why` adds no facts, publish only after Emilio's OK.
 
 ## Structure (Nov 2026)
 - Event pages live at `/events/<slug>/` (no date in the URL, so a postponed event keeps its address). Old `/YYYY/MM/<slug>/` addresses get a 301 through `docs/_redirects` (Cloudflare Pages).
 - Optional fields: `calls` (list of call ids from calls.ullswaterinvestments.com, linked as "Call page"), `series` + `series_title` (groups sessions of the same programme under `/series/<series>/`).
 - `programme` keys map to theme pages of calls.ullswaterinvestments.com (`THEME` in `src/build.py`, reference list in `/data/taxonomy.json` of the calls site). `events.json` now also carries `theme` and `calls`.
 - The header carries the shared network menu (Home · EU calls · News · Events · Projects · About), identical on www, calls, news and events.
+
+## Spanish version (/es/) — mandatory for every new event (Nov 2026)
+The site is bilingual: English at `/`, Spanish at `/es/` (same paths with the `/es` prefix), with hreflang and an EN | ES switcher. Every event JSON must carry an `"es"` block with the Spanish translation of `title`, `summary`, `details` (same number of paragraphs), `why`, `tags`, `location` and, for series, `series_title`. A faithful translation: no new facts, same dates and figures. Official Spanish terms: Horizon Europe → Horizonte Europa, info day → jornada informativa, call → convocatoria, topic → tema, Cluster → Clúster, Online → En línea, Brussels → Bruselas. Programme and instrument names stay in English (EIC Accelerator, Pathfinder, STEP). Without the block, the Spanish page shows the English text with a notice. calls.ullswaterinvestments.com stays English only.

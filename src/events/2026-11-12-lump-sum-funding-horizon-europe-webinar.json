@@ -23,5 +23,20 @@
   "registration_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event261112.htm",
   "source_name": "Horizon Europe NCP Türkiye (TÜBİTAK)",
   "source_url": "https://ufukavrupa.org.tr/en/news/new-european-commission-webinars-horizon-europe-applications-and-project-implementation",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Financiación a tanto alzado (lump sum) en Horizonte Europa: cómo funciona y cómo redactar una propuesta",
+    "summary": "Webinario de dos horas de la Comisión que explica cómo funcionan las subvenciones a tanto alzado en Horizonte Europa y qué implica al redactar una propuesta.",
+    "details": [
+      "Forma parte de la serie de otoño de webinarios de la Comisión sobre las solicitudes y la ejecución de proyectos de Horizonte Europa, y se dirige a solicitantes y beneficiarios de subvenciones a tanto alzado. Es de 10:00 a 12:00 CET y no requiere inscripción."
+    ],
+    "why": "Las cantidades fijas cambian la forma de construir el presupuesto y el plan de trabajo, y los errores en ese punto son difíciles de corregir tras la presentación. Los equipos que preparan propuestas de 2027 en un tema a tanto alzado deberían asistir antes de cerrar su presupuesto.",
+    "tags": [
+      "Horizonte Europa",
+      "Lump sum",
+      "Redacción de propuestas",
+      "Presupuesto"
+    ],
+    "location": "En línea"
+  }
 }

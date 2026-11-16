@@ -23,5 +23,20 @@
   "registration_url": "https://research-innovation-community.ec.europa.eu/events/4kcNbd29FiAhBZf1wLeUr7/overview",
   "source_name": "European Health and Digital Executive Agency (HaDEA)",
   "source_url": "https://hadea.ec.europa.eu/events/brokerage-event-horizon-europe-cluster-1-health-2026-11-24_en",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Evento de brokerage del Clúster 1 Salud de Horizonte Europa",
+    "summary": "Evento en línea de dos días para encontrar socios internacionales de consorcio para las convocatorias de 2027 del Clúster 1 Salud.",
+    "details": [
+      "Incluye una sesión de presentaciones (pitching) la mañana del 24 de noviembre y reuniones bilaterales concertadas a través de una plataforma de matchmaking. El idioma de trabajo es el inglés. Se celebra justo antes de la jornada informativa del Clúster 1 del 26 de noviembre."
+    ],
+    "why": "Los consorcios de salud que aún tienen huecos pueden usarlo para encontrar socios antes de la jornada informativa. Un perfil claro en la plataforma de matchmaking es lo que suele generar reuniones útiles.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 1",
+      "Salud",
+      "Búsqueda de socios"
+    ],
+    "location": "En línea"
+  }
 }

@@ -22,5 +22,19 @@
   "registration_url": "https://research-innovation-community.ec.europa.eu/events/4kcNbd29FiAhBZf1wLeUr7/overview",
   "source_name": "European Health and Digital Executive Agency (HaDEA)",
   "source_url": "https://hadea.ec.europa.eu/events/brokerage-event-horizon-europe-cluster-1-health-2026-11-24_en",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada informativa del Clúster 1 Salud de Horizonte Europa",
+    "summary": "Jornada informativa de la Comisión sobre los temas de la convocatoria 2027 del Clúster 1 Salud, justo después del evento de brokerage del Clúster 1.",
+    "details": [
+      "Consulta la página oficial del evento para el programa y la inscripción."
+    ],
+    "why": "Los solicitantes del ámbito de la salud deberían tomarla como la sesión de referencia sobre los temas de 2027. Conviene revisar antes el programa de trabajo para que las preguntas sean concretas.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 1",
+      "Salud"
+    ],
+    "location": "En línea"
+  }
 }

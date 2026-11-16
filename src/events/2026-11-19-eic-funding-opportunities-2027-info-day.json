@@ -25,5 +25,22 @@
   "registration_url": "https://ec.europa.eu/eusurvey/runner/90fde2eb-528b-b060-275a-080eb0352bfa",
   "source_name": "European Innovation Council",
   "source_url": "https://eic.ec.europa.eu/events/online-information-day-eic-funding-opportunities-2027-2026-11-19_en",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada informativa en línea: oportunidades de financiación del EIC en 2027",
+    "summary": "Sesión en línea de un día completo que recorre el programa de trabajo 2027 del Consejo Europeo de Innovación, instrumento a instrumento.",
+    "details": [
+      "El programa empieza con los principales cambios del programa de trabajo 2027 y repasa después EIC Pathfinder, EIC Transition y el EIC Accelerator, seguidos de STEP y STEP Defence, los Business Acceleration Services y las redes de apoyo Access2EIC y EEN2EIC. Es de 09:30 a 15:40 CET, en inglés.",
+      "La inscripción cierra el 18 de noviembre de 2026 a las 09:30 CET. Las preguntas pueden enviarse con antelación a través de Slido."
+    ],
+    "why": "Las startups, pymes y equipos de investigación que estudian presentarse al EIC deberían escuchar los cambios de 2027 de boca de la propia agencia antes de elegir instrumento. Conviene llevar preguntas concretas sobre elegibilidad y sobre el encaje entre Pathfinder, Transition y Accelerator.",
+    "tags": [
+      "EIC",
+      "Pathfinder",
+      "Transition",
+      "Accelerator",
+      "STEP"
+    ],
+    "location": "En línea"
+  }
 }

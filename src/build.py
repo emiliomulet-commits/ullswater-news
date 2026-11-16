@@ -58,18 +58,69 @@ def call_url(cid):
 # Same network menu on www, calls, news and events
 NETWORK = [("Home", "https://www.ullswaterinvestments.com/"), ("EU calls", CALLS + "/"), ("News", "https://news.ullswaterinvestments.com/"),
            ("Events", "https://events.ullswaterinvestments.com/"), ("Projects", "https://www.ullswaterinvestments.com/projects/"), ("About", "https://www.ullswaterinvestments.com/about/")]
-def network(cur): return "".join(f'<a href="{u}"{" aria-current=page" if t == cur else ""}>{t}</a>' for t, u in NETWORK)
+# Spanish menu: www, news and events have /es/ versions; calls.ullswaterinvestments.com stays in English only.
+NETWORK_ES = [("Inicio", "https://www.ullswaterinvestments.com/es/"), ("Convocatorias UE", CALLS + "/"), ("Noticias", "https://news.ullswaterinvestments.com/es/"),
+              ("Eventos", "https://events.ullswaterinvestments.com/es/"), ("Proyectos", "https://www.ullswaterinvestments.com/es/projects/"), ("Quiénes somos", "https://www.ullswaterinvestments.com/es/about/")]
+def network(cur):
+    i = [t for t, _ in NETWORK].index(cur)
+    return "".join(f'<a href="{u}"{" aria-current=page" if j == i else ""}>{t}</a>' for j, (t, u) in enumerate(NETWORK_ES if ES() else NETWORK))
 MODES = {"online": "Online", "onsite": "In person", "hybrid": "Hybrid"}
 STATUS = {"scheduled": "", "applications-closed": "Applications closed", "cancelled": "Cancelled", "postponed": "Postponed"}
 
 E = lambda s: html.escape(str(s), quote=True)
-MON = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-def nice(d): return f"{d.day} {MON[d.month-1]} {d.year}"
+MON_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+MON_ES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+
+# ---- Bilingual site (Nov 2026): English at /, Spanish at /es/ ----
+# Each event JSON may carry an "es" block: title, summary, details, why, tags, location, series_title.
+LANG = "en"
+def ES(): return LANG == "es"
+def MONTH(i): return (MON_ES if ES() else MON_EN)[i]
+def P(path): return ("/es" + path) if ES() and path.startswith("/") else path
+def F(e, key, default=None):
+    if ES():
+        v = (e.get("es") or {}).get(key)
+        if v: return v
+    return e.get(key, default)
+def has_es(e): return bool((e.get("es") or {}).get("title"))
+def nice(d): return f"{d.day} de {MONTH(d.month-1)} de {d.year}" if ES() else f"{d.day} {MONTH(d.month-1)} {d.year}"
 def span(e):
     s, t = e["s"], e["e"]
     if s == t: return nice(s)
-    if (s.year, s.month) == (t.year, t.month): return f"{s.day}–{t.day} {MON[s.month-1]} {s.year}"
+    if (s.year, s.month) == (t.year, t.month):
+        return f"{s.day}–{t.day} de {MONTH(s.month-1)} de {s.year}" if ES() else f"{s.day}–{t.day} {MONTH(s.month-1)} {s.year}"
     return f"{nice(s)} – {nice(t)}"
+UI = {
+    "All events": "Todos los eventos", "Calendar": "Calendario", "Past events": "Eventos pasados", "Events": "Eventos", "EU funding events": "Eventos de financiación UE",
+    "EU Funding Advisors": "Asesores de financiación europea", "Editorial policy": "Política editorial", "EU Funding News": "Noticias de financiación UE",
+    "Key facts": "Datos clave", "Date": "Fecha", "Type": "Tipo", "Format": "Formato", "Location": "Lugar", "Organiser": "Organizador", "Programme": "Programa", "Status": "Estado",
+    "Event page and registration": "Página del evento e inscripción", "Add to calendar": "Añadir al calendario", "Apply with our support": "Solicítala con nuestro apoyo",
+    "Why it matters for applicants": "Por qué importa a los solicitantes", "Source": "Fuente",
+    "— always confirm dates and registration on the organiser's page before you travel.": "— confirma siempre las fechas y la inscripción en la página del organizador antes de viajar.",
+    "This event has ended.": "Este evento ya se ha celebrado.", "Related calls": "Convocatorias relacionadas", ": deadline, conditions and partners": ": plazo, condiciones y socios",
+    "Open calls": "Convocatorias abiertas", "All sessions of this series": "Todas las sesiones de esta serie", "See the related open calls →": "Ver las convocatorias abiertas relacionadas →",
+    "Language": "Idioma", "Event types": "Tipos de evento", "Programmes": "Programas",
+    "This event is only available in English for now.": "Este evento de momento solo está disponible en inglés.",
+}
+def T(s): return UI.get(s, s) if ES() else s
+TYPES_ES = {"info-day": ("Jornadas informativas", "Jornada informativa", "Sesiones oficiales sobre convocatorias y programas de trabajo de la UE."),
+            "brokerage": ("Brokerage", "Brokerage", "Eventos de búsqueda de socios y matchmaking para formar consorcios."),
+            "conference": ("Conferencias", "Conferencia", "Grandes encuentros europeos de investigación e innovación."),
+            "training": ("Formación", "Formación", "Programas de formación y preparación de propuestas."),
+            "webinar": ("Webinarios", "Webinario", "Sesiones en línea sobre financiación europea.")}
+PROGS_ES = {"horizon-europe": "Horizonte Europa (general)", "cluster-1": "Clúster 1: Salud", "cluster-2": "Clúster 2: Cultura y Sociedad",
+            "cluster-3": "Clúster 3: Seguridad", "cluster-4": "Clúster 4: Digital e Industria", "cluster-5": "Clúster 5: Clima, Energía y Movilidad",
+            "cluster-6": "Clúster 6: Alimentación y Bioeconomía", "widera": "WIDERA", "eic": "Consejo Europeo de Innovación", "digital-europe": "Europa Digital", "other": "Otros programas"}
+def TY(k): return (TYPES_ES if ES() else TYPES)[k]
+def PG(k): return (PROGS_ES if ES() else PROGS)[k]
+MODES_ES = {"online": "En línea", "onsite": "Presencial", "hybrid": "Híbrido"}
+STATUS_ES = {"scheduled": "", "applications-closed": "Inscripción cerrada", "cancelled": "Cancelado", "postponed": "Aplazado"}
+def MD(k): return (MODES_ES if ES() else MODES)[k]
+def STS(k): return (STATUS_ES if ES() else STATUS).get(k, "")
+SITE_ES = dict(name="Eventos de financiación europea · Ullswater Investments", short="Eventos de financiación UE",
+    book_url="https://www.ullswaterinvestments.com/es/investment-readiness/", news_url="https://news.ullswaterinvestments.com/es",
+    description="Jornadas informativas y eventos de brokerage de Horizonte Europa para formar consorcios y preparar propuestas, con fechas, lugares y enlaces oficiales revisados por Ullswater Investments.")
+def S(k): return SITE_ES.get(k, SITE[k]) if ES() else SITE[k]
 
 CSS = """
 :root{--navy:#233567;--navy2:#1a2850;--gold:#c9a646;--ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--bg:#f5f6f8}
@@ -84,6 +135,8 @@ nav.cats{background:var(--navy2)}nav.cats .wrap{display:flex;gap:4px;overflow-x:
 nav.cats a{color:#dbe2f5;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px;white-space:nowrap}
 nav.cats a:hover,nav.cats a[aria-current]{background:rgba(255,255,255,.12);color:#fff}
 .top-links a{color:#fff;font-size:14px;text-decoration:none;margin-left:16px;opacity:.9}
+.hdr-r{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.lang{display:flex;flex-shrink:0;border:1px solid rgba(255,255,255,.35);border-radius:6px;overflow:hidden;font-size:13px;font-weight:700}.lang a{color:#e6ebf7;text-decoration:none;padding:6px 9px;letter-spacing:.04em}.lang a[aria-current]{background:var(--gold);color:var(--navy)}.lang a:not([aria-current]):hover{background:rgba(255,255,255,.12)}
 .hero{background:var(--bg);border-bottom:1px solid var(--line)}.hero .wrap{padding:40px 20px 32px}
 .kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#8a6a1c;margin:0 0 8px}
 h1{font-size:36px;line-height:1.2;margin:0 0 12px;color:var(--navy)}
@@ -117,7 +170,7 @@ article.post{max-width:760px;margin:0 auto;padding:36px 20px 56px}article.post h
 .notice{background:#fff4d6;border-radius:8px;padding:12px 16px;margin:16px 0}
 .about{max-width:760px;margin:0 auto;padding:36px 20px 56px}.about p,.about li{font-size:17px}
 footer.site{background:var(--navy);color:#dbe2f5;font-size:14px}footer.site .wrap{padding:28px 20px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}footer.site a{color:#fff}
-@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}.ev{grid-template-columns:72px 1fr;gap:12px;padding:14px}.date b{font-size:18px}}
+@media(max-width:640px){.hdr-r{width:100%;justify-content:space-between}h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}.ev{grid-template-columns:72px 1fr;gap:12px;padding:14px}.date b{font-size:18px}}
 """
 
 def org_ld():
@@ -125,34 +178,38 @@ def org_ld():
             "sameAs": ["https://www.wikidata.org/wiki/Q142106306", "https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
-def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"):
-    canon = SITE["url"] + path
-    items = [("/", "All events", "home")] + [(f"/type/{k}/", TYPES[k][0], k) for k in TYPES if k in USED] + [("/calendar/", "Calendar", "calendar"), ("/past/", "Past events", "past")]
-    navs = "".join(f'<a href="{h}"{" aria-current=page" if k == cur else ""}>{E(t)}</a>' for h, t, k in items)
+def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website", bilingual=True):
+    """path is the English path; the Spanish page lives at /es + path."""
+    canon = SITE["url"] + P(path)
+    items = [("/", T("All events"), "home")] + [(f"/type/{k}/", TY(k)[0], k) for k in TYPES if k in USED] + [("/calendar/", T("Calendar"), "calendar"), ("/past/", T("Past events"), "past")]
+    navs = "".join(f'<a href="{P(h)}"{" aria-current=page" if k == cur else ""}>{E(t)}</a>' for h, t, k in items)
+    alt = (f'<link rel="alternate" hreflang="en" href="{SITE["url"]}{path}"><link rel="alternate" hreflang="es" href="{SITE["url"]}/es{path}"><link rel="alternate" hreflang="x-default" href="{SITE["url"]}{path}">' if bilingual else "")
+    switch = (f'<nav class="lang" aria-label="{T("Language")}"><a href="{path}" hreflang="en" lang="en"{"" if ES() else ' aria-current="true"'}>EN</a>'
+              f'<a href="/es{path}" hreflang="es" lang="es"{' aria-current="true"' if ES() else ""}>ES</a></nav>' if bilingual else "")
     ld = list(ld or [])
-    name = re.split(r" [·|] (EU Funding Events|Ullswater)", title)[0].strip()
+    name = re.split(r" [·|] (EU Funding Events|Eventos de financiación UE|Ullswater)", title)[0].strip()
     if not noindex and not ld:
         ld.append({"@context": "https://schema.org", "@type": "CollectionPage" if path.startswith(("/type/", "/series/", "/calendar/", "/past/")) else "WebPage",
-                   "name": name, "url": canon, "description": desc, "inLanguage": "en", "publisher": org_ld()})
+                   "name": name, "url": canon, "description": desc, "inLanguage": LANG, "publisher": org_ld()})
     if not noindex and path != "/" and not any(x.get("@type") == "BreadcrumbList" for x in ld):
         ld.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "EU funding events", "item": SITE["url"] + "/"},
+            {"@type": "ListItem", "position": 1, "name": T("EU funding events"), "item": SITE["url"] + P("/")},
             {"@type": "ListItem", "position": 2, "name": name, "item": canon}]})
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
     return f"""<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">
+<html lang="{LANG}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">{alt}
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-snippet:-1, max-image-preview:large'}">
-<meta property="og:site_name" content="{E(SITE['name'])}"><meta property="og:type" content="{og}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="en_GB"><meta property="og:image" content="{SITE['url']}/assets/og.png"><meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="{E(SITE['name'])}" href="{SITE['url']}/feed.xml"><link rel="icon" href="/assets/favicon.png">
+<meta property="og:site_name" content="{E(S('name'))}"><meta property="og:type" content="{og}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="{'es_ES' if ES() else 'en_GB'}"><meta property="og:image" content="{SITE['url']}/assets/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="{E(S('name'))}" href="{SITE['url']}{P('/feed.xml')}"><link rel="icon" href="/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>{CSS}</style>{lds}</head><body>
-<header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding Events</span></a>
-<nav class="top-links" aria-label="Ullswater Investments sites">{network("Events")}</nav></div></header>
-<nav class="cats" aria-label="Event types"><div class="wrap">{navs}</div></nav>
+<header class="site"><div class="wrap"><a class="brand" href="{P('/')}">Ullswater Investments <span>· {E(S('short'))}</span></a>
+<div class="hdr-r"><nav class="top-links" aria-label="Ullswater Investments">{network("Events")}</nav>{switch}</div></div></header>
+<nav class="cats" aria-label="{T('Event types')}"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
-<footer class="site"><div class="wrap"><div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
-<div><a href="{SITE['org_url']}">ullswaterinvestments.com</a> · <a href="{SITE['news_url']}/">EU Funding News</a> · <a href="/about/">Editorial policy</a> · <a href="/sitemap.xml">Sitemap</a><br>© {TODAY.year} {E(SITE['org_legal'])}</div></div></footer>
+<footer class="site"><div class="wrap"><div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>{T("EU Funding Advisors")} · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
+<div><a href="{SITE['org_url']}{'/es/' if ES() else ''}">ullswaterinvestments.com</a> · <a href="{S('news_url')}/">{T("EU Funding News")}</a> · <a href="{P('/about/')}">{T("Editorial policy")}</a> · <a href="/sitemap.xml">Sitemap</a><br>© {TODAY.year} {E(SITE['org_legal'])}</div></div></footer>
 </body></html>"""
 
 def load():
@@ -166,13 +223,13 @@ def load():
     return sorted(ev, key=lambda x: (x["s"], x["title"]))
 
 def badge(e):
-    st = STATUS.get(e.get("status", "scheduled"), "")
+    st = STS(e.get("status", "scheduled"))
     return f'<span class="tag c">{E(st)}</span>' if st else ""
 
 def card(e):
-    return f"""<div class="ev"><div class="date"><b>{e['s'].day}{'–' + str(e['e'].day) if e['s'] != e['e'] and e['s'].month == e['e'].month else ''}</b><i>{MON[e['s'].month-1][:3]} {e['s'].year}</i></div>
-<div><div class="meta"><a class="tag{' b' if e['type'] == 'brokerage' else ''}" href="/type/{e['type']}/">{E(TYPES[e['type']][1])}</a>{badge(e)}<span>{E(e['location'])}</span><span>{E(PROGS[e['programme']])}</span></div>
-<h3><a href="{e['path']}">{E(e['title'])}</a></h3><p>{E(e['summary'])}</p></div></div>"""
+    return f"""<div class="ev"><div class="date"><b>{e['s'].day}{'–' + str(e['e'].day) if e['s'] != e['e'] and e['s'].month == e['e'].month else ''}</b><i>{MONTH(e['s'].month-1)[:3]} {e['s'].year}</i></div>
+<div><div class="meta"><a class="tag{' b' if e['type'] == 'brokerage' else ''}" href="{P('/type/' + e['type'] + '/')}">{E(TY(e['type'])[1])}</a>{badge(e)}<span>{E(F(e, 'location'))}</span><span>{E(PG(e['programme']))}</span></div>
+<h3><a href="{P(e['path'])}">{E(F(e, 'title'))}</a></h3><p>{E(F(e, 'summary'))}</p></div></div>"""
 
 def by_month(evs):
     out, cur = [], None
@@ -180,7 +237,7 @@ def by_month(evs):
         k = (e["s"].year, e["s"].month)
         if k != cur:
             if cur: out.append("</section>")
-            out.append(f'<section class="month"><h2>{MON[k[1]-1]} {k[0]}</h2>'); cur = k
+            out.append(f'<section class="month"><h2>{MONTH(k[1]-1).capitalize()} {k[0]}</h2>'); cur = k
         out.append(card(e))
     return "".join(out) + ("</section>" if cur else "")
 
@@ -204,11 +261,11 @@ def event_ld(e):
 
 def related(e, events):
     """Links to the call page(s), the programme's open calls and the other sessions of the same series."""
-    li = [f'<li><a href="{call_url(c)}">{E(call_title(c))}</a>: deadline, conditions and partners</li>' for c in e.get("calls", [])]
-    li.append(f'<li><a href="{theme_url(e["programme"])}">Open calls: {E(PROGS[e["programme"]])}</a></li>')
+    li = [f'<li><a href="{call_url(c)}">{E(call_title(c))}</a>{T(": deadline, conditions and partners")}</li>' for c in e.get("calls", [])]
+    li.append(f'<li><a href="{theme_url(e["programme"])}">{T("Open calls")}: {E(PG(e["programme"]))}</a></li>')
     if e.get("series"):
-        li.append(f'<li><a href="/series/{e["series"]}/">All sessions of this series</a></li>')
-    return f'<section class="src"><h2>Related calls</h2><ul>{"".join(li)}</ul></section>'
+        li.append(f'<li><a href="{P("/series/" + e["series"] + "/")}">{T("All sessions of this series")}</a></li>')
+    return f'<section class="src"><h2>{T("Related calls")}</h2><ul>{"".join(li)}</ul></section>'
 
 def write(path, text):
     p = OUT / path.lstrip("/")
@@ -217,69 +274,111 @@ def write(path, text):
 
 USED = set()
 
+def lang_pages(events, up, past):
+    """Reader-facing pages in the current LANG (English paths; Spanish under /es)."""
+    if ES():
+        cta = f'<div class="cta"><div><strong>¿Vas a un evento para formar un consorcio?</strong><p>Ullswater Investments ayuda a pymes, startups y centros tecnológicos a preparar propuestas de financiación europea.</p></div><a class="btn" href="{S("book_url")}">Habla con nosotros</a></div>'
+    else:
+        cta = f'<div class="cta"><div><strong>Going to an event to build a consortium?</strong><p>Ullswater Investments helps SMEs, start-ups and technology centres prepare EU funding proposals.</p></div><a class="btn" href="{SITE["book_url"]}">Talk to us</a></div>'
+    site_ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": S("name"), "url": SITE["url"] + P("/"), "description": S("description"), "inLanguage": LANG, "publisher": org_ld(),
+                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + P(e["path"]), "name": F(e, "title")} for i, e in enumerate(up)]}}]
+    chips = "".join(f'<a href="{P("/programme/" + k + "/")}">{E(PG(k))}</a>' for k in PROGS if any(e["programme"] == k for e in up))
+    n = {t: sum(e["type"] == t for e in up) for t in TYPES}
+    if ES():
+        stats = f'<ul class="stats"><li><strong>{len(up)}</strong>próximos eventos</li><li><strong>{n["info-day"]}</strong>jornadas informativas</li><li><strong>{n["brokerage"]}</strong>eventos de brokerage</li></ul>'
+        hero = (f'<section class="hero"><div class="wrap"><p class="kicker">Eventos de financiación UE</p><h1>Eventos de financiación europea: jornadas informativas y brokerage</h1>'
+                f'<p class="lead">Jornadas informativas oficiales y eventos de búsqueda de socios para formar consorcios y preparar propuestas para las convocatorias de 2027. Fechas y enlaces revisados el {nice(TODAY)}.</p>{stats}'
+                f'<div class="actions"><a class="btn" href="/calendar.ics">Añadir todos a mi calendario</a><a class="btn ghost" href="{CALLS}/closing-soon/">Plazos de las convocatorias</a></div>')
+        title = f"Eventos de financiación europea {TODAY.year}–{TODAY.year+1}: jornadas informativas y brokerage · {SITE['org']}"
+    else:
+        stats = f'<ul class="stats"><li><strong>{len(up)}</strong>upcoming events</li><li><strong>{n["info-day"]}</strong>info days</li><li><strong>{n["brokerage"]}</strong>brokerage events</li></ul>'
+        hero = (f'<section class="hero"><div class="wrap"><p class="kicker">EU Funding Events</p><h1>EU funding events: info days and brokerage</h1>'
+                f'<p class="lead">Official info days and partner-search events to build consortia and prepare proposals for the 2027 calls. Dates and links checked {nice(TODAY)}.</p>{stats}'
+                f'<div class="actions"><a class="btn" href="/calendar.ics">Add all to my calendar</a><a class="btn ghost" href="{CALLS}/closing-soon/">Call deadlines</a></div>')
+        title = f"EU funding events {TODAY.year}–{TODAY.year+1}: info days and brokerage · {SITE['org']}"
+    write(P("/"), page(title, S("description"), "/", f'{hero}<nav class="chips" aria-label="{T("Programmes")}">{chips}</nav></div></section><div class="wrap">{by_month(up)}{cta}</div>', site_ld, cur="home"))
+    for e in events:
+        ended = e["e"] < TODAY
+        noindex = ended and (TODAY - e["e"]).days > 90
+        ended_note = f'<div class="notice">{T("This event has ended.")}</div>' if ended else ""
+        only_en = '' if (not ES() or has_es(e)) else f'<p class="notice">{T("This event is only available in English for now.")}</p>'
+        st = STS(e.get("status", "scheduled"))
+        rows = [(T("Date"), span(e)), (T("Type"), TY(e["type"])[1]), (T("Format"), MD(e["mode"])), (T("Location"), F(e, "location")), (T("Organiser"), e["organiser"]), (T("Programme"), PG(e["programme"]))] + ([(T("Status"), st)] if st else [])
+        dl = "".join(f"<dt>{E(a)}</dt><dd>{E(b)}</dd>" for a, b in rows)
+        reg = "" if ended or e.get("status") in ("applications-closed", "cancelled") else f'<a class="btn" href="{E(e["registration_url"])}" rel="noopener">{T("Event page and registration")}</a>'
+        ld = event_ld(e)
+        if ES():
+            ld = dict(ld, name=F(e, "title"), description=F(e, "summary"), url=SITE["url"] + P(e["path"]), inLanguage="es")
+        write(P(e["path"]), page(f"{F(e, 'title')} · {span(e)}", F(e, "summary"), e["path"],
+            f"""<article class="post"><div class="crumbs"><a href="{P('/')}">{T('Events')}</a> › <a href="{P('/type/' + e['type'] + '/')}">{E(TY(e['type'])[0])}</a></div>{only_en}<h1>{E(F(e, 'title'))}</h1><p class="dek">{E(F(e, 'summary'))}</p>{ended_note}
+<section class="facts"><h2>{T('Key facts')}</h2><dl>{dl}</dl></section><div class="actions">{reg}<a class="btn ghost" href="{e['path']}event.ics">{T('Add to calendar')}</a><a class="btn ghost" href="{E(support_link((call_title(e['calls'][0]) if e.get('calls') else e['title']), SITE['url'] + P(e['path'])))}" target="_blank" rel="noopener">{T('Apply with our support')}</a></div>
+<div class="body" style="margin-top:24px">{''.join(f'<p>{E(p)}</p>' for p in F(e, 'details'))}</div>
+<section class="why"><h2>{T('Why it matters for applicants')}</h2><p>{E(F(e, 'why'))}</p></section>{related(e, events)}
+<section class="src"><h2>{T('Source')}</h2><p><a href="{E(e['source_url'])}" rel="noopener">{E(e['source_name'])}</a> {T("— always confirm dates and registration on the organiser's page before you travel.")}</p></section>
+<div class="tags">{''.join(f'<span>{E(t)}</span>' for t in F(e, 'tags', []))}</div>{cta}</article>""", [ld], cur=e["type"], noindex=noindex, og="article"))
+    def listing(path, title, lead, evs, cur=None, noindex=False, calls_link=None):
+        cl = f'<div class="actions"><a class="btn ghost" href="{calls_link}">{T("See the related open calls →")}</a></div>' if calls_link else ""
+        empty = "<p style=padding:28px_0>No hay próximos eventos.</p>" if ES() else "<p style=padding:28px_0>No upcoming events listed.</p>"
+        write(P(path), page(f"{title} · {S('short')}", lead, path, f'<section class="hero"><div class="wrap"><p class="kicker">{E(S("short"))}</p><h1>{E(title)}</h1><p class="lead">{E(lead)}</p>{cl}</div></section><div class="wrap">{by_month(evs) or empty.replace("_"," ")}{cta}</div>', cur=cur, noindex=noindex or not evs))
+    for k in USED:
+        listing(f"/type/{k}/", (f"Eventos de financiación UE: {TY(k)[0].lower()}" if ES() else f"EU funding events: {TYPES[k][0].lower()}"), TY(k)[2], [e for e in up if e["type"] == k], k)
+    for k in {e["programme"] for e in events}:
+        listing(f"/programme/{k}/", (f"Eventos de {PG(k)}" if ES() else f"{PROGS[k]} events"), (f"Próximos eventos de financiación europea de {PG(k)}." if ES() else f"Upcoming EU funding events for {PROGS[k]}."),
+                [e for e in up if e["programme"] == k], calls_link=theme_url(k))
+    for k in {e["series"] for e in events if e.get("series")}:
+        sv = [e for e in events if e.get("series") == k]
+        stitle = ((sv[0].get("es") or {}).get("series_title") if ES() else None) or sv[0].get("series_title", k)
+        listing(f"/series/{k}/", stitle, ("Todas las sesiones de la serie, por orden de fecha." if ES() else "All sessions of the series, in date order."), [e for e in sv if e["e"] >= TODAY],
+                calls_link=call_url(sv[0]["calls"][0]) if sv[0].get("calls") else None)
+    if ES():
+        listing("/past/", "Eventos de financiación europea ya celebrados", "Eventos ya celebrados, que se mantienen como referencia.", past, "past", noindex=not past)
+        write(P("/calendar/"), page(f"Calendario de eventos de financiación europea · {S('short')}", "Calendario de próximos eventos de financiación europea, por meses, con un archivo para suscribirte desde tu propio calendario.", "/calendar/",
+            f'<section class="hero"><div class="wrap"><p class="kicker">Calendario</p><h1>Calendario de eventos de financiación europea</h1><p class="lead">{len(up)} próximos eventos por meses. Añádelos todos a Outlook, Google Calendar o Apple Calendar.</p><div class="actions"><a class="btn" href="/calendar.ics">Descargar el archivo de calendario</a></div></div></section><div class="wrap">{by_month(up)}</div>', cur="calendar"))
+        write(P("/about/"), page(f"Quiénes somos y política editorial · {S('short')}", "Cómo selecciona y comprueba Ullswater Investments los eventos de financiación europea que publica este sitio.", "/about/",
+            f"""<div class="about"><h1>Sobre Eventos de financiación UE</h1><p>Eventos de financiación UE es una publicación de {E(SITE['org_legal'])}, firma de asesoramiento en financiación europea con sede en Madrid. Recoge eventos que ayudan a empresas, investigadores y consorcios a preparar propuestas de financiación europea.</p>
+<h2>Cómo se comprueban los eventos</h2><ul><li>Cada evento enlaza a la página del organizador o a un Punto Nacional de Contacto o fuente de socios reconocida.</li><li>Las fechas, lugares y formatos se comprueban con esa fuente antes de publicar.</li><li>Nuestros comentarios sobre por qué importa un evento son análisis y no añaden datos nuevos.</li><li>Cada evento se publica en inglés y en español; la versión en español es una traducción fiel de la inglesa.</li><li>Confirma siempre los detalles con el organizador antes de inscribirte o viajar.</li></ul>
+<p>Correcciones: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p></div>"""))
+    else:
+        listing("/past/", "Past EU funding events", "Events already held, kept for reference.", past, "past", noindex=not past)
+        write("/calendar/", page(f"EU funding events calendar · {SITE['short']}", "Calendar of upcoming EU funding events, by month, with a subscription file for your own calendar.", "/calendar/",
+            f'<section class="hero"><div class="wrap"><p class="kicker">Calendar</p><h1>EU funding events calendar</h1><p class="lead">{len(up)} upcoming events by month. Add them all to Outlook, Google Calendar or Apple Calendar.</p><div class="actions"><a class="btn" href="/calendar.ics">Download calendar file</a></div></div></section><div class="wrap">{by_month(up)}</div>', cur="calendar"))
+        write("/about/", page(f"About and editorial policy · {SITE['short']}", "How Ullswater Investments selects and checks the EU funding events listed on this site.", "/about/",
+            f"""<div class="about"><h1>About EU Funding Events</h1><p>EU Funding Events is published by {E(SITE['org_legal'])}, a Madrid-based European funding advisory firm. It lists events that help companies, researchers and consortia prepare EU funding proposals.</p>
+<h2>How events are checked</h2><ul><li>Every event links to the organiser's page or to a recognised National Contact Point or partner source.</li><li>Dates, locations and formats are checked against that source before publication.</li><li>Our comments on why an event matters are analysis and add no new facts.</li><li>Every event is published in English and Spanish; the Spanish version is a faithful translation of the English one.</li><li>Always confirm details with the organiser before registering or travelling.</li></ul>
+<p>Corrections: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p></div>"""))
+    from email.utils import format_datetime
+    now = format_datetime(datetime.datetime.now(datetime.timezone.utc))
+    write(P("/feed.xml"), f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{E(S("name"))}</title><link>{SITE["url"]}{P("/")}</link><description>{E(S("description"))}</description><language>{LANG}</language><lastBuildDate>{now}</lastBuildDate>' +
+          "".join(f'<item><title>{E(F(e, "title"))}</title><link>{SITE["url"]}{P(e["path"])}</link><guid>{SITE["url"]}{P(e["path"])}</guid><description>{E(span(e) + ". " + F(e, "summary"))}</description></item>' for e in up) + "</channel></rss>\n")
+
 def build():
+    global LANG
     events = load()
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); shutil.copytree(SRC / "assets", OUT / "assets")
     write("/.nojekyll", ""); write("/CNAME", SITE["domain"] + "\n"); write(f"/{KEY}.txt", KEY)
     USED.update(e["type"] for e in events)
     up = [e for e in events if e["e"] >= TODAY]; past = [e for e in reversed(events) if e["e"] < TODAY]
-    cta = f'<div class="cta"><div><strong>Going to an event to build a consortium?</strong><p>Ullswater Investments helps SMEs, start-ups and technology centres prepare EU funding proposals.</p></div><a class="btn" href="{SITE["book_url"]}">Talk to us</a></div>'
-    site_ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": SITE["name"], "url": SITE["url"] + "/", "description": SITE["description"], "publisher": org_ld(),
-                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + e["path"], "name": e["title"]} for i, e in enumerate(up)]}}]
-    chips = "".join(f'<a href="/programme/{k}/">{E(v)}</a>' for k, v in PROGS.items() if any(e["programme"] == k for e in up))
-    n = {t: sum(e["type"] == t for e in up) for t in TYPES}
-    stats = f'<ul class="stats"><li><strong>{len(up)}</strong>upcoming events</li><li><strong>{n["info-day"]}</strong>info days</li><li><strong>{n["brokerage"]}</strong>brokerage events</li></ul>'
-    write("/", page(f"EU funding events {TODAY.year}–{TODAY.year+1}: info days and brokerage · {SITE['org']}", SITE["description"], "/",
-        f"""<section class="hero"><div class="wrap"><p class="kicker">EU Funding Events</p><h1>EU funding events: info days and brokerage</h1>
-<p class="lead">Official info days and partner-search events to build consortia and prepare proposals for the 2027 calls. Dates and links checked {nice(TODAY)}.</p>{stats}
-<div class="actions"><a class="btn" href="/calendar.ics">Add all to my calendar</a><a class="btn ghost" href="{CALLS}/closing-soon/">Call deadlines</a></div>
-<nav class="chips" aria-label="Programmes">{chips}</nav></div></section><div class="wrap">{by_month(up)}{cta}</div>""", site_ld, cur="home"))
     for e in events:
-        ended = e["e"] < TODAY
-        noindex = ended and (TODAY - e["e"]).days > 90
-        ended_note = '<div class="notice">This event has ended.</div>' if ended else ""
-        st = STATUS.get(e.get("status", "scheduled"), "")
-        rows = [("Date", span(e)), ("Type", TYPES[e["type"]][1]), ("Format", MODES[e["mode"]]), ("Location", e["location"]), ("Organiser", e["organiser"]), ("Programme", PROGS[e["programme"]])] + ([("Status", st)] if st else [])
-        dl = "".join(f"<dt>{E(a)}</dt><dd>{E(b)}</dd>" for a, b in rows)
-        reg = "" if ended or e.get("status") in ("applications-closed", "cancelled") else f'<a class="btn" href="{E(e["registration_url"])}" rel="noopener">Event page and registration</a>'
         write(e["path"] + "event.ics", ics([e]))
-        write(e["path"], page(f"{e['title']} · {span(e)}", e["summary"], e["path"],
-            f"""<article class="post"><div class="crumbs"><a href="/">Events</a> › <a href="/type/{e['type']}/">{E(TYPES[e['type']][0])}</a></div><h1>{E(e['title'])}</h1><p class="dek">{E(e['summary'])}</p>{ended_note}
-<section class="facts"><h2>Key facts</h2><dl>{dl}</dl></section><div class="actions">{reg}<a class="btn ghost" href="{e['path']}event.ics">Add to calendar</a><a class="btn ghost" href="{E(support_link((call_title(e['calls'][0]) if e.get('calls') else e['title']), SITE['url'] + e['path']))}" target="_blank" rel="noopener">Apply with our support</a></div>
-<div class="body" style="margin-top:24px">{''.join(f'<p>{E(p)}</p>' for p in e['details'])}</div>
-<section class="why"><h2>Why it matters for applicants</h2><p>{E(e['why'])}</p></section>{related(e, events)}
-<section class="src"><h2>Source</h2><p><a href="{E(e['source_url'])}" rel="noopener">{E(e['source_name'])}</a> — always confirm dates and registration on the organiser's page before you travel.</p></section>
-<div class="tags">{''.join(f'<span>{E(t)}</span>' for t in e['tags'])}</div>{cta}</article>""", [event_ld(e)], cur=e["type"], noindex=noindex, og="article"))
-    def listing(path, title, lead, evs, cur=None, noindex=False, calls_link=None):
-        cl = f'<div class="actions"><a class="btn ghost" href="{calls_link}">See the related open calls →</a></div>' if calls_link else ""
-        write(path, page(f"{title} · {SITE['short']}", lead, path, f'<section class="hero"><div class="wrap"><p class="kicker">EU Funding Events</p><h1>{E(title)}</h1><p class="lead">{E(lead)}</p>{cl}</div></section><div class="wrap">{by_month(evs) or "<p style=padding:28px_0>No upcoming events listed.</p>".replace("_"," ")}{cta}</div>', cur=cur, noindex=noindex or not evs))
-    for k in USED: listing(f"/type/{k}/", f"EU funding events: {TYPES[k][0].lower()}", TYPES[k][2], [e for e in up if e["type"] == k], k)
-    for k in {e["programme"] for e in events}: listing(f"/programme/{k}/", f"{PROGS[k]} events", f"Upcoming EU funding events for {PROGS[k]}.", [e for e in up if e["programme"] == k], calls_link=theme_url(k))
-    for k in {e["series"] for e in events if e.get("series")}:
-        sv = [e for e in events if e.get("series") == k]
-        listing(f"/series/{k}/", sv[0].get("series_title", k), f"All sessions of the series, in date order.", [e for e in sv if e["e"] >= TODAY], calls_link=call_url(sv[0]["calls"][0]) if sv[0].get("calls") else None)
-    listing("/past/", "Past EU funding events", "Events already held, kept for reference.", past, "past", noindex=not past)
-    write("/calendar/", page(f"EU funding events calendar · {SITE['short']}", "Calendar of upcoming EU funding events, by month, with a subscription file for your own calendar.", "/calendar/",
-        f'<section class="hero"><div class="wrap"><p class="kicker">Calendar</p><h1>EU funding events calendar</h1><p class="lead">{len(up)} upcoming events by month. Add them all to Outlook, Google Calendar or Apple Calendar.</p><div class="actions"><a class="btn" href="/calendar.ics">Download calendar file</a></div></div></section><div class="wrap">{by_month(up)}</div>', cur="calendar"))
+    for LANG in ("en", "es"):
+        lang_pages(events, up, past)
+    LANG = "en"
     write("/calendar.ics", ics(up))
     write("/_redirects", "".join(f"{e['old_path']} {e['path']} 301\n{e['old_path']}event.ics {e['path']}event.ics 301\n" for e in events))
     # Machine-readable feed (used by calls.ullswaterinvestments.com to show events per call)
     feed = [{k: e.get(k) for k in ("slug", "title", "start", "end", "type", "programme", "mode", "location", "organiser", "summary", "registration_url", "status")}
-            | {"url": SITE["url"] + e["path"], "theme": THEME.get(e["programme"]), "calls": e.get("calls", [])} for e in up]
+            | {"url": SITE["url"] + e["path"], "url_es": SITE["url"] + "/es" + e["path"], "theme": THEME.get(e["programme"]), "calls": e.get("calls", [])} for e in up]
     write("/events.json", json.dumps({"updated": str(TODAY), "events": feed}, ensure_ascii=False, indent=1, default=str))
-    write("/about/", page(f"About and editorial policy · {SITE['short']}", "How Ullswater Investments selects and checks the EU funding events listed on this site.", "/about/",
-        f"""<div class="about"><h1>About EU Funding Events</h1><p>EU Funding Events is published by {E(SITE['org_legal'])}, a Madrid-based European funding advisory firm. It lists events that help companies, researchers and consortia prepare EU funding proposals.</p>
-<h2>How events are checked</h2><ul><li>Every event links to the organiser's page or to a recognised National Contact Point or partner source.</li><li>Dates, locations and formats are checked against that source before publication.</li><li>Our comments on why an event matters are analysis and add no new facts.</li><li>Always confirm details with the organiser before registering or travelling.</li></ul>
-<p>Corrections: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p></div>"""))
-    write("/404.html", page(f"Page not found · {SITE['short']}", "Page not found.", "/404.html", '<div class="about"><h1>Page not found</h1><p><a href="/">See upcoming EU funding events</a>.</p></div>', noindex=True))
+    write("/404.html", page(f"Page not found · {SITE['short']}", "Page not found.", "/404.html", '<div class="about"><h1>Page not found</h1><p><a href="/">See upcoming EU funding events</a> · <a href="/es/">Ver los próximos eventos en español</a>.</p></div>', noindex=True, bilingual=False))
     urls = [("/", TODAY.isoformat()), ("/calendar/", TODAY.isoformat()), ("/about/", TODAY.isoformat())] + [(f"/type/{k}/", TODAY.isoformat()) for k in sorted(USED) if any(e["type"] == k for e in up)] + \
            [(f"/programme/{k}/", TODAY.isoformat()) for k in sorted({e["programme"] for e in up})] + [(f"/series/{k}/", TODAY.isoformat()) for k in sorted({e["series"] for e in up if e.get("series")})] + \
            [(e["path"], TODAY.isoformat()) for e in events if not (e["e"] < TODAY and (TODAY - e["e"]).days > 90)]
-    write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>{SITE['url']}{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls) + "</urlset>\n")
+    alts = lambda u: (f'<xhtml:link rel="alternate" hreflang="en" href="{SITE["url"]}{u}"/><xhtml:link rel="alternate" hreflang="es" href="{SITE["url"]}/es{u}"/><xhtml:link rel="alternate" hreflang="x-default" href="{SITE["url"]}{u}"/>')
+    write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(f"<url><loc>{SITE['url']}{pre}{u}</loc><lastmod>{d}</lastmod>{alts(u)}</url>" for u, d in urls for pre in ("", "/es")) + "</urlset>\n")
     bots = ["*", "Googlebot", "Bingbot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "ClaudeBot", "Claude-SearchBot", "Claude-User", "Google-Extended", "Applebot", "DuckDuckBot"]
     write("/robots.txt", f"# {SITE['name']}\n\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) + f"Sitemap: {SITE['url']}/sitemap.xml\n")
-    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", "", "## Full text", "", f"- [llms-full.txt]({SITE['url']}/llms-full.txt): every upcoming event with dates, place, organiser and summary", ""]))
+    write("/llms.txt", "\n".join([f"# {SITE['name']}", "", f"> {SITE['description']}", "", f"Languages: English (this site) and Spanish ({SITE['url']}/es/).", "", "## Upcoming events", ""] + [f"- [{e['title']}]({SITE['url']}{e['path']}): {span(e)}, {e['location']}." for e in up] + ["", "## Related", "", f"- [EU Funding News]({SITE['news_url']}/)", f"- [Open EU funding calls]({CALLS}/)", "", "## Full text", "", f"- [llms-full.txt]({SITE['url']}/llms-full.txt): every upcoming event with dates, place, organiser and summary", ""]))
     full = [f"# {SITE['name']}: full text of upcoming events", "", f"> {SITE['description']} Published by Ullswater Investments S.L., EU funding advisors in Madrid and Brussels ({SITE['org_url']}/).", ""]
     for e in up:
         full += [f"## {e['title']}", f"URL: {SITE['url']}{e['path']}", f"- When: {span(e)}", f"- Where: {e['location']}", f"- Organiser: {e['organiser']}"]
@@ -289,10 +388,6 @@ def build():
             full.append(f"- Official source: {e['source_url']}")
         full += ["", e.get("summary", "")] + [d for d in (e.get("details") or []) if isinstance(d, str)] + ([f"Why it matters: {e['why']}"] if e.get("why") else []) + [""]
     write("/llms-full.txt", "\n".join(full))
-    from email.utils import format_datetime
-    now = format_datetime(datetime.datetime.now(datetime.timezone.utc))
-    write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>{E(SITE["name"])}</title><link>{SITE["url"]}/</link><description>{E(SITE["description"])}</description><language>en</language><lastBuildDate>{now}</lastBuildDate>' +
-          "".join(f'<item><title>{E(e["title"])}</title><link>{SITE["url"]}{e["path"]}</link><guid>{SITE["url"]}{e["path"]}</guid><description>{E(span(e) + ". " + e["summary"])}</description></item>' for e in up) + "</channel></rss>\n")
     print(f"Built {len(events)} events ({len(up)} upcoming) -> {OUT}")
 
 if __name__ == "__main__":

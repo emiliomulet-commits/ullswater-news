@@ -24,5 +24,21 @@
   "registration_url": "https://research-innovation-community.ec.europa.eu/events/1BlOchF5f8ViHvC1DosGqo/overview",
   "source_name": "Euresearch",
   "source_url": "https://www.euresearch.ch/app/euresearch/action/ealertdetail?id=1393",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada informativa del Clúster 5 de Horizonte Europa: Clima, Energía y Movilidad",
+    "summary": "Jornada híbrida que presenta los temas de financiación de 2027 del Clúster 5, con contexto político y consejos para preparar una propuesta sólida.",
+    "details": [
+      "El programa incluye el contexto político, una sesión con consejos para propuestas sólidas y sesiones temáticas paralelas que presentan cada tema de 2027, con preguntas y respuestas. Es de 09:00 a 16:00 CET."
+    ],
+    "why": "Es la forma más directa de escuchar cómo interpreta la Comisión los temas de 2027 del Clúster 5. Los consorcios que ya se están formando deberían llevar preguntas concretas sobre el alcance y el impacto esperado.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 5",
+      "Clima",
+      "Energía",
+      "Movilidad"
+    ],
+    "location": "Charlemagne, Bruselas, y en línea"
+  }
 }

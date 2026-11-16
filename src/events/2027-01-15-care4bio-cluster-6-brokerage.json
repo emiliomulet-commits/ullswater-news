@@ -22,5 +22,19 @@
   "registration_url": "https://www.b2match.com/e/horizon-europe-on-site-matchmaking",
   "source_name": "Horizon Europe Türkiye",
   "source_url": "https://ufukavrupa.org.tr/en/news/horizon-europe-cluster-6-2027-call-infoday-and-brokerage-event",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Evento de brokerage CARE4BIO: convocatorias 2027 del Clúster 6 de Horizonte Europa",
+    "summary": "Evento de brokerage gratuito con presentaciones breves de ideas de proyecto seguidas de reuniones bilaterales programadas.",
+    "details": [
+      "El aforo es limitado y la inscripción es obligatoria. Los perfiles de los participantes se revisan según criterios de calidad. Está abierto a empresas, incluidas pymes, universidades, centros de investigación y otros actores de Europa y de fuera de ella."
+    ],
+    "why": "La revisión de calidad de los perfiles hace que la preparación sea importante. Una presentación concisa y una explicación clara de lo que aportas a un consorcio pesarán más que la mera asistencia.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 6",
+      "Búsqueda de socios"
+    ],
+    "location": "Bruselas"
+  }
 }

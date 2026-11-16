@@ -22,5 +22,19 @@
   "registration_url": "https://horizoneuropencpportal.eu/stage/save-date-interdisciplinary-pathways-towards-green-and-resilient-societies",
   "source_name": "Czech National Agency for International Education and Research (DZS)",
   "source_url": "https://dzs.cz/en/event/interdisciplinary-pathways-towards-green-and-resilient-societies",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Interdisciplinary Pathways towards Green and Resilient Societies",
+    "summary": "Intercambio de socios en línea sobre la transición verde y la resiliencia climática, que conecta las ciencias sociales y las humanidades con los ámbitos STEM.",
+    "details": [
+      "Está pensado para quienes preparan propuestas de Horizonte Europa en salud, clima y medio ambiente, energía, movilidad y ciudades. Los participantes obtienen una visión general de algunos temas de 2027, consejos prácticos para integrar las ciencias sociales y las humanidades y oportunidades para encontrar socios."
+    ],
+    "why": "Muchos temas esperan una aportación real de las ciencias sociales y las humanidades, y suele ser el último socio que encuentra un consorcio. Este evento es una vía directa para cubrir ese hueco.",
+    "tags": [
+      "Horizonte Europa",
+      "Transición verde",
+      "Búsqueda de socios"
+    ],
+    "location": "En línea"
+  }
 }

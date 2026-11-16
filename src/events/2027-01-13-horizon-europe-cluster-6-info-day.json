@@ -23,5 +23,20 @@
   "registration_url": "https://ufukavrupa.org.tr/en/news/horizon-europe-cluster-6-2027-call-infoday-and-brokerage-event",
   "source_name": "Horizon Europe Türkiye",
   "source_url": "https://ufukavrupa.org.tr/en/news/horizon-europe-cluster-6-2027-call-infoday-and-brokerage-event",
-  "status": "scheduled"
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada informativa del Clúster 6 de Horizonte Europa: convocatoria 2027",
+    "summary": "Expertos de la Comisión presentan los temas de la convocatoria 2027 del Clúster 6 y las claves para preparar propuestas sobre alimentación, bioeconomía, recursos naturales, agricultura y medio ambiente.",
+    "details": [
+      "Forma parte de una serie en Bruselas del 13 al 15 de enero de 2027, que incluye también un evento de brokerage y sesiones de formación."
+    ],
+    "why": "La serie reúne la sesión informativa y la búsqueda de socios en la misma semana, lo que encaja con organizaciones que todavía están dando forma a un consorcio del Clúster 6.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 6",
+      "Bioeconomía",
+      "Agricultura"
+    ],
+    "location": "Bruselas y en línea"
+  }
 }
