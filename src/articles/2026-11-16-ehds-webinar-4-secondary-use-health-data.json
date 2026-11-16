@@ -1,0 +1,44 @@
+{
+  "slug": "ehds-webinar-4-secondary-use-health-data",
+  "date": "2026-11-16",
+  "category": "health",
+  "title": "EHDS webinar on 25 November: benefits of health data secondary use",
+  "dek": "The fourth webinar of the Commission's EHDS stakeholder support series discusses the benefits, challenges and incentives of reusing health data. Open to all.",
+  "key_facts": [
+    ["Event", "EHDS support to stakeholders · Webinar 4: Stakeholder workshop on Benefits, challenges and incentives of EHDS secondary use"],
+    ["Date", "Wednesday 25 November 2026, 11:00–12:30 CET"],
+    ["Format", "Online (Microsoft Teams), open to anyone after registration"],
+    ["Moderators", "Verena Thaler, Yann Heyer (European Patients' Forum), Valentina Colcelli (CNR-IFAC) and Sarah Collen"],
+    ["Framework", "European Health Data Space Regulation (EU) 2025/327"]
+  ],
+  "body": [
+    "The European Commission's EHDS stakeholder support series holds its fourth webinar on Wednesday 25 November 2026, from 11:00 to 12:30 CET. The online workshop is dedicated to the secondary use of health data under the European Health Data Space: how it can create value through more efficient, transparent and trustworthy access to health data, and which benefits matter most to each group of stakeholders.",
+    "Four moderators lead the discussion: Verena Thaler, a senior expert in digital health and EHDS data governance; Yann Heyer, senior policy officer at the European Patients' Forum; Valentina Colcelli, senior researcher at Italy's National Research Council (CNR-IFAC), who works on the governance of health research data; and Sarah Collen, an EU policy manager working on the EHDS, cancer policy and data protection.",
+    "The session is open: anyone can watch and take part after registering on the official event page on Microsoft Teams. Ullswater Investments has published the full event details, moderators and official links in English and Spanish on EU Funding Events."
+  ],
+  "why": "Ullswater Investments analysis: the secondary use rules of the EHDS will shape how researchers, companies and public bodies can access health data across Europe, and data holders will carry new obligations. Understanding the benefits and incentives that each stakeholder group expects is useful for anyone building a health data space, offering services to data holders or preparing an EU proposal that relies on reusing health data. It is a good opportunity to hear patients, researchers and clinicians on the same panel before the implementing rules are finalised.",
+  "tags": ["EHDS", "Health data", "Secondary use", "HealthData@EU", "Webinar"],
+  "action": {"label": "Event details, moderators and registration", "url": "https://events.ullswaterinvestments.com/events/ehds-webinar-4-secondary-use-benefits-incentives/"},
+  "source_name": "European Commission · EHDS support to stakeholders (official event page)",
+  "source_url": "https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13",
+  "es": {
+    "title": "Webinario del EHDS el 25 de noviembre: beneficios del uso secundario de datos sanitarios",
+    "dek": "El cuarto webinario de la serie de la Comisión de apoyo a las partes interesadas del EHDS debate los beneficios, retos e incentivos de reutilizar los datos sanitarios. Abierto a todos.",
+    "key_facts": [
+      ["Evento", "EHDS support to stakeholders · Webinario 4: taller sobre beneficios, retos e incentivos del uso secundario en el EHDS"],
+      ["Fecha", "Miércoles 25 de noviembre de 2026, 11:00–12:30 CET"],
+      ["Formato", "En línea (Microsoft Teams), abierto a cualquier persona tras inscribirse"],
+      ["Moderadores", "Verena Thaler, Yann Heyer (Foro Europeo de Pacientes), Valentina Colcelli (CNR-IFAC) y Sarah Collen"],
+      ["Marco", "Reglamento (UE) 2025/327 del Espacio Europeo de Datos Sanitarios"]
+    ],
+    "body": [
+      "La serie de la Comisión Europea de apoyo a las partes interesadas del EHDS celebra su cuarto webinario el miércoles 25 de noviembre de 2026, de 11:00 a 12:30 CET. El taller en línea se dedica al uso secundario de los datos sanitarios en el Espacio Europeo de Datos Sanitarios: cómo puede crear valor gracias a un acceso a los datos de salud más eficiente, transparente y fiable, y qué beneficios importan más a cada grupo de interés.",
+      "Cuatro moderadores dirigen el debate: Verena Thaler, experta sénior en salud digital y en gobernanza de datos del EHDS; Yann Heyer, responsable sénior de políticas del Foro Europeo de Pacientes; Valentina Colcelli, investigadora sénior del Consejo Nacional de Investigación de Italia (CNR-IFAC), que trabaja en la gobernanza de los datos de investigación sanitaria; y Sarah Collen, responsable de políticas de la UE que trabaja en el EHDS, la política contra el cáncer y la protección de datos.",
+      "La sesión es abierta: cualquier persona puede verla y participar tras inscribirse en la página oficial del evento en Microsoft Teams. Ullswater Investments ha publicado todos los detalles del evento, los moderadores y los enlaces oficiales, en inglés y en español, en Eventos de financiación UE."
+    ],
+    "why": "Análisis de Ullswater Investments: las reglas de uso secundario del EHDS determinarán cómo investigadores, empresas y organismos públicos podrán acceder a los datos sanitarios en toda Europa, y los titulares de datos asumirán nuevas obligaciones. Entender los beneficios e incentivos que espera cada grupo de interés es útil para quien construye un espacio de datos sanitarios, ofrece servicios a titulares de datos o prepara una propuesta europea basada en la reutilización de datos de salud. Es una buena ocasión para escuchar a pacientes, investigadores y clínicos en el mismo panel antes de que se cierren las normas de desarrollo.",
+    "tags": ["EHDS", "Datos sanitarios", "Uso secundario", "HealthData@EU", "Webinario"],
+    "action_label": "Detalles del evento, moderadores e inscripción",
+    "action_url": "https://events.ullswaterinvestments.com/es/events/ehds-webinar-4-secondary-use-benefits-incentives/"
+  }
+}

@@ -392,7 +392,8 @@ def lang_pages(arts, vids, live):
         why = f'<section class="why"><h2>{T("Why it matters")}</h2><p>{E(F(a, "why"))}</p></section>' if a.get("why") else ""
         act = a.get("action")  # optional {"label", "url"}: direct link to the official registration/application page
         act_label = ((a.get("es") or {}).get("action_label") if ES() else None) or (act or {}).get("label")
-        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act_label)} ↗</a></p>' if act else ""
+        act_url = ((a.get("es") or {}).get("action_url") if ES() else None) or (act or {}).get("url")
+        act_btn = f'<p class="act"><a class="btn" href="{E(act_url)}" rel="noopener" target="_blank">{E(act_label)} ↗</a></p>' if act else ""
         rel = "".join(f'<li><a href="{P(b["path"])}">{E(F(b, "title"))}</a> <span class="meta">· {nice(b["d"])}</span></li>' for b in related)
         html_ = f"""<article class="post">
 <div class="crumbs"><a href="{P('/')}">{T('News')}</a> › <a href="{P('/' + a['category'] + '/')}">{E(cat)}</a></div>

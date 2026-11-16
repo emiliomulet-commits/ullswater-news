@@ -1,5 +1,25 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EHDS webinar on 25 November: benefits of health data secondary use
+URL: https://news.ullswaterinvestments.com/2026/11/ehds-webinar-4-secondary-use-health-data/
+Date: 2026-11-16 · Category: Health & Health Data · Source: European Commission · EHDS support to stakeholders (official event page) (https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13)
+
+The fourth webinar of the Commission's EHDS stakeholder support series discusses the benefits, challenges and incentives of reusing health data. Open to all.
+
+- Event: EHDS support to stakeholders · Webinar 4: Stakeholder workshop on Benefits, challenges and incentives of EHDS secondary use
+- Date: Wednesday 25 November 2026, 11:00–12:30 CET
+- Format: Online (Microsoft Teams), open to anyone after registration
+- Moderators: Verena Thaler, Yann Heyer (European Patients' Forum), Valentina Colcelli (CNR-IFAC) and Sarah Collen
+- Framework: European Health Data Space Regulation (EU) 2025/327
+
+The European Commission's EHDS stakeholder support series holds its fourth webinar on Wednesday 25 November 2026, from 11:00 to 12:30 CET. The online workshop is dedicated to the secondary use of health data under the European Health Data Space: how it can create value through more efficient, transparent and trustworthy access to health data, and which benefits matter most to each group of stakeholders.
+Four moderators lead the discussion: Verena Thaler, a senior expert in digital health and EHDS data governance; Yann Heyer, senior policy officer at the European Patients' Forum; Valentina Colcelli, senior researcher at Italy's National Research Council (CNR-IFAC), who works on the governance of health research data; and Sarah Collen, an EU policy manager working on the EHDS, cancer policy and data protection.
+The session is open: anyone can watch and take part after registering on the official event page on Microsoft Teams. Ullswater Investments has published the full event details, moderators and official links in English and Spanish on EU Funding Events.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: the secondary use rules of the EHDS will shape how researchers, companies and public bodies can access health data across Europe, and data holders will carry new obligations. Understanding the benefits and incentives that each stakeholder group expects is useful for anyone building a health data space, offering services to data holders or preparing an EU proposal that relies on reusing health data. It is a good opportunity to hear patients, researchers and clinicians on the same panel before the implementing rules are finalised.
+
+---
+
 ## EU launches first global alliance of climate and health funders
 URL: https://news.ullswaterinvestments.com/2026/11/global-climate-health-research-funders-alliance/
 Date: 2026-11-13 · Category: Health & Health Data · Source: European Commission – Research and Innovation (https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-launches-first-global-alliance-climate-and-health-research-funding-cop31-2026-11-13_en)
