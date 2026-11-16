@@ -368,7 +368,8 @@ def build():
     write("/_redirects", "".join(f"{e['old_path']} {e['path']} 301\n{e['old_path']}event.ics {e['path']}event.ics 301\n" for e in events))
     # Machine-readable feed (used by calls.ullswaterinvestments.com to show events per call)
     feed = [{k: e.get(k) for k in ("slug", "title", "start", "end", "type", "programme", "mode", "location", "organiser", "summary", "registration_url", "status")}
-            | {"url": SITE["url"] + e["path"], "url_es": SITE["url"] + "/es" + e["path"], "theme": THEME.get(e["programme"]), "calls": e.get("calls", [])} for e in up]
+            | {"url": SITE["url"] + e["path"], "url_es": SITE["url"] + "/es" + e["path"], "theme": THEME.get(e["programme"]), "calls": e.get("calls", [])}
+            | {k + "_es": (e.get("es") or {}).get(k) for k in ("title", "summary", "location") if (e.get("es") or {}).get(k)} for e in up]
     write("/events.json", json.dumps({"updated": str(TODAY), "events": feed}, ensure_ascii=False, indent=1, default=str))
     write("/404.html", page(f"Page not found · {SITE['short']}", "Page not found.", "/404.html", '<div class="about"><h1>Page not found</h1><p><a href="/">See upcoming EU funding events</a> · <a href="/es/">Ver los próximos eventos en español</a>.</p></div>', noindex=True, bilingual=False))
     urls = [("/", TODAY.isoformat()), ("/calendar/", TODAY.isoformat()), ("/about/", TODAY.isoformat())] + [(f"/type/{k}/", TODAY.isoformat()) for k in sorted(USED) if any(e["type"] == k for e in up)] + \
