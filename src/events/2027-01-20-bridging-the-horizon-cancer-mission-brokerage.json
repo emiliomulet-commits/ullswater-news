@@ -1,0 +1,44 @@
+{
+  "slug": "bridging-the-horizon-cancer-mission-brokerage",
+  "title": "Bridging the Horizon: online brokerage for Cancer Mission 2027 calls",
+  "start": "2027-01-20",
+  "end": "2027-01-20",
+  "type": "brokerage",
+  "programme": "horizon-europe",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "UK Health National Contact Points and the European Institute of Innovation and Technology (EIT)",
+  "summary": "An online partner-search event built around the five Cancer Mission topics in the Horizon Europe 2026-2027 work programme.",
+  "details": [
+    "The session is aimed at organisations putting together consortia for the 2027 Cancer Mission calls.",
+    "Applications to take part close on 13 December 2026."
+  ],
+  "why": "Cancer Mission topics reward broad consortia that join clinical, research and industry partners, and these are hard to assemble late. Applicants who already know which topic they are targeting should use the event to fill specific gaps rather than to browse.",
+  "tags": [
+    "Horizon Europe",
+    "EU Missions",
+    "Cancer Mission",
+    "Partner search"
+  ],
+  "registration_url": "https://www.go-eit.eu/eit-uk-hub/bridging-the-horizon-cancer-mission/#about",
+  "source_name": "Horizon Europe Türkiye (Ufuk Avrupa NCP)",
+  "source_url": "https://ufukavrupa.org.tr/en/node/6878",
+  "status": "scheduled",
+  "es": {
+    "title": "Bridging the Horizon: brokerage en línea para las convocatorias 2027 de la Misión Cáncer",
+    "summary": "Evento en línea de búsqueda de socios centrado en los cinco temas de la Misión Cáncer del programa de trabajo 2026-2027 de Horizonte Europa.",
+    "details": [
+      "La sesión se dirige a organizaciones que están formando consorcios para las convocatorias de 2027 de la Misión Cáncer.",
+      "Las solicitudes para participar cierran el 13 de diciembre de 2026."
+    ],
+    "why": "Los temas de la Misión Cáncer premian consorcios amplios que unan socios clínicos, de investigación e industriales, y estos son difíciles de reunir a última hora. Los solicitantes que ya saben a qué tema se dirigen deberían usar el evento para cubrir huecos concretos más que para explorar.",
+    "tags": [
+      "Horizonte Europa",
+      "Misiones de la UE",
+      "Misión Cáncer",
+      "Búsqueda de socios"
+    ],
+    "location": "En línea"
+  }
+}

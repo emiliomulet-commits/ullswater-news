@@ -1,0 +1,52 @@
+{
+  "slug": "green-inclusive-future-brokerage-istanbul",
+  "title": "Green and Inclusive Future International Brokerage Event",
+  "start": "2027-01-21",
+  "end": "2027-01-21",
+  "type": "brokerage",
+  "programme": "horizon-europe",
+  "mode": "onsite",
+  "city": "Istanbul",
+  "location": "Point Hotel Barbaros, Şişli, Istanbul",
+  "organiser": "TÜBİTAK, with the Enterprise Europe Network",
+  "summary": "A one-day in-person matchmaking event in Istanbul for 2027 Horizon Europe calls in Cluster 2, Cluster 4 Digital, the New European Bauhaus and two EU Missions.",
+  "details": [
+    "The morning combines welcome addresses with four parallel thematic sessions that include project pitches. Pre-booked bilateral meetings run from 14:00 to 17:00, followed by a reception.",
+    "Target areas are Cluster 2 (Culture, Creativity and Inclusive Society), the New European Bauhaus, Cluster 4 Digital including the Chips and Smart Networks and Services joint undertakings, and the Climate-Neutral and Smart Cities and Cancer Missions.",
+    "Meetings are requested in advance on B2Match, and the platform stays open for online meetings until the end of 2027."
+  ],
+  "why": "Useful for teams looking for partners across digital and social sciences topics in one place, including the chips and networks joint undertakings that rarely get their own brokerage. The long-running online platform also lets you follow up contacts after the day.",
+  "tags": [
+    "Horizon Europe",
+    "Cluster 2",
+    "Cluster 4",
+    "Chips JU",
+    "SNS JU",
+    "EU Missions",
+    "Partner search"
+  ],
+  "registration_url": "https://www.b2match.com/e/green-and-inclusive-future-brokerage",
+  "source_name": "Green and Inclusive Future Brokerage Event (B2Match)",
+  "source_url": "https://www.b2match.com/e/green-and-inclusive-future-brokerage",
+  "status": "scheduled",
+  "es": {
+    "title": "Green and Inclusive Future: evento internacional de brokerage",
+    "summary": "Evento presencial de matchmaking de un día en Estambul para las convocatorias 2027 de Horizonte Europa del Clúster 2, del Clúster 4 Digital, de la Nueva Bauhaus Europea y de dos Misiones de la UE.",
+    "details": [
+      "La mañana combina las palabras de bienvenida con cuatro sesiones temáticas paralelas que incluyen presentaciones de proyectos. Las reuniones bilaterales concertadas se celebran de 14:00 a 17:00, y la jornada termina con una recepción.",
+      "Los ámbitos son el Clúster 2 (Cultura, Creatividad y Sociedad Inclusiva), la Nueva Bauhaus Europea, el Clúster 4 Digital, incluidas las empresas comunes Chips y Smart Networks and Services, y las Misiones de Ciudades Inteligentes y Climáticamente Neutras y de Cáncer.",
+      "Las reuniones se solicitan con antelación en B2Match, y la plataforma sigue abierta para reuniones en línea hasta finales de 2027."
+    ],
+    "why": "Útil para equipos que buscan socios en temas digitales y de ciencias sociales en un mismo lugar, incluidas las empresas comunes de chips y redes, que rara vez tienen un brokerage propio. La plataforma en línea, abierta durante mucho tiempo, permite además dar seguimiento a los contactos después de la jornada.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 2",
+      "Clúster 4",
+      "Chips JU",
+      "SNS JU",
+      "Misiones de la UE",
+      "Búsqueda de socios"
+    ],
+    "location": "Point Hotel Barbaros, Şişli, Estambul"
+  }
+}

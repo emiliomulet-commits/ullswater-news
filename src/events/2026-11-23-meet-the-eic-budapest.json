@@ -1,0 +1,46 @@
+{
+  "slug": "meet-the-eic-budapest",
+  "title": "Meet the EIC in Budapest",
+  "start": "2026-11-23",
+  "end": "2026-11-23",
+  "type": "info-day",
+  "programme": "eic",
+  "mode": "onsite",
+  "city": "Budapest",
+  "location": "Bosch Budapest Innovation Campus, Budapest",
+  "organiser": "European Innovation Council, Hungary's National Research, Development and Innovation Office (NKFIH) and DARE",
+  "summary": "An in-person day in Budapest explaining how the European Innovation Council funds deep tech researchers, startups and scaleups, from first application to investment.",
+  "details": [
+    "After an opening panel on the EIC's impact, an EIC policy officer walks through the EIC journey and the Hungarian National Contact Point explains the support available to applicants.",
+    "In the afternoon the day splits into two tracks: one for startups and scaleups covering the Pre-Accelerator, the EIC Accelerator, the EIC Fund, STEP and Scaleup Europe, and one for researchers covering the EIC Pathfinder and technology transfer. It runs from 10:30 to 17:00 CET in English, places are limited and prior registration is required."
+  ],
+  "why": "A useful in-person complement to the online EIC info days for teams in Central Europe deciding which EIC scheme suits them. Talking directly to an EIC officer and the national contact point helps settle eligibility and fit questions before drafting.",
+  "tags": [
+    "EIC",
+    "Accelerator",
+    "Pathfinder",
+    "Deep tech",
+    "Hungary"
+  ],
+  "registration_url": "https://ec.europa.eu/eusurvey/runner/EICBudapest2026",
+  "source_name": "European Innovation Council",
+  "source_url": "https://eic.ec.europa.eu/events/meet-eic-budapest-hungary-2026-11-23_en",
+  "status": "scheduled",
+  "es": {
+    "title": "Meet the EIC en Budapest",
+    "summary": "Jornada presencial en Budapest que explica cómo financia el Consejo Europeo de Innovación a investigadores, startups y scaleups de deep tech, desde la primera solicitud hasta la inversión.",
+    "details": [
+      "Tras un panel inaugural sobre el impacto del EIC, un responsable de políticas del EIC recorre el itinerario del EIC y el Punto Nacional de Contacto húngaro explica el apoyo disponible para los solicitantes.",
+      "Por la tarde la jornada se divide en dos sesiones paralelas: una para startups y scaleups, sobre el Pre-Accelerator, el EIC Accelerator, el EIC Fund, STEP y Scaleup Europe, y otra para investigadores, sobre el EIC Pathfinder y la transferencia de tecnología. Es de 10:30 a 17:00 CET, en inglés; las plazas son limitadas y se requiere inscripción previa."
+    ],
+    "why": "Un complemento presencial útil a las jornadas informativas en línea del EIC para equipos de Europa Central que están decidiendo qué instrumento del EIC les encaja. Hablar directamente con un responsable del EIC y con el punto nacional de contacto ayuda a resolver dudas de elegibilidad y encaje antes de redactar.",
+    "tags": [
+      "EIC",
+      "Accelerator",
+      "Pathfinder",
+      "Deep tech",
+      "Hungría"
+    ],
+    "location": "Bosch Budapest Innovation Campus, Budapest"
+  }
+}
