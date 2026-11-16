@@ -45,5 +45,49 @@
     "Supercomputing"
   ],
   "source_name": "European Commission – Shaping Europe's digital future",
-  "source_url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum"
+  "source_url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum",
+  "es": {
+    "title": "Canadá se une a EuroHPC como Estado participante",
+    "dek": "Acordada en la Cumbre UE–Canadá de Montreal, la adhesión abre a Canadá los recursos públicos europeos de supercomputación, IA y cuántica.",
+    "key_facts": [
+      [
+        "Anuncio",
+        "30 de octubre de 2026, Cumbre UE–Canadá, Montreal"
+      ],
+      [
+        "Nuevo estatus",
+        "Canadá es Estado participante de la Empresa Común EuroHPC"
+      ],
+      [
+        "Red de EuroHPC",
+        "12 superordenadores adquiridos, 19 Fábricas de IA y 13 Antenas de Fábricas de IA"
+      ],
+      [
+        "Consejo de administración",
+        "Comisión Europea y 39 Estados participantes"
+      ],
+      [
+        "Vínculo con Horizonte Europa",
+        "Canadá está asociado desde 2024"
+      ],
+      [
+        "Base jurídica del mandato ampliado",
+        "Reglamento (UE) 2026/150 del Consejo"
+      ]
+    ],
+    "body": [
+      "Canadá se convirtió el 30 de octubre de 2026 en Estado participante de la Empresa Común Europea de Informática de Alto Rendimiento (EuroHPC), durante la Cumbre UE–Canadá celebrada en Montreal. El paso da a Canadá acceso a los recursos de computación de alto rendimiento, IA y cuántica de la empresa común y permite a los científicos canadienses trabajar junto a sus colegas europeos.",
+      "Ambas partes quieren estrechar la cooperación en supercomputación, infraestructura de IA y tecnología cuántica, para desarrollar aplicaciones científicas y aumentar el potencial de innovación de las empresas. El acuerdo se apoya en una cooperación científica que se remonta a 1996; Canadá está además asociado a Horizonte Europa desde 2024.",
+      "Hasta ahora EuroHPC ha adquirido 12 superordenadores, supervisa 19 Fábricas de IA y 13 Antenas de Fábricas de IA y está desplegando una infraestructura europea de computación cuántica. En su consejo de administración se sientan la Comisión Europea y 39 Estados participantes, y el Reglamento (UE) 2026/150 del Consejo amplió su mandato a las gigafactorías de IA y a las tecnologías cuánticas.",
+      "La cumbre dejó otros resultados digitales: Destination Earth incorporará la cooperación con Canadá en modelización climática con IA, y las partes trataron la conectividad en el Ártico y la interoperabilidad de las identidades digitales de la UE y Canadá."
+    ],
+    "why": "Para los consorcios de IA, HPC y cuántica, los socios canadienses se sitúan ahora más cerca del mismo ecosistema de cálculo que sus homólogos europeos, además de la asociación ya existente a Horizonte Europa. Eso puede facilitar que una propuesta incorpore la colaboración UE–Canadá. Aun así, conviene comprobar las reglas de acceso y las condiciones de elegibilidad de cada convocatoria antes de construir un plan de trabajo en torno a los recursos de EuroHPC.",
+    "tags": [
+      "EuroHPC",
+      "Canadá",
+      "Fábricas de IA",
+      "Cuántica",
+      "Supercomputación"
+    ]
+  }
 }

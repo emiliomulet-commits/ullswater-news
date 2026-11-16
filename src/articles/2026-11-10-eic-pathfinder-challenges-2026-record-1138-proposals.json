@@ -5,12 +5,30 @@
   "title": "EIC Pathfinder Challenges 2026 draws record 1,138 proposals",
   "dek": "Submissions almost doubled on 2025 for an indicative €96 million budget across three challenges, with results expected in spring 2027.",
   "key_facts": [
-    ["Proposals", "1,138 (almost double 2025)"],
-    ["Participants", "5,107 from 58 countries"],
-    ["Indicative budget", "€96 million"],
-    ["Grant size", "Up to €4 million (TRL 3–4)"],
-    ["Deadline", "28 October 2026 (closed)"],
-    ["Results", "Expected in spring 2027"]
+    [
+      "Proposals",
+      "1,138 (almost double 2025)"
+    ],
+    [
+      "Participants",
+      "5,107 from 58 countries"
+    ],
+    [
+      "Indicative budget",
+      "€96 million"
+    ],
+    [
+      "Grant size",
+      "Up to €4 million (TRL 3–4)"
+    ],
+    [
+      "Deadline",
+      "28 October 2026 (closed)"
+    ],
+    [
+      "Results",
+      "Expected in spring 2027"
+    ]
   ],
   "body": [
     "The European Innovation Council's 2026 Pathfinder Challenges call, which closed on 28 October 2026, received 1,138 project proposals, almost twice as many as in 2025. The applications involve 5,107 participants from 58 countries.",
@@ -19,7 +37,59 @@
     "Evaluation has started and the EIC expects to announce results in spring 2027."
   ],
   "why": "A near doubling of applications for a fixed budget means much tougher competition, so a strong concept is no longer enough on its own: proposals need a clear fit with the specific challenge and a credible path from research to proof of concept. The AI and healthy-ageing challenges were the most crowded. Teams planning a Pathfinder bid in the next cycle should check the EIC 2027 work programme early and consider whether an open Pathfinder or a less contested challenge better matches their project.",
-  "tags": ["EIC", "EIC Pathfinder", "Pathfinder Challenges", "Artificial intelligence", "Healthy ageing", "Advanced materials"],
+  "tags": [
+    "EIC",
+    "EIC Pathfinder",
+    "Pathfinder Challenges",
+    "Artificial intelligence",
+    "Healthy ageing",
+    "Advanced materials"
+  ],
   "source_name": "European Innovation Council",
-  "source_url": "https://eic.ec.europa.eu/news/2026-eic-pathfinder-challenges-call-attracts-record-interest-breakthrough-innovators-2026-11-10_en"
+  "source_url": "https://eic.ec.europa.eu/news/2026-eic-pathfinder-challenges-call-attracts-record-interest-breakthrough-innovators-2026-11-10_en",
+  "es": {
+    "title": "EIC Pathfinder Challenges 2026 bate su récord con 1.138 propuestas",
+    "dek": "Las solicitudes casi se duplicaron respecto a 2025 para un presupuesto indicativo de 96 millones de euros en tres retos; los resultados se esperan en primavera de 2027.",
+    "key_facts": [
+      [
+        "Propuestas",
+        "1.138 (casi el doble que en 2025)"
+      ],
+      [
+        "Participantes",
+        "5.107 de 58 países"
+      ],
+      [
+        "Presupuesto indicativo",
+        "96 millones de euros"
+      ],
+      [
+        "Importe de la ayuda",
+        "Hasta 4 millones de euros (TRL 3–4)"
+      ],
+      [
+        "Plazo",
+        "28 de octubre de 2026 (cerrado)"
+      ],
+      [
+        "Resultados",
+        "Previstos en primavera de 2027"
+      ]
+    ],
+    "body": [
+      "La convocatoria Pathfinder Challenges 2026 del Consejo Europeo de Innovación, que cerró el 28 de octubre de 2026, recibió 1.138 propuestas, casi el doble que en 2025. Las solicitudes reúnen a 5.107 participantes de 58 países.",
+      "La demanda se repartió de forma desigual entre los tres retos. El de razonamiento profundo, abstracción y planificación para sistemas de IA cognitiva fiables (DeepRAP) atrajo 450 propuestas, el de biotecnología para un envejecimiento saludable recibió 427 y el de materiales avanzados para sistemas miniaturizados de captación de energía, 261.",
+      "La convocatoria tiene un presupuesto indicativo de 96 millones de euros, que se repartirá previsiblemente a partes casi iguales entre los tres retos. Las ayudas Pathfinder, de hasta 4 millones de euros, financian investigación en fase temprana hasta la prueba de concepto o la validación en laboratorio (TRL 3–4). Los proyectos seleccionados pueden además trabajar con los gestores de programa del EIC y recibir financiación adicional para explorar su potencial de innovación o sumarse a actividades de cartera.",
+      "La evaluación ya ha empezado y el EIC prevé anunciar los resultados en primavera de 2027."
+    ],
+    "why": "Que las solicitudes casi se dupliquen con un presupuesto fijo significa una competencia mucho más dura, así que un concepto sólido ya no basta por sí solo: las propuestas necesitan un encaje claro con el reto concreto y un camino creíble de la investigación a la prueba de concepto. Los retos de IA y de envejecimiento saludable fueron los más concurridos. Los equipos que preparen una candidatura a Pathfinder en el próximo ciclo deberían revisar pronto el programa de trabajo 2027 del EIC y valorar si un Pathfinder abierto o un reto menos disputado encaja mejor con su proyecto.",
+    "tags": [
+      "EIC",
+      "EIC Pathfinder",
+      "Pathfinder Challenges",
+      "Inteligencia artificial",
+      "Envejecimiento saludable",
+      "Materiales avanzados"
+    ]
+  }
 }

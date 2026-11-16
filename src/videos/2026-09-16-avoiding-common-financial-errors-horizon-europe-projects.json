@@ -16,5 +16,20 @@
     "Project management",
     "Audit",
     "Financial reporting"
-  ]
+  ],
+  "es": {
+    "title": "Cómo evitar los errores financieros más comunes en los proyectos de Horizonte Europa",
+    "summary": "Sesión de la Comisión sobre cómo prepararse para una auditoría y evitar los errores financieros más frecuentes y costosos en los proyectos de Horizonte Europa.",
+    "body": [
+      "Esta sesión en directo, emitida el 16 de septiembre de 2026 en el canal EU Science & Innovation de la Comisión Europea, está dirigida a beneficiarios que ya gestionan proyectos de Horizonte Europa.",
+      "Explica cómo prepararse para una auditoría y cómo evitar los errores en las finanzas del proyecto más frecuentes y más caros, y termina con una ronda de preguntas y respuestas."
+    ],
+    "why": "Nota de Ullswater Investments: conseguir la subvención es solo la mitad del trabajo. Los errores detectados en una auditoría pueden obligar a devolver fondos, así que los coordinadores y los equipos financieros deberían revisar su justificación de costes con estos puntos desde el inicio del proyecto.",
+    "tags": [
+      "Horizonte Europa",
+      "Gestión de proyectos",
+      "Auditoría",
+      "Justificación económica"
+    ]
+  }
 }

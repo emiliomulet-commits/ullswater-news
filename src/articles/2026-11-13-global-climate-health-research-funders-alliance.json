@@ -5,10 +5,22 @@
   "title": "EU launches first global alliance of climate and health funders",
   "dek": "Launched at COP 31 with the Wellcome Trust, the initiative will align research funders' priorities. A secretariat starts work in January 2027.",
   "key_facts": [
-    ["Initiative", "Multilateral Initiative on Climate & Health Research Funding"],
-    ["Founding support", "European Commission and Wellcome Trust, with nine national public funders"],
-    ["Secretariat", "From January 2027, hosted by ANR, ZonMw, IDRC and UEFISCDI"],
-    ["EU funding", "Coordination and Support Action grant running until December 2029"]
+    [
+      "Initiative",
+      "Multilateral Initiative on Climate & Health Research Funding"
+    ],
+    [
+      "Founding support",
+      "European Commission and Wellcome Trust, with nine national public funders"
+    ],
+    [
+      "Secretariat",
+      "From January 2027, hosted by ANR, ZonMw, IDRC and UEFISCDI"
+    ],
+    [
+      "EU funding",
+      "Coordination and Support Action grant running until December 2029"
+    ]
   ],
   "body": [
     "The European Commission used COP 31 to launch the Multilateral Initiative on Climate & Health Research Funding, together with the Wellcome Trust and public research funders from five continents. The Commission presents it as the first global alliance of funders focused on how climate change affects health. Its aim is to help funders coordinate their investment and research priorities, cut fragmentation and move results faster into policy, technology and practice.",
@@ -16,7 +28,48 @@
     "The alliance has five strategic goals, ranging from building a stronger global research community and making better use of funding to clearer pathways to impact. Once launched, membership will be open to any organisation that funds climate and health research. From January 2027 a permanent secretariat will be hosted by four Design Group members (ANR, ZonMw, IDRC and UEFISCDI), funded by a European Commission Coordination and Support Action grant running until December 2029."
   ],
   "why": "Ullswater Investments analysis: the alliance does not open a call, but it signals where funders intend to put coordinated effort. Climate and health research is likely to gain visibility in national and EU work programmes, and alignment between funders can lead to joint or complementary calls over time. Research teams and companies working on heat, infectious disease, air quality or health-system resilience should follow the initiative's work and frame their proposals around these shared priorities.",
-  "tags": ["Climate and health", "COP31", "Wellcome Trust", "Research funding", "International cooperation"],
+  "tags": [
+    "Climate and health",
+    "COP31",
+    "Wellcome Trust",
+    "Research funding",
+    "International cooperation"
+  ],
   "source_name": "European Commission – Research and Innovation",
-  "source_url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-launches-first-global-alliance-climate-and-health-research-funding-cop31-2026-11-13_en"
+  "source_url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-launches-first-global-alliance-climate-and-health-research-funding-cop31-2026-11-13_en",
+  "es": {
+    "title": "La UE lanza la primera alianza mundial de financiadores de clima y salud",
+    "dek": "Presentada en la COP 31 con el Wellcome Trust, la iniciativa alineará las prioridades de los financiadores de la investigación. Una secretaría empezará a funcionar en enero de 2027.",
+    "key_facts": [
+      [
+        "Iniciativa",
+        "Multilateral Initiative on Climate & Health Research Funding"
+      ],
+      [
+        "Impulsores",
+        "Comisión Europea y Wellcome Trust, con nueve financiadores públicos nacionales"
+      ],
+      [
+        "Secretaría",
+        "Desde enero de 2027, a cargo de ANR, ZonMw, IDRC y UEFISCDI"
+      ],
+      [
+        "Financiación de la UE",
+        "Ayuda de Coordinación y Apoyo hasta diciembre de 2029"
+      ]
+    ],
+    "body": [
+      "La Comisión Europea aprovechó la COP 31 para lanzar la Multilateral Initiative on Climate & Health Research Funding, junto con el Wellcome Trust y financiadores públicos de la investigación de cinco continentes. La Comisión la presenta como la primera alianza mundial de financiadores centrada en cómo afecta el cambio climático a la salud. Su objetivo es ayudar a los financiadores a coordinar sus inversiones y prioridades de investigación, reducir la fragmentación y trasladar antes los resultados a las políticas, la tecnología y la práctica.",
+      "Durante 2026 la iniciativa ha tomado forma en un grupo de diseño formado por la Comisión, el Wellcome Trust y nueve financiadores nacionales: NHMRC (Australia), IDRC (Canadá), ANR (Francia), ZonMw (Países Bajos), el Departamento de Salud de Filipinas, UEFISCDI (Rumanía), SAMRC (Sudáfrica), TSRI (Tailandia) y UKRI (Reino Unido), en consulta con la Organización Mundial de la Salud y el conjunto de la comunidad investigadora.",
+      "La alianza tiene cinco objetivos estratégicos, que van desde construir una comunidad investigadora mundial más sólida y aprovechar mejor la financiación hasta definir vías más claras hacia el impacto. Una vez en marcha, podrá adherirse cualquier organización que financie investigación sobre clima y salud. Desde enero de 2027, una secretaría permanente estará a cargo de cuatro miembros del grupo de diseño (ANR, ZonMw, IDRC y UEFISCDI), financiada con una ayuda de Coordinación y Apoyo de la Comisión Europea hasta diciembre de 2029."
+    ],
+    "why": "Análisis de Ullswater Investments: la alianza no abre ninguna convocatoria, pero indica dónde quieren concentrar los financiadores un esfuerzo coordinado. Es probable que la investigación sobre clima y salud gane visibilidad en los programas de trabajo nacionales y europeos, y que la coordinación entre financiadores dé lugar con el tiempo a convocatorias conjuntas o complementarias. Los equipos de investigación y las empresas que trabajan en calor extremo, enfermedades infecciosas, calidad del aire o resiliencia de los sistemas sanitarios deberían seguir los trabajos de la iniciativa y enfocar sus propuestas hacia estas prioridades comunes.",
+    "tags": [
+      "Clima y salud",
+      "COP31",
+      "Wellcome Trust",
+      "Financiación de la investigación",
+      "Cooperación internacional"
+    ]
+  }
 }

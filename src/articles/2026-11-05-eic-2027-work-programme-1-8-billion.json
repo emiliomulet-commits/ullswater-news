@@ -46,5 +46,50 @@
     "Defence"
   ],
   "source_name": "European Innovation Council",
-  "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-funding-opportunities-2027_en"
+  "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-funding-opportunities-2027_en",
+  "es": {
+    "title": "El programa de trabajo 2027 del EIC moviliza más de 1.800 M€ para deep tech",
+    "dek": "La Comisión ha adoptado el plan 2027 del EIC: 578 millones de euros para el Accelerator, 248 millones para Pathfinder y 100 millones para una convocatoria de capital en defensa.",
+    "key_facts": [
+      [
+        "Total",
+        "Más de 1.800 millones de euros"
+      ],
+      [
+        "EIC Accelerator",
+        "578 millones de euros (subvenciones de menos de 2,5 millones; inversiones de 0,5 a 10 millones)"
+      ],
+      [
+        "EIC Pathfinder",
+        "248 millones de euros (subvenciones de hasta 4 millones)"
+      ],
+      [
+        "STEP Scale Up",
+        "290 millones de euros (inversiones de 10 a 30 millones)"
+      ],
+      [
+        "STEP Scale Up Defence",
+        "100 millones de euros (hasta 30 millones en capital directo)"
+      ],
+      [
+        "Scaleup Europe Fund",
+        "400 millones de euros"
+      ]
+    ],
+    "body": [
+      "La Comisión Europea ha adoptado el programa de trabajo 2027 del Consejo Europeo de Innovación, que pone sobre la mesa más de 1.800 millones de euros para tecnologías estratégicas y para empresas que quieren escalar. El dinero se reparte entre seis instrumentos principales, desde la investigación en fase temprana hasta grandes rondas de capital.",
+      "El EIC Accelerator sigue siendo la línea más grande, con 578 millones de euros para startups y pymes, que combina subvenciones de menos de 2,5 millones con inversiones de 0,5 a 10 millones. Pathfinder recibe 248 millones para equipos de investigación multidisciplinares, con subvenciones de hasta 4 millones, y Transition dispone de 92 millones y subvenciones de hasta 2,5 millones para convertir resultados de investigación en innovación. Otros 25 millones van a los Advanced Innovation Challenges, que pagan una cantidad fija de 300.000 euros.",
+      "En la fase de escalado, STEP Scale Up cuenta con 290 millones para inversiones de 10 a 30 millones, y una convocatoria específica STEP Scale Up Defence dispone de 100 millones con hasta 30 millones en capital directo. El Scaleup Europe Fund recibe 400 millones para inversiones de capital de más de 30 millones, que pueden llegar a varios cientos de millones de euros.",
+      "Según el EIC, el programa de 2027 completa la financiación de tres instrumentos creados en 2026: el Scaleup Europe Fund (1.000 millones de euros), las inversiones en defensa (200 millones) y el piloto de Advanced Innovation Challenges (25 millones). Un programa Women TechEU rediseñado duplica sus ayudas hasta 150.000 euros por startup. El EIC presentará sus oportunidades de financiación de 2027 en una jornada informativa en línea el 19 de noviembre, seguida de una sesión sobre los EIC Accelerator Challenges el 20 de noviembre."
+    ],
+    "why": "Con el presupuesto de 2027 ya fijado, los solicitantes pueden planificar su calendario con una dotación conocida y no con estimaciones. El Accelerator sigue siendo la principal puerta de entrada para startups y pymes, pero el peso creciente de los instrumentos de capital muestra que el EIC espera cada vez más que las empresas lleguen con un caso de inversión, no solo con un caso tecnológico. Las empresas de doble uso y defensa tienen ya una vía propia y recurrente. Conviene leer el programa de trabajo completo y los textos de las convocatorias antes de elegir instrumento, porque las reglas y las fases de evaluación pueden cambiar de un año a otro.",
+    "tags": [
+      "EIC",
+      "Programa de trabajo 2027",
+      "EIC Accelerator",
+      "STEP",
+      "Scaleup Europe Fund",
+      "Defensa"
+    ]
+  }
 }

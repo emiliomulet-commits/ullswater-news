@@ -16,5 +16,20 @@
     "Proposal writing",
     "Funding & Tenders Portal",
     "Evaluation criteria"
-  ]
+  ],
+  "es": {
+    "title": "Horizon Implementation Day: cómo encontrar oportunidades y presentar una propuesta",
+    "summary": "Sesión de la Comisión para recién llegados: cómo funciona Horizonte Europa, cómo encontrar convocatorias y socios en el Portal de Financiación y Licitaciones y cómo presentar una propuesta.",
+    "body": [
+      "Esta sesión en directo de la serie Horizon Implementation Day de la Comisión Europea está dirigida a organizaciones que quieren solicitar financiación de Horizonte Europa. Se emitió el 24 de septiembre de 2026.",
+      "El programa empieza con una introducción general a Horizonte Europa, muestra después cómo buscar convocatorias y posibles socios en el Portal de Financiación y Licitaciones y termina con cómo preparar y presentar una propuesta: la plantilla, los principios básicos y los criterios de evaluación. Cada parte va seguida de preguntas y respuestas."
+    ],
+    "why": "Nota de Ullswater Investments: un buen punto de partida para las empresas que se presentan por primera vez a Horizonte Europa. Entender los criterios de evaluación antes de escribir es lo que separa una propuesta financiable de una buena idea sobre el papel.",
+    "tags": [
+      "Horizonte Europa",
+      "Redacción de propuestas",
+      "Portal de Financiación y Licitaciones",
+      "Criterios de evaluación"
+    ]
+  }
 }

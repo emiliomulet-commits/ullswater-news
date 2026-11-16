@@ -53,5 +53,51 @@
   },
   "calls": [
     "EIT HEI-48939733"
-  ]
+  ],
+  "es": {
+    "title": "Convocatoria EIT HEI 2026: hasta 1,25 M€ para consorcios universitarios de deep tech",
+    "dek": "La Iniciativa de Educación Superior del EIT financia consorcios liderados por universidades que refuercen la capacidad de innovación en deep tech y fabricación. Plazo: 13 de enero de 2027.",
+    "key_facts": [
+      [
+        "Programa",
+        "EIT Higher Education Initiative (EIT HEI), convocatoria 2026"
+      ],
+      [
+        "Financiación",
+        "Hasta 1,25 millones de euros por proyecto"
+      ],
+      [
+        "Duración del proyecto",
+        "18 meses, del 1 de mayo de 2027 al 31 de octubre de 2028"
+      ],
+      [
+        "Plazo",
+        "13 de enero de 2027, 17:00 CET"
+      ],
+      [
+        "Consorcio mínimo",
+        "5 socios, con 3 instituciones de educación superior de 3 países y 2 socios empresariales"
+      ],
+      [
+        "Resultados",
+        "Marzo de 2027"
+      ]
+    ],
+    "body": [
+      "La Iniciativa de Educación Superior del EIT abrió su convocatoria 2026 el 20 de octubre de 2026. Financia proyectos que ayudan a universidades y otras instituciones de educación superior a convertir el talento, el conocimiento y la investigación en ciencia y tecnología en innovación y emprendimiento en deep tech y fabricación. Cada proyecto puede recibir hasta 1,25 millones de euros durante 18 meses, del 1 de mayo de 2027 al 31 de octubre de 2028.",
+      "Se espera que los proyectos trabajen en tres frentes conectados: desarrollar talento, reforzar la capacidad de la institución para valorizar el conocimiento e innovar, y vincularla con los ecosistemas de innovación regionales y europeos. Entre las actividades elegibles figuran planes de acción de innovación, programas de emprendimiento, formación y mentoría, estructuras de innovación nuevas o reforzadas dentro de la institución, transferencia de tecnología y creación de startups.",
+      "Las solicitudes las presentan consorcios liderados por una institución de educación superior. El mínimo es de cinco entidades, todas de países elegibles en Horizonte Europa, con al menos tres instituciones de educación superior de tres países distintos (una de ellas en un Estado miembro de la UE) y al menos dos socios empresariales o industriales, que pueden ser redes o asociaciones. También pueden participar centros de investigación, oficinas de transferencia, organismos públicos, intermediarios, empresas sociales y ONG.",
+      "Los solicitantes completan la autoevaluación HEInnovate y un Innovation Vision Action Plan, se registran en el Portal del Participante de la UE y presentan la solicitud en el portal de EIT HEI. El plazo termina el 13 de enero de 2027 a las 17:00 CET y los resultados se esperan en marzo de 2027. Hasta el 3 de diciembre hay sesiones informativas en línea sobre los indicadores esperados, la planificación de la solicitud y del presupuesto, un EIT KIC Discovery Day y una ronda abierta de preguntas."
+    ],
+    "why": "Análisis de Ullswater Investments: el detalle clave es el requisito de socios empresariales. Cada consorcio necesita al menos dos empresas o asociaciones industriales, así que en las próximas semanas las universidades buscarán socios industriales en deep tech y fabricación, y las empresas tienen una vía directa para entrar en proyectos de innovación liderados por universidades. Con el plazo en enero y dos meses por delante, el consorcio debería quedar cerrado en noviembre para dedicar diciembre al plan de acción y al presupuesto. Las universidades españolas que quieran coordinar deberían empezar por la autoevaluación HEInnovate, que condiciona el resto de la propuesta.",
+    "tags": [
+      "EIT",
+      "EIT HEI",
+      "Educación superior",
+      "Deep tech",
+      "Fabricación",
+      "Emprendimiento"
+    ],
+    "action_label": "Busca socios en el matchmaking de EIT HEI"
+  }
 }

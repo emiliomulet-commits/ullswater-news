@@ -44,5 +44,45 @@
   "action": {
     "label": "Register for the info day",
     "url": "https://ec.europa.eu/eusurvey/runner/90fde2eb-528b-b060-275a-080eb0352bfa"
+  },
+  "es": {
+    "title": "El EIC presenta el 19 de noviembre sus oportunidades de financiación de 2027",
+    "dek": "La sesión en línea repasará el Programa de trabajo 2027 instrumento a instrumento, de Pathfinder a STEP Defence. La inscripción cierra el 18 de noviembre.",
+    "key_facts": [
+      [
+        "Evento",
+        "Jornada informativa en línea del Programa de trabajo 2027 del EIC"
+      ],
+      [
+        "Fecha",
+        "19 de noviembre de 2026, 09:30–15:40 CET"
+      ],
+      [
+        "Cierre de inscripción",
+        "18 de noviembre de 2026, 09:30 CET"
+      ],
+      [
+        "Formato",
+        "En línea, en inglés"
+      ],
+      [
+        "Sesiones posteriores",
+        "Accelerator Challenges, 20 de noviembre de 2026; Advanced Innovation Challenges, 3 de febrero de 2027"
+      ]
+    ],
+    "body": [
+      "El Consejo Europeo de Innovación presentará sus oportunidades de financiación de 2027 en una jornada informativa en línea el 19 de noviembre de 2026. La sesión, organizada con su agencia ejecutiva EISMEA y la dirección general de investigación de la Comisión, se celebra en inglés y empezará con los principales cambios del Programa de trabajo 2027.",
+      "Después el programa repasa los instrumentos uno a uno: Pathfinder, Transition, Accelerator, STEP y STEP Defence, seguidos de Business Acceleration Services, Access2EIC y EEN2EIC. Pathfinder y Transition tienen las franjas más largas, de 90 minutos cada una.",
+      "La inscripción cierra el 18 de noviembre a las 09:30 CET. Habrá dos sesiones más: una sobre los EIC Accelerator Challenges el 20 de noviembre de 2026 y otra sobre los EIC Advanced Innovation Challenges el 3 de febrero de 2027."
+    ],
+    "why": "Las empresas que piensen presentarse al EIC el próximo año deberían tomar esta jornada como primer punto de control. Los cambios de reglas entre programas de trabajo pueden afectar a la elegibilidad, la forma de la propuesta y la elección del instrumento, así que conviene asistir antes de empezar a redactar. Las empresas de doble uso y defensa deben tener en cuenta que STEP Defence tiene su propio espacio en el programa. Conviene basar los planes en el programa de trabajo publicado, no en las reglas del año anterior, y usar el canal de preguntas previas para plantear las cuestiones propias del proyecto.",
+    "tags": [
+      "EIC",
+      "Programa de trabajo 2027",
+      "EIC Accelerator",
+      "STEP",
+      "Pathfinder"
+    ],
+    "action_label": "Inscríbete en la jornada informativa"
   }
 }

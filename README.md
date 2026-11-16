@@ -51,6 +51,23 @@ Optional: `"action": {"label": "Register for the info day", "url": "https://<off
 2. Run `python3 src/build.py`.
 3. Commit and push. GitHub Pages republishes in about a minute.
 
+## Spanish version (/es/) — mandatory for every new article and video
+
+The site is bilingual: English at `/`, Spanish at `/es/` (same paths with the `/es` prefix), linked with hreflang and an EN | ES switcher in the header. Every article JSON must carry an `"es"` block with the Spanish translation:
+
+```json
+"es": {
+  "title": "…", "dek": "…",
+  "key_facts": [["Programa", "…"], ["Presupuesto", "…"]],
+  "body": ["Párrafo 1.", "Párrafo 2."],
+  "why": "…",
+  "tags": ["Horizonte Europa", "…"],
+  "action_label": "Inscríbete en la jornada informativa"
+}
+```
+
+Rules: a faithful translation of the English text (no new facts, same figures and dates, same number of `key_facts` and `body` paragraphs). Spanish number format (1.800 millones de euros, 12,75 millones). Official Spanish terms: Horizon Europe → Horizonte Europa, call → convocatoria, topic → tema, work programme → programa de trabajo, Cluster → Clúster, EIB → BEI, EIF → FEI, ERDF → FEDER, SME → pyme, info day → jornada informativa. Programme and instrument names stay in English (EIC Accelerator, Pathfinder, STEP, call codes). "Ullswater Investments analysis:" → "Análisis de Ullswater Investments:". Videos take `"es": {"title", "summary", "body", "why", "tags"}`. If the block is missing, the Spanish page shows the English text with a notice, so always add it.
+
 ## Videos section (/videos/)
 
 Add `src/videos/YYYY-MM-DD-slug.json` to publish an official video at `/videos/<slug>/` (also listed on `/videos/`, in the sitemap and in llms.txt; a "Videos" link appears in the category bar):

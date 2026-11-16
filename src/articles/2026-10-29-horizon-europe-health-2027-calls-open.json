@@ -42,5 +42,46 @@
     "Antimicrobials"
   ],
   "source_name": "European Health and Digital Executive Agency (HaDEA)",
-  "source_url": "https://hadea.ec.europa.eu/news/2027-horizon-europe-health-calls-are-open-proposals-2026-10-29_en"
+  "source_url": "https://hadea.ec.europa.eu/news/2027-horizon-europe-health-calls-are-open-proposals-2026-10-29_en",
+  "es": {
+    "title": "Horizonte Europa abre 14 temas de «Salud» para 2027, con plazo el 17 de febrero",
+    "dek": "HaDEA ha publicado las convocatorias de «Salud» de 2027, de antivirales y antimicrobianos a biomarcadores con IA y diagnóstico en el punto de atención. Jornada informativa el 26 de noviembre.",
+    "key_facts": [
+      [
+        "Programa",
+        "Horizonte Europa, Clúster 1 «Salud»"
+      ],
+      [
+        "Temas",
+        "14 temas en las convocatorias de 2027"
+      ],
+      [
+        "Plazo",
+        "17 de febrero de 2027, 17:00 hora de Bruselas"
+      ],
+      [
+        "Jornada informativa",
+        "26 de noviembre de 2026"
+      ],
+      [
+        "Próximas aperturas",
+        "Asociación de Preparación ante Pandemias (fase 2), prevista el 10 de febrero de 2027; convocatorias de la Misión Cáncer en febrero de 2027"
+      ]
+    ],
+    "body": [
+      "La Agencia Ejecutiva Europea de Salud y Digital (HaDEA) ha anunciado que las convocatorias de «Salud» de Horizonte Europa para 2027 están abiertas en el Portal de Financiación y Licitaciones de la UE. Las propuestas deben presentarse antes del 17 de febrero de 2027 a las 17:00, hora de Bruselas.",
+      "Los 14 temas abarcan un amplio abanico. En enfermedades infecciosas incluyen nuevos antivirales de molécula pequeña para patógenos con potencial epidémico, anticuerpos monoclonales contra varias familias de virus, entre ellas los flavivirus, y antimicrobianos innovadores contra patógenos resistentes. Otros temas tratan las enfermedades no transmisibles, los ensayos clínicos en enfermedades neurodegenerativas, la prevención de enfermedades crónicas en niños y jóvenes, la discapacidad y la vida independiente, y los efectos del cambio climático en la salud.",
+      "Varios temas se dirigen a desarrolladores de tecnología: biomarcadores predictivos basados en IA de la evolución de la enfermedad y la respuesta al tratamiento, plataformas de síntesis de proteínas sin células para productos biológicos, diagnóstico portátil en el punto de atención y enfoques personalizados para reducir las reacciones adversas causadas por la polimedicación. Algunos temas funcionan como convocatorias en dos fases.",
+      "Una jornada informativa del Clúster 1 «Salud» el 26 de noviembre de 2026 presentará los temas de 2027. HaDEA anuncia además nuevas convocatorias: la Asociación Europea de Preparación ante Pandemias (fase 2) abrirá previsiblemente el 10 de febrero de 2027, las convocatorias de la Misión de la UE contra el Cáncer abrirán en febrero de 2027 y habrá más convocatorias en junio de 2027."
+    ],
+    "why": "Con un único plazo en febrero, los consorcios tienen unos tres meses para formar alianzas y redactar propuestas, un margen ajustado para trabajos clínicos y multinacionales. Los temas en dos fases reducen el esfuerzo de un primer envío, pero dejan poco margen a un concepto débil. Los temas de biomarcadores con IA, diagnóstico y síntesis de proteínas encajan de forma natural con pymes de tecnología sanitaria y biotecnología que puedan aportar un enfoque industrial a consorcios académicos. Conviene revisar las condiciones de cada tema en el Portal de Financiación y Licitaciones y aprovechar la jornada informativa para comprobar el encaje antes de comprometerse.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 1 Salud",
+      "HaDEA",
+      "IA",
+      "Diagnóstico",
+      "Antimicrobianos"
+    ]
+  }
 }

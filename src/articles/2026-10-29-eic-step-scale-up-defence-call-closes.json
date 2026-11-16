@@ -5,12 +5,30 @@
   "title": "First EIC defence equity call closes with nine applications",
   "dek": "The EIC STEP Scale Up Defence call offered direct equity of up to €30 million per company; results are expected in early 2027.",
   "key_facts": [
-    ["Call", "EIC STEP Scale Up Defence"],
-    ["Closed", "28 October 2026"],
-    ["Applications", "9 from 7 countries"],
-    ["Instrument", "Direct equity, up to €30 million per company"],
-    ["Budget", "€100 million"],
-    ["Results", "Expected early 2027"]
+    [
+      "Call",
+      "EIC STEP Scale Up Defence"
+    ],
+    [
+      "Closed",
+      "28 October 2026"
+    ],
+    [
+      "Applications",
+      "9 from 7 countries"
+    ],
+    [
+      "Instrument",
+      "Direct equity, up to €30 million per company"
+    ],
+    [
+      "Budget",
+      "€100 million"
+    ],
+    [
+      "Results",
+      "Expected early 2027"
+    ]
   ],
   "body": [
     "The first EIC STEP Scale Up Defence call closed on 28 October with nine applications from seven countries.",
@@ -18,7 +36,56 @@
     "The call has a €100 million budget and results are expected in early 2027. Dual-use innovators can apply through the EIC Accelerator and the general STEP Scale Up call."
   ],
   "why": "Defence is now an equity market for the EIC, not just a grant topic. Companies with dual-use technologies do not need a dedicated defence call: the EIC Accelerator and the general STEP Scale Up call remain open routes, and a well-prepared investment case matters as much as the technology.",
-  "tags": ["EIC", "STEP", "Defence", "Equity", "Dual use"],
+  "tags": [
+    "EIC",
+    "STEP",
+    "Defence",
+    "Equity",
+    "Dual use"
+  ],
   "source_name": "European Innovation Council",
-  "source_url": "https://eic.ec.europa.eu/news/overview-eic-step-scale-defence-call-submissions-2026-10-29_en"
+  "source_url": "https://eic.ec.europa.eu/news/overview-eic-step-scale-defence-call-submissions-2026-10-29_en",
+  "es": {
+    "title": "Cierra la primera convocatoria de capital del EIC para defensa con nueve solicitudes",
+    "dek": "La convocatoria EIC STEP Scale Up Defence ofrecía capital directo de hasta 30 millones de euros por empresa; los resultados se esperan a principios de 2027.",
+    "key_facts": [
+      [
+        "Convocatoria",
+        "EIC STEP Scale Up Defence"
+      ],
+      [
+        "Cierre",
+        "28 de octubre de 2026"
+      ],
+      [
+        "Solicitudes",
+        "9 de 7 países"
+      ],
+      [
+        "Instrumento",
+        "Capital directo, hasta 30 millones de euros por empresa"
+      ],
+      [
+        "Presupuesto",
+        "100 millones de euros"
+      ],
+      [
+        "Resultados",
+        "Previstos a principios de 2027"
+      ]
+    ],
+    "body": [
+      "La primera convocatoria EIC STEP Scale Up Defence cerró el 28 de octubre con nueve solicitudes de siete países.",
+      "Es el primer instrumento de financiación de la UE que ofrece capital directo, de hasta 30 millones de euros por empresa, a compañías cuyas tecnologías sirven principalmente a fines de defensa, desde la defensa aérea y antimisiles hasta los drones y los sistemas antidrones.",
+      "La convocatoria tiene un presupuesto de 100 millones de euros y los resultados se esperan a principios de 2027. Los innovadores de doble uso pueden presentarse al EIC Accelerator y a la convocatoria general STEP Scale Up."
+    ],
+    "why": "La defensa ya es un mercado de capital para el EIC, no solo un tema de subvenciones. Las empresas con tecnologías de doble uso no necesitan una convocatoria específica de defensa: el EIC Accelerator y la convocatoria general STEP Scale Up siguen siendo vías abiertas, y un buen caso de inversión pesa tanto como la tecnología.",
+    "tags": [
+      "EIC",
+      "STEP",
+      "Defensa",
+      "Capital",
+      "Doble uso"
+    ]
+  }
 }

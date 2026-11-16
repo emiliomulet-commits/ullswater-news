@@ -13,5 +13,25 @@
     "This stream covers the second day of sessions in the Auditorium. Policymakers, researchers, innovators, business leaders and civil society discuss how research and innovation can strengthen Europe's competitiveness, resilience and technological sovereignty."
   ],
   "why": "Ullswater Investments note: the R&I Days are where the Commission sets out the direction of EU research and innovation policy. The debates help companies and consortia read the priorities behind future Horizon Europe calls and the next framework programme, which is useful context when positioning a proposal.",
-  "tags": ["R&I Days", "Horizon Europe", "Research policy", "European Commission"]
+  "tags": [
+    "R&I Days",
+    "Horizon Europe",
+    "Research policy",
+    "European Commission"
+  ],
+  "es": {
+    "title": "Días Europeos de la Investigación y la Innovación 2026: día 2 (Auditorio)",
+    "summary": "Emisión completa del segundo día en el Auditorio del gran evento de investigación e innovación de la Comisión, celebrado en Bruselas y en línea.",
+    "body": [
+      "Los Días Europeos de la Investigación y la Innovación son el evento de referencia de la Comisión Europea sobre política de investigación e innovación. La edición de 2026, la séptima, se celebra el 10 y 11 de noviembre en Bruselas y en línea, organizada por la Dirección General de Investigación e Innovación.",
+      "Esta emisión recoge el segundo día de sesiones en el Auditorio. Responsables políticos, investigadores, innovadores, directivos y sociedad civil debaten cómo la investigación y la innovación pueden reforzar la competitividad, la resiliencia y la soberanía tecnológica de Europa."
+    ],
+    "why": "Nota de Ullswater Investments: los Días de I+I son donde la Comisión expone la orientación de la política europea de investigación e innovación. Los debates ayudan a empresas y consorcios a entender las prioridades detrás de las próximas convocatorias de Horizonte Europa y del próximo programa marco, un contexto útil para posicionar una propuesta.",
+    "tags": [
+      "Días de I+I",
+      "Horizonte Europa",
+      "Política de investigación",
+      "Comisión Europea"
+    ]
+  }
 }

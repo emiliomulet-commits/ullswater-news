@@ -41,7 +41,12 @@ CAT_CALLS = {"digital-ai": ("/theme/digital-industry-space/", "Open digital and 
 # Same network menu on www, calls, news and events
 NETWORK = [("Home", "https://www.ullswaterinvestments.com/"), ("EU calls", "https://calls.ullswaterinvestments.com/"), ("News", "https://news.ullswaterinvestments.com/"),
            ("Events", "https://events.ullswaterinvestments.com/"), ("Projects", "https://www.ullswaterinvestments.com/projects/"), ("About", "https://www.ullswaterinvestments.com/about/")]
-def network(cur): return "".join(f'<a href="{u}"{" aria-current=page" if t == cur else ""}>{t}</a>' for t, u in NETWORK)
+# Spanish menu: www, news and events have /es/ versions; calls.ullswaterinvestments.com stays in English only.
+NETWORK_ES = [("Inicio", "https://www.ullswaterinvestments.com/es/"), ("Convocatorias UE", "https://calls.ullswaterinvestments.com/"), ("Noticias", "https://news.ullswaterinvestments.com/es/"),
+              ("Eventos", "https://events.ullswaterinvestments.com/es/"), ("Proyectos", "https://www.ullswaterinvestments.com/es/projects/"), ("Quiénes somos", "https://www.ullswaterinvestments.com/es/about/")]
+def network(cur):
+    items = NETWORK_ES if ES() else NETWORK
+    return "".join(f'<a href="{u}"{" aria-current=page" if i == [t for t, _ in NETWORK].index(cur) else ""}>{t}</a>' for i, (t, u) in enumerate(items))
 
 AUTHOR = {
     "name": "Emilio Mulet",
@@ -66,10 +71,72 @@ CATEGORIES = {
     "climate-energy": ("Climate & Energy", "Innovation Fund, LIFE, clean energy and climate funding."),
     "health": ("Health & Health Data", "EU4Health, Horizon Europe Health and the European Health Data Space."),
 }
+CATEGORIES_ES = {
+    "horizon-europe": ("Horizonte Europa", "Convocatorias, programas de trabajo y resultados de Horizonte Europa, el programa de investigación e innovación de la UE."),
+    "digital-ai": ("Digital e IA", "Financiación europea para inteligencia artificial, espacios de datos, infraestructura digital y Europa Digital."),
+    "eic-defence": ("EIC, defensa y capital", "Consejo Europeo de Innovación, STEP, Fondo Europeo de Defensa e instrumentos de capital de la UE."),
+    "research-policy": ("Política de investigación", "Espacio Europeo de Investigación, ciencia abierta y las normas de la investigación financiada por la UE."),
+    "budget-policy": ("Presupuesto y política UE", "El presupuesto de la UE, el MFP 2028–2034, el FP10 y la política detrás de la financiación europea."),
+    "spain": ("España", "Financiación española de I+D+i: CDTI, AEI, Red.es, ENISA y NextGenerationEU."),
+    "climate-energy": ("Clima y energía", "Fondo de Innovación, LIFE, energía limpia y financiación climática."),
+    "health": ("Salud y datos sanitarios", "EU4Health, Horizonte Europa Salud y el Espacio Europeo de Datos Sanitarios."),
+}
+def CAT(k): return (CATEGORIES_ES if ES() else CATEGORIES)[k]
+SITE_ES = {
+    "name": "Noticias de financiación europea · Ullswater Investments",
+    "short": "Noticias de financiación UE",
+    "description": "Noticias diarias y verificadas sobre financiación europea para innovadores, investigadores y pymes: Horizonte Europa, EIC, Europa Digital, defensa, fondos de cohesión y ayudas españolas de I+D, con enlace a las fuentes oficiales.",
+    "book_url": "https://www.ullswaterinvestments.com/es/investment-readiness/",
+}
+def S(k): return SITE_ES.get(k, SITE[k]) if ES() else SITE[k]
+AUTHOR_ES = {
+    "role": "Socio Director, Ullswater Investments",
+    "bio": [
+        "Emilio Mulet es Socio Director de Ullswater Investments, firma de asesoramiento en financiación europea y creación de empresas con sede en Madrid.",
+        "Asesora a empresas y consorcios en financiación europea y española de I+D, incluidos Horizonte Europa y los instrumentos del CDTI, Red.es y ENISA, y en la gestión de proyectos financiados.",
+        "Su actividad gira en torno a los espacios de datos federados: ha trabajado en tres demostradores europeos de espacios de datos financiados por la SEDIA —Global Data Care (salud), PROCUREDATA (contratación pública) y EcoDataNet (economía circular)— y en arquitecturas de intercambio de datos basadas en Gaia-X, IDSA y ODRL.",
+    ],
+}
+def A(k): return AUTHOR_ES.get(k, AUTHOR[k]) if ES() else AUTHOR[k]
+CAT_CALLS_ES = {"digital-ai": "Convocatorias abiertas de digital e IA", "eic-defence": "Convocatorias abiertas del EIC", "climate-energy": "Convocatorias abiertas de clima, energía y movilidad",
+                "health": "Convocatorias abiertas de salud", "spain": "Convocatorias abiertas nacionales y regionales en España", "horizon-europe": "Todas las convocatorias abiertas de la UE"}
 
 E = lambda s: html.escape(str(s), quote=True)
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-def nice(d): return f"{d.day} {MONTHS[d.month-1]} {d.year}"
+MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+
+# ---- Bilingual site (Nov 2026): English at /, Spanish at /es/ ----
+# Each article/video JSON may carry an "es" block with the Spanish text of
+# title, dek, key_facts, body, why, tags, summary and action.label.
+LANG = "en"
+def ES(): return LANG == "es"
+def nice(d): return f"{d.day} de {MESES[d.month-1]} de {d.year}" if ES() else f"{d.day} {MONTHS[d.month-1]} {d.year}"
+def P(path):
+    """Internal path in the current language."""
+    return ("/es" + path) if ES() and path.startswith("/") else path
+def F(a, key, default=None):
+    """Field of an article/video in the current language (falls back to English)."""
+    if ES():
+        v = (a.get("es") or {}).get(key)
+        if v: return v
+    return a.get(key, default)
+def has_es(a): return bool((a.get("es") or {}).get("title"))
+UI = {  # English → Spanish interface strings
+    "News": "Noticias", "Videos": "Vídeos", "Category": "Categoría", "Source": "Fuente", "Published": "Publicado el", "By": "Por",
+    "Key facts": "Datos clave", "Why it matters": "Por qué importa", "Official source": "Fuente oficial",
+    "— always check eligibility, budgets and deadlines on the official page before applying.": "— comprueba siempre la elegibilidad, los presupuestos y los plazos en la página oficial antes de solicitar.",
+    "Related calls": "Convocatorias relacionadas", ": deadline, conditions and partners": ": plazo, condiciones y socios", "Apply with our support": "Solicítala con nuestro apoyo",
+    "Preparing a proposal?": "¿Preparando una propuesta?", "Ullswater Investments helps companies match, prepare and submit EU funding applications.": "Ullswater Investments ayuda a las empresas a encontrar, preparar y presentar solicitudes de financiación europea.",
+    "EU funding advisor.": "Asesor de financiación europea.", "Related news": "Noticias relacionadas", "More videos": "Más vídeos", "Why watch it": "Por qué verlo",
+    "Video": "Vídeo", "Video by": "Vídeo de", "Event": "Evento", "Embedded from YouTube.": "Insertado desde YouTube.", "Watch on YouTube ↗": "Ver en YouTube ↗",
+    "Updated": "Actualizado el", "articles": "noticias", "Every article links to its official source.": "Cada noticia enlaza a su fuente oficial.",
+    "Closing in the next": "Cierran en los próximos", "days": "días", "All deadlines →": "Todos los plazos →",
+    "Call": "Convocatoria", "Programme": "Programa", "Deadline": "Plazo", "Status": "Estado", "Open": "Abierta", "Forthcoming": "Próxima", "Closed": "Cerrada",
+    "EU Funding Advisors": "Asesores de financiación europea", "Editorial policy": "Política editorial", "Author": "Autor", "Latest articles": "Últimas noticias",
+    "Contact": "Contacto", "Categories": "Categorías", "Page not found": "Página no encontrada", "Language": "Idioma",
+    "This news item is only available in English for now.": "Esta noticia de momento solo está disponible en inglés.",
+}
+def T(s): return UI.get(s, s) if ES() else s
 
 CSS = """
 :root{--navy:#233567;--navy2:#1a2850;--gold:#c9a646;--ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--bg:#f5f6f8}
@@ -86,6 +153,8 @@ nav.cats .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:6px;padding-bott
 nav.cats a{color:#dbe2f5;text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px;white-space:nowrap}
 nav.cats a:hover,nav.cats a[aria-current]{background:rgba(255,255,255,.12);color:#fff}
 .top-links a{color:#fff;font-size:14px;text-decoration:none;margin-left:16px;opacity:.9}
+.hdr-r{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.lang{display:flex;flex-shrink:0;border:1px solid rgba(255,255,255,.35);border-radius:6px;overflow:hidden;font-size:13px;font-weight:700}.lang a{color:#e6ebf7;text-decoration:none;padding:6px 9px;letter-spacing:.04em}.lang a[aria-current]{background:var(--gold);color:var(--navy)}.lang a:not([aria-current]):hover{background:rgba(255,255,255,.12)}
 .hero{background:var(--bg);border-bottom:1px solid var(--line)}
 .hero .wrap{padding:40px 20px 32px}
 .kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#8a6a1c;margin:0 0 8px}
@@ -136,7 +205,7 @@ table.calls td.dl{white-space:nowrap;font-weight:600}
 .vthumb{display:block;position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
 .vthumb span{position:absolute;left:12px;bottom:12px;width:48px;height:34px;border-radius:12px;background:rgba(200,0,0,.9);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px}
 .player{position:relative;aspect-ratio:16/9;margin:20px 0;border-radius:10px;overflow:hidden;background:#000}.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-@media(max-width:640px){h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}}
+@media(max-width:640px){.hdr-r{width:100%;justify-content:space-between}h1,article.post h1{font-size:28px}.facts dl{grid-template-columns:1fr}.top-links{display:flex;overflow-x:auto;width:100%;padding-bottom:6px}.top-links a{margin:0 14px 0 0;white-space:nowrap}}
 """
 
 def org_ld():
@@ -152,30 +221,35 @@ def person_ld():
             "url": SITE["url"] + AUTHOR_PATH, "worksFor": {"@type": "Organization", "name": SITE["org"], "url": SITE["org_url"]},
             "knowsAbout": AUTHOR["knows"], "sameAs": ["https://www.linkedin.com/in/emilio-mulet-esade/"]}
 
-def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False):
-    canon = SITE["url"] + path
-    navs = "".join(f'<a href="/{k}/"{" aria-current=\"page\"" if k == cur else ""}>{E(v[0])}</a>' for k, v in CATEGORIES.items() if k in ACTIVE)
-    if HAS_VIDEOS: navs += f'<a href="/videos/"{" aria-current=\"page\"" if cur == "videos" else ""}>Videos</a>'
+def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False, bilingual=True):
+    """path is the English path; the Spanish page lives at /es + path."""
+    canon = SITE["url"] + P(path)
+    navs = "".join(f'<a href="{P("/" + k + "/")}"{" aria-current=\"page\"" if k == cur else ""}>{E(CAT(k)[0])}</a>' for k in CATEGORIES if k in ACTIVE)
+    if HAS_VIDEOS: navs += f'<a href="{P("/videos/")}"{" aria-current=\"page\"" if cur == "videos" else ""}>{T("Videos")}</a>'
+    alt = (f'<link rel="alternate" hreflang="en" href="{SITE["url"]}{path}"><link rel="alternate" hreflang="es" href="{SITE["url"]}/es{path}"><link rel="alternate" hreflang="x-default" href="{SITE["url"]}{path}">'
+           if bilingual else "")
+    switch = (f'<nav class="lang" aria-label="{T("Language")}"><a href="{path}" hreflang="en" lang="en"{"" if ES() else ' aria-current="true"'}>EN</a>'
+              f'<a href="/es{path}" hreflang="es" lang="es"{' aria-current="true"' if ES() else ""}>ES</a></nav>' if bilingual else "")
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in (ld or []))
     year = datetime.date.today().year
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{LANG}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
-<link rel="canonical" href="{canon}">
+<link rel="canonical" href="{canon}">{alt}
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-snippet:-1, max-image-preview:large'}">
-<meta property="og:site_name" content="{E(SITE['name'])}">
+<meta property="og:site_name" content="{E(S('name'))}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{E(title)}">
 <meta property="og:description" content="{E(desc)}">
 <meta property="og:url" content="{canon}">
-<meta property="og:locale" content="en_GB">
+<meta property="og:locale" content="{'es_ES' if ES() else 'en_GB'}">
 <meta property="og:image" content="{SITE['url']}/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="{E(SITE['name'])}" href="{SITE['url']}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{E(S('name'))}" href="{SITE['url']}{P('/feed.xml')}">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -183,13 +257,13 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 {extra_head}{ld_html}
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="/">Ullswater Investments <span>· EU Funding News</span></a>
-<nav class="top-links" aria-label="Ullswater Investments sites">{network("News")}</nav></div></header>
-<nav class="cats" aria-label="Categories"><div class="wrap">{navs}</div></nav>
+<header class="site"><div class="wrap"><a class="brand" href="{P('/')}">Ullswater Investments <span>· {E(S('short'))}</span></a>
+<div class="hdr-r"><nav class="top-links" aria-label="Ullswater Investments">{network("News")}</nav>{switch}</div></div></header>
+<nav class="cats" aria-label="{T('Categories')}"><div class="wrap">{navs}</div></nav>
 <main>{body}</main>
 <footer class="site"><div class="wrap">
-<div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>EU Funding Advisors · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
-<div><a href="{SITE['org_url']}">ullswaterinvestments.com</a> · <a href="/about/">Editorial policy</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">Sitemap</a><br>© {year} {E(SITE['org_legal'])}</div>
+<div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>{T("EU Funding Advisors")} · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
+<div><a href="{SITE['org_url']}{'/es/' if ES() else ''}">ullswaterinvestments.com</a> · <a href="{P('/about/')}">{T("Editorial policy")}</a> · <a href="{P('/feed.xml')}">RSS</a> · <a href="/sitemap.xml">Sitemap</a><br>© {year} {E(SITE['org_legal'])}</div>
 </div></footer>
 </body>
 </html>"""
@@ -224,31 +298,31 @@ def load_videos():
     return vids
 
 def vcard(v):
-    return (f'<article class="card"><a class="vthumb" href="{v["path"]}" aria-label="Watch: {E(v["title"])}"><img src="{v["thumb"]}" alt="" loading="lazy" width="480" height="360"><span>▶</span></a>'
-            f'<h2><a href="{v["path"]}">{E(v["title"])}</a></h2>'
+    return (f'<article class="card"><a class="vthumb" href="{P(v["path"])}" aria-label="{T("Video")}: {E(F(v, "title"))}"><img src="{v["thumb"]}" alt="" loading="lazy" width="480" height="360"><span>▶</span></a>'
+            f'<h2><a href="{P(v["path"])}">{E(F(v, "title"))}</a></h2>'
             f'<div class="meta"><time datetime="{v["date"]}">{nice(v["d"])}</time> · {E(v["channel_name"])}</div>'
-            f'<p>{E(v["summary"])}</p></article>')
+            f'<p>{E(F(v, "summary"))}</p></article>')
 
 def card(a):
-    c = CATEGORIES[a["category"]][0]
-    return (f'<article class="card"><div><a class="tag" href="/{a["category"]}/">{E(c)}</a></div>'
-            f'<h2><a href="{a["path"]}">{E(a["title"])}</a></h2>'
-            f'<div class="meta"><time datetime="{a["date"]}">{nice(a["d"])}</time> · Source: {E(a["source_name"])}</div>'
-            f'<p>{E(a["dek"])}</p></article>')
+    c = CAT(a["category"])[0]
+    return (f'<article class="card"><div><a class="tag" href="{P("/" + a["category"] + "/")}">{E(c)}</a></div>'
+            f'<h2><a href="{P(a["path"])}">{E(F(a, "title"))}</a></h2>'
+            f'<div class="meta"><time datetime="{a["date"]}">{nice(a["d"])}</time> · {T("Source")}: {E(a["source_name"])}</div>'
+            f'<p>{E(F(a, "dek"))}</p></article>')
 
 def call_rows(cs):
     return "".join(f'<tr><td><a href="{c.get("href") or c["path"]}">{E(c["title"])}</a><span class="code">{E(c["code"])}</span></td>'
                    f'<td>{E(GROUPS[c["group"]][0])}</td><td class="dl"><time datetime="{c["deadline"][:10]}">{nice(c["dl"])}</time></td>'
-                   f'<td><span class="st st-{c["state"]}">{c["state"]}</span></td></tr>' for c in cs)
+                   f'<td><span class="st st-{c["state"]}">{T(c["state"])}</span></td></tr>' for c in cs)
 
 def call_table(cs):
-    return ('<div style="overflow-x:auto"><table class="calls"><thead><tr><th>Call</th><th>Programme</th><th>Deadline</th><th>Status</th></tr></thead>'
+    return (f'<div style="overflow-x:auto"><table class="calls"><thead><tr><th>{T("Call")}</th><th>{T("Programme")}</th><th>{T("Deadline")}</th><th>{T("Status")}</th></tr></thead>'
             f'<tbody>{call_rows(cs)}</tbody></table></div>')
 
 def soon_block(live, days, n):
     soon = [c for c in live if c["status"] == "open" and 0 <= c["days"] <= days][:n]
     if not soon: return ""
-    return (f'<section class="section"><div class="soon"><h2>Closing in the next {days} days</h2><a href="https://calls.ullswaterinvestments.com/closing-soon/">All deadlines →</a></div>'
+    return (f'<section class="section"><div class="soon"><h2>{T("Closing in the next")} {days} {T("days")}</h2><a href="https://calls.ullswaterinvestments.com/closing-soon/">{T("All deadlines →")}</a></div>'
             + call_table(soon) + '</section>')
 
 # "Apply with our support" form (Google Form, see ullswater-calls/tools/support_request_setup.gs). CALL and PAGE are replaced per page.
@@ -261,14 +335,15 @@ def support_link(label, page_url):
 
 def related_calls(a):
     """Call pages (optional "calls": [ids]) and the open calls of the article's area, on calls.ullswaterinvestments.com."""
-    li = [f'<li><a href="{CALLS}/call/{calls_slug(c)}/">{E(TITLES.get(c) or c)}</a>: deadline, conditions and partners</li>' for c in a.get("calls", [])]
+    li = [f'<li><a href="{CALLS}/call/{calls_slug(c)}/">{E(TITLES.get(c) or c)}</a>{T(": deadline, conditions and partners")}</li>' for c in a.get("calls", [])]
     if a["category"] in CAT_CALLS:
         u, t = CAT_CALLS[a["category"]]
+        if ES(): t = CAT_CALLS_ES.get(a["category"], t)
         li.append(f'<li><a href="{CALLS}{u}">{E(t)}</a></li>')
     if not li: return ""
     label = (TITLES.get(a["calls"][0]) or a["calls"][0]) if a.get("calls") else a["title"]
-    btn = f'<p class="act"><a class="btn" href="{E(support_link(label, SITE["url"] + a["path"]))}" target="_blank" rel="noopener">Apply with our support</a></p>' if a.get("calls") else ""
-    return f'<section class="src"><h2>Related calls</h2><ul>{"".join(li)}</ul>{btn}</section>'
+    btn = f'<p class="act"><a class="btn" href="{E(support_link(label, SITE["url"] + P(a["path"])))}" target="_blank" rel="noopener">{T("Apply with our support")}</a></p>' if a.get("calls") else ""
+    return f'<section class="src"><h2>{T("Related calls")}</h2><ul>{"".join(li)}</ul>{btn}</section>'
 
 def write(path, text):
     p = OUT / path.lstrip("/")
@@ -278,6 +353,173 @@ def write(path, text):
 
 ACTIVE = set()
 HAS_VIDEOS = False
+
+def lang_pages(arts, vids, live):
+    """All reader-facing pages in the current LANG (English paths, /es prefix for Spanish)."""
+    url = lambda path: SITE["url"] + P(path)
+    book = S("book_url")
+    cta = (f'<aside class="cta"><div><strong>{T("Preparing a proposal?")}</strong><p>{T("Ullswater Investments helps companies match, prepare and submit EU funding applications.")}</p></div>'
+           f'<a class="btn" href="{book}">Investment Readiness →</a></aside>')
+    only_en = lambda a: '' if (not ES() or has_es(a)) else f'<p class="notice" lang="es">{T("This news item is only available in English for now.")}</p>'
+
+    # Articles
+    for a in arts:
+        cat, catdesc = CAT(a["category"])
+        facts = "".join(f"<dt>{E(k)}</dt><dd>{E(v)}</dd>" for k, v in F(a, "key_facts", []))
+        body = "".join(f"<p>{E(p)}</p>" for p in F(a, "body"))
+        related = [b for b in arts if b is not a and b["category"] == a["category"]][:3] or [b for b in arts if b is not a][:3]
+        ld = [{
+            "@context": "https://schema.org", "@type": "NewsArticle",
+            "headline": F(a, "title"), "description": F(a, "dek"), "inLanguage": "es" if ES() and has_es(a) else "en",
+            "datePublished": a["date"], "dateModified": a["updated"],
+            "mainEntityOfPage": url(a["path"]), "url": url(a["path"]),
+            "image": [SITE["url"] + "/assets/og.png"],
+            "articleSection": cat, "keywords": ", ".join(F(a, "tags", [])),
+            "author": person_ld(),
+            "publisher": org_ld(),
+            "isBasedOn": a["source_url"],
+            "citation": {"@type": "CreativeWork", "name": a["source_name"], "url": a["source_url"]},
+        }, {
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": T("News"), "item": url("/")},
+                {"@type": "ListItem", "position": 2, "name": cat, "item": url(f"/{a['category']}/")},
+                {"@type": "ListItem", "position": 3, "name": F(a, "title"), "item": url(a["path"])}]}]
+        if ES() and has_es(a): ld[0]["translationOfWork"] = {"@type": "NewsArticle", "url": SITE["url"] + a["path"], "inLanguage": "en"}
+        head = (f'<meta property="article:published_time" content="{a["date"]}">'
+                f'<meta property="article:modified_time" content="{a["updated"]}">'
+                f'<meta property="article:section" content="{E(cat)}">')
+        tags = "".join(f"<span>{E(t)}</span>" for t in F(a, "tags", []))
+        why = f'<section class="why"><h2>{T("Why it matters")}</h2><p>{E(F(a, "why"))}</p></section>' if a.get("why") else ""
+        act = a.get("action")  # optional {"label", "url"}: direct link to the official registration/application page
+        act_label = ((a.get("es") or {}).get("action_label") if ES() else None) or (act or {}).get("label")
+        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act_label)} ↗</a></p>' if act else ""
+        rel = "".join(f'<li><a href="{P(b["path"])}">{E(F(b, "title"))}</a> <span class="meta">· {nice(b["d"])}</span></li>' for b in related)
+        html_ = f"""<article class="post">
+<div class="crumbs"><a href="{P('/')}">{T('News')}</a> › <a href="{P('/' + a['category'] + '/')}">{E(cat)}</a></div>
+{only_en(a)}<p class="kicker">{E(cat)}</p>
+<h1>{E(F(a, 'title'))}</h1>
+<p class="dek">{E(F(a, 'dek'))}</p>
+<div class="meta">{T('Published')} <time datetime="{a['date']}">{nice(a['d'])}</time> · {T('By')} <a href="{P(AUTHOR_PATH)}">{AUTHOR['name']}</a> · {T('Source')}: <a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a></div>
+{f'<section class="facts" aria-label="{T("Key facts")}"><h2>{T("Key facts")}</h2><dl>{facts}</dl>{act_btn}</section>' if facts else act_btn}
+<div class="body">{body}</div>
+{why}
+<section class="src"><h2>{T('Official source')}</h2><p><a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a> {T('— always check eligibility, budgets and deadlines on the official page before applying.')}</p>{act_btn}</section>
+{related_calls(a)}
+<div class="tags">{tags}</div>
+{cta}
+<div class="author-card"><div class="avatar">EM</div><div><strong><a href="{P(AUTHOR_PATH)}">{AUTHOR['name']}</a></strong><br><span class="meta">{E(A('role'))}. {T('EU funding advisor.')}</span></div></div>
+{f'<section class="why"><h2>{T("Related news")}</h2><ul>{rel}</ul></section>' if rel else ''}
+</article>"""
+        write(P(a["path"]), page(f"{F(a, 'title')} · {S('short')}", F(a, "dek"), a["path"], html_, ld, "article", head, a["category"]))
+
+    # Home
+    site_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": S("name"), "url": url("/"),
+                "description": S("description"), "inLanguage": LANG, "publisher": org_ld()},
+               {"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [
+                   {"@type": "ListItem", "position": i + 1, "url": url(a["path"]), "name": F(a, "title")} for i, a in enumerate(arts[:20])]}]
+    h1 = "Noticias de financiación europea" if ES() else "EU Funding News"
+    home = (f'<section class="hero"><div class="wrap"><p class="kicker">Ullswater Investments · {T("EU Funding Advisors")}</p>'
+            f'<h1>{h1}</h1><p class="lead">{E(S("description"))}</p>'
+            f'<p class="meta" style="margin-top:12px">{T("Updated")} {nice(arts[0]["d"]) if arts else ""} · {len(arts)} {T("articles")} · {T("Every article links to its official source.")}</p></div></section>'
+            f'<div class="wrap"><div class="grid">{"".join(card(a) for a in arts[:30])}</div>'
+            + soon_block(live, 30, 10) + '</div>')
+    title = (f"{S('short')} · Horizonte Europa, EIC y ayudas de la UE | Ullswater Investments" if ES()
+             else f"{SITE['short']} · Horizon Europe, EIC and EU grants | Ullswater Investments")
+    write(P("/"), page(title, S("description"), "/", home, site_ld))
+
+    # Categories
+    for k in CATEGORIES:
+        name, desc = CAT(k)
+        items = [a for a in arts if a["category"] == k]
+        if not items: continue  # no thin, empty category pages
+        body = (f'<section class="hero"><div class="wrap"><p class="kicker">{T("Category")}</p><h1>{E(name)}</h1><p class="lead">{E(desc)}</p></div></section>'
+                f'<div class="wrap"><div class="grid">{"".join(card(a) for a in items)}</div></div>')
+        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{name} · {S('short')}", "url": url(f"/{k}/"), "description": desc, "inLanguage": LANG, "publisher": org_ld()}]
+        write(P(f"/{k}/"), page(f"{name} · {S('short')} | Ullswater Investments", desc, f"/{k}/", body, ld, cur=k))
+
+    # ---- Videos ----
+    if vids:
+        vdesc = ("Vídeos oficiales sobre investigación, innovación y financiación europea: grabaciones de eventos y jornadas informativas de la Comisión Europea, seleccionadas por Ullswater Investments." if ES()
+                 else "Official videos on EU research, innovation and funding: recordings of European Commission events and info days, selected by Ullswater Investments.")
+        vh1 = "Vídeos sobre financiación europea" if ES() else "EU Funding Videos"
+        body = (f'<section class="hero"><div class="wrap"><p class="kicker">{T("Videos")}</p><h1>{vh1}</h1><p class="lead">{E(vdesc)}</p></div></section>'
+                f'<div class="wrap"><div class="grid">{"".join(vcard(v) for v in vids)}</div></div>')
+        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{T('Videos')} · {S('short')}", "url": url("/videos/"), "description": vdesc, "inLanguage": LANG, "publisher": org_ld(),
+               "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": url(v["path"]), "name": F(v, "title")} for i, v in enumerate(vids)]}}]
+        write(P("/videos/"), page(f"{T('Videos')} · {S('short')} | Ullswater Investments", vdesc, "/videos/", body, ld, cur="videos"))
+        for v in vids:
+            body = "".join(f"<p>{E(p)}</p>" for p in F(v, "body", []))
+            why = f'<section class="why"><h2>{T("Why watch it")}</h2><p>{E(F(v, "why"))}</p></section>' if v.get("why") else ""
+            tags = "".join(f"<span>{E(t)}</span>" for t in F(v, "tags", []))
+            ev = f' · {T("Event")}: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>' if v.get("event_url") else ""
+            more = [w for w in vids if w is not v][:5]
+            rel = "".join(f'<li><a href="{P(w["path"])}">{E(F(w, "title"))}</a> <span class="meta">· {nice(w["d"])}</span></li>' for w in more)
+            src_txt = (f'Vídeo publicado por <a href="{E(v["channel_url"])}" rel="noopener">{E(v["channel_name"])}</a> en YouTube: <a href="{v["watch"]}" rel="noopener">{v["watch"]}</a>.' + (f' Página del evento: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>.' if v.get("event_url") else "")) if ES() else \
+                      (f'Video published by <a href="{E(v["channel_url"])}" rel="noopener">{E(v["channel_name"])}</a> on YouTube: <a href="{v["watch"]}" rel="noopener">{v["watch"]}</a>.' + (f' Event page: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>.' if v.get("event_url") else ""))
+            html_ = f"""<article class="post">
+<div class="crumbs"><a href="{P('/')}">{T('News')}</a> › <a href="{P('/videos/')}">{T('Videos')}</a></div>
+{only_en(v)}<p class="kicker">{T('Video')}</p>
+<h1>{E(F(v, 'title'))}</h1>
+<p class="dek">{E(F(v, 'summary'))}</p>
+<div class="meta">{T('Published')} <time datetime="{v['date']}">{nice(v['d'])}</time> · {T('Video by')} <a href="{E(v['channel_url'])}" rel="noopener">{E(v['channel_name'])}</a>{ev}</div>
+<div class="player"><iframe src="https://www.youtube-nocookie.com/embed/{E(v['youtube_id'])}" title="{E(F(v, 'title'))}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<p class="meta">{T('Embedded from YouTube.')} <a href="{v['watch']}" rel="noopener">{T('Watch on YouTube ↗')}</a></p>
+<div class="body">{body}</div>
+{why}
+<section class="src"><h2>{T('Official source')}</h2><p>{src_txt}</p></section>
+<div class="tags">{tags}</div>
+{cta}
+{f'<section class="why"><h2>{T("More videos")}</h2><ul>{rel}</ul></section>' if rel else ''}
+</article>"""
+            ld = [{"@context": "https://schema.org", "@type": "VideoObject", "name": F(v, "title"), "description": F(v, "summary"), "thumbnailUrl": [v["thumb"]],
+                   "uploadDate": v["date"], "embedUrl": f"https://www.youtube.com/embed/{v['youtube_id']}", "url": url(v["path"]), "inLanguage": "en",
+                   "author": {"@type": "Organization", "name": v["channel_name"], "url": v["channel_url"]}},
+                  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+                      {"@type": "ListItem", "position": 1, "name": T("News"), "item": url("/")},
+                      {"@type": "ListItem", "position": 2, "name": T("Videos"), "item": url("/videos/")},
+                      {"@type": "ListItem", "position": 3, "name": F(v, "title"), "item": url(v["path"])}]}]
+            write(P(v["path"]), page(f"{F(v, 'title')} · {T('Video')} · {S('short')}", F(v, "summary"), v["path"], html_, ld, "video.other", "", "videos"))
+
+    # ---- Author ----
+    my = arts[:20]
+    auth = (f'<div class="about"><p class="kicker">{T("Author")}</p><h1>{E(AUTHOR["name"])}</h1><p class="lead">{E(A("role"))}</p>'
+            + "".join(f"<p>{E(p)}</p>" for p in A("bio"))
+            + f'<p>{T("Contact")}: <a href="mailto:{SITE["email"]}">{SITE["email"]}</a> · <a href="{SITE["org_url"]}{"/es/" if ES() else ""}">ullswaterinvestments.com</a> · <a href="https://www.linkedin.com/in/emilio-mulet-esade/" target="_blank" rel="noopener me">LinkedIn ↗</a></p>'
+            + f'<h2>{T("Latest articles")}</h2><ul>' + "".join(f'<li><a href="{P(a["path"])}">{E(F(a, "title"))}</a> <span class="meta">· {nice(a["d"])}</span></li>' for a in my) + '</ul></div>')
+    adesc = (f"{AUTHOR['name']}, {A('role')}: asesor de financiación europea especializado en Horizonte Europa, ayudas españolas de I+D y espacios de datos federados." if ES()
+             else f"{AUTHOR['name']}, {AUTHOR['role']}: EU funding advisor specialised in Horizon Europe, Spanish R&D grants and federated data spaces.")
+    write(P(AUTHOR_PATH), page(f"{AUTHOR['name']} · {A('role')} · {S('short')}", adesc, AUTHOR_PATH, auth,
+                            [{"@context": "https://schema.org", "@type": "ProfilePage", "url": url(AUTHOR_PATH), "mainEntity": person_ld()}]))
+
+    # About / editorial policy
+    if ES():
+        about = f"""<div class="about"><p class="kicker">Quiénes somos</p><h1>Sobre Noticias de financiación europea</h1>
+<p>Noticias de financiación europea es una publicación de <a href="{SITE['org_url']}/es/">{E(SITE['org_legal'])}</a>, firma de asesoramiento en financiación europea y creación de empresas con sede en Madrid. Cubrimos la financiación europea y española para la innovación: Horizonte Europa, el Consejo Europeo de Innovación, Europa Digital, los instrumentos de defensa y doble uso, los fondos de cohesión y de recuperación, y las ayudas nacionales de I+D.</p>
+<h2>Política editorial</h2>
+<ul>
+<li>Cada noticia se basa en una fuente oficial (Comisión Europea, agencias e instituciones de la UE u organismos públicos españoles), que se enlaza en la propia noticia.</li>
+<li>Las cifras, fechas y plazos se comprueban con esa fuente antes de publicar. No publicamos estimaciones como si fueran hechos.</li>
+<li>Las noticias están redactadas con palabras propias. La sección «Por qué importa» es el análisis de Ullswater Investments y está claramente separada de los hechos.</li>
+<li>Cada noticia se publica en inglés y en español; la versión en español es una traducción fiel de la inglesa.</li>
+<li>Si nos equivocamos, lo corregimos y actualizamos la fecha de modificación de la noticia. Correcciones: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</li>
+<li>Confirma siempre la elegibilidad, los presupuestos y los plazos en la página oficial de la convocatoria antes de solicitar.</li>
+</ul></div>"""
+        atitle, adesc = f"Quiénes somos y política editorial · {S('short')}", "Quién publica Noticias de financiación europea y cómo se documentan, verifican y corrigen las noticias."
+    else:
+        about = f"""<div class="about"><p class="kicker">About</p><h1>About EU Funding News</h1>
+<p>EU Funding News is published by <a href="{SITE['org_url']}">{E(SITE['org_legal'])}</a>, a Madrid-based European funding advisory and venture-building firm. We cover EU and Spanish funding for innovation: Horizon Europe, the European Innovation Council, Digital Europe, defence and dual-use instruments, cohesion and recovery funds, and national R&amp;D grants.</p>
+<h2>Editorial policy</h2>
+<ul>
+<li>Every article is based on an official source (European Commission, EU agencies, EU institutions or Spanish public bodies), which is linked in the article.</li>
+<li>Figures, dates and deadlines are checked against that source before publication. We do not publish estimates as facts.</li>
+<li>Articles are written in our own words. The “Why it matters” section is Ullswater Investments' analysis and is clearly separated from the facts.</li>
+<li>Every article is published in English and Spanish; the Spanish version is a faithful translation of the English one.</li>
+<li>If we get something wrong, we correct it and update the article's modification date. Corrections: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</li>
+<li>Always confirm eligibility, budgets and deadlines on the official call page before applying.</li>
+</ul></div>"""
+        atitle, adesc = f"About & editorial policy · {SITE['short']}", "Who publishes EU Funding News and how articles are sourced, verified and corrected."
+    write(P("/about/"), page(atitle, adesc, "/about/", about, [{"@context": "https://schema.org", "@type": "AboutPage", "url": url("/about/"), "inLanguage": LANG, "publisher": org_ld()}]))
+
 
 def build():
     global HAS_VIDEOS
@@ -300,170 +542,45 @@ def build():
     (OUT / ".nojekyll").write_text("")
     today = datetime.date.today().isoformat()
 
-    # Articles
-    for a in arts:
-        cat, catdesc = CATEGORIES[a["category"]]
-        facts = "".join(f"<dt>{E(k)}</dt><dd>{E(v)}</dd>" for k, v in a.get("key_facts", []))
-        body = "".join(f"<p>{E(p)}</p>" for p in a["body"])
-        related = [b for b in arts if b is not a and b["category"] == a["category"]][:3] or [b for b in arts if b is not a][:3]
-        ld = [{
-            "@context": "https://schema.org", "@type": "NewsArticle",
-            "headline": a["title"], "description": a["dek"], "inLanguage": "en",
-            "datePublished": a["date"], "dateModified": a["updated"],
-            "mainEntityOfPage": SITE["url"] + a["path"], "url": SITE["url"] + a["path"],
-            "image": [SITE["url"] + "/assets/og.png"],
-            "articleSection": cat, "keywords": ", ".join(a.get("tags", [])),
-            "author": person_ld(),
-            "publisher": org_ld(),
-            "isBasedOn": a["source_url"],
-            "citation": {"@type": "CreativeWork", "name": a["source_name"], "url": a["source_url"]},
-        }, {
-            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "News", "item": SITE["url"] + "/"},
-                {"@type": "ListItem", "position": 2, "name": cat, "item": f"{SITE['url']}/{a['category']}/"},
-                {"@type": "ListItem", "position": 3, "name": a["title"], "item": SITE["url"] + a["path"]}]}]
-        head = (f'<meta property="article:published_time" content="{a["date"]}">'
-                f'<meta property="article:modified_time" content="{a["updated"]}">'
-                f'<meta property="article:section" content="{E(cat)}">')
-        tags = "".join(f"<span>{E(t)}</span>" for t in a.get("tags", []))
-        why = f'<section class="why"><h2>Why it matters</h2><p>{E(a["why"])}</p></section>' if a.get("why") else ""
-        act = a.get("action")  # optional {"label", "url"}: direct link to the official registration/application page
-        act_btn = f'<p class="act"><a class="btn" href="{E(act["url"])}" rel="noopener" target="_blank">{E(act["label"])} ↗</a></p>' if act else ""
-        rel = "".join(f'<li><a href="{b["path"]}">{E(b["title"])}</a> <span class="meta">· {nice(b["d"])}</span></li>' for b in related)
-        html_ = f"""<article class="post">
-<div class="crumbs"><a href="/">News</a> › <a href="/{a['category']}/">{E(cat)}</a></div>
-<p class="kicker">{E(cat)}</p>
-<h1>{E(a['title'])}</h1>
-<p class="dek">{E(a['dek'])}</p>
-<div class="meta">Published <time datetime="{a['date']}">{nice(a['d'])}</time> · By <a href="{AUTHOR_PATH}">{AUTHOR['name']}</a> · Source: <a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a></div>
-{f'<section class="facts" aria-label="Key facts"><h2>Key facts</h2><dl>{facts}</dl>{act_btn}</section>' if facts else act_btn}
-<div class="body">{body}</div>
-{why}
-<section class="src"><h2>Official source</h2><p><a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a> — always check eligibility, budgets and deadlines on the official page before applying.</p>{act_btn}</section>
-{related_calls(a)}
-<div class="tags">{tags}</div>
-<aside class="cta"><div><strong>Preparing a proposal?</strong><p>Ullswater Investments helps companies match, prepare and submit EU funding applications.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
-<div class="author-card"><div class="avatar">EM</div><div><strong><a href="{AUTHOR_PATH}">{AUTHOR['name']}</a></strong><br><span class="meta">{E(AUTHOR['role'])}. EU funding advisor.</span></div></div>
-{f'<section class="why"><h2>Related news</h2><ul>{rel}</ul></section>' if rel else ''}
-</article>"""
-        write(a["path"], page(f"{a['title']} · {SITE['short']}", a["dek"], a["path"], html_, ld, "article", head, a["category"]))
-
-    # Home
-    site_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": SITE["name"], "url": SITE["url"] + "/",
-                "description": SITE["description"], "inLanguage": "en", "publisher": org_ld()},
-               {"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [
-                   {"@type": "ListItem", "position": i + 1, "url": SITE["url"] + a["path"], "name": a["title"]} for i, a in enumerate(arts[:20])]}]
-    home = (f'<section class="hero"><div class="wrap"><p class="kicker">Ullswater Investments · EU Funding Advisors</p>'
-            f'<h1>EU Funding News</h1><p class="lead">{E(SITE["description"])}</p>'
-            f'<p class="meta" style="margin-top:12px">Updated {nice(arts[0]["d"]) if arts else ""} · {len(arts)} articles · Every article links to its official source.</p></div></section>'
-            f'<div class="wrap"><div class="grid">{"".join(card(a) for a in arts[:30])}</div>'
-            + soon_block(live, 30, 10) + '</div>')
-    write("/", page(f"{SITE['short']} · Horizon Europe, EIC and EU grants | Ullswater Investments", SITE["description"], "/", home, site_ld))
-
-    # Categories
-    for k, (name, desc) in CATEGORIES.items():
-        items = [a for a in arts if a["category"] == k]
-        if not items: continue  # no thin, empty category pages
-        body = (f'<section class="hero"><div class="wrap"><p class="kicker">Category</p><h1>{E(name)}</h1><p class="lead">{E(desc)}</p></div></section>'
-                f'<div class="wrap"><div class="grid">{"".join(card(a) for a in items) or "<p>No articles yet in this category.</p>"}</div></div>')
-        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{name} · {SITE['short']}", "url": f"{SITE['url']}/{k}/", "description": desc, "publisher": org_ld()}]
-        write(f"/{k}/", page(f"{name} · {SITE['short']} | Ullswater Investments", desc, f"/{k}/", body, ld, cur=k))
-
-    # ---- Videos ----
-    if vids:
-        vdesc = "Official videos on EU research, innovation and funding: recordings of European Commission events and info days, selected by Ullswater Investments."
-        body = (f'<section class="hero"><div class="wrap"><p class="kicker">Videos</p><h1>EU Funding Videos</h1><p class="lead">{E(vdesc)}</p></div></section>'
-                f'<div class="wrap"><div class="grid">{"".join(vcard(v) for v in vids)}</div></div>')
-        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"Videos · {SITE['short']}", "url": SITE["url"] + "/videos/", "description": vdesc, "publisher": org_ld(),
-               "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE["url"] + v["path"], "name": v["title"]} for i, v in enumerate(vids)]}}]
-        write("/videos/", page(f"Videos · {SITE['short']} | Ullswater Investments", vdesc, "/videos/", body, ld, cur="videos"))
-        for v in vids:
-            body = "".join(f"<p>{E(p)}</p>" for p in v.get("body", []))
-            why = f'<section class="why"><h2>Why watch it</h2><p>{E(v["why"])}</p></section>' if v.get("why") else ""
-            tags = "".join(f"<span>{E(t)}</span>" for t in v.get("tags", []))
-            ev = f' · Event: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>' if v.get("event_url") else ""
-            more = [w for w in vids if w is not v][:5]
-            rel = "".join(f'<li><a href="{w["path"]}">{E(w["title"])}</a> <span class="meta">· {nice(w["d"])}</span></li>' for w in more)
-            html_ = f"""<article class="post">
-<div class="crumbs"><a href="/">News</a> › <a href="/videos/">Videos</a></div>
-<p class="kicker">Video</p>
-<h1>{E(v['title'])}</h1>
-<p class="dek">{E(v['summary'])}</p>
-<div class="meta">Published <time datetime="{v['date']}">{nice(v['d'])}</time> · Video by <a href="{E(v['channel_url'])}" rel="noopener">{E(v['channel_name'])}</a>{ev}</div>
-<div class="player"><iframe src="https://www.youtube-nocookie.com/embed/{E(v['youtube_id'])}" title="{E(v['title'])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-<p class="meta">Embedded from YouTube. <a href="{v['watch']}" rel="noopener">Watch on YouTube ↗</a></p>
-<div class="body">{body}</div>
-{why}
-<section class="src"><h2>Official source</h2><p>Video published by <a href="{E(v['channel_url'])}" rel="noopener">{E(v['channel_name'])}</a> on YouTube: <a href="{v['watch']}" rel="noopener">{v['watch']}</a>.{f' Event page: <a href="{E(v["event_url"])}" rel="noopener">{E(v["event"])}</a>.' if v.get("event_url") else ""}</p></section>
-<div class="tags">{tags}</div>
-<aside class="cta"><div><strong>Preparing a proposal?</strong><p>Ullswater Investments helps companies match, prepare and submit EU funding applications.</p></div><a class="btn" href="{SITE['book_url']}">Investment Readiness →</a></aside>
-{f'<section class="why"><h2>More videos</h2><ul>{rel}</ul></section>' if rel else ''}
-</article>"""
-            ld = [{"@context": "https://schema.org", "@type": "VideoObject", "name": v["title"], "description": v["summary"], "thumbnailUrl": [v["thumb"]],
-                   "uploadDate": v["date"], "embedUrl": f"https://www.youtube.com/embed/{v['youtube_id']}", "url": SITE["url"] + v["path"], "inLanguage": "en",
-                   "author": {"@type": "Organization", "name": v["channel_name"], "url": v["channel_url"]}},
-                  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-                      {"@type": "ListItem", "position": 1, "name": "News", "item": SITE["url"] + "/"},
-                      {"@type": "ListItem", "position": 2, "name": "Videos", "item": SITE["url"] + "/videos/"},
-                      {"@type": "ListItem", "position": 3, "name": v["title"], "item": SITE["url"] + v["path"]}]}]
-            write(v["path"], page(f"{v['title']} · Video · {SITE['short']}", v["summary"], v["path"], html_, ld, "video.other", "", "videos"))
-
-    # ---- Call alerts ----
-    upd = f" · Feed updated {feed_updated[:10]}" if feed_updated else ""
-    n_open = sum(1 for c in live if c["status"] == "open")
     # Call pages live only on calls.ullswaterinvestments.com: every old /calls/... address becomes a redirect page.
     for c in calls:
         write(c["path"], stub(c["href"], c["code"]))
-    groups_live = {k: [c for c in live if c["group"] == k] for k in GROUPS}
     write("/calls/", stub(CALLS + "/", "EU funding calls"))
     for k in GROUPS:
         write(f"/calls/programme/{k}/", stub(theme_url(k), GROUPS[k][0]))
     write("/calls/deadlines/", stub(CALLS + "/closing-soon/", "EU funding deadlines"))
 
-    # ---- Author ----
-    my = [a for a in arts][:20]
-    auth = (f'<div class="about"><p class="kicker">Author</p><h1>{E(AUTHOR["name"])}</h1><p class="lead">{E(AUTHOR["role"])}</p>'
-            + "".join(f"<p>{E(p)}</p>" for p in AUTHOR["bio"])
-            + f'<p>Contact: <a href="mailto:{SITE["email"]}">{SITE["email"]}</a> · <a href="{SITE["org_url"]}">ullswaterinvestments.com</a> · <a href="https://www.linkedin.com/in/emilio-mulet-esade/" target="_blank" rel="noopener me">LinkedIn ↗</a></p>'
-            + '<h2>Latest articles</h2><ul>' + "".join(f'<li><a href="{a["path"]}">{E(a["title"])}</a> <span class="meta">· {nice(a["d"])}</span></li>' for a in my) + '</ul></div>')
-    write(AUTHOR_PATH, page(f"{AUTHOR['name']} · {AUTHOR['role']} · {SITE['short']}", f"{AUTHOR['name']}, {AUTHOR['role']}: EU funding advisor specialised in Horizon Europe, Spanish R&D grants and federated data spaces.", AUTHOR_PATH, auth,
-                            [{"@context": "https://schema.org", "@type": "ProfilePage", "url": SITE["url"] + AUTHOR_PATH, "mainEntity": person_ld()}]))
-
-    # About / editorial policy
-    about = f"""<div class="about"><p class="kicker">About</p><h1>About EU Funding News</h1>
-<p>EU Funding News is published by <a href="{SITE['org_url']}">{E(SITE['org_legal'])}</a>, a Madrid-based European funding advisory and venture-building firm. We cover EU and Spanish funding for innovation: Horizon Europe, the European Innovation Council, Digital Europe, defence and dual-use instruments, cohesion and recovery funds, and national R&amp;D grants.</p>
-<h2>Editorial policy</h2>
-<ul>
-<li>Every article is based on an official source (European Commission, EU agencies, EU institutions or Spanish public bodies), which is linked in the article.</li>
-<li>Figures, dates and deadlines are checked against that source before publication. We do not publish estimates as facts.</li>
-<li>Articles are written in our own words. The “Why it matters” section is Ullswater Investments' analysis and is clearly separated from the facts.</li>
-<li>If we get something wrong, we correct it and update the article's modification date. Corrections: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</li>
-<li>Always confirm eligibility, budgets and deadlines on the official call page before applying.</li>
-</ul></div>"""
-    write("/about/", page(f"About & editorial policy · {SITE['short']}", "Who publishes EU Funding News and how articles are sourced, verified and corrected.", "/about/", about,
-                          [{"@context": "https://schema.org", "@type": "AboutPage", "url": SITE["url"] + "/about/", "publisher": org_ld()}]))
+    # Language pages: English at /, Spanish at /es/
+    global LANG
+    for LANG in ("en", "es"):
+        lang_pages(arts, vids, live)
+    LANG = "en"
 
     # 404
     (OUT / "404.html").write_text(page(f"Page not found · {SITE['short']}", "Page not found.", "/404.html",
-        '<div class="about"><h1>Page not found</h1><p>The page you are looking for does not exist. Go to the <a href="/">latest EU funding news</a>.</p></div>').replace(
+        '<div class="about"><h1>Page not found</h1><p>The page you are looking for does not exist. Go to the <a href="/">latest EU funding news</a> · <a href="/es/">últimas noticias en español</a>.</p></div>', bilingual=False).replace(
         '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">', '<meta name="robots" content="noindex">'), encoding="utf-8")
 
-    # RSS
+    # RSS (English at /feed.xml, Spanish at /es/feed.xml)
     now = format_datetime(datetime.datetime.now(datetime.timezone.utc))
-    items = "".join(
-        f"<item><title>{E(a['title'])}</title><link>{SITE['url']}{a['path']}</link><guid isPermaLink=\"true\">{SITE['url']}{a['path']}</guid>"
-        f"<pubDate>{format_datetime(datetime.datetime.combine(a['d'], datetime.time(9, 0), datetime.timezone.utc))}</pubDate>"
-        f"<category>{E(CATEGORIES[a['category']][0])}</category><description>{E(a['dek'])}</description></item>" for a in arts[:50])
-    (OUT / "feed.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
-        f'<title>{E(SITE["name"])}</title><link>{SITE["url"]}/</link><description>{E(SITE["description"])}</description><language>en</language>'
-        f'<lastBuildDate>{now}</lastBuildDate><atom:link href="{SITE["url"]}/feed.xml" rel="self" type="application/rss+xml"/>{items}</channel></rss>\n', encoding="utf-8")
+    for LANG in ("en", "es"):
+        items = "".join(
+            f"<item><title>{E(F(a, 'title'))}</title><link>{SITE['url']}{P(a['path'])}</link><guid isPermaLink=\"true\">{SITE['url']}{P(a['path'])}</guid>"
+            f"<pubDate>{format_datetime(datetime.datetime.combine(a['d'], datetime.time(9, 0), datetime.timezone.utc))}</pubDate>"
+            f"<category>{E(CAT(a['category'])[0])}</category><description>{E(F(a, 'dek'))}</description></item>" for a in arts[:50] if not ES() or has_es(a))
+        (OUT / P("/feed.xml").lstrip("/")).write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
+            f'<title>{E(S("name"))}</title><link>{SITE["url"]}{P("/")}</link><description>{E(S("description"))}</description><language>{LANG}</language>'
+            f'<lastBuildDate>{now}</lastBuildDate><atom:link href="{SITE["url"]}{P("/feed.xml")}" rel="self" type="application/rss+xml"/>{items}</channel></rss>\n', encoding="utf-8")
+    LANG = "en"
 
     # Sitemaps (regular + Google News for the last 2 days)
     urls = [("/", arts[0]["updated"] if arts else today), ("/about/", today)] + [(f"/{k}/", next(a["updated"] for a in arts if a["category"] == k)) for k in CATEGORIES if k in ACTIVE] + [(a["path"], a["updated"]) for a in arts] \
         + [(AUTHOR_PATH, arts[0]["updated"] if arts else today)] \
         + ([("/videos/", vids[0]["date"])] + [(v["path"], v["date"]) for v in vids] if vids else [])
-    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-        + "".join(f"<url><loc>{SITE['url']}{p}</loc><lastmod>{d}</lastmod></url>" for p, d in urls) + "</urlset>\n", encoding="utf-8")
+    alts = lambda p: (f'<xhtml:link rel="alternate" hreflang="en" href="{SITE["url"]}{p}"/><xhtml:link rel="alternate" hreflang="es" href="{SITE["url"]}/es{p}"/>'
+                      f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE["url"]}{p}"/>')
+    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+        + "".join(f"<url><loc>{SITE['url']}{pre}{p}</loc><lastmod>{d}</lastmod>{alts(p)}</url>" for p, d in urls for pre in ("", "/es")) + "</urlset>\n", encoding="utf-8")
     recent = [a for a in arts if (datetime.date.today() - a["d"]).days <= 2]
     (OUT / "news-sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
         + "".join(f"<url><loc>{SITE['url']}{a['path']}</loc><news:news><news:publication><news:name>{E(SITE['short'])}</news:name><news:language>en</news:language></news:publication>"
@@ -477,7 +594,7 @@ def build():
 
     # llms.txt + llms-full.txt (plain-text versions for AI assistants)
     llms = [f"# {SITE['name']}", "", f"> {SITE['description']} Published by {SITE['org_legal']} (Madrid), EU funding advisors. Every article cites and links an official source.", "",
-            "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", "- Language: English. Updated on working days.", "",
+            "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", f"- Languages: English (this site) and Spanish ({SITE['url']}/es/, RSS {SITE['url']}/es/feed.xml). Updated on working days.", "",
             "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + (["", "## Videos", "", f"- [All videos]({SITE['url']}/videos/): official recordings of EU research, innovation and funding events."] + [f"- [{v['title']}]({SITE['url']}{v['path']}) ({v['date']}): {v['summary']}" for v in vids[:20]] if vids else []) + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
            [f"- [{a['title']}]({SITE['url']}{a['path']}) ({a['date']}): {a['dek']}" for a in arts[:50]] + ["", "## Optional", "", f"- [Full text of recent articles]({SITE['url']}/llms-full.txt)", f"- [Editorial policy]({SITE['url']}/about/)", f"- [RSS feed]({SITE['url']}/feed.xml)"]
     (OUT / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")

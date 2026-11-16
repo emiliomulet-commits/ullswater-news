@@ -5,12 +5,30 @@
   "title": "New €230 million Horizon Europe call on nature",
   "dek": "Ten topics to raise biodiversity spending across Pillar II of the 2026–2027 work programme, with most deadlines on 14 January 2027.",
   "key_facts": [
-    ["Programme", "Horizon Europe, Pillar II (Work Programme 2026–2027)"],
-    ["Call", "Transformative change towards a nature-positive economy and society"],
-    ["Budget", "€230 million"],
-    ["Topics", "10, including PFAS effects on biodiversity, invasive species and biodiversity monitoring"],
-    ["Main deadline", "14 January 2027"],
-    ["Ocean observing action", "€50 million innovation action, deadline 16 February 2027"]
+    [
+      "Programme",
+      "Horizon Europe, Pillar II (Work Programme 2026–2027)"
+    ],
+    [
+      "Call",
+      "Transformative change towards a nature-positive economy and society"
+    ],
+    [
+      "Budget",
+      "€230 million"
+    ],
+    [
+      "Topics",
+      "10, including PFAS effects on biodiversity, invasive species and biodiversity monitoring"
+    ],
+    [
+      "Main deadline",
+      "14 January 2027"
+    ],
+    [
+      "Ocean observing action",
+      "€50 million innovation action, deadline 16 February 2027"
+    ]
   ],
   "body": [
     "The European Commission published a new €230 million Horizon Europe call, “Transformative change towards a nature-positive economy and society”, to raise biodiversity spending across Pillar II of the 2026–2027 work programme.",
@@ -18,7 +36,54 @@
     "A separate €50 million innovation action for a stronger Global Ocean Observing System closes on 16 February 2027."
   ],
   "why": "Biodiversity is no longer a niche for environmental research groups: topics on PFAS, monitoring and invasive species open the door to companies working on sensors, environmental data and analytical services. With most deadlines in mid-January, consortia that are not already formed need to start partner search now.",
-  "tags": ["Horizon Europe", "Biodiversity", "Cluster 6", "PFAS"],
+  "tags": [
+    "Horizon Europe",
+    "Biodiversity",
+    "Cluster 6",
+    "PFAS"
+  ],
   "source_name": "European Commission – Research and Innovation",
-  "source_url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/horizon-europe-launches-new-research-and-innovation-call-nature-2026-10-02_en"
+  "source_url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/horizon-europe-launches-new-research-and-innovation-call-nature-2026-10-02_en",
+  "es": {
+    "title": "Nueva convocatoria de Horizonte Europa de 230 M€ sobre naturaleza",
+    "dek": "Diez temas para aumentar el gasto en biodiversidad en todo el Pilar II del programa de trabajo 2026–2027, con la mayoría de los plazos el 14 de enero de 2027.",
+    "key_facts": [
+      [
+        "Programa",
+        "Horizonte Europa, Pilar II (Programa de trabajo 2026–2027)"
+      ],
+      [
+        "Convocatoria",
+        "Transformative change towards a nature-positive economy and society"
+      ],
+      [
+        "Presupuesto",
+        "230 millones de euros"
+      ],
+      [
+        "Temas",
+        "10, entre ellos los efectos de los PFAS en la biodiversidad, las especies invasoras y el seguimiento de la biodiversidad"
+      ],
+      [
+        "Plazo principal",
+        "14 de enero de 2027"
+      ],
+      [
+        "Acción de observación oceánica",
+        "Acción de innovación de 50 millones de euros, plazo 16 de febrero de 2027"
+      ]
+    ],
+    "body": [
+      "La Comisión Europea ha publicado una nueva convocatoria de Horizonte Europa de 230 millones de euros, «Transformative change towards a nature-positive economy and society», para aumentar el gasto en biodiversidad en todo el Pilar II del programa de trabajo 2026–2027.",
+      "Sus diez temas incluyen los efectos de los PFAS en la biodiversidad y los servicios ecosistémicos, las especies invasoras y el seguimiento rentable de la biodiversidad. La mayoría de los temas cierran el 14 de enero de 2027.",
+      "Una acción de innovación independiente de 50 millones de euros para reforzar el Sistema Mundial de Observación de los Océanos cierra el 16 de febrero de 2027."
+    ],
+    "why": "La biodiversidad ya no es un nicho para los grupos de investigación medioambiental: los temas sobre PFAS, seguimiento y especies invasoras abren la puerta a empresas que trabajan en sensores, datos ambientales y servicios analíticos. Con la mayoría de los plazos a mediados de enero, los consorcios que aún no estén formados deben empezar ya a buscar socios.",
+    "tags": [
+      "Horizonte Europa",
+      "Biodiversidad",
+      "Clúster 6",
+      "PFAS"
+    ]
+  }
 }

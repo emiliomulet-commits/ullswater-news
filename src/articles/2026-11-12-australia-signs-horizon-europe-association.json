@@ -5,11 +5,26 @@
   "title": "Australia signs deal to join Horizon Europe's Pillar II",
   "dek": "Australian organisations will be able to join and lead Pillar II consortia, with transitional access to calls from January 2027.",
   "key_facts": [
-    ["Scope", "Horizon Europe Pillar II, worth €52.4 billion"],
-    ["Signed", "In Brussels, by Commissioner Ekaterina Zaharieva and Minister Tim Ayres"],
-    ["Transitional access", "From January 2027 for Pillar II calls"],
-    ["Formal completion", "Expected by mid-2027, after Australian parliamentary scrutiny"],
-    ["Associated countries", "Australia becomes the 24th"]
+    [
+      "Scope",
+      "Horizon Europe Pillar II, worth €52.4 billion"
+    ],
+    [
+      "Signed",
+      "In Brussels, by Commissioner Ekaterina Zaharieva and Minister Tim Ayres"
+    ],
+    [
+      "Transitional access",
+      "From January 2027 for Pillar II calls"
+    ],
+    [
+      "Formal completion",
+      "Expected by mid-2027, after Australian parliamentary scrutiny"
+    ],
+    [
+      "Associated countries",
+      "Australia becomes the 24th"
+    ]
   ],
   "body": [
     "The EU and Australia have signed an agreement that associates Australia to Pillar II of Horizon Europe, the part of the programme that funds collaborative research in fields such as health, climate, energy and digital technologies. Pillar II is worth €52.4 billion. Commissioner for Startups, Research and Innovation Ekaterina Zaharieva and Australia's Minister for Industry and Innovation and Minister for Science, Tim Ayres, signed the text in Brussels.",
@@ -17,7 +32,52 @@
     "Transitional arrangements apply from January 2027. From then, Australian entities can apply to Pillar II calls and be evaluated as prospective beneficiaries. The Commission expects the association to be formally completed by mid-2027, once Australia's parliament has scrutinised it. Negotiations had concluded in June 2026, and Australia is now the 24th country associated with Horizon Europe."
   ],
   "why": "Ullswater Investments analysis: for consortia preparing Pillar II proposals for the 2027 calls, Australian universities, research organisations and companies become partners that can be funded and even lead projects. That makes it easier to add complementary expertise from outside Europe. Because the arrangements are transitional until the association is formally completed, coordinators should check the eligibility wording of each call and keep in close contact with Australian partners as the process moves forward.",
-  "tags": ["Horizon Europe", "Australia", "Association", "Pillar II", "International cooperation"],
+  "tags": [
+    "Horizon Europe",
+    "Australia",
+    "Association",
+    "Pillar II",
+    "International cooperation"
+  ],
   "source_name": "European Commission – Press release",
-  "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2418"
+  "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2418",
+  "es": {
+    "title": "Australia firma su asociación al Pilar II de Horizonte Europa",
+    "dek": "Las entidades australianas podrán participar en consorcios del Pilar II y liderarlos, con acceso transitorio a las convocatorias desde enero de 2027.",
+    "key_facts": [
+      [
+        "Alcance",
+        "Pilar II de Horizonte Europa, dotado con 52.400 millones de euros"
+      ],
+      [
+        "Firma",
+        "En Bruselas, por la comisaria Ekaterina Zaharieva y el ministro Tim Ayres"
+      ],
+      [
+        "Acceso transitorio",
+        "Desde enero de 2027 para las convocatorias del Pilar II"
+      ],
+      [
+        "Culminación formal",
+        "Prevista para mediados de 2027, tras el examen del Parlamento australiano"
+      ],
+      [
+        "Países asociados",
+        "Australia es el 24.º"
+      ]
+    ],
+    "body": [
+      "La UE y Australia han firmado un acuerdo que asocia a Australia al Pilar II de Horizonte Europa, la parte del programa que financia la investigación colaborativa en ámbitos como la salud, el clima, la energía y las tecnologías digitales. El Pilar II está dotado con 52.400 millones de euros. Firmaron el texto en Bruselas la comisaria de Startups, Investigación e Innovación, Ekaterina Zaharieva, y el ministro australiano de Industria e Innovación y de Ciencia, Tim Ayres.",
+      "Con el acuerdo, los investigadores y las entidades australianas pueden incorporarse a consorcios internacionales, liderarlos y recibir financiación en condiciones similares a las de los participantes de la UE. Para el resto del programa no cambia nada: los australianos mantienen el acceso a las partes del pilar de Ciencia Excelente abiertas a países no comunitarios, como las Acciones Marie Skłodowska-Curie, y al pilar de Europa Innovadora, según las condiciones de cada convocatoria.",
+      "Desde enero de 2027 se aplican disposiciones transitorias. A partir de entonces, las entidades australianas pueden presentarse a las convocatorias del Pilar II y ser evaluadas como posibles beneficiarias. La Comisión prevé que la asociación se complete formalmente a mediados de 2027, después de que la examine el Parlamento australiano. Las negociaciones concluyeron en junio de 2026, y Australia es ya el 24.º país asociado a Horizonte Europa."
+    ],
+    "why": "Análisis de Ullswater Investments: para los consorcios que preparan propuestas del Pilar II para las convocatorias de 2027, las universidades, centros de investigación y empresas australianas pasan a ser socios financiables que incluso pueden liderar proyectos. Eso facilita sumar conocimiento complementario de fuera de Europa. Como las disposiciones son transitorias hasta que la asociación se complete formalmente, los coordinadores deben revisar la redacción sobre elegibilidad de cada convocatoria y mantener un contacto estrecho con los socios australianos mientras avanza el proceso.",
+    "tags": [
+      "Horizonte Europa",
+      "Australia",
+      "Asociación",
+      "Pilar II",
+      "Cooperación internacional"
+    ]
+  }
 }

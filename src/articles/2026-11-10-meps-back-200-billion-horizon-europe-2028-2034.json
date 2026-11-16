@@ -47,5 +47,51 @@
     "EIC"
   ],
   "source_name": "European Parliament – Press room",
-  "source_url": "https://www.europarl.europa.eu/news/en/press-room/20261109IPR48713/horizon-europe-meps-back-plans-to-strengthen-the-eu-s-scientific-base"
+  "source_url": "https://www.europarl.europa.eu/news/en/press-room/20261109IPR48713/horizon-europe-meps-back-plans-to-strengthen-the-eu-s-scientific-base",
+  "es": {
+    "title": "Los eurodiputados respaldan un Horizonte Europa de 200.000 M€ para 2028–2034",
+    "dek": "La comisión de industria e investigación del Parlamento pide 200.000 millones de euros para el próximo programa de investigación, por encima de los 175.000 millones que propone la Comisión.",
+    "key_facts": [
+      [
+        "Comisión parlamentaria",
+        "Industria, Investigación y Energía (ITRE)"
+      ],
+      [
+        "Presupuesto propuesto",
+        "200.000 millones de euros a precios corrientes (177.000 millones a precios de 2025)"
+      ],
+      [
+        "Propuesta de la Comisión",
+        "175.000 millones de euros"
+      ],
+      [
+        "Votación del reglamento",
+        "67 a favor, 1 en contra y 18 abstenciones"
+      ],
+      [
+        "Transferencias dentro de los pilares",
+        "Limitadas al 10% de los créditos correspondientes"
+      ],
+      [
+        "Ponentes",
+        "Christian Ehler (PPE, DE) y René Repasi (S&D, DE)"
+      ]
+    ],
+    "body": [
+      "La Comisión de Industria, Investigación y Energía del Parlamento Europeo ha adoptado su posición sobre Horizonte Europa 2028–2034, el próximo programa marco de investigación e innovación de la UE. Los eurodiputados piden 200.000 millones de euros a precios corrientes, equivalentes a 177.000 millones a precios de 2025, frente a los 175.000 millones propuestos por la Comisión. También quieren rehacer la relación del programa con el futuro Fondo Europeo de Competitividad.",
+      "En cuanto a la estructura, la comisión quiere mantener las cuatro áreas de actividad actuales: ciencia excelente, competitividad y sociedad, innovación y Espacio Europeo de Investigación. Cada pilar tendría su propia línea presupuestaria, y la Comisión solo podría mover hasta el 10% de los créditos correspondientes dentro de un pilar. El Consejo Europeo de Investigación y el Consejo Europeo de Innovación tendrían garantías presupuestarias firmes y protección de su independencia.",
+      "Los eurodiputados proponen además un consejo de alto nivel de al menos 30 expertos independientes de la ciencia, la industria y la sociedad civil para asesorar sobre las prioridades y ayudar a preparar las convocatorias. Entre los nuevos instrumentos figurarían una «vía rápida a la excelencia», una «vía rápida a la innovación», apoyo a investigadores en riesgo y medidas parecidas para las ciencias sociales, las humanidades y las artes.",
+      "La posición sobre el reglamento salió adelante con 67 votos a favor, 1 en contra y 18 abstenciones; el texto sobre la Decisión del Consejo, con 66 a favor, 1 en contra y 19 abstenciones; y el mandato para abrir negociaciones, con 65 a favor, 18 en contra y 2 abstenciones. Se espera que el pleno confirme el mandato, y las negociaciones con los Estados miembros solo podrán empezar cuando el Consejo adopte su propia posición, incluidas las cifras globales del presupuesto a largo plazo 2028–2034."
+    ],
+    "why": "Este todavía no es el presupuesto por el que competirán los solicitantes: la cifra final depende de las negociaciones con los Estados miembros sobre todo el presupuesto a largo plazo. Aun así, el mandato del Parlamento fija el techo del debate y señala lo que defenderá: dotaciones separadas y protegidas para cada pilar y para el ERC y el EIC. Para empresas y consorcios, las vías rápidas propuestas y el límite más estricto a los movimientos de fondos entre pilares harían el programa más previsible. Las organizaciones que quieran influir deberían seguir la votación en el pleno y la posición del Consejo en los próximos meses.",
+    "tags": [
+      "Horizonte Europa",
+      "FP10",
+      "MFP 2028-2034",
+      "Parlamento Europeo",
+      "Fondo Europeo de Competitividad",
+      "ERC",
+      "EIC"
+    ]
+  }
 }

@@ -19,5 +19,23 @@
     "Advanced manufacturing",
     "Critical raw materials",
     "HaDEA"
-  ]
+  ],
+  "es": {
+    "title": "Jornada informativa del Clúster 4 de Horizonte Europa: industria y temas horizontales",
+    "summary": "Jornada informativa de HaDEA sobre los temas de industria del Clúster 4 (Digital, Industria y Espacio) del programa de trabajo 2026-2027 y sobre el proceso de solicitud.",
+    "body": [
+      "Esta grabación corresponde al segundo día de las jornadas informativas de otoño del Clúster 4 de Horizonte Europa, celebrado el 15 de octubre de 2026 y publicado por la Agencia Ejecutiva Europea de Salud y Digital (HaDEA). Presenta los temas de industria y horizontales del programa de trabajo 2026-2027.",
+      "El programa abarca materiales y producción (fabricación avanzada, materiales avanzados circulares, circularidad textil y descarbonización de las industrias intensivas en energía), materias primas críticas y temas de innovación y valorización, como los activos intelectuales académicos, el acceso piloto a infraestructuras tecnológicas, los esquemas de prueba de mercado y las redes de venture builders.",
+      "Las sesiones horizontales explican el proceso de solicitud, la aleatorización parcial, la validación central por la REA, los aspectos jurídicos y financieros, las cantidades fijas (lump sums), la integración de las ciencias sociales y las humanidades y los servicios de los Puntos Nacionales de Contacto."
+    ],
+    "why": "Nota de Ullswater Investments: las jornadas informativas son la forma más directa de escuchar cómo interpreta la Comisión sus propios temas. Para fabricantes, empresas de materiales y centros tecnológicos que preparan una propuesta del Clúster 4, conviene ver las presentaciones de los temas y las sesiones sobre lump sums y evaluación antes de empezar a redactar.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 4",
+      "Jornada informativa",
+      "Fabricación avanzada",
+      "Materias primas críticas",
+      "HaDEA"
+    ]
+  }
 }
