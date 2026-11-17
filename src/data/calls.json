@@ -5355,7 +5355,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Neutral-Atom Platform Technologies",
@@ -5368,7 +5368,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Next-Generation QKD Systems",
@@ -5381,7 +5381,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Quantum Experimental Pilot Lines for Quantum Technologies",
@@ -5407,7 +5407,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Quantum-Testing Infrastructure for Quantum Technologies",
@@ -5420,7 +5420,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Superconducting Platform Technologies",
@@ -5433,7 +5433,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-17",
-   "listed": true,
+   "listed": false,
    "opens": "2026-08-13",
    "status": "open",
    "title": "Trapped-Ion Platform Technologies",
@@ -6903,5 +6903,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-17T14:25:44.809Z"
+ "feed_updated": "2026-11-17T21:22:11.303Z"
 }
