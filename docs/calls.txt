@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-16 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-17 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 HORIZON-JU-EUROHPC-2026-NAPT-11-01 | Neutral-Atom Platform Technologies | Open | 2026-08-13 | 2026-11-17 | ≈ €19M–€20M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-napt-11-01/
 HORIZON-JU-EUROHPC-2026-NQKD-12-01 | Next-Generation QKD Systems | Open | 2026-08-13 | 2026-11-17 | ≈ €21M–€24M / project | https://calls.ullswaterinvestments.com/call/horizon-ju-eurohpc-2026-nqkd-12-01/
@@ -168,7 +168,7 @@ HORIZON-CL4-2027-04-DIGITAL-EMERGING-11 | EU Frontier AI Initiative:  Developing
 HORIZON-CL4-2027-04-HUMAN-01 | Advanced and Innovative hardware components for Virtual Worlds (RIA) (Virtual Worlds Partnership) | Forthcoming | 2026-11-17 | 2027-03-18 | ≈ €4.8M–€5.6M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-04-human-01/
 HORIZON-CL4-2027-04-HUMAN-02 | Create a thriving and competitive Virtual Worlds and Web 4.0 ecosystem (CSA) (Virtual Worlds Partnership) | Forthcoming | 2026-11-17 | 2027-03-18 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-04-human-02/
 HORIZON-CL4-2027-04-HUMAN-07 | Facilitate the engagement of European stakeholders in international digital standardisation (CSA) | Forthcoming | 2026-11-17 | 2027-03-18 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-04-human-07/
-HORIZON-CL4-2027-05-DIGITAL-EMERGING-03 | Advanced integrated photonic devices for extended features and ultra-low power consumption (RIA) (Photonics Partnership) | Forthcoming | 2026-11-17 | 2027-03-18 | ≈ €3M–€5M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-05-digital-emerging-03/
+HORIZON-CL4-2027-05-DIGITAL-EMERGING-03 | Advanced integrated photonic devices for extended features and ultra-low power consumption (RIA) (Photonics Partnership) | Open | 2026-11-17 | 2027-03-18 | ≈ €3M–€5M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-05-digital-emerging-03/
 HORIZON-CL5-2027-02-D2-05 | Improvement of Adaptability, Flexibility and Efficiency of Existing Recycling Processes (BATT4EU Partnership) | Forthcoming | 2026-12-03 | 2027-03-31 | ≈ €9.4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-02-d2-05/
 HORIZON-CL5-2027-02-D2-06 | Sustainable and Competitive Cell Production Techniques for Lithium-ion And Sodium-ion Batteries (BATT4EU Partnership) | Forthcoming | 2026-12-03 | 2027-03-31 | ≈ €18.9M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-02-d2-06/
 HORIZON-CL5-2027-02-D3-07 | Concentrated solar thermal systems for decarbonising industrial processes | Forthcoming | 2026-12-03 | 2027-03-31 | ≈ €6M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-02-d3-07/
@@ -395,4 +395,4 @@ HORIZON-NEB-2027-01-REGEN-04 | Enabling environments for a sustainable and circu
 HORIZON-EIC-2027-ACCELERATOR-01 | Short proposal | Open | 2026-11-10 | 2027-12-16 | - | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-accelerator-01/
 HORIZON-CL4-2027-SPACE-07-83 | Space critical EEE components for EU non-dependence | Forthcoming | 2027-10-07 | 2028-01-20 | ≈ €3M–€4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-space-07-83/
 HORIZON-CL4-2027-SPACE-07-84 | Space critical equipment for EU non-dependence | Forthcoming | 2027-10-07 | 2028-01-20 | ≈ €3M–€4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl4-2027-space-07-84/
-HUMA-2028-2034-PARTNERSHIP-CERT | EU Humanitarian Partnership Certificate 2028-2034 | Forthcoming | 2026-11-17 | 2033-06-30 | - | https://calls.ullswaterinvestments.com/call/huma-2028-2034-partnership-cert/
+HUMA-2028-2034-PARTNERSHIP-CERT | EU Humanitarian Partnership Certificate 2028-2034 | Open | 2026-11-17 | 2033-06-30 | - | https://calls.ullswaterinvestments.com/call/huma-2028-2034-partnership-cert/

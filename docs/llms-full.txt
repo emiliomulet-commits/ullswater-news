@@ -1,5 +1,26 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EIC Accelerator picks 35 deep tech firms for €84 million in grants
+URL: https://news.ullswaterinvestments.com/2026/11/eic-accelerator-35-companies-84-million/
+Date: 2026-11-16 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/european-innovation-council-selects-35-deep-tech-companies-its-accelerator-support-2026-11-16_en)
+
+Out of 453 full applications, 35 start-ups and SMEs from 17 countries were selected; 32 of them will be assessed for EIC Fund equity of up to €10 million each.
+
+- Selected companies: 35 start-ups and SMEs from 17 EU and associated countries
+- Competition: 453 full applications, 88 interviewed
+- Grant funding: €84 million in total proposed grants
+- Equity: 32 companies to be assessed for EIC Fund investments of up to €10 million each
+- Seals: 74 Seals of Excellence and 13 STEP Seals
+
+The European Innovation Council announced on 16 November 2026 the results of its latest EIC Accelerator evaluation round, linked to the May–July 2026 cut-off. Of the 453 companies that submitted full applications, 88 were invited to interview and 35 start-ups and SMEs were finally selected. The total proposed grant funding for them is €84 million, and the large majority (32 companies) will also be assessed by the EIC Fund for equity investments of up to €10 million each.
+The selected companies come from 17 EU and associated countries, with France, Switzerland and Germany contributing the most. Women hold key leadership roles such as CEO, CTO or CSO in 31% of them. Examples highlighted by the EIC include autonomous underwater robots for seabed mapping (DEESS, France), biorefineries that turn coffee waste into ingredients (Ecobean, Poland), light-based destruction of PFAS (Oxyle, Switzerland), desalination with mineral recovery from brine (Seamoretech, Portugal) and microbiome-enabled organ-on-chip technology (Sia Cellboxlab, Latvia).
+A further 74 applications scored above the threshold but could not be funded and will receive a Seal of Excellence, while 13 companies that met the criteria under the five EIC Accelerator challenges will receive a STEP Seal. Both seals can help them access other EU funding. Grant agreements are expected to be finalised within the next three months, and the EIC Fund will decide on equity investments, co-investing with other private and public investors.
+As a reminder, the EIC Accelerator offers grants of up to €2.5 million and EIC Fund equity between €1 million and €10 million, with up to €30 million in equity under EIC STEP Scale-up. Applications can be submitted at any time: short proposals are batched monthly and assessed within 4 to 6 weeks, while full proposals are batched four times per year.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: with only a small share of full applications funded, the EIC Accelerator remains one of the most selective instruments in Horizon Europe, and the interview stage is where most projects are decided. Companies that scored above the threshold should not treat the Seal of Excellence or STEP Seal as a dead end: they can open doors to national and regional funding, and a well-documented resubmission often performs better. For deep tech start-ups preparing for 2027, the continuous short-proposal route is the best way to test eligibility early and plan a full application around a realistic cut-off.
+
+---
+
 ## EHDS webinar on 25 November: benefits of health data secondary use
 URL: https://news.ullswaterinvestments.com/2026/11/ehds-webinar-4-secondary-use-health-data/
 Date: 2026-11-16 · Category: Health & Health Data · Source: European Commission · EHDS support to stakeholders (official event page) (https://events.teams.microsoft.com/event/a9526537-8a2b-448d-9045-59470ebf0b13@b853f977-4183-428f-855c-ffe7328b6f13)
