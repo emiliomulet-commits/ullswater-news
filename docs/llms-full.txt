@@ -1,5 +1,46 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## Innovation Fund 2026: €5.2 billion in five calls opening 3 December
+URL: https://news.ullswaterinvestments.com/2026/11/innovation-fund-2026-calls-5-2-billion-info-days/
+Date: 2026-11-17 · Category: Climate & Energy · Source: CINEA – European Climate, Infrastructure and Environment Executive Agency (https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en)
+
+The Commission will launch three grant calls and two auctions under the Innovation Fund on 3 December, with online info days on 9, 10 and 15 December.
+
+- Programme: Innovation Fund (IF26), funded by EU ETS revenues
+- Total budget: Up to €5.2 billion across five calls
+- Launch: 3 December: three grant calls and two auction calls
+- Largest call: Net-Zero Technologies: €3.3 billion
+- Info days: 9, 10 and 15 December 2026, online with live Q&A
+
+The European Climate, Infrastructure and Environment Executive Agency (CINEA) announced on 17 November 2026 that the Commission plans to open five Innovation Fund calls on 3 December, with a combined budget of up to €5.2 billion. The package comprises three grant calls and two auction calls. Ahead of the launch, DG CLIMA and CINEA have opened registrations for four online info days, which will be livestreamed with a live Q&A.
+The two auctions come first. The IF26 Hydrogen Auction, worth €500 million and aimed at renewable and electrolytic low-carbon hydrogen production, will be presented on 9 December from 09:30 to 13:00 CET. The IF26 Heat Auction, with €1 billion for process heat from electrified technologies, direct renewable heat and waste heat sources, follows the same day from 14:30 to 17:30 CET.
+The IF26 SME Call, with €200 million, will be presented on 10 December from 09:30 to 13:00 CET. It will have two cut-off dates, at the end of March 2027 and at the end of September 2027, and CINEA may hold online orientation dialogues in December on request. Finally, on 15 December from 09:00 to 13:00 CET, the info day will cover the Net-Zero Technologies call, with €3.3 billion, and the Maritime call, with €200 million.
+The full call conditions and application requirements will be published on the EU Funding and Tenders Portal. The Innovation Fund is financed by revenues from the EU Emissions Trading System and has so far committed over €18 billion to around 380 projects.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: with the calls opening only a few weeks before the end of the year, project promoters should use the info days to confirm eligibility and the specific rules of each call rather than wait for the full documents. Auctions and grant calls follow different logics: auctions reward the lowest support requested per unit of output, while grant calls assess the project as a whole, so the choice of instrument shapes the whole preparation. The SME call, with two cut-off dates spread over 2027, gives smaller companies a more manageable route and time to mature a proposal before submitting.
+
+---
+
+## EIC Fund survey: 64% say it was essential to close their round
+URL: https://news.ullswaterinvestments.com/2026/11/eic-fund-survey-64-percent-essential-investment-round/
+Date: 2026-11-17 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/eic-fund-companies-highlight-its-role-supporting-fundraising-and-growth-2026-11-17_en)
+
+A survey of 182 companies backed by the EIC Fund finds strong support for its role in fundraising, while asking for faster processes and more follow-on capacity.
+
+- Respondents: 182 companies assigned to the EIC Fund in 2019–2025 (24% of 752 invited)
+- Essential to the round: 64% of companies with signed investment agreements
+- Grant plus equity: 72% see the combination as complementary
+- Recommendation score: 8.6 out of 10
+- Dual use and defence: Relevant to 45% of respondents
+
+The European Innovation Council and SMEs Executive Agency (EISMEA) published on 17 November 2026 the results of a survey of companies supported by the EIC Fund, the EIC's equity arm for start-ups and SMEs. The survey was launched in March 2026 and collected answers from 182 companies assigned to the Fund between 2019 and 2025, which represents 24% of the 752 companies invited to take part.
+Among companies that had signed investment agreements, 64% said the EIC Fund had been essential to completing their investment round, and another 17% reported a positive impact. In total, 72% of respondents considered the mix of EIC grant and equity support complementary, and companies gave an average score of 8.6 out of 10 when asked how likely they were to recommend applying to the EIC. Among companies selected since 2023, 58% said the effect on the timing of their fundraising was positive or neutral.
+The survey also shows that dual-use and defence-related activities are relevant to 45% of the responding companies. At the same time, respondents identified areas where the Fund could do better: more capacity for follow-on investments, faster processes, lighter administrative requirements and clearer communication of investment decisions. EISMEA says the findings will be used to further improve the EIC Fund and its investment processes.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: for deep tech companies weighing an EIC Accelerator application, the equity component is often what convinces co-investors to commit, so it deserves as much attention in the proposal as the grant. The feedback on timing and administrative load is a reminder to plan the fundraising calendar with margin and to have due diligence documentation ready early. The weight of dual-use activities among respondents also confirms that companies with defence-relevant technologies can find a natural place in the EIC portfolio.
+
+---
+
 ## EIC Accelerator picks 35 deep tech firms for €84 million in grants
 URL: https://news.ullswaterinvestments.com/2026/11/eic-accelerator-35-companies-84-million/
 Date: 2026-11-16 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/european-innovation-council-selects-35-deep-tech-companies-its-accelerator-support-2026-11-16_en)
