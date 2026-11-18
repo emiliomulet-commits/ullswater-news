@@ -893,6 +893,25 @@
    "title": "European Degree Exploratory Action",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2026-eued"
   },
+  "ERASMUS-EDU-2027-EMJM-DESIGN": {
+   "budget": "€3M (topic total)",
+   "code": "ERASMUS-EDU-2027-EMJM-DESIGN",
+   "deadline": "2027-02-16",
+   "first_seen": "2026-11-18",
+   "keywords": [
+    "EHEA",
+    "EMDM",
+    "EMJM",
+    "HEI",
+    "Joint Masters"
+   ],
+   "last_seen": "2026-11-18",
+   "listed": true,
+   "opens": "2026-11-19",
+   "status": "forthcoming",
+   "title": "Erasmus Mundus Design Measures",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-emjm-design"
+  },
   "ERASMUS-EDU-2027-EUR-UNIV": {
    "budget": "€218.4M (topic total)",
    "code": "ERASMUS-EDU-2027-EUR-UNIV",
@@ -911,6 +930,70 @@
    "status": "open",
    "title": "European Universities",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-eur-univ"
+  },
+  "ERASMUS-EDU-2027-PEX-EMJM-MOB": {
+   "budget": "€164.6M (topic total)",
+   "code": "ERASMUS-EDU-2027-PEX-EMJM-MOB",
+   "deadline": "2027-02-16",
+   "first_seen": "2026-11-18",
+   "keywords": [
+    "Course",
+    "Courses",
+    "Degree",
+    "Degrees",
+    "Design measures"
+   ],
+   "last_seen": "2026-11-18",
+   "listed": true,
+   "opens": "2026-11-19",
+   "status": "forthcoming",
+   "title": "Erasmus Mundus Joint Masters",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-pex-emjm-mob"
+  },
+  "ERASMUS-SPORT-2027-CB": {
+   "budget": "€2.6M (topic total)",
+   "code": "ERASMUS-SPORT-2027-CB",
+   "deadline": "2027-03-09",
+   "first_seen": "2026-11-18",
+   "keywords": [
+    "CB",
+    "Capacity Building",
+    "Capacity building in the field of sport",
+    "Erasmus+",
+    "SPORT"
+   ],
+   "last_seen": "2026-11-18",
+   "listed": true,
+   "opens": "2026-12-17",
+   "status": "forthcoming",
+   "title": "ERASMUS-SPORT-2027-CB - Capacity Building in the Field of Sport",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-sport-2027-cb"
+  },
+  "ERASMUS-SPORT-2027-SCP": {
+   "budget": "€69.2M (topic total)",
+   "code": "ERASMUS-SPORT-2027-SCP",
+   "deadline": "2027-03-09",
+   "first_seen": "2026-11-18",
+   "keywords": [],
+   "last_seen": "2026-11-18",
+   "listed": true,
+   "opens": "2026-12-17",
+   "status": "forthcoming",
+   "title": "Cooperation Partnerships",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-sport-2027-scp"
+  },
+  "ERASMUS-SPORT-2027-SSCP": {
+   "budget": "€69.2M (topic total)",
+   "code": "ERASMUS-SPORT-2027-SSCP",
+   "deadline": "2027-03-09",
+   "first_seen": "2026-11-18",
+   "keywords": [],
+   "last_seen": "2026-11-18",
+   "listed": true,
+   "opens": "2026-12-17",
+   "status": "forthcoming",
+   "title": "Small-scale Partnerships",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-sport-2027-sscp"
   },
   "ERC-2027-COG": {
    "budget": "€618.5M (topic total)",
@@ -6903,5 +6986,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-18T06:55:21.257Z"
+ "feed_updated": "2026-11-18T13:59:29.766Z"
 }
