@@ -1,0 +1,47 @@
+{
+  "slug": "innovation-fund-2026-sme-call-info-day",
+  "title": "Innovation Fund 2026 SME Call Info Day",
+  "start": "2026-12-10",
+  "end": "2026-12-10",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "CINEA and the European Commission (DG CLIMA)",
+  "summary": "An online morning session on the Innovation Fund's 2026 call for SMEs, which has a budget of €200 million and two cut-off dates in 2027.",
+  "details": [
+    "CINEA and DG CLIMA present the features and general provisions of the IF26 SME call, the award criteria and the greenhouse gas calculation methodology, and the Research Executive Agency explains the SME requirements. Three question-and-answer slots are planned. It starts at 09:30 CET, is in English and is livestreamed.",
+    "Applications can be submitted by the end of March 2027 or the end of September 2027. Questions can be sent through Slido, and registration closes at midnight CET at the start of 10 December."
+  ],
+  "why": "A dedicated SME call lowers the competition small companies face against large industrial projects. The session on the greenhouse gas methodology is worth attending in full, since emissions avoidance is central to how Innovation Fund proposals are scored.",
+  "tags": [
+    "Innovation Fund",
+    "SMEs",
+    "Clean tech",
+    "Net zero"
+  ],
+  "registration_url": "https://cinea.ec.europa.eu/news-events/events/innovation-fund-2026-sme-call-info-day-2026-12-10_en",
+  "source_name": "CINEA (European Climate, Infrastructure and Environment Executive Agency)",
+  "source_url": "https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en",
+  "status": "scheduled",
+  "series": "innovation-fund-2026-info-days",
+  "series_title": "Innovation Fund 2026 info days",
+  "es": {
+    "title": "Jornada informativa de la convocatoria para pymes del Fondo de Innovación 2026",
+    "summary": "Sesión en línea de mañana sobre la convocatoria 2026 del Fondo de Innovación para pymes, con un presupuesto de 200 millones de euros y dos fechas de corte en 2027.",
+    "details": [
+      "CINEA y la DG CLIMA presentan las características y disposiciones generales de la convocatoria IF26 SME, los criterios de adjudicación y la metodología de cálculo de gases de efecto invernadero, y la Agencia Ejecutiva de Investigación (REA) explica los requisitos de pyme. Hay tres turnos de preguntas. Empieza a las 09:30 CET, es en inglés y se retransmite en directo.",
+      "Las solicitudes pueden presentarse hasta finales de marzo de 2027 o hasta finales de septiembre de 2027. Las preguntas pueden enviarse por Slido y la inscripción se cierra a medianoche CET al comienzo del 10 de diciembre."
+    ],
+    "why": "Una convocatoria propia para pymes reduce la competencia frente a grandes proyectos industriales. Merece la pena seguir entera la parte sobre la metodología de gases de efecto invernadero, porque las emisiones evitadas son clave en la puntuación de las propuestas del Fondo de Innovación.",
+    "tags": [
+      "Fondo de Innovación",
+      "Pymes",
+      "Tecnologías limpias",
+      "Cero emisiones netas"
+    ],
+    "location": "En línea",
+    "series_title": "Jornadas informativas del Fondo de Innovación 2026"
+  }
+}
