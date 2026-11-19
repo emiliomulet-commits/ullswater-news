@@ -1,0 +1,47 @@
+{
+  "slug": "innovation-fund-2026-heat-auction-info-day",
+  "title": "Innovation Fund 2026 Heat Auction Info Day",
+  "start": "2026-12-09",
+  "end": "2026-12-09",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "CINEA and the European Commission (DG CLIMA)",
+  "summary": "An online afternoon session on the Innovation Fund's 2026 auction for industrial heat, which has a budget of €1 billion.",
+  "details": [
+    "CINEA and DG CLIMA present the objectives and design of the auction, the application process, qualification requirements and lessons learned, and the evaluation and award criteria, with two question-and-answer slots. It starts at 14:30 CET, is in English and is livestreamed.",
+    "The Commission plans to open the auction on 3 December 2026. Questions can be sent through Slido, and registration closes at midnight CET at the start of 9 December."
+  ],
+  "why": "A new route for industrial sites that want to decarbonise process heat. Companies weighing an auction bid against a grant application under the net-zero technologies call can use this session and the 15 December info day to compare the two.",
+  "tags": [
+    "Innovation Fund",
+    "Industrial heat",
+    "Auction",
+    "Decarbonisation"
+  ],
+  "registration_url": "https://cinea.ec.europa.eu/news-events/events/innovation-fund-2026-heat-auction-info-day-2026-12-09_en",
+  "source_name": "CINEA (European Climate, Infrastructure and Environment Executive Agency)",
+  "source_url": "https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en",
+  "status": "scheduled",
+  "series": "innovation-fund-2026-info-days",
+  "series_title": "Innovation Fund 2026 info days",
+  "es": {
+    "title": "Jornada informativa de la subasta de calor del Fondo de Innovación 2026",
+    "summary": "Sesión en línea de tarde sobre la subasta 2026 del Fondo de Innovación para calor industrial, con un presupuesto de 1.000 millones de euros.",
+    "details": [
+      "CINEA y la DG CLIMA presentan los objetivos y el diseño de la subasta, el proceso de solicitud, los requisitos de admisibilidad y las lecciones aprendidas, y los criterios de evaluación y adjudicación, con dos turnos de preguntas. Empieza a las 14:30 CET, es en inglés y se retransmite en directo.",
+      "La Comisión prevé abrir la subasta el 3 de diciembre de 2026. Las preguntas pueden enviarse por Slido y la inscripción se cierra a medianoche CET al comienzo del 9 de diciembre."
+    ],
+    "why": "Una vía nueva para plantas industriales que quieren descarbonizar el calor de proceso. Las empresas que dudan entre pujar en la subasta o pedir una subvención en la convocatoria de tecnologías de cero emisiones netas pueden usar esta sesión y la del 15 de diciembre para comparar ambas.",
+    "tags": [
+      "Fondo de Innovación",
+      "Calor industrial",
+      "Subasta",
+      "Descarbonización"
+    ],
+    "location": "En línea",
+    "series_title": "Jornadas informativas del Fondo de Innovación 2026"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "innovation-fund-2026-hydrogen-auction-info-day",
+  "title": "Innovation Fund 2026 Hydrogen Auction Info Day",
+  "start": "2026-12-09",
+  "end": "2026-12-09",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "CINEA and the European Commission (DG CLIMA)",
+  "summary": "An online morning session on the Innovation Fund's 2026 auction for renewable and electrolytic low-carbon hydrogen, which has a budget of €500 million.",
+  "details": [
+    "CINEA and DG CLIMA explain the objectives and design of the auction, the application process and qualification requirements, and the evaluation criteria, with two question-and-answer slots. It starts at 09:30 CET, is in English and is livestreamed.",
+    "The Commission plans to open the auction on 3 December 2026 as one of five Innovation Fund calls. Questions can be sent through Slido, and registration closes at midnight CET at the start of 9 December."
+  ],
+  "why": "In an auction the bid and the qualification rules decide the outcome more than a long project narrative. Hydrogen producers should use the session to check that their project qualifies and to understand how bids are assessed before committing resources to one.",
+  "tags": [
+    "Innovation Fund",
+    "Hydrogen",
+    "Auction",
+    "Net zero"
+  ],
+  "registration_url": "https://cinea.ec.europa.eu/news-events/events/innovation-fund-2026-hydrogen-auction-info-day-2026-12-09_en",
+  "source_name": "CINEA (European Climate, Infrastructure and Environment Executive Agency)",
+  "source_url": "https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en",
+  "status": "scheduled",
+  "series": "innovation-fund-2026-info-days",
+  "series_title": "Innovation Fund 2026 info days",
+  "es": {
+    "title": "Jornada informativa de la subasta de hidrógeno del Fondo de Innovación 2026",
+    "summary": "Sesión en línea de mañana sobre la subasta 2026 del Fondo de Innovación para hidrógeno renovable y electrolítico bajo en carbono, con un presupuesto de 500 millones de euros.",
+    "details": [
+      "CINEA y la DG CLIMA explican los objetivos y el diseño de la subasta, el proceso de solicitud y los requisitos de admisibilidad, y los criterios de evaluación, con dos turnos de preguntas. Empieza a las 09:30 CET, es en inglés y se retransmite en directo.",
+      "La Comisión prevé abrir la subasta el 3 de diciembre de 2026 como una de las cinco convocatorias del Fondo de Innovación. Las preguntas pueden enviarse por Slido y la inscripción se cierra a medianoche CET al comienzo del 9 de diciembre."
+    ],
+    "why": "En una subasta, la oferta y las reglas de admisibilidad pesan más que una larga descripción del proyecto. Los productores de hidrógeno deberían usar la sesión para comprobar que su proyecto puede optar y entender cómo se valoran las ofertas antes de dedicar recursos a preparar una.",
+    "tags": [
+      "Fondo de Innovación",
+      "Hidrógeno",
+      "Subasta",
+      "Cero emisiones netas"
+    ],
+    "location": "En línea",
+    "series_title": "Jornadas informativas del Fondo de Innovación 2026"
+  }
+}

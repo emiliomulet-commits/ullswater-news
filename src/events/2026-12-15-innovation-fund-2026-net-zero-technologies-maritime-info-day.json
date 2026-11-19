@@ -1,0 +1,47 @@
+{
+  "slug": "innovation-fund-2026-net-zero-technologies-maritime-info-day",
+  "title": "Innovation Fund 2026 Net-Zero Technologies and Maritime Calls Info Day",
+  "start": "2026-12-15",
+  "end": "2026-12-15",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "CINEA and the European Commission (DG CLIMA)",
+  "summary": "A joint online session on the Innovation Fund's 2026 net-zero technologies call (€3.3 billion) and its maritime call (€200 million).",
+  "details": [
+    "CINEA and DG CLIMA present the features and general provisions of both calls, the award criteria with lessons learned from earlier rounds, and the greenhouse gas calculation methodology, with three question-and-answer slots. It starts at 09:00 CET, is in English and is livestreamed.",
+    "The Commission plans to open both calls on 3 December 2026. Questions can be sent through Slido, and registration closes at midnight CET at the start of 15 December."
+  ],
+  "why": "The net-zero technologies call is the largest of the five Innovation Fund calls this round. Teams preparing a large-scale or pilot project should attend to hear how evaluators applied the criteria in past calls before fixing their scope and emissions case.",
+  "tags": [
+    "Innovation Fund",
+    "Net zero",
+    "Maritime",
+    "Clean tech"
+  ],
+  "registration_url": "https://cinea.ec.europa.eu/news-events/events/innovation-fund-2026-maritime-and-net-zero-technologies-calls-info-day-2026-12-15_en",
+  "source_name": "CINEA (European Climate, Infrastructure and Environment Executive Agency)",
+  "source_url": "https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en",
+  "status": "scheduled",
+  "series": "innovation-fund-2026-info-days",
+  "series_title": "Innovation Fund 2026 info days",
+  "es": {
+    "title": "Jornada informativa de las convocatorias de tecnologías de cero emisiones netas y marítima del Fondo de Innovación 2026",
+    "summary": "Sesión conjunta en línea sobre la convocatoria 2026 de tecnologías de cero emisiones netas del Fondo de Innovación (3.300 millones de euros) y su convocatoria marítima (200 millones de euros).",
+    "details": [
+      "CINEA y la DG CLIMA presentan las características y disposiciones generales de ambas convocatorias, los criterios de adjudicación con las lecciones de rondas anteriores y la metodología de cálculo de gases de efecto invernadero, con tres turnos de preguntas. Empieza a las 09:00 CET, es en inglés y se retransmite en directo.",
+      "La Comisión prevé abrir ambas convocatorias el 3 de diciembre de 2026. Las preguntas pueden enviarse por Slido y la inscripción se cierra a medianoche CET al comienzo del 15 de diciembre."
+    ],
+    "why": "La convocatoria de tecnologías de cero emisiones netas es la mayor de las cinco del Fondo de Innovación en esta ronda. Los equipos que preparan un proyecto a gran escala o piloto deberían asistir para conocer cómo aplicaron los evaluadores los criterios en convocatorias anteriores antes de cerrar el alcance y el cálculo de emisiones.",
+    "tags": [
+      "Fondo de Innovación",
+      "Cero emisiones netas",
+      "Marítimo",
+      "Tecnologías limpias"
+    ],
+    "location": "En línea",
+    "series_title": "Jornadas informativas del Fondo de Innovación 2026"
+  }
+}
