@@ -1,7 +1,7 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-19 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-PPPA-2026-REGIONAL-SUBMARINE-ISM-CABLE-HUBS | Integrated Surveillance mechanism: Regional Cable hubs | Open | 2026-07-14 | 2026-11-19 | €3.9M (topic total) | https://calls.ullswaterinvestments.com/call/pppa-2026-regional-submarine-ism-cable-hubs/
+PPPA-2026-REGIONAL-SUBMARINE-ISM-CABLE-HUBS | Integrated Surveillance mechanism: Regional Cable hubs | Open | 2026-07-14 | 2026-11-19 | €3.9M (topic total) | https://calls.ullswaterinvestments.com/
 HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2026-dn-01-01/
 HORIZON-RAISE-2026-01-03 | RAISE Doctoral Networks for AI in Science (RAISE pilot) | Open | 2026-05-28 | 2026-11-24 | €90M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2026-01-03/
 CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/call/cef-dig-2026-cable-repair-capacities-works/
