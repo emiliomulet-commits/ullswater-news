@@ -1,0 +1,70 @@
+{
+  "slug": "horizon-europe-finding-opportunities-submitting-proposal-2026",
+  "title": "Horizon Implementation Day: Finding opportunities and submitting a proposal in Horizon Europe (September 2026)",
+  "date": "2026-09-24",
+  "time": "09:30–12:30 CEST",
+  "topic": "proposal",
+  "programme": "horizon-europe",
+  "organiser": "European Commission, DG Research and Innovation",
+  "summary": "The autumn 2026 edition of the Commission's starting session for applicants: how Horizon Europe is organised, how to find calls and partners in the Funding & Tenders Portal, and how proposals are written, submitted and evaluated.",
+  "covers": [
+    "A general overview of Horizon Europe",
+    "Searching for calls and partners in the Funding & Tenders Portal",
+    "The proposal template, basic submission principles and the evaluation criteria, including the Commission's position on using AI tools to write proposals",
+    "Question-and-answer sessions after each block"
+  ],
+  "materials": "Video recording, agenda and presentation slides for each session",
+  "why": "It is the most up-to-date official starting point for a team preparing a Horizon Europe proposal for the 2027 calls. Watching the evaluation part before drafting helps write each section against the criteria experts actually score.",
+  "tags": [
+    "Horizon Europe",
+    "Proposal writing",
+    "Funding & Tenders Portal",
+    "Partner search"
+  ],
+  "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260924.htm",
+  "source_name": "European Commission · Horizon Europe events and webinars",
+  "source_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260924.htm",
+  "videos": [
+    {
+      "youtube": "eeHZGKVmtvw",
+      "channel": "EU Science & Innovation",
+      "seconds": 10750,
+      "uploaded": "2026-09-24",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          139,
+          "General overview of Horizon Europe"
+        ],
+        [
+          1849,
+          "Q&A on the overview"
+        ],
+        [
+          3013,
+          "Searching for calls and partners in the Funding & Tenders Portal"
+        ],
+        [
+          5309,
+          "Q&A on the portal"
+        ],
+        [
+          6562,
+          "Submission and evaluation: proposal template, basic principles, evaluation criteria"
+        ],
+        [
+          8195,
+          "Using AI tools when writing a proposal"
+        ],
+        [
+          9174,
+          "Q&A on submission and evaluation"
+        ]
+      ],
+      "chapters_source": "ullswater"
+    }
+  ]
+}

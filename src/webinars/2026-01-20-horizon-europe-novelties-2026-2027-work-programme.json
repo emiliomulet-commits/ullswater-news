@@ -1,0 +1,62 @@
+{
+  "slug": "horizon-europe-novelties-2026-2027-work-programme",
+  "title": "Horizon Implementation Day: Novelties in the 2026-2027 Horizon Europe work programme",
+  "date": "2026-01-20",
+  "time": "09:00–12:00 CET",
+  "topic": "proposal",
+  "programme": "horizon-europe",
+  "organiser": "European Commission, DG Research and Innovation",
+  "summary": "The Commission's briefing on what changes for applicants under the 2026-2027 work programme: the application process and evaluation criteria, the Choose Europe for Science actions and the roll-out of two-factor authentication in the Funding & Tenders Portal.",
+  "covers": [
+    "Novelties in the application process and the evaluation criteria",
+    "Novelties in the Choose Europe for Science actions, presented by the Research Executive Agency and DG Education and Culture",
+    "The gradual roll-out of two-factor authentication in the Funding & Tenders Portal",
+    "Question-and-answer sessions after each block"
+  ],
+  "materials": "Video recording, agenda and presentation slides for each session",
+  "why": "Anyone writing a proposal for the 2026-2027 calls should watch the first block before drafting: changes to templates and criteria apply to every topic in the work programme.",
+  "tags": [
+    "Horizon Europe",
+    "Work programme 2026-2027",
+    "Proposal writing",
+    "Evaluation criteria"
+  ],
+  "official_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260120.htm",
+  "source_name": "European Commission · Horizon Europe events and webinars",
+  "source_url": "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/other/event260120.htm",
+  "videos": [
+    {
+      "youtube": "zBCiqTHj_HU",
+      "channel": "EU Science & Innovation",
+      "seconds": 9860,
+      "uploaded": "2026-01-20",
+      "chapters": [
+        [
+          0,
+          "Welcome and agenda"
+        ],
+        [
+          432,
+          "Novelties in the application process and evaluation criteria"
+        ],
+        [
+          1716,
+          "Q&A on the application process"
+        ],
+        [
+          4696,
+          "Novelties in Choose Europe for Science"
+        ],
+        [
+          5814,
+          "Q&A on Choose Europe for Science"
+        ],
+        [
+          8239,
+          "Two-factor authentication in the Funding & Tenders Portal, with Q&A"
+        ]
+      ],
+      "chapters_source": "ullswater"
+    }
+  ]
+}
