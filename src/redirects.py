@@ -2,6 +2,8 @@
 
 news.ullswaterinvestments.com/calls/... keeps a tiny redirect page at every old address
 (canonical + meta refresh + JS) so links and search results move to the calls site.
+No noindex: Google treats an instant meta refresh as a redirect and passes signals to the target;
+noindex on a redirect page blocks that consolidation (Search Console, Nov 2026).
 """
 import json, re, urllib.request
 from html import escape as E
@@ -53,6 +55,6 @@ def call_url(c, ids):
 def stub(target, title):
     t = E(target)
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{E(title)}</title>'
-            f'<link rel="canonical" href="{t}"><meta name="robots" content="noindex,follow">'
+            f'<link rel="canonical" href="{t}">'
             f'<meta http-equiv="refresh" content="0; url={t}"><script>location.replace({json.dumps(target)})</script></head>'
             f'<body><p>This page has moved to <a href="{t}">{t}</a>.</p></body></html>')
