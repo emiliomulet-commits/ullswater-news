@@ -946,7 +946,7 @@
    "last_seen": "2026-11-19",
    "listed": true,
    "opens": "2026-11-19",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Erasmus Mundus Joint Masters",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-pex-emjm-mob"
   },
@@ -6978,7 +6978,7 @@
     "interoperability and data fusion"
    ],
    "last_seen": "2026-11-19",
-   "listed": true,
+   "listed": false,
    "opens": "2026-07-14",
    "status": "open",
    "title": "Integrated Surveillance mechanism: Regional Cable hubs",
@@ -7017,5 +7017,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-19T06:50:17.368Z"
+ "feed_updated": "2026-11-19T20:59:45.595Z"
 }

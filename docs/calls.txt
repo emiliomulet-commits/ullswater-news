@@ -1,7 +1,6 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-19 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-PPPA-2026-REGIONAL-SUBMARINE-ISM-CABLE-HUBS | Integrated Surveillance mechanism: Regional Cable hubs | Open | 2026-07-14 | 2026-11-19 | €3.9M (topic total) | https://calls.ullswaterinvestments.com/
 HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2026-dn-01-01/
 HORIZON-RAISE-2026-01-03 | RAISE Doctoral Networks for AI in Science (RAISE pilot) | Open | 2026-05-28 | 2026-11-24 | €90M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2026-01-03/
 CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/call/cef-dig-2026-cable-repair-capacities-works/
@@ -99,7 +98,7 @@ EDF-EDIP-P-2027-LS-IRA-KEC | Key electronic components | Open | 2026-06-17 | 202
 EDF-EDIP-P-2027-LS-IRA-PE | Platforms and end-products | Open | 2026-06-17 | 2027-02-16 | €282.2M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-ls-ira-pe/
 EDF-EDIP-USI-2027-LS-IRA-CUXS | Unmanned systems and counter-unmanned systems | Open | 2026-06-17 | 2027-02-16 | €80M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-usi-2027-ls-ira-cuxs/
 ERASMUS-EDU-2027-EMJM-DESIGN | Erasmus Mundus Design Measures | Open | 2026-11-19 | 2027-02-16 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-emjm-design/
-ERASMUS-EDU-2027-PEX-EMJM-MOB | Erasmus Mundus Joint Masters | Forthcoming | 2026-11-19 | 2027-02-16 | €164.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-pex-emjm-mob/
+ERASMUS-EDU-2027-PEX-EMJM-MOB | Erasmus Mundus Joint Masters | Open | 2026-11-19 | 2027-02-16 | €164.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-pex-emjm-mob/
 HORIZON-BRIDGING-2027-01-09 | EU AI Media Platform – modular multilingual public-interest infrastructure for European news and audiovisual media (IA) - Apply AI | Open | 2026-10-20 | 2027-02-16 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-01-09/
 HORIZON-BRIDGING-2027-01-10 | Autonomous Drive Ambition Cities (IA) - Apply AI | Open | 2026-10-20 | 2027-02-16 | €15M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-01-10/
 HORIZON-BRIDGING-2027-01-12 | Large-Scale piloting of next-generation AI-driven digital platforms for a more affordable, secure and sustainable European energy system (IA) - Apply AI | Open | 2026-10-20 | 2027-02-16 | €15M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-01-12/
