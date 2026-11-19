@@ -1,0 +1,39 @@
+{
+  "slug": "edf-d-storm-cascade-funding-call-smes",
+  "date": "2026-11-18",
+  "category": "eic-defence",
+  "title": "EDF project D-STORM opens €90,000 cascade call for SMEs",
+  "dek": "The European Defence Fund project D-STORM offers up to €10,000 to SMEs and start-ups with operational know-how on loitering munitions and combat drones, until 11 January 2027.",
+  "key_facts": [
+    ["Programme", "European Defence Fund (EDF) – cascade funding"],
+    ["Budget", "€90,000 in total, up to €10,000 per recipient"],
+    ["Who can apply", "SMEs and start-ups in EU Member States, Norway or Ukraine"],
+    ["Deadline", "11 January 2027, 11:00 CET"]
+  ],
+  "body": [
+    "D-STORM (Drone-based Scalable Tactical Operations Responsive Munitions), a project funded by the European Defence Fund, launched its first open call for cascade funding on 18 November 2026, as announced by the Commission's Directorate-General for Defence Industry and Space. The project is developing affordable, scalable tactical munitions and the operational concepts that go with them.",
+    "The call looks for first-hand operational knowledge on loitering munitions and unmanned combat air systems to refine the project's concepts of operations and operational requirements. Relevant expertise includes swarm characteristics, the number and reusability of effectors, field constraints such as jamming, mission types, logistics and maintenance, pre-launch preparation, assembly and configuration of effectors, and their recovery.",
+    "Selected recipients will receive up to €10,000 each, from a total budget of €90,000. The call targets SMEs, including start-ups, established in EU Member States, Norway or Ukraine, with priority for entities operating directly in Ukraine. Over a period of up to four weeks, recipients will provide structured recommendations using the project's templates, take part in interviews with the technical teams and attend a workshop that may be held in Ukraine, for example in Kyiv or Lviv, or in an EU country. Applications are open until 11 January 2027 at 11:00 CET."
+  ],
+  "why": "Ullswater Investments analysis: the amounts are small, but cascade calls like this one are a low-barrier way for SMEs with real field experience to work inside an EDF consortium, build references with defence primes and understand how EDF projects define their requirements. For companies considering future EDF or EDIP proposals, this kind of participation can be a useful first step. Applicants should document their operational experience precisely, since the call rewards first-hand knowledge rather than technology development.",
+  "tags": ["European Defence Fund", "EDF", "Cascade funding", "Drones", "Ukraine", "SMEs", "Dual use"],
+  "source_name": "European Commission – Defence Industry and Space",
+  "source_url": "https://defence-industry-space.ec.europa.eu/edf-d-storm-project-launches-first-open-call-cascade-funding-2026-11-18_en",
+  "es": {
+    "title": "D-STORM (EDF) abre una convocatoria en cascada de 90.000 € para pymes",
+    "dek": "El proyecto D-STORM del Fondo Europeo de Defensa ofrece hasta 10.000 euros a pymes y startups con conocimiento operativo sobre municiones merodeadoras y drones de combate, hasta el 11 de enero de 2027.",
+    "key_facts": [
+      ["Programa", "Fondo Europeo de Defensa (EDF) – financiación en cascada"],
+      ["Presupuesto", "90.000 euros en total, hasta 10.000 euros por beneficiario"],
+      ["Quién puede solicitar", "Pymes y startups de Estados miembros de la UE, Noruega o Ucrania"],
+      ["Plazo", "11 de enero de 2027, 11:00 CET"]
+    ],
+    "body": [
+      "D-STORM (Drone-based Scalable Tactical Operations Responsive Munitions), un proyecto financiado por el Fondo Europeo de Defensa, lanzó el 18 de noviembre de 2026 su primera convocatoria abierta de financiación en cascada, según anunció la Dirección General de Industria de Defensa y Espacio de la Comisión. El proyecto desarrolla municiones tácticas asequibles y escalables y los conceptos operativos asociados.",
+      "La convocatoria busca conocimiento operativo de primera mano sobre municiones merodeadoras y sistemas aéreos de combate no tripulados para afinar los conceptos de operaciones y los requisitos operativos del proyecto. Entre los ámbitos de experiencia pertinentes figuran las características de los enjambres, el número y la reutilización de los efectores, las limitaciones sobre el terreno como las interferencias, los tipos de misión, la logística y el mantenimiento, la preparación previa al lanzamiento, el montaje y la configuración de los efectores y su recuperación.",
+      "Los beneficiarios seleccionados recibirán hasta 10.000 euros cada uno, con un presupuesto total de 90.000 euros. La convocatoria se dirige a pymes, incluidas startups, establecidas en Estados miembros de la UE, Noruega o Ucrania, con prioridad para las entidades que operan directamente en Ucrania. Durante un periodo de hasta cuatro semanas, los beneficiarios aportarán recomendaciones estructuradas con las plantillas del proyecto, participarán en entrevistas con los equipos técnicos y asistirán a un taller que podrá celebrarse en Ucrania, por ejemplo en Kiev o Leópolis, o en un país de la UE. Las solicitudes pueden presentarse hasta el 11 de enero de 2027 a las 11:00 CET."
+    ],
+    "why": "Análisis de Ullswater Investments: los importes son reducidos, pero las convocatorias en cascada como esta son una vía de acceso sencilla para que las pymes con experiencia real sobre el terreno trabajen dentro de un consorcio del EDF, ganen referencias ante los grandes contratistas de defensa y entiendan cómo definen sus requisitos los proyectos del EDF. Para las empresas que se planteen futuras propuestas al EDF o a EDIP, este tipo de participación puede ser un primer paso útil. Los solicitantes deberían documentar con precisión su experiencia operativa, ya que la convocatoria valora el conocimiento de primera mano y no el desarrollo tecnológico.",
+    "tags": ["Fondo Europeo de Defensa", "EDF", "Financiación en cascada", "Drones", "Ucrania", "Pymes", "Doble uso"]
+  }
+}

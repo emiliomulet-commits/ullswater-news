@@ -1,0 +1,41 @@
+{
+  "slug": "horizon-europe-digital-calls-297-million-ai",
+  "date": "2026-11-17",
+  "category": "digital-ai",
+  "title": "Horizon Europe opens €297 million digital calls with 12 topics",
+  "dek": "Two new Horizon Europe calls under the digital strand cover frontier AI, AI-driven robotics, energy-efficient AI data centres and virtual worlds, open until 18 March 2027.",
+  "key_facts": [
+    ["Programme", "Horizon Europe – Digital, Industry and Space (Work Programme 2026-27)"],
+    ["Budget", "€297 million across two calls and 12 topics"],
+    ["AI topics", "Four topics worth €107 million"],
+    ["Data and AI services", "Three topics worth €112 million"],
+    ["Deadline", "18 March 2027"]
+  ],
+  "body": [
+    "On 17 November 2026 the European Commission opened two new calls under the digital strand of Horizon Europe, bringing together 12 topics with a combined budget of €297 million. The calls belong to the Horizon Europe Work Programme 2026-27 for Digital, Industry and Space and will stay open until 18 March 2027.",
+    "The largest share goes to open strategic autonomy in digital and enabling technologies. Four AI topics, worth €107 million in total, address frontier AI that is safe by design, AI-driven robotics for industry, faster uptake of AI in key sectors and European AI solutions for low- and middle-income countries. Two further topics, totalling €29 million, cover advanced photonics and a European forum on emerging technologies.",
+    "A second block of three topics, worth €112 million, targets distributed, decentralised and energy-efficient AI processing, pilots on the Connected, Collaborative, Computing (3C) infrastructure driven by industry demand, and more sustainable, energy-efficient AI data centres. The final block, worth €49 million, funds hardware components for virtual worlds, a virtual worlds and Web 4.0 ecosystem, and European participation in international digital standardisation."
+  ],
+  "why": "Ullswater Investments analysis: these topics mix research actions, innovation actions and coordination actions, so consortia should first check the action type of the topic they target, because it determines the expected maturity of the results and the funding rate. Several topics are linked to European partnerships in AI, photonics and virtual worlds, which makes it worth aligning proposals with those partnerships' agendas. With a single deadline in March, the window to build industry-led consortia, especially for the innovation actions on robotics, edge cloud and data centres, is short and should start now.",
+  "tags": ["Horizon Europe", "Artificial intelligence", "Robotics", "Data centres", "Photonics", "Virtual worlds", "Cluster 4"],
+  "source_name": "European Commission – Shaping Europe's digital future",
+  "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-launches-over-eu290-million-boost-eu-tech-sovereignty-and-beyond",
+  "es": {
+    "title": "Horizonte Europa abre convocatorias digitales de 297 millones",
+    "dek": "Dos nuevas convocatorias de Horizonte Europa en el ámbito digital cubren IA de frontera, robótica impulsada por IA, centros de datos de IA eficientes y mundos virtuales, abiertas hasta el 18 de marzo de 2027.",
+    "key_facts": [
+      ["Programa", "Horizonte Europa – Digital, Industria y Espacio (programa de trabajo 2026-27)"],
+      ["Presupuesto", "297 millones de euros en dos convocatorias y 12 temas"],
+      ["Temas de IA", "Cuatro temas por valor de 107 millones de euros"],
+      ["Datos y servicios de IA", "Tres temas por valor de 112 millones de euros"],
+      ["Plazo", "18 de marzo de 2027"]
+    ],
+    "body": [
+      "El 17 de noviembre de 2026 la Comisión Europea abrió dos nuevas convocatorias en el ámbito digital de Horizonte Europa, que reúnen 12 temas con un presupuesto conjunto de 297 millones de euros. Las convocatorias forman parte del programa de trabajo 2026-27 de Horizonte Europa para Digital, Industria y Espacio y seguirán abiertas hasta el 18 de marzo de 2027.",
+      "La mayor parte se destina a la autonomía estratégica abierta en tecnologías digitales y facilitadoras. Cuatro temas de IA, por un total de 107 millones de euros, abordan una IA de frontera segura desde el diseño, la robótica impulsada por IA para la industria, una adopción más rápida de la IA en sectores clave y soluciones europeas de IA para países de renta baja y media. Otros dos temas, por un total de 29 millones de euros, cubren la fotónica avanzada y un foro europeo sobre tecnologías emergentes.",
+      "Un segundo bloque de tres temas, por valor de 112 millones de euros, se centra en el procesamiento de IA distribuido, descentralizado y energéticamente eficiente, en pilotos sobre la infraestructura Connected, Collaborative, Computing (3C) impulsados por la demanda industrial y en centros de datos de IA más sostenibles y eficientes. El último bloque, de 49 millones de euros, financia componentes de hardware para mundos virtuales, un ecosistema de mundos virtuales y Web 4.0, y la participación europea en la normalización digital internacional."
+    ],
+    "why": "Análisis de Ullswater Investments: estos temas combinan acciones de investigación, acciones de innovación y acciones de coordinación, por lo que los consorcios deberían comprobar primero el tipo de acción del tema al que se dirigen, ya que determina la madurez esperada de los resultados y el porcentaje de financiación. Varios temas están vinculados a partenariados europeos de IA, fotónica y mundos virtuales, lo que aconseja alinear las propuestas con las agendas de esos partenariados. Con un único plazo en marzo, el margen para formar consorcios liderados por la industria, sobre todo en las acciones de innovación sobre robótica, edge cloud y centros de datos, es corto y conviene empezar ya.",
+    "tags": ["Horizonte Europa", "Inteligencia artificial", "Robótica", "Centros de datos", "Fotónica", "Mundos virtuales", "Clúster 4"]
+  }
+}

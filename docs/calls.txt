@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-18 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-19 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 PPPA-2026-REGIONAL-SUBMARINE-ISM-CABLE-HUBS | Integrated Surveillance mechanism: Regional Cable hubs | Open | 2026-07-14 | 2026-11-19 | €3.9M (topic total) | https://calls.ullswaterinvestments.com/call/pppa-2026-regional-submarine-ism-cable-hubs/
 HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2026-dn-01-01/
@@ -54,6 +54,8 @@ HORIZON-NATURE-2027-02-02 | Living labs co-creating solutions for the restoratio
 HORIZON-NATURE-2027-02-03 | Networking to scale up living labs for nature restoration solutions and to address bottlenecks to implementation | Open | 2026-10-13 | 2027-01-14 | €4M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-03/
 HORIZON-NATURE-2027-02-04 | Innovative solutions to fight wildlife trafficking and to reduce invasion of invasive alien species | Open | 2026-10-13 | 2027-01-14 | €13M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-04/
 HORIZON-NATURE-2027-02-05 | Cost-effective biodiversity monitoring for EU policies | Open | 2026-10-13 | 2027-01-14 | ≈ €5M–€6M / project | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-05/
+ERASMUS-SPORT-2027-LSSNCESE | Large scale not-for-profit European sport event | Forthcoming | 2026-11-24 | 2027-01-19 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-lssncese/
+ERASMUS-SPORT-2027-SNCESE | Not-for-profit European sport events | Forthcoming | 2026-11-24 | 2027-01-19 | €12M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-sncese/
 EU4H-2027-SANTE-OG | Call for proposals for operating grants in 2027 to non-governmental organisations: financial contribution to the functioning of health non-governmental organisations implementing one or more specific objectives of Regulation (EU) 2021/522  (OA-g-26-91 ) | Open | 2026-11-04 | 2027-01-19 | €1.8M (topic total) | https://calls.ullswaterinvestments.com/call/eu4h-2027-sante-og/
 CREA-CROSS-2027-MEDIALITERACY | NEWS - Media Literacy | Open | 2026-10-22 | 2027-01-20 | €3.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-medialiteracy/
 CREA-MEDIA-2027-FILMOVE | Films on the Move | Open | 2026-09-30 | 2027-01-21 | €23.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-filmove/
@@ -96,7 +98,7 @@ EDF-EDIP-P-2027-FNLC-CPA-GNPS | Ground and naval platforms and systems | Open | 
 EDF-EDIP-P-2027-LS-IRA-KEC | Key electronic components | Open | 2026-06-17 | 2027-02-16 | €282.2M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-ls-ira-kec/
 EDF-EDIP-P-2027-LS-IRA-PE | Platforms and end-products | Open | 2026-06-17 | 2027-02-16 | €282.2M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-p-2027-ls-ira-pe/
 EDF-EDIP-USI-2027-LS-IRA-CUXS | Unmanned systems and counter-unmanned systems | Open | 2026-06-17 | 2027-02-16 | €80M (topic total) | https://calls.ullswaterinvestments.com/call/edf-edip-usi-2027-ls-ira-cuxs/
-ERASMUS-EDU-2027-EMJM-DESIGN | Erasmus Mundus Design Measures | Forthcoming | 2026-11-19 | 2027-02-16 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-emjm-design/
+ERASMUS-EDU-2027-EMJM-DESIGN | Erasmus Mundus Design Measures | Open | 2026-11-19 | 2027-02-16 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-emjm-design/
 ERASMUS-EDU-2027-PEX-EMJM-MOB | Erasmus Mundus Joint Masters | Forthcoming | 2026-11-19 | 2027-02-16 | €164.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-pex-emjm-mob/
 HORIZON-BRIDGING-2027-01-09 | EU AI Media Platform – modular multilingual public-interest infrastructure for European news and audiovisual media (IA) - Apply AI | Open | 2026-10-20 | 2027-02-16 | €10M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-01-09/
 HORIZON-BRIDGING-2027-01-10 | Autonomous Drive Ambition Cities (IA) - Apply AI | Open | 2026-10-20 | 2027-02-16 | €15M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-01-10/
@@ -372,7 +374,7 @@ HORIZON-CL3-2027-01-SSRI-03 | Demand-led innovation in security | Forthcoming | 
 HORIZON-EURATOM-2027-02-01 | Key enabling technologies for fusion power plants (European Partnership on Fusion Energy) | Forthcoming | 2027-04-15 | 2027-11-04 | ≈ €15M / project | https://calls.ullswaterinvestments.com/call/horizon-euratom-2027-02-01/
 HORIZON-WIDERA-2027-01-WIDENING-01 | EIC Pre-accelerator - Widening | Forthcoming | 2027-05-05 | 2027-11-18 | ≈ €500k–€1M / project | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-01-widening-01/
 HORIZON-MSCA-2027-DN-01-01 | MSCA Doctoral Networks 2027 | Forthcoming | 2027-05-26 | 2027-11-23 | €1938M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2027-dn-01-01/
-HORIZON-EIC-2027-STEP | EIC STEP Scale Up | Forthcoming | 2026-11-18 | 2027-11-24 | ≈ €10M–€30M / project | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-step/
+HORIZON-EIC-2027-STEP | EIC STEP Scale Up | Open | 2026-11-18 | 2027-11-24 | ≈ €10M–€30M / project | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-step/
 HORIZON-CL5-2027-07-D3-11 | Demonstration of hydropower technologies for efficient and forward-looking refurbishment of existing hydropower plants | Forthcoming | 2027-08-04 | 2027-12-01 | ≈ €8.5M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-07-d3-11/
 HORIZON-CL5-2027-07-D3-16 | Industrial processes and equipment for innovative, reliable and scalable tandem technologies (EUPI-PV Partnership) | Forthcoming | 2027-08-04 | 2027-12-01 | ≈ €9.5M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-07-d3-16/
 HORIZON-CL5-2027-07-D3-17 | PV based electrification of the economy: Designing & optimising PV systems supporting industrial electrification and promoting participation in electricity markets (EUPI-PV Partnership) | Forthcoming | 2027-08-04 | 2027-12-01 | ≈ €6M / project | https://calls.ullswaterinvestments.com/call/horizon-cl5-2027-07-d3-17/

@@ -1,5 +1,24 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EDF project D-STORM opens €90,000 cascade call for SMEs
+URL: https://news.ullswaterinvestments.com/2026/11/edf-d-storm-cascade-funding-call-smes/
+Date: 2026-11-18 · Category: EIC, Defence & Equity · Source: European Commission – Defence Industry and Space (https://defence-industry-space.ec.europa.eu/edf-d-storm-project-launches-first-open-call-cascade-funding-2026-11-18_en)
+
+The European Defence Fund project D-STORM offers up to €10,000 to SMEs and start-ups with operational know-how on loitering munitions and combat drones, until 11 January 2027.
+
+- Programme: European Defence Fund (EDF) – cascade funding
+- Budget: €90,000 in total, up to €10,000 per recipient
+- Who can apply: SMEs and start-ups in EU Member States, Norway or Ukraine
+- Deadline: 11 January 2027, 11:00 CET
+
+D-STORM (Drone-based Scalable Tactical Operations Responsive Munitions), a project funded by the European Defence Fund, launched its first open call for cascade funding on 18 November 2026, as announced by the Commission's Directorate-General for Defence Industry and Space. The project is developing affordable, scalable tactical munitions and the operational concepts that go with them.
+The call looks for first-hand operational knowledge on loitering munitions and unmanned combat air systems to refine the project's concepts of operations and operational requirements. Relevant expertise includes swarm characteristics, the number and reusability of effectors, field constraints such as jamming, mission types, logistics and maintenance, pre-launch preparation, assembly and configuration of effectors, and their recovery.
+Selected recipients will receive up to €10,000 each, from a total budget of €90,000. The call targets SMEs, including start-ups, established in EU Member States, Norway or Ukraine, with priority for entities operating directly in Ukraine. Over a period of up to four weeks, recipients will provide structured recommendations using the project's templates, take part in interviews with the technical teams and attend a workshop that may be held in Ukraine, for example in Kyiv or Lviv, or in an EU country. Applications are open until 11 January 2027 at 11:00 CET.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: the amounts are small, but cascade calls like this one are a low-barrier way for SMEs with real field experience to work inside an EDF consortium, build references with defence primes and understand how EDF projects define their requirements. For companies considering future EDF or EDIP proposals, this kind of participation can be a useful first step. Applicants should document their operational experience precisely, since the call rewards first-hand knowledge rather than technology development.
+
+---
+
 ## Innovation Fund 2026: €5.2 billion in five calls opening 3 December
 URL: https://news.ullswaterinvestments.com/2026/11/innovation-fund-2026-calls-5-2-billion-info-days/
 Date: 2026-11-17 · Category: Climate & Energy · Source: CINEA – European Climate, Infrastructure and Environment Executive Agency (https://cinea.ec.europa.eu/news-events/news/registrations-open-innovation-fund-2026-info-days-2026-11-17_en)
@@ -21,6 +40,26 @@ Why it matters (Ullswater Investments analysis): Ullswater Investments analysis:
 
 ---
 
+## Horizon Europe opens €297 million digital calls with 12 topics
+URL: https://news.ullswaterinvestments.com/2026/11/horizon-europe-digital-calls-297-million-ai/
+Date: 2026-11-17 · Category: Digital & AI · Source: European Commission – Shaping Europe's digital future (https://digital-strategy.ec.europa.eu/en/news/commission-launches-over-eu290-million-boost-eu-tech-sovereignty-and-beyond)
+
+Two new Horizon Europe calls under the digital strand cover frontier AI, AI-driven robotics, energy-efficient AI data centres and virtual worlds, open until 18 March 2027.
+
+- Programme: Horizon Europe – Digital, Industry and Space (Work Programme 2026-27)
+- Budget: €297 million across two calls and 12 topics
+- AI topics: Four topics worth €107 million
+- Data and AI services: Three topics worth €112 million
+- Deadline: 18 March 2027
+
+On 17 November 2026 the European Commission opened two new calls under the digital strand of Horizon Europe, bringing together 12 topics with a combined budget of €297 million. The calls belong to the Horizon Europe Work Programme 2026-27 for Digital, Industry and Space and will stay open until 18 March 2027.
+The largest share goes to open strategic autonomy in digital and enabling technologies. Four AI topics, worth €107 million in total, address frontier AI that is safe by design, AI-driven robotics for industry, faster uptake of AI in key sectors and European AI solutions for low- and middle-income countries. Two further topics, totalling €29 million, cover advanced photonics and a European forum on emerging technologies.
+A second block of three topics, worth €112 million, targets distributed, decentralised and energy-efficient AI processing, pilots on the Connected, Collaborative, Computing (3C) infrastructure driven by industry demand, and more sustainable, energy-efficient AI data centres. The final block, worth €49 million, funds hardware components for virtual worlds, a virtual worlds and Web 4.0 ecosystem, and European participation in international digital standardisation.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: these topics mix research actions, innovation actions and coordination actions, so consortia should first check the action type of the topic they target, because it determines the expected maturity of the results and the funding rate. Several topics are linked to European partnerships in AI, photonics and virtual worlds, which makes it worth aligning proposals with those partnerships' agendas. With a single deadline in March, the window to build industry-led consortia, especially for the innovation actions on robotics, edge cloud and data centres, is short and should start now.
+
+---
+
 ## EIC Fund survey: 64% say it was essential to close their round
 URL: https://news.ullswaterinvestments.com/2026/11/eic-fund-survey-64-percent-essential-investment-round/
 Date: 2026-11-17 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/eic-fund-companies-highlight-its-role-supporting-fundraising-and-growth-2026-11-17_en)
@@ -38,6 +77,25 @@ Among companies that had signed investment agreements, 64% said the EIC Fund had
 The survey also shows that dual-use and defence-related activities are relevant to 45% of the responding companies. At the same time, respondents identified areas where the Fund could do better: more capacity for follow-on investments, faster processes, lighter administrative requirements and clearer communication of investment decisions. EISMEA says the findings will be used to further improve the EIC Fund and its investment processes.
 
 Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: for deep tech companies weighing an EIC Accelerator application, the equity component is often what convinces co-investors to commit, so it deserves as much attention in the proposal as the grant. The feedback on timing and administrative load is a reminder to plan the fundraising calendar with margin and to have due diligence documentation ready early. The weight of dual-use activities among respondents also confirms that companies with defence-relevant technologies can find a natural place in the EIC portfolio.
+
+---
+
+## AI Office seeks up to 100 European AI providers for SMEs via EDIHs
+URL: https://news.ullswaterinvestments.com/2026/11/ai-office-call-european-ai-providers-edih-sme/
+Date: 2026-11-17 · Category: Digital & AI · Source: European Commission – Shaping Europe's digital future (https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers)
+
+European AI providers with market-ready solutions can apply until 17 December 2026 to join an 'EDIH Ready' catalogue that Digital Innovation Hubs will offer to SMEs.
+
+- Initiative: Call for expression of interest under the Apply AI Strategy
+- Places: Up to 100 AI providers in the first edition
+- Deadline: 17 December 2026, 17:00 CET (may close earlier)
+- Eligibility: Mature AI solutions; providers headquartered in the EU or Digital Europe associated countries
+
+The European Commission's AI Office opened on 17 November 2026 a call for expression of interest for European AI providers that want to present mature AI solutions to the network of European Digital Innovation Hubs (EDIHs). The goal, set out in the Apply AI Strategy, is to bridge supply and demand by helping SMEs across Europe adopt European AI, with EDIHs acting as trusted intermediaries. The hubs have already delivered services to more than 50,000 organisations.
+The first edition is open to up to 100 providers. Solutions must be ready for deployment in SMEs: proofs of concept, research projects, minimum viable products and solutions not yet on the market are not suitable. Eligibility depends on where the provider is headquartered, which must be an EU Member State or a country associated to the Digital Europe Programme. Submissions are made in English through an EU Survey form by 17 December 2026 at 17:00 CET, and the call may close earlier if 100 suitable solutions arrive first.
+Selected solutions will form a catalogue on the AI-on-Demand Platform, listed in the Business Navigator with an 'EDIH Ready' label. Details of suitable candidates will be shared with DeployAI, the EU-funded consortium behind the platform, which will handle onboarding, and information sessions with EDIHs are planned for the first quarter of 2027.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: this is not a grant, but it gives European AI companies a direct channel to SME customers through a network the Commission funds, which can shorten sales cycles and add credibility. Because places are limited and the call can close early, providers with a product already deployed at customers should apply soon and present clear evidence of market readiness. Visibility in the catalogue may also help when preparing proposals for future Digital Europe or Horizon Europe uptake actions that involve EDIHs.
 
 ---
 
