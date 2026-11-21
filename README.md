@@ -96,3 +96,6 @@ Videos are embedded with the YouTube player (youtube-nocookie.com) and always cr
 - Every figure, date and deadline must appear in the linked official source.
 - The `why` field is analysis and must not add facts that are not in the source.
 - Publish only after verification against the official source. Emilio gave standing approval (16 Nov 2026) for the daily news agent to publish verified articles directly; anything that cannot be verified stays in a drafts/ branch.
+
+## External links open in a new tab (Nov 2026)
+`src/extlinks.py` runs at the end of every build: links outside the Ullswater network get `target="_blank" rel="noopener noreferrer"`, a small ↗ icon and a hidden "(opens in a new tab)" / "(se abre en una pestaña nueva)" label. Links between our own sites (`*.ullswaterinvestments.com`) stay in the same tab, and links marked `data-noext` are skipped. Check with `python3 src/extlinks.py docs --check`. Same file as in events-site.
