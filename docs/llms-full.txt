@@ -1,5 +1,26 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## STEP report: almost €24 billion mobilised and 614 Seals awarded
+URL: https://news.ullswaterinvestments.com/2026/11/step-report-24-billion-614-projects/
+Date: 2026-11-19 · Category: EU Budget & Policy · Source: European Commission – Press corner (IP/26/2356) (https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2356)
+
+The second annual STEP report shows €23.9 billion of EU funds mobilised by end-2025, €5.3 billion in direct calls last year and defence added as a fourth sector.
+
+- EU funds mobilised (end-2025): €23.9 billion: €10 billion direct management, €13.9 billion cohesion
+- STEP Seals: 614 in total, 452 of them in 2025
+- Direct STEP calls in 2025: €5.3 billion (€3.5 billion clean tech, €746 million digital, €509 million biotech, €553 million multi-sector)
+- Sectors: Digital, clean tech, biotech and, since 2025, defence
+- Cumulative EU contribution: €30 billion (€15 billion direct, €15 billion cohesion)
+
+The European Commission has published the second annual report on the Strategic Technologies for Europe Platform (STEP), covering 2025. STEP, in place since March 2024, steers existing EU programmes towards critical technologies. By the end of 2025 it had mobilised €23.9 billion of EU funds: €10 billion through programmes managed directly by the Commission and €13.9 billion reprogrammed from cohesion policy funds.
+In 2025 the Defence Readiness Omnibus added defence as a fourth STEP sector next to digital, clean tech and biotech. As a result, Digital Europe and the EIC Accelerator can now fund dual-use technologies, and the EIC's STEP Scale Up call is also open to defence-only projects. Directly managed STEP calls totalled €5.3 billion in 2025: €3.5 billion for clean tech, €746 million for digital, €509 million for biotech and €553 million for multi-sector calls. A total of 614 STEP Seals have been awarded, 452 of them in 2025, and more than 200 sealed projects appear on a Dealroom dashboard aimed at investors.
+On the cohesion side, by the end of 2025 19 countries had aligned funds with STEP through 96 programme amendments, and 54 calls had been launched in 11 countries. Eleven Member States had already selected projects, supporting an estimated 11,900 companies and 21,644 jobs. Spain is among the largest contributors, together with Germany, Italy and Romania. The cumulative EU contribution to STEP priorities now reaches €30 billion, split equally between direct management and cohesion.
+The Commission says the STEP experience is feeding into its proposal for a European Competitiveness Fund for 2028-2034, which would bring together 14 programmes, and that the STEP Portal serves as a testbed for a future single access point to EU funding.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: STEP is not a separate budget but a label that redirects money from existing programmes, so applicants should look for STEP-flagged topics in Horizon Europe, the EIC, Digital Europe and the Innovation Fund, and for STEP calls in their regional cohesion programmes. A STEP Seal is worth pursuing even when a proposal is not funded, because it helps when approaching national, regional and private funders. Spanish companies should check the STEP calls run by their regional and national managing authorities, since Spain is one of the main contributors on the cohesion side. Defence and dual-use firms gain new routes through the EIC and Digital Europe. The report also previews how the European Competitiveness Fund could work after 2027.
+
+---
+
 ## EIB Group approves €14 billion, a third for EU energy autonomy
 URL: https://news.ullswaterinvestments.com/2026/11/eib-group-approves-14-billion-energy-autonomy/
 Date: 2026-11-19 · Category: Climate & Energy · Source: European Investment Bank (https://www.eib.org/en/press/all/2026-424-eib-group-approves-eur14-billion-in-new-financing-with-focus-on-eu-energy-autonomy)
