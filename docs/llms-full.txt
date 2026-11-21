@@ -1,5 +1,24 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EIB Group approves €14 billion, a third for EU energy autonomy
+URL: https://news.ullswaterinvestments.com/2026/11/eib-group-approves-14-billion-energy-autonomy/
+Date: 2026-11-19 · Category: Climate & Energy · Source: European Investment Bank (https://www.eib.org/en/press/all/2026-424-eib-group-approves-eur14-billion-in-new-financing-with-focus-on-eu-energy-autonomy)
+
+The EIB and EIF Boards back €14 billion in new financing, with €4.2 billion for clean-energy infrastructure and €3.8 billion for business competitiveness.
+
+- Total approved: €14 billion in new financing (EIB and EIF Boards, Luxembourg)
+- Clean-energy infrastructure in the EU: €4.2 billion
+- Business competitiveness: €3.8 billion, mainly through innovation
+- Energy share: Around a third of the package
+
+The Boards of Directors of the European Investment Bank and the European Investment Fund, meeting in Luxembourg this week, endorsed €14 billion in fresh financing. Energy accounts for around a third of the package, which the EIB Group presents as part of its effort to strengthen the EU's energy autonomy.
+Within the EU, €4.2 billion goes to clean-energy infrastructure: district heating and cooling in Austria and Germany, renewable energy in France, Italy, Spain and Lithuania, and electricity grids in Cyprus and Hungary. A further €3.8 billion is earmarked for business competitiveness across Europe, mainly through support for innovation. Other approved projects cover water infrastructure in Belgium, schools in France, affordable housing in Ireland and urban development in Romania.
+Outside the EU, the Boards backed waste management and plastics projects in Gabon, water infrastructure and climate resilience in Jordan, and climate adaptation and rural development in Uzbekistan, in line with the Global Gateway strategy. The Boards also endorsed revised codes of conduct covering conflicts of interest and cooling-off periods, which still need final approval by the EIB Board of Governors and the EIF General Meeting. In 2025 the EIB Group signed €100 billion in new financing and advisory services for over 870 projects.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: these are Board approvals, not open calls, so companies cannot apply to this package directly. For energy and cleantech developers, the message is that the EIB Group keeps energy security and grids at the top of its lending, which matters when planning the debt side of projects that also seek EU grants such as the Innovation Fund. Innovative companies should note the share aimed at business competitiveness, which typically reaches them through direct EIB venture debt or through intermediated EIF products offered by local banks and funds. Spanish promoters of renewable projects should watch for the signature announcements that follow these approvals.
+
+---
+
 ## EDF project D-STORM opens €90,000 cascade call for SMEs
 URL: https://news.ullswaterinvestments.com/2026/11/edf-d-storm-cascade-funding-call-smes/
 Date: 2026-11-18 · Category: EIC, Defence & Equity · Source: European Commission – Defence Industry and Space (https://defence-industry-space.ec.europa.eu/edf-d-storm-project-launches-first-open-call-cascade-funding-2026-11-18_en)
