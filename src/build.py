@@ -607,6 +607,8 @@ def build():
     (OUT / "calls.txt").write_text(f"# Open and forthcoming EU funding calls · {SITE['name']}\n# Checked {TODAY.isoformat()} from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page\n\n"
         + "".join(f"{c['code']} | {c['title']} | {c['state']} | {(c.get('opens') or '')[:10]} | {c['deadline'][:10]} | {c.get('budget') or '-'} | {c['href']}\n" for c in live), encoding="utf-8")
     print(f"Calls: {len(calls)} pages ({len(live)} live)")
+    import sys; sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    import extlinks; extlinks.run(OUT)  # external links open in a new tab (shared rule, see src/extlinks.py)
     print(f"Built {len(arts)} articles, {len(vids)} videos, {len(CATEGORIES)} categories → {OUT}")
 
 if __name__ == "__main__":
