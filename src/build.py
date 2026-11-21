@@ -265,6 +265,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 <div><strong style="color:#fff">{E(SITE['org_legal'])}</strong><br>{T("EU Funding Advisors")} · Madrid: {E(SITE['address'])} · Brussels: {E(SITE['address_brussels'])}<br><a href="mailto:{SITE['email']}">{SITE['email']}</a></div>
 <div><a href="{SITE['org_url']}{'/es/' if ES() else ''}">ullswaterinvestments.com</a> · <a href="{P('/about/')}">{T("Editorial policy")}</a> · <a href="{P('/feed.xml')}">RSS</a> · <a href="/sitemap.xml">Sitemap</a><br>© {year} {E(SITE['org_legal'])}</div>
 </div></footer>
+<script src="https://ullswater-ai.emilio-mulet-b52.workers.dev/widget.js" defer data-site="news"></script>
 </body>
 </html>"""
 
