@@ -1,5 +1,27 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## Ullswater launches its Funding Assistant, an AI chat for EU calls and Spanish grants
+URL: https://news.ullswaterinvestments.com/2026/11/ullswater-launches-ai-funding-assistant/
+Date: 2026-11-22 · Category: Spain · Source: Ullswater Investments (https://www.ullswaterinvestments.com/)
+
+The free assistant, now on every Ullswater website, answers questions on 465 open and forthcoming EU calls, more than 150 Spanish State and regional grants, funding news and events, and links each answer to its source.
+
+- What it is: A free AI chat assistant ("Asistente de ayudas" in Spanish) on every Ullswater Investments website
+- What it covers: 465 open and forthcoming EU calls, Spanish State and regional grants for companies, EU funding news, events and webinars, and Ullswater's services and European projects
+- Languages: English and Spanish
+- How it works: Claude (Anthropic) searching the data published on Ullswater's websites, updated every day; every answer links to the call, grant or page it comes from
+- Talk to an expert: One-hour Teams meetings, Monday to Friday, 10:00–11:00 (Madrid time)
+- Privacy: No registration; questions are stored anonymously for 12 months, without IP addresses
+
+Ullswater Investments has launched its Funding Assistant, a free AI chat available on all its websites: www.ullswaterinvestments.com, the EU calls site calls.ullswaterinvestments.com, this news site, the events site and the sites of the European R&D projects Ullswater takes part in. The assistant opens from the button at the bottom right of every page and works in English and Spanish.
+The assistant answers questions in plain language. It can find, filter and compare the 465 open and forthcoming EU calls published on calls.ullswaterinvestments.com, read the official topic text to explain what a call funds and who can apply, and list the open Spanish State and regional grants for companies taken from the official BDNS database, filtered by region and company size. It also searches the news and events published by Ullswater, including info days, brokerage events and the Commission webinars library, and explains Ullswater's services and its European projects that are open to new partners.
+Every specific fact comes from the data published on Ullswater's websites, which are updated every day from the EU Funding & Tenders Portal, the Spanish BDNS and official sources, and each answer links to the call, grant or page it is based on. The assistant knows the page the user is reading, so a reader of a news article or a call page can simply ask what it means for their organisation. It is built on Claude, Anthropic's AI model, and states clearly that users are talking to an AI system.
+When a user needs help to apply, find partners or prepare a proposal, the assistant offers a one-hour Teams meeting with an Ullswater expert, bookable online from Monday to Friday between 10:00 and 11:00 (Madrid time). No registration is needed to use the chat: questions are stored anonymously for 12 months to improve the service, without IP addresses, as explained in Ullswater's privacy policy.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: public funding information is scattered across the EU Funding & Tenders Portal, the Spanish BDNS and dozens of regional agencies, and it is written in programme language. The assistant puts EU calls and Spanish grants behind a single question, in English or Spanish, so companies, universities and research centres can check in minutes whether there is funding for their project before deciding whether to apply.
+
+---
+
 ## STEP report: almost €24 billion mobilised and 614 Seals awarded
 URL: https://news.ullswaterinvestments.com/2026/11/step-report-24-billion-614-projects/
 Date: 2026-11-19 · Category: EU Budget & Policy · Source: European Commission – Press corner (IP/26/2356) (https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2356)
