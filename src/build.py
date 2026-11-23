@@ -221,6 +221,14 @@ def person_ld():
             "url": SITE["url"] + AUTHOR_PATH, "worksFor": {"@type": "Organization", "name": SITE["org"], "url": SITE["org_url"]},
             "knowsAbout": AUTHOR["knows"], "sameAs": ["https://www.linkedin.com/in/emilio-mulet-esade/"]}
 
+# Default language shared by all Ullswater sites (master copy: ullswater-www/scripts/ulang.js): the visitor's own
+# EN/ES choice first, then country (Spain + Spanish-speaking Latin America -> Spanish, rest -> English).
+def _ulang():
+    js = re.sub(r"/\*.*?\*/", "", (SRC / "ulang.js").read_text(encoding="utf-8"), flags=re.S)
+    return "<style>html.ulang-wait body{visibility:hidden}</style><script>" + "\n".join(l.strip() for l in js.splitlines() if l.strip()) + "</script>"
+ULANG = _ulang()
+
+
 def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False, bilingual=True):
     """path is the English path; the Spanish page lives at /es + path."""
     canon = SITE["url"] + P(path)
@@ -239,7 +247,7 @@ def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
-<link rel="canonical" href="{canon}">{alt}
+<link rel="canonical" href="{canon}">{alt}{ULANG}
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-snippet:-1, max-image-preview:large'}">
 <meta property="og:site_name" content="{E(S('name'))}">
 <meta property="og:type" content="{og_type}">
