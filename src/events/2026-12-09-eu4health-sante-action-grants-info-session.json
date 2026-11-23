@@ -1,0 +1,44 @@
+{
+  "slug": "eu4health-sante-action-grants-info-session",
+  "title": "Information session on EU4Health SANTE Action grants – Annual Work Programme 2026",
+  "start": "2026-12-09",
+  "end": "2026-12-09",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "online",
+  "city": "",
+  "location": "Online",
+  "organiser": "HaDEA (European Health and Digital Executive Agency)",
+  "summary": "A virtual session on the first wave of the EU4Health call for proposals, covering the eleven topics of the 2026 Work Programme.",
+  "details": [
+    "The topics are based on DG SANTE policy priorities. The session goes through the objectives and requirements of each topic and the key steps in preparing a proposal. It is open to all potential applicants and stakeholders.",
+    "It runs from 09:30 to 15:30 CET in English. Registration closes on 3 December 2026 at 23:59 CET, and the agenda has not yet been published."
+  ],
+  "why": "EU4Health action grants are a separate route from Horizon Europe health funding, with their own topics and rules. A full-day walk-through of every topic helps applicants decide early which one fits their project before consortium building starts.",
+  "tags": [
+    "EU4Health",
+    "Health",
+    "Action grants",
+    "Call for proposals"
+  ],
+  "registration_url": "https://ecconf.webex.com/weblink/register/r6c6466ee389eb330376f7877b15a5eb5",
+  "source_name": "HaDEA",
+  "source_url": "https://hadea.ec.europa.eu/events/information-session-eu4health-sante-action-grants-annual-work-programme-2026-2026-12-09_en",
+  "status": "scheduled",
+  "es": {
+    "title": "Sesión informativa sobre las subvenciones a acciones SANTE de EU4Health – Programa de Trabajo Anual 2026",
+    "summary": "Sesión virtual sobre la primera ola de la convocatoria de propuestas de EU4Health, que abarca los once temas del Programa de Trabajo 2026.",
+    "details": [
+      "Los temas se basan en las prioridades políticas de la DG SANTE. La sesión repasa los objetivos y requisitos de cada tema y los pasos clave para preparar una propuesta. Está abierta a todos los posibles solicitantes y partes interesadas.",
+      "Es de 09:30 a 15:30 CET, en inglés. La inscripción se cierra el 3 de diciembre de 2026 a las 23:59 CET y el programa aún no se ha publicado."
+    ],
+    "why": "Las subvenciones a acciones de EU4Health son una vía distinta de la financiación en salud de Horizonte Europa, con temas y normas propios. Repasar todos los temas en una jornada completa ayuda a los solicitantes a decidir pronto cuál encaja con su proyecto, antes de formar el consorcio.",
+    "tags": [
+      "EU4Health",
+      "Salud",
+      "Subvenciones a acciones",
+      "Convocatoria de propuestas"
+    ],
+    "location": "En línea"
+  }
+}

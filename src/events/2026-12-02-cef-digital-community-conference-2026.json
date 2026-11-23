@@ -1,0 +1,44 @@
+{
+  "slug": "cef-digital-community-conference-2026",
+  "title": "CEF Digital Community Conference 2026",
+  "start": "2026-12-02",
+  "end": "2026-12-02",
+  "type": "conference",
+  "programme": "other",
+  "mode": "onsite",
+  "city": "Brussels",
+  "location": "Albert Borschette Conference Centre, Brussels",
+  "organiser": "European Commission (DG CNECT)",
+  "summary": "The annual gathering of the CEF Digital community in Brussels, focused on future funding for backbone network infrastructure, in particular under the European Competitiveness Fund.",
+  "details": [
+    "It brings together the CEF Digital community, European stakeholders, policymakers, regulators, financial actors and industry. The programme includes updates on the CEF Digital programme and discussions on emerging digital infrastructure priorities and challenges.",
+    "The day closes with the European Digital Connectivity Awards 2026 in three categories. The agenda is still to be announced."
+  ],
+  "why": "Connectivity funding is moving towards the European Competitiveness Fund, so operators and infrastructure promoters planning future applications get an early view of the priorities. It is also a networking opportunity with the teams that run CEF Digital.",
+  "tags": [
+    "CEF Digital",
+    "Connectivity",
+    "Digital infrastructure",
+    "European Competitiveness Fund"
+  ],
+  "registration_url": "https://register.event-works.europa.eu/dgcnect/cef_digital_community_conference_2026/e/lk/k/",
+  "source_name": "European Commission, Shaping Europe's digital future",
+  "source_url": "https://digital-strategy.ec.europa.eu/en/events/cef-digital-community-conference-2026",
+  "status": "scheduled",
+  "es": {
+    "title": "Conferencia de la Comunidad CEF Digital 2026",
+    "summary": "Encuentro anual de la comunidad CEF Digital en Bruselas, centrado en la futura financiación de infraestructuras de red troncal, en particular en el marco del Fondo Europeo de Competitividad.",
+    "details": [
+      "Reúne a la comunidad CEF Digital, actores europeos, responsables políticos, reguladores, entidades financieras e industria. El programa incluye novedades del programa CEF Digital y debates sobre las prioridades y retos emergentes de la infraestructura digital.",
+      "La jornada termina con los Premios Europeos de Conectividad Digital 2026, en tres categorías. El programa aún no se ha anunciado."
+    ],
+    "why": "La financiación de la conectividad se está desplazando hacia el Fondo Europeo de Competitividad, por lo que operadores y promotores de infraestructuras que preparan futuras solicitudes obtienen una primera visión de las prioridades. También es una ocasión para conocer a los equipos que gestionan CEF Digital.",
+    "tags": [
+      "CEF Digital",
+      "Conectividad",
+      "Infraestructura digital",
+      "Fondo Europeo de Competitividad"
+    ],
+    "location": "Albert Borschette Conference Centre, Bruselas"
+  }
+}
