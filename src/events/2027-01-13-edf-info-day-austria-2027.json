@@ -1,0 +1,44 @@
+{
+  "slug": "edf-info-day-austria-2027",
+  "title": "EDF Info Day AT 2027: International Information and Networking Event on the European Defence Fund",
+  "start": "2027-01-13",
+  "end": "2027-01-13",
+  "type": "info-day",
+  "programme": "other",
+  "mode": "onsite",
+  "city": "Vienna",
+  "location": "Vienna",
+  "organiser": "FFG, the Austrian Federal Ministry of Defence (BMLV) and ARGE Sicherheit & Wirtschaft",
+  "summary": "A one-day information and matchmaking event in Vienna on the 2027 work programme of the European Defence Fund, its seventh and final round.",
+  "details": [
+    "The morning covers the EDF, related national and European synergy programmes, and a panel on defence research in the European Competitiveness Fund. The afternoon is given over to best practices, international matchmaking and information booths.",
+    "The 2027 work programme allocates about €1 billion to defence research and development, with its details expected in mid-December 2026. FFG and ministry experts offer individual consultations throughout the day, which runs from 09:00 to 18:00. Registration and a detailed agenda are due to be published shortly."
+  ],
+  "why": "As the last EDF round before the European Competitiveness Fund, 2027 is a chance for dual-use and defence companies to join consortia with a track record. Matchmaking a few weeks after the work programme appears gives time to shape partnerships before the deadlines.",
+  "tags": [
+    "European Defence Fund",
+    "Defence",
+    "Dual use",
+    "Matchmaking"
+  ],
+  "registration_url": "https://www.ffg.at/en/europe/events/edf-info-day_2027-01-13",
+  "source_name": "FFG (Austrian Research Promotion Agency)",
+  "source_url": "https://www.ffg.at/en/europe/events/edf-info-day_2027-01-13",
+  "status": "scheduled",
+  "es": {
+    "title": "EDF Info Day AT 2027: jornada internacional de información y networking sobre el Fondo Europeo de Defensa",
+    "summary": "Jornada de información y matchmaking en Viena sobre el programa de trabajo 2027 del Fondo Europeo de Defensa, su séptima y última ronda.",
+    "details": [
+      "La mañana trata del EDF, los programas de sinergia nacionales y europeos relacionados y un panel sobre la investigación en defensa en el Fondo Europeo de Competitividad. La tarde se dedica a buenas prácticas, matchmaking internacional y stands informativos.",
+      "El programa de trabajo 2027 asigna unos 1.000 millones de euros a investigación y desarrollo en defensa, y se espera que sus detalles se publiquen a mediados de diciembre de 2026. Expertos de la FFG y del ministerio ofrecen consultas individuales durante toda la jornada, que es de 09:00 a 18:00. La inscripción y el programa detallado se publicarán en breve."
+    ],
+    "why": "Como última ronda del EDF antes del Fondo Europeo de Competitividad, 2027 es una oportunidad para que las empresas de defensa y doble uso se unan a consorcios con experiencia. Un matchmaking pocas semanas después de publicarse el programa de trabajo deja tiempo para cerrar alianzas antes de los plazos.",
+    "tags": [
+      "Fondo Europeo de Defensa",
+      "Defensa",
+      "Doble uso",
+      "Matchmaking"
+    ],
+    "location": "Viena"
+  }
+}

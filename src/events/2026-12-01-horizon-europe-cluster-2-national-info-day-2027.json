@@ -1,0 +1,42 @@
+{
+  "slug": "horizon-europe-cluster-2-national-info-day-2027",
+  "title": "Spanish national info day on the 2027 Horizon Europe Cluster 2 calls",
+  "start": "2026-12-01",
+  "end": "2026-12-01",
+  "type": "info-day",
+  "programme": "cluster-2",
+  "mode": "onsite",
+  "city": "Barcelona",
+  "location": "Casa de Convalescència, Universitat Autònoma de Barcelona, Barcelona",
+  "organiser": "Universitat Autònoma de Barcelona (UAB) and the FECYT European Office",
+  "summary": "Spain's national info day on the 2027 calls of Horizon Europe Cluster 2: Culture, Creativity and Inclusive Society.",
+  "details": [
+    "The UAB and the FECYT European Office, which acts as Spanish National Contact Point, host the day at the Casa de Convalescència in Barcelona, from 10:00 to 17:00."
+  ],
+  "why": "Cluster 2 topics often reward consortia that combine social sciences and humanities with technical partners. A national info day is a good place to meet the Spanish contact points and test a project idea before the 2027 calls open.",
+  "tags": [
+    "Horizon Europe",
+    "Cluster 2",
+    "Spain",
+    "National Contact Points"
+  ],
+  "registration_url": "https://www.horizonteeuropa.es/la-uab-y-la-oficina-europea-de-fecyt-organizan-el-infoday-nacional-de-las-calls-2027-del-cluster-2",
+  "source_name": "Portal Horizonte Europa (CDTI and FECYT)",
+  "source_url": "https://www.horizonteeuropa.es/eventos",
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada informativa nacional sobre las convocatorias 2027 del Clúster 2 de Horizonte Europa",
+    "summary": "Jornada informativa nacional de España sobre las convocatorias 2027 del Clúster 2 de Horizonte Europa: Cultura, Creatividad y Sociedad Inclusiva.",
+    "details": [
+      "La UAB y la Oficina Europea de FECYT, que actúa como Punto Nacional de Contacto, organizan la jornada en la Casa de Convalescència de Barcelona, de 10:00 a 17:00."
+    ],
+    "why": "Los temas del Clúster 2 suelen premiar a consorcios que combinan ciencias sociales y humanidades con socios tecnológicos. Una jornada informativa nacional es un buen lugar para conocer a los puntos de contacto españoles y contrastar una idea de proyecto antes de que se abran las convocatorias 2027.",
+    "tags": [
+      "Horizonte Europa",
+      "Clúster 2",
+      "España",
+      "Puntos Nacionales de Contacto"
+    ],
+    "location": "Casa de Convalescència, Universitat Autònoma de Barcelona, Barcelona"
+  }
+}
