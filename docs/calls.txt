@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-22 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-23 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2026-dn-01-01/
 HORIZON-RAISE-2026-01-03 | RAISE Doctoral Networks for AI in Science (RAISE pilot) | Open | 2026-05-28 | 2026-11-24 | €90M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2026-01-03/

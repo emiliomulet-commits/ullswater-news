@@ -22,6 +22,28 @@ Why it matters (Ullswater Investments analysis): Ullswater Investments analysis:
 
 ---
 
+## Spain selects bodies for five EU4Health joint actions: 5-day window
+URL: https://news.ullswaterinvestments.com/2026/11/spain-eu4health-2026-joint-actions-selection/
+Date: 2026-11-21 · Category: Health & Health Data · Source: Boletín Oficial del Estado (BOE) · Orden SND/1258/2026 (https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-24491)
+
+The Spanish Ministry of Health opens a competitive procedure to nominate the Spanish entities that will join five EU4Health joint actions under the 2026 Work Plan.
+
+- Legal basis: Orden SND/1258/2026, of 12 November (BOE no. 290, 21 November 2026)
+- Programme: EU4Health, 2026 Work Plan, managed by HaDEA
+- Joint actions: Five: EU4H-2027-JA-HERA-IBA-01 and -02, EU4H-2027-JA-SANTE-IBA-01, -02 and -03
+- EU co-funding per action: €5,000,000 · €15,000,000 · €24,850,000 · €7,900,000 · €3,330,000
+- Who can apply: Public-sector legal entities and supervised non-profit entities whose activity includes health research and innovation, tax-resident in Spain
+- Deadline: Five working days from the day after publication in the BOE
+
+Spain's Ministry of Health has published an order that sets the competitive procedure for choosing which Spanish authorities and bodies will take part, with funding as beneficiaries, in the joint actions approved in the 2026 Work Plan of the EU4Health programme. Joint actions are carried out with Member States' authorities, and the EU regulation does not set how each country picks its participants, so the ministry is doing it through a published call.
+Five joint actions are open. Two come from DG HERA: coordinating whole genome sequencing activities for preparedness and response (€5 million of EU co-funding) and strengthening EU deployable diagnostic capacities and pre-positioned medical countermeasures (€15 million). Three come from DG SANTE: enhancing public health security in the Union (€24.85 million), capacity building and AI capabilities in the European medicines regulatory network (€7.9 million), and reinforced market surveillance of medical devices and in vitro diagnostics, JAMS 3.0 (€3.33 million).
+Only public-sector legal entities and non-profit entities supervised by the competent authorities, whose activity includes health research and innovation and that are tax-resident in Spain, can apply. Applications go by email to the ministry unit responsible for each action, using the forms annexed to the order, within five working days from the day after publication. Each unit proposes its candidates, the Secretary of State for Health resolves, and HaDEA then continues the grant procedure with the nominated authorities.
+The assessment is a pass/fail check against criteria such as legal competence in the field, capacity to coordinate consortia, quality and European added value of the proposal, alignment with the ministry's priorities, and previous experience in joint actions and European projects.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: joint actions are one of the few EU4Health routes that only Member State authorities can enter, and the national nomination is the gate. The window is very short, so eligible hospitals, research institutes and agencies should already have a clear idea of their role, their affiliated entities and their own co-funding before writing to the ministry. Experience in previous joint actions and European projects weighs in the assessment, so a short, evidence-based track record is worth preparing. Private companies cannot apply directly, but they may later work with nominated bodies within the rules of each action.
+
+---
+
 ## STEP report: almost €24 billion mobilised and 614 Seals awarded
 URL: https://news.ullswaterinvestments.com/2026/11/step-report-24-billion-614-projects/
 Date: 2026-11-19 · Category: EU Budget & Policy · Source: European Commission – Press corner (IP/26/2356) (https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2356)
