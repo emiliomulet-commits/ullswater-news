@@ -187,6 +187,14 @@ def org_ld():
             "sameAs": ["https://www.wikidata.org/wiki/Q142106306", "https://www.linkedin.com/company/ullswater-investments", "https://www.youtube.com/@ullswaterinvestments", "https://www.ullswaterinvestments.com/"],
             "logo": {"@type": "ImageObject", "url": SITE["url"] + "/assets/logo.png", "width": 512, "height": 512}}
 
+# Default language shared by all Ullswater sites (master copy: ullswater-www/scripts/ulang.js): the visitor's own
+# EN/ES choice first, then country (Spain + Spanish-speaking Latin America -> Spanish, rest -> English).
+def _ulang():
+    js = re.sub(r"/\*.*?\*/", "", (SRC / "ulang.js").read_text(encoding="utf-8"), flags=re.S)
+    return "<style>html.ulang-wait body{visibility:hidden}</style><script>" + "\n".join(l.strip() for l in js.splitlines() if l.strip()) + "</script>"
+ULANG = _ulang()
+
+
 def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website", bilingual=True):
     """path is the English path; the Spanish page lives at /es + path."""
     canon = SITE["url"] + P(path)
@@ -209,7 +217,7 @@ def page(title, desc, path, body, ld=None, cur=None, noindex=False, og="website"
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
     return f"""<!DOCTYPE html>
 <html lang="{LANG}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">{alt}
+<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{canon}">{alt}{ULANG}
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-snippet:-1, max-image-preview:large'}">
 <meta property="og:site_name" content="{E(S('name'))}"><meta property="og:type" content="{og}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{canon}"><meta property="og:locale" content="{'es_ES' if ES() else 'en_GB'}"><meta property="og:image" content="{SITE['url']}/assets/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="{E(S('name'))}" href="{SITE['url']}{P('/feed.xml')}"><link rel="icon" href="/assets/favicon.png">
