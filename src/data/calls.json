@@ -1116,6 +1116,25 @@
    "title": "Erasmus + Teacher Academies",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-pex-teach-aca"
   },
+  "ERASMUS-EDU-2027-VIRT-EXCH-WB": {
+   "budget": "€900k (topic total)",
+   "code": "ERASMUS-EDU-2027-VIRT-EXCH-WB",
+   "deadline": "2027-10-12",
+   "first_seen": "2026-11-23",
+   "keywords": [
+    "Erasmus +",
+    "Higher education",
+    "Western Balkans",
+    "networks and exchanges of good practices",
+    "virtual learning"
+   ],
+   "last_seen": "2026-11-23",
+   "listed": true,
+   "opens": "2027-07-06",
+   "status": "forthcoming",
+   "title": "Erasmus+ Virtual Exchanges in Western Balkans",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-virt-exch-wb"
+  },
   "ERASMUS-SPORT-2027-CB": {
    "budget": "€2.6M (topic total)",
    "code": "ERASMUS-SPORT-2027-CB",
@@ -7183,5 +7202,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-23T15:40:47.113Z"
+ "feed_updated": "2026-11-23T15:59:07.951Z"
 }
