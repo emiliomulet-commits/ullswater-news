@@ -1,0 +1,28 @@
+{
+  "slug": "costa-mff-2028-2034-negotiating-box",
+  "date": "2026-11-21",
+  "category": "budget-policy",
+  "title": "Costa tables new negotiating box for the 2028–2034 EU budget",
+  "dek": "European Council President António Costa has put a new negotiating box for the 2028–2034 long-term budget to member states ahead of the leaders' talks.",
+  "_draft_note": "PENDING VERIFICATION: consilium.europa.eu could not be opened by the agent on 2026-11-24. Signal figures (Brussels Times, 23 Nov, NOT official, not yet in this JSON): Horizon Europe +57%, competitiveness +120%, defence +232% vs 2021-2027; national contributions 0.80% -> 0.82% GNI; 5 new own resources ~EUR 60 bn/yr; proposal 10% (EUR 204 bn current prices) below Commission plan. Add only what the official press release confirms.",
+  "key_facts": [["Presented by", "António Costa, President of the European Council"], ["Date", "21 November 2026"], ["Budget period", "2028–2034 (MFF)"]],
+  "body": [
+    "On 21 November 2026 the President of the European Council, António Costa, presented member states with a new negotiating box for the Multiannual Financial Framework 2028–2034, the EU's next long-term budget. The text sets out the figures and conditions that leaders will negotiate on, building on the Commission's proposal.",
+    "The negotiating box is the reference document for the leaders' discussions. Its envelopes for research, competitiveness and defence will shape the size of the successor to Horizon Europe and of the proposed European Competitiveness Fund."
+  ],
+  "why": "Ullswater Investments analysis: the negotiating box is the first signal of where member states may land on research and innovation funding after 2027. Applicants planning multi-year R&I roadmaps should follow how the research and competitiveness envelopes evolve, because they will determine call budgets and success rates from 2028.",
+  "tags": ["MFF 2028-2034", "EU budget", "Horizon Europe", "European Council"],
+  "source_name": "Council of the EU and European Council",
+  "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/21/multiannual-financial-framework-president-costa-s-proposal/",
+  "es": {
+    "title": "Costa presenta una nueva caja de negociación para el presupuesto 2028–2034",
+    "dek": "El presidente del Consejo Europeo, António Costa, ha presentado a los Estados miembros una nueva caja de negociación del presupuesto a largo plazo 2028–2034.",
+    "key_facts": [["Presentada por", "António Costa, presidente del Consejo Europeo"], ["Fecha", "21 de noviembre de 2026"], ["Periodo presupuestario", "2028–2034 (MFP)"]],
+    "body": [
+      "El 21 de noviembre de 2026, el presidente del Consejo Europeo, António Costa, presentó a los Estados miembros una nueva caja de negociación del Marco Financiero Plurianual 2028–2034, el próximo presupuesto a largo plazo de la UE. El texto recoge las cifras y condiciones sobre las que negociarán los líderes, a partir de la propuesta de la Comisión.",
+      "La caja de negociación es el documento de referencia para las conversaciones de los líderes. Sus dotaciones para investigación, competitividad y defensa marcarán el tamaño del sucesor de Horizonte Europa y del propuesto Fondo Europeo de Competitividad."
+    ],
+    "why": "Análisis de Ullswater Investments: la caja de negociación es la primera señal de dónde pueden situarse los Estados miembros en la financiación de la investigación y la innovación después de 2027. Quienes planifiquen hojas de ruta plurianuales de I+D+i deben seguir la evolución de las dotaciones de investigación y competitividad, porque determinarán los presupuestos de las convocatorias y las tasas de éxito a partir de 2028.",
+    "tags": ["MFP 2028-2034", "Presupuesto de la UE", "Horizonte Europa", "Consejo Europeo"]
+  }
+}
