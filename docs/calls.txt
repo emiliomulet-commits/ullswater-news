@@ -1,8 +1,8 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-23 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-24 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-msca-2026-dn-01-01/
-HORIZON-RAISE-2026-01-03 | RAISE Doctoral Networks for AI in Science (RAISE pilot) | Open | 2026-05-28 | 2026-11-24 | €90M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2026-01-03/
+HORIZON-MSCA-2026-DN-01-01 | MSCA Doctoral Networks 2026 | Open | 2026-05-28 | 2026-11-24 | €1884.1M (topic total) | https://calls.ullswaterinvestments.com/theme/science-widening/
+HORIZON-RAISE-2026-01-03 | RAISE Doctoral Networks for AI in Science (RAISE pilot) | Open | 2026-05-28 | 2026-11-24 | €90M (topic total) | https://calls.ullswaterinvestments.com/
 CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/call/cef-dig-2026-cable-repair-capacities-works/
 HORIZON-CL6-2026-04-GOVERNANCE-01 | Additional activities for the European Partnership of Agriculture of Data | Open | 2026-08-25 | 2026-11-26 | €60M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl6-2026-04-governance-01/
 CREA-MEDIA-2027-DEVSLATE | European slate development | Open | 2026-09-30 | 2026-12-01 | €22.4M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-devslate/
@@ -53,8 +53,8 @@ HORIZON-NATURE-2027-02-02 | Living labs co-creating solutions for the restoratio
 HORIZON-NATURE-2027-02-03 | Networking to scale up living labs for nature restoration solutions and to address bottlenecks to implementation | Open | 2026-10-13 | 2027-01-14 | €4M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-03/
 HORIZON-NATURE-2027-02-04 | Innovative solutions to fight wildlife trafficking and to reduce invasion of invasive alien species | Open | 2026-10-13 | 2027-01-14 | €13M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-04/
 HORIZON-NATURE-2027-02-05 | Cost-effective biodiversity monitoring for EU policies | Open | 2026-10-13 | 2027-01-14 | ≈ €5M–€6M / project | https://calls.ullswaterinvestments.com/call/horizon-nature-2027-02-05/
-ERASMUS-SPORT-2027-LSSNCESE | Large scale not-for-profit European sport event | Forthcoming | 2026-11-24 | 2027-01-19 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-lssncese/
-ERASMUS-SPORT-2027-SNCESE | Not-for-profit European sport events | Forthcoming | 2026-11-24 | 2027-01-19 | €12M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-sncese/
+ERASMUS-SPORT-2027-LSSNCESE | Large scale not-for-profit European sport event | Open | 2026-11-24 | 2027-01-19 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-lssncese/
+ERASMUS-SPORT-2027-SNCESE | Not-for-profit European sport events | Open | 2026-11-24 | 2027-01-19 | €12M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-sncese/
 EU4H-2027-SANTE-OG | Call for proposals for operating grants in 2027 to non-governmental organisations: financial contribution to the functioning of health non-governmental organisations implementing one or more specific objectives of Regulation (EU) 2021/522  (OA-g-26-91 ) | Open | 2026-11-04 | 2027-01-19 | €1.8M (topic total) | https://calls.ullswaterinvestments.com/call/eu4h-2027-sante-og/
 CREA-CROSS-2027-MEDIALITERACY | NEWS - Media Literacy | Open | 2026-10-22 | 2027-01-20 | €3.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-medialiteracy/
 CREA-MEDIA-2027-FILMOVE | Films on the Move | Open | 2026-09-30 | 2027-01-21 | €23.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-filmove/
@@ -362,7 +362,10 @@ HORIZON-MISS-2027-04-CIT-02 | Hydrogen cities | Forthcoming | 2027-02-09 | 2027-
 HORIZON-MISS-2027-04-CIT-03 | Inclusive and climate resilient multimodal passenger hubs enhancing modal shift towards sustainable transport and shared mobility | Forthcoming | 2027-02-09 | 2027-10-07 | ≈ €9M / project | https://calls.ullswaterinvestments.com/call/horizon-miss-2027-04-cit-03/
 HORIZON-MISS-2027-04-CIT-05 | Boosting the transformation towards climate-neutral cities, the net-zero economy and open strategic autonomy through Pre-Commercial Procurement (PCP) | Forthcoming | 2027-02-09 | 2027-10-07 | ≈ €7M–€12M / project | https://calls.ullswaterinvestments.com/call/horizon-miss-2027-04-cit-05/
 HORIZON-MISS-2027-04-CIT-CCRI-04 | Advancing circular logistics solutions in cities | Forthcoming | 2027-02-09 | 2027-10-07 | ≈ €7.5M / project | https://calls.ullswaterinvestments.com/call/horizon-miss-2027-04-cit-ccri-04/
-ERASMUS-EDU-2027-VIRT-EXCH-WB | Erasmus+ Virtual Exchanges in Western Balkans | Forthcoming | 2027-07-06 | 2027-10-12 | €900k (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-VIRT-EXCH-NE | Erasmus+ Virtual Exchanges in Neighborhood East | Forthcoming | 2027-07-06 | 2027-10-12 | €1.3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-virt-exch-ne/
+ERASMUS-EDU-2027-VIRT-EXCH-SMC | Erasmus+ Virtual Exchanges in South Mediterranean Countries | Forthcoming | 2027-07-06 | 2027-10-12 | €1.3M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-virt-exch-smc/
+ERASMUS-EDU-2027-VIRT-EXCH-SSA | Erasmus+ Virtual Exchanges in Sub-Saharan Africa | Forthcoming | 2027-07-06 | 2027-10-12 | €4.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-virt-exch-ssa/
+ERASMUS-EDU-2027-VIRT-EXCH-WB | Erasmus+ Virtual Exchanges in Western Balkans | Forthcoming | 2027-07-06 | 2027-10-12 | €900k (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-virt-exch-wb/
 HORIZON-CL3-2027-01-BM-01 | Open topic on research and innovation for effective management of EU external borders that promotes fundamental rights and EU values | Forthcoming | 2027-05-05 | 2027-11-04 | ≈ €4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl3-2027-01-bm-01/
 HORIZON-CL3-2027-01-BM-02 | Trusted, secure, quality future digital travel credentials | Forthcoming | 2027-05-05 | 2027-11-04 | ≈ €4M / project | https://calls.ullswaterinvestments.com/call/horizon-cl3-2027-01-bm-02/
 HORIZON-CL3-2027-01-BM-03 | Detection and characterisation of threats or illegal/ smuggled goods in cargo | Forthcoming | 2027-05-05 | 2027-11-04 | ≈ €3.5M / project | https://calls.ullswaterinvestments.com/call/horizon-cl3-2027-01-bm-03/
