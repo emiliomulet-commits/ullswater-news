@@ -1211,6 +1211,110 @@
    "title": "Erasmus+ Virtual Exchanges in Western Balkans",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-virt-exch-wb"
   },
+  "ERASMUS-JMO-2027-HEI-TCH-RSCH-CHAIR": {
+   "budget": "€20.1M (topic total)",
+   "code": "ERASMUS-JMO-2027-HEI-TCH-RSCH-CHAIR",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "ERASMUS-JMO-2027-CHAIR",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-chair"
+  },
+  "ERASMUS-JMO-2027-HEI-TCH-RSCH-CoE": {
+   "budget": "€20.1M (topic total)",
+   "code": "ERASMUS-JMO-2027-HEI-TCH-RSCH-CoE",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "ERASMUS-JMO-2027-CoE",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-coe"
+  },
+  "ERASMUS-JMO-2027-HEI-TCH-RSCH-MODULE": {
+   "budget": "€20.1M (topic total)",
+   "code": "ERASMUS-JMO-2027-HEI-TCH-RSCH-MODULE",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "ERASMUS-JMO-2027-MODULE",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-module"
+  },
+  "ERASMUS-JMO-2027-NETWORKS-HEI-EU-DIG-ECO": {
+   "budget": "€6M (topic total)",
+   "code": "ERASMUS-JMO-2027-NETWORKS-HEI-EU-DIG-ECO",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Networks on internal policy: Strategic autonomy of the European political area – digital and economic independence",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-eu-dig-eco"
+  },
+  "ERASMUS-JMO-2027-NETWORKS-HEI-EU-EDU-CUL": {
+   "budget": "€6M (topic total)",
+   "code": "ERASMUS-JMO-2027-NETWORKS-HEI-EU-EDU-CUL",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Network on internal policy: The role of education and culture for integration and cooperation in Europe",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-eu-edu-cul"
+  },
+  "ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-CANADA": {
+   "budget": "€2.4M (topic total)",
+   "code": "ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-CANADA",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Network on external policy: EU-Canada",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-non-eu-canada"
+  },
+  "ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-UA-MLD": {
+   "budget": "€2.4M (topic total)",
+   "code": "ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-UA-MLD",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Network on external policy: EU-Ukraine-Moldova",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-non-eu-ua-mld"
+  },
+  "ERASMUS-JMO-2027-NETWORKS-SCHOOLS": {
+   "budget": "€6M (topic total)",
+   "code": "ERASMUS-JMO-2027-NETWORKS-SCHOOLS",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Networks in other fields of education and training",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-schools"
+  },
   "ERASMUS-SPORT-2027-CB": {
    "budget": "€2.6M (topic total)",
    "code": "ERASMUS-SPORT-2027-CB",
@@ -7278,5 +7382,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-25T12:49:35.026Z"
+ "feed_updated": "2026-11-25T15:37:38.704Z"
 }
