@@ -7,7 +7,7 @@
    "first_seen": "2026-11-04",
    "keywords": [],
    "last_seen": "2026-11-25",
-   "listed": true,
+   "listed": false,
    "opens": "2026-06-23",
    "status": "open",
    "title": "Submarine Cable Repair Capacities - Works",
@@ -1314,6 +1314,19 @@
    "status": "forthcoming",
    "title": "Jean Monnet Networks in other fields of education and training",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-schools"
+  },
+  "ERASMUS-JMO-2027-OFET-TT": {
+   "budget": "€5.1M (topic total)",
+   "code": "ERASMUS-JMO-2027-OFET-TT",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-25",
+   "keywords": [],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Jean Monnet Actions for other fields of Education and Training: Teacher Training",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-ofet-tt"
   },
   "ERASMUS-SPORT-2027-CB": {
    "budget": "€2.6M (topic total)",
@@ -7382,5 +7395,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-25T15:37:38.704Z"
+ "feed_updated": "2026-11-25T21:59:29.615Z"
 }

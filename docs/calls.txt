@@ -1,7 +1,6 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-25 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/
 HORIZON-CL6-2026-04-GOVERNANCE-01 | Additional activities for the European Partnership of Agriculture of Data | Open | 2026-08-25 | 2026-11-26 | €60M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl6-2026-04-governance-01/
 CREA-MEDIA-2027-DEVSLATE | European slate development | Open | 2026-09-30 | 2026-12-01 | €22.4M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-devslate/
 DIGITAL-JU-CHIPS-2026-AI-GFP | AI compute evaluation and deployment platform for EU infrastructure | Open | 2026-07-07 | 2026-12-01 | ≈ €50M–€70M / project | https://calls.ullswaterinvestments.com/call/digital-ju-chips-2026-ai-gfp/
@@ -83,14 +82,15 @@ HORIZON-RAISE-2027-01-01 | Automated Scientific Discovery - Materials Science (R
 HORIZON-RAISE-2027-01-02 | Automated Scientific Discovery – Food (RAISE pilot) | Open | 2026-10-13 | 2027-02-02 | €3M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2027-01-02/
 HORIZON-RAISE-2027-01-04 | Developing a model for a Data Lab for Science linking with EOSC and RAISE (RAISE pilot) (CSA) | Open | 2026-10-13 | 2027-02-02 | €1M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-raise-2027-01-04/
 NDICI-2026-MOBAF | Intra-Africa Academic Mobility Scheme | Open | 2026-11-03 | 2027-02-02 | €24.8M (topic total) | https://calls.ullswaterinvestments.com/call/ndici-2026-mobaf/
-ERASMUS-JMO-2027-HEI-TCH-RSCH-CHAIR | ERASMUS-JMO-2027-CHAIR | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/
-ERASMUS-JMO-2027-HEI-TCH-RSCH-CoE | ERASMUS-JMO-2027-CoE | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/
-ERASMUS-JMO-2027-HEI-TCH-RSCH-MODULE | ERASMUS-JMO-2027-MODULE | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-JMO-2027-HEI-TCH-RSCH-CHAIR | ERASMUS-JMO-2027-CHAIR | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-hei-tch-rsch-chair/
+ERASMUS-JMO-2027-HEI-TCH-RSCH-CoE | ERASMUS-JMO-2027-CoE | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-hei-tch-rsch-coe/
+ERASMUS-JMO-2027-HEI-TCH-RSCH-MODULE | ERASMUS-JMO-2027-MODULE | Forthcoming | 2026-11-26 | 2027-02-03 | €20.1M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-hei-tch-rsch-module/
 ERASMUS-JMO-2027-NETWORKS-HEI-EU-DIG-ECO | Jean Monnet Networks on internal policy: Strategic autonomy of the European political area – digital and economic independence | Forthcoming | 2026-11-26 | 2027-02-03 | €6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-networks-hei-eu-dig-eco/
 ERASMUS-JMO-2027-NETWORKS-HEI-EU-EDU-CUL | Jean Monnet Network on internal policy: The role of education and culture for integration and cooperation in Europe | Forthcoming | 2026-11-26 | 2027-02-03 | €6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-networks-hei-eu-edu-cul/
 ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-CANADA | Jean Monnet Network on external policy: EU-Canada | Forthcoming | 2026-11-26 | 2027-02-03 | €2.4M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-networks-hei-non-eu-canada/
 ERASMUS-JMO-2027-NETWORKS-HEI-NON-EU-UA-MLD | Jean Monnet Network on external policy: EU-Ukraine-Moldova | Forthcoming | 2026-11-26 | 2027-02-03 | €2.4M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-networks-hei-non-eu-ua-mld/
 ERASMUS-JMO-2027-NETWORKS-SCHOOLS | Jean Monnet Networks in other fields of education and training | Forthcoming | 2026-11-26 | 2027-02-03 | €6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-networks-schools/
+ERASMUS-JMO-2027-OFET-TT | Jean Monnet Actions for other fields of Education and Training: Teacher Training | Forthcoming | 2026-11-26 | 2027-02-03 | €5.1M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-ofet-tt/
 CREA-CROSS-2027-JOURPART-COLLABORATIONS | NEWS - JOURNALISM PARTNERSHIPS - COLLABORATIONS | Open | 2026-10-22 | 2027-02-04 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-jourpart-collaborations/
 CREA-CROSS-2027-JOURPART-PLURALISM | NEWS - JOURNALISM PARTNERSHIPS - PLURALISM | Open | 2026-10-22 | 2027-02-04 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-jourpart-pluralism/
 CREA-MEDIA-2027-TVONLINE-1 | TV and online content Animation projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-1/
