@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-24 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-25 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/call/cef-dig-2026-cable-repair-capacities-works/
 HORIZON-CL6-2026-04-GOVERNANCE-01 | Additional activities for the European Partnership of Agriculture of Data | Open | 2026-08-25 | 2026-11-26 | €60M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl6-2026-04-governance-01/
