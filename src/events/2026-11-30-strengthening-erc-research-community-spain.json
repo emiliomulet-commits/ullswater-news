@@ -1,0 +1,44 @@
+{
+  "slug": "strengthening-erc-research-community-spain",
+  "title": "Strengthening the ERC Research Community in Spain",
+  "start": "2026-11-30",
+  "end": "2026-11-30",
+  "type": "conference",
+  "programme": "horizon-europe",
+  "mode": "onsite",
+  "city": "Barcelona",
+  "location": "CMIMA, Barcelona",
+  "organiser": "Association of ERC Grantees (AERG) with the Institute of Evolutionary Biology (IBE, CSIC-UPF)",
+  "summary": "An afternoon meeting in Barcelona to strengthen Spain's ERC research community, for current and former grantees and researchers preparing an application.",
+  "details": [
+    "The meeting runs from 14:30 to 19:00 and includes a keynote talk, the results of a survey of the community and a debate with Spanish research institutions and the ERC National Contact Point.",
+    "It ends with networking. Registration is through an online form linked from the event page."
+  ],
+  "why": "Useful for researchers planning an ERC application in 2027: it gives direct access to past grantees and to the National Contact Point in a single afternoon.",
+  "tags": [
+    "Horizon Europe",
+    "ERC",
+    "Frontier research",
+    "Spain"
+  ],
+  "registration_url": "https://www.horizonteeuropa.es/jornada-strengthening-erc-research-community-spain-0",
+  "source_name": "Horizonte Europa (portal español)",
+  "source_url": "https://www.horizonteeuropa.es/jornada-strengthening-erc-research-community-spain-0",
+  "status": "scheduled",
+  "es": {
+    "title": "Jornada «Strengthening the ERC Research Community in Spain»",
+    "summary": "Encuentro de tarde en Barcelona para reforzar la comunidad ERC en España, dirigido a beneficiarios actuales y pasados y a quienes preparan una solicitud.",
+    "details": [
+      "La jornada se celebra de 14:30 a 19:00 e incluye una conferencia, los resultados de una encuesta a la comunidad y un debate con instituciones españolas de investigación y el punto nacional de contacto del ERC.",
+      "Termina con networking. La inscripción se hace en un formulario enlazado desde la página del evento."
+    ],
+    "why": "Útil para quien prepare una solicitud ERC en 2027: en una sola tarde da acceso directo a antiguos beneficiarios y al punto nacional de contacto.",
+    "tags": [
+      "Horizonte Europa",
+      "ERC",
+      "Investigación de frontera",
+      "España"
+    ],
+    "location": "CMIMA, Barcelona"
+  }
+}

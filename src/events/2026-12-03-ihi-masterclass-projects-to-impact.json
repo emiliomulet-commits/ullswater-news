@@ -1,0 +1,46 @@
+{
+  "slug": "ihi-masterclass-projects-to-impact",
+  "title": "IHI masterclass: From projects to impact – smarter strategies for long-term impact",
+  "start": "2026-12-03",
+  "end": "2026-12-03",
+  "type": "webinar",
+  "programme": "cluster-1",
+  "mode": "online",
+  "city": "Online",
+  "location": "Online",
+  "organiser": "Innovative Health Initiative (IHI)",
+  "summary": "An online IHI masterclass on how EU-funded health projects can secure long-term impact, presenting a new addendum to the IHI Field Manual.",
+  "details": [
+    "The webinar runs from 15:00 to 16:30. IHI presents a new addendum to its Field Manual on scaling innovation from public-private partnerships, with guidance and case studies.",
+    "It is aimed at EU-funded projects that want their results to last beyond the funding period. Registration is on the IHI website."
+  ],
+  "why": "Practical for coordinators of running IHI and Horizon Europe health projects who need to plan exploitation and sustainability.",
+  "tags": [
+    "Horizon Europe",
+    "IHI",
+    "Health",
+    "Impact",
+    "Webinar"
+  ],
+  "registration_url": "https://www.horizonteeuropa.es/masterclass-projects-impact-smarter-strategies-long-term-impact",
+  "source_name": "Horizonte Europa (portal español)",
+  "source_url": "https://www.horizonteeuropa.es/masterclass-projects-impact-smarter-strategies-long-term-impact",
+  "status": "scheduled",
+  "es": {
+    "title": "Masterclass IHI: «From projects to impact», estrategias para un impacto duradero",
+    "summary": "Masterclass en línea de la IHI sobre cómo los proyectos de salud financiados por la UE pueden asegurar un impacto a largo plazo, con un nuevo anexo del IHI Field Manual.",
+    "details": [
+      "El webinar se celebra de 15:00 a 16:30. La IHI presenta un nuevo anexo de su Field Manual sobre cómo escalar la innovación de las asociaciones público-privadas, con orientaciones y casos.",
+      "Está dirigido a proyectos financiados por la UE que quieren que sus resultados perduren más allá de la financiación. La inscripción se hace en la web de la IHI."
+    ],
+    "why": "Útil para coordinadores de proyectos de salud de la IHI y de Horizonte Europa que deben planificar la explotación y la sostenibilidad de sus resultados.",
+    "tags": [
+      "Horizonte Europa",
+      "IHI",
+      "Salud",
+      "Impacto",
+      "Webinar"
+    ],
+    "location": "En línea"
+  }
+}

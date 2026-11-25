@@ -1,0 +1,44 @@
+{
+  "slug": "eu-agri-food-days-2026",
+  "title": "EU Agri-Food Days 2026",
+  "start": "2026-12-08",
+  "end": "2026-12-09",
+  "type": "conference",
+  "programme": "other",
+  "mode": "onsite",
+  "city": "Brussels",
+  "location": "Charlemagne Building, Rue de la Loi 170, Brussels",
+  "organiser": "European Commission (DG AGRI)",
+  "summary": "Two days in Brussels on making the European agri-food sector more resilient and on the role of EU policies and the Common Agricultural Policy.",
+  "details": [
+    "Sessions run from 09:30 to 18:30 on both days and bring together farmers, policymakers and stakeholders.",
+    "The discussions look at the sector's resilience in four dimensions, economic, environmental, digital and social, and at how EU policies and the CAP can support that shift. Registration is on the European Commission's agriculture website."
+  ],
+  "why": "Relevant for agrifood companies, cooperatives and research groups tracking where EU agricultural policy and funding are heading.",
+  "tags": [
+    "CAP",
+    "Agri-food",
+    "EU policy",
+    "Resilience"
+  ],
+  "registration_url": "https://agriculture.ec.europa.eu/eu-agri-food-days_en",
+  "source_name": "Horizonte Europa (portal español)",
+  "source_url": "https://www.horizonteeuropa.es/eu-agri-food-days-2026",
+  "status": "scheduled",
+  "es": {
+    "title": "EU Agri-Food Days 2026",
+    "summary": "Dos días en Bruselas sobre cómo hacer más resiliente el sector agroalimentario europeo y sobre el papel de las políticas de la UE y de la PAC.",
+    "details": [
+      "Las sesiones se celebran de 9:30 a 18:30 ambos días y reúnen a agricultores, responsables políticos y actores del sector.",
+      "Los debates analizan la resiliencia del sector en cuatro dimensiones, económica, ambiental, digital y social, y cómo las políticas de la UE y la PAC pueden apoyar ese cambio. La inscripción se hace en la web de agricultura de la Comisión Europea."
+    ],
+    "why": "Interesante para empresas agroalimentarias, cooperativas y grupos de investigación que siguen la evolución de la política agraria y la financiación europea.",
+    "tags": [
+      "PAC",
+      "Agroalimentación",
+      "Política de la UE",
+      "Resiliencia"
+    ],
+    "location": "Edificio Charlemagne, Rue de la Loi 170, Bruselas"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "advance-eic-conference-2026",
+  "title": "ADVANCE EIC Conference 2026",
+  "start": "2026-12-08",
+  "end": "2026-12-09",
+  "type": "conference",
+  "programme": "eic",
+  "mode": "onsite",
+  "city": "Dublin",
+  "location": "University College Dublin, Belfield, Dublin",
+  "organiser": "University College Dublin, with the support of the European Innovation Council and Enterprise Ireland",
+  "summary": "An official event of the Irish Presidency of the Council of the EU on strengthening Europe's deep tech base and turning research into European companies.",
+  "details": [
+    "The conference runs from 09:00 to 20:00 on both days at University College Dublin.",
+    "Topics include artificial intelligence, quantum, biotechnology, advanced connectivity, robotics, space, energy and food systems, and how European research can become European companies. Registration is on the conference website."
+  ],
+  "why": "Useful for deep tech founders and research teams considering EIC Pathfinder, Transition or Accelerator funding, and for meeting the EIC community.",
+  "tags": [
+    "EIC",
+    "Deep tech",
+    "Innovation",
+    "Irish Presidency"
+  ],
+  "registration_url": "https://eicadvance2026.eu",
+  "source_name": "Horizonte Europa (portal español)",
+  "source_url": "https://www.horizonteeuropa.es/advance-eic-conference-2026",
+  "status": "scheduled",
+  "es": {
+    "title": "ADVANCE EIC Conference 2026",
+    "summary": "Evento oficial de la Presidencia irlandesa del Consejo de la UE sobre cómo reforzar la base deep tech de Europa y convertir la investigación en empresas europeas.",
+    "details": [
+      "La conferencia se celebra de 9:00 a 20:00 los dos días en el University College Dublin.",
+      "Los temas incluyen inteligencia artificial, cuántica, biotecnología, conectividad avanzada, robótica, espacio, energía y sistemas alimentarios, y cómo la investigación europea puede convertirse en empresas europeas. La inscripción se hace en la web de la conferencia."
+    ],
+    "why": "Útil para fundadores deep tech y equipos de investigación que estudian presentarse al EIC Pathfinder, Transition o Accelerator, y para conocer a la comunidad del EIC.",
+    "tags": [
+      "EIC",
+      "Deep tech",
+      "Innovación",
+      "Presidencia irlandesa"
+    ],
+    "location": "University College Dublin, Belfield, Dublín"
+  }
+}
