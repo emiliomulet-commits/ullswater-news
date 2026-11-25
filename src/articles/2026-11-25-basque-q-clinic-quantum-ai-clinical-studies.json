@@ -1,0 +1,81 @@
+{
+  "slug": "basque-q-clinic-quantum-ai-clinical-studies",
+  "date": "2026-11-25",
+  "category": "health",
+  "title": "Basque project Q-CLINIC uses quantum-inspired AI to streamline clinical studies",
+  "dek": "Led by Ubikare with Vicomtech and Multiverse Computing, the project is funded by SPRI's Smart Industry – Quantum Technologies 2025 programme.",
+  "key_facts": [
+    [
+      "Funding",
+      "SPRI Smart Industry – Quantum Technologies 2025 (Basque Government)"
+    ],
+    [
+      "Consortium",
+      "Ubikare (lead), Vicomtech, Multiverse Computing"
+    ],
+    [
+      "What it does",
+      "Turns clinical notes into coded data (SNOMED CT, LOINC, HL7/FHIR)"
+    ],
+    [
+      "Duration",
+      "16 months, until spring 2027"
+    ],
+    [
+      "Goal",
+      "Cut administrative workload by 30–40%"
+    ]
+  ],
+  "body": [
+    "A Basque consortium led by Ubikare, with the research centre Vicomtech and the quantum software company Multiverse Computing, is developing Q-CLINIC. The project uses quantum-inspired AI to turn clinicians' free-text notes into structured data coded to international standards such as SNOMED CT, LOINC and HL7/FHIR.",
+    "The 16-month project is funded by SPRI's Smart Industry – Quantum Technologies 2025 programme and will run until spring 2027. Its goal is to cut the administrative workload of health professionals by 30–40%."
+  ],
+  "why": "Ullswater Investments analysis: structured, interoperable health data is a precondition for the European Health Data Space. The project also shows how Basque programmes, which do not always appear in Spain's national grants database, fund applied quantum and AI work.",
+  "tags": [
+    "Quantum",
+    "AI",
+    "Health data",
+    "Basque Country",
+    "SPRI"
+  ],
+  "source_name": "SPRI",
+  "source_url": "https://www.spri.eus/es/blog/teics-comunicacion/q-clinic-mejora-el-rendimiento-de-los-estudios-clinicos-gracias-a-la-inteligencia-artificial-cuantica/",
+  "es": {
+    "title": "Q-CLINIC: IA cuántica para mejorar los estudios clínicos en Euskadi",
+    "dek": "Liderado por Ubikare con Vicomtech y Multiverse Computing, el proyecto está financiado por el programa Smart Industry – Tecnologías Cuánticas 2025 de SPRI.",
+    "key_facts": [
+      [
+        "Financiación",
+        "SPRI Smart Industry – Tecnologías Cuánticas 2025 (Gobierno Vasco)"
+      ],
+      [
+        "Consorcio",
+        "Ubikare (líder), Vicomtech, Multiverse Computing"
+      ],
+      [
+        "Qué hace",
+        "Convierte notas clínicas en datos codificados (SNOMED CT, LOINC, HL7/FHIR)"
+      ],
+      [
+        "Duración",
+        "16 meses, hasta la primavera de 2027"
+      ],
+      [
+        "Objetivo",
+        "Reducir la carga administrativa un 30-40 %"
+      ]
+    ],
+    "body": [
+      "Un consorcio vasco liderado por Ubikare, con el centro tecnológico Vicomtech y la empresa de software cuántico Multiverse Computing, desarrolla Q-CLINIC. El proyecto usa IA de inspiración cuántica para convertir las notas clínicas en texto libre en datos estructurados según estándares internacionales como SNOMED CT, LOINC y HL7/FHIR.",
+      "El proyecto, de 16 meses, está financiado por el programa Smart Industry – Tecnologías Cuánticas 2025 de SPRI y durará hasta la primavera de 2027. Su objetivo es reducir entre un 30 y un 40 % la carga administrativa de los profesionales sanitarios."
+    ],
+    "why": "Análisis de Ullswater Investments: los datos sanitarios estructurados e interoperables son una condición previa del Espacio Europeo de Datos Sanitarios. El proyecto muestra además cómo los programas vascos, que no siempre aparecen en la base de datos nacional de subvenciones, financian trabajo aplicado en cuántica e IA.",
+    "tags": [
+      "Cuántica",
+      "IA",
+      "Datos sanitarios",
+      "País Vasco",
+      "SPRI"
+    ]
+  }
+}
