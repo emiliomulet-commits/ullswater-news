@@ -1,0 +1,100 @@
+{
+  "slug": "spain-ai-voucher-600-million-what-smes-need-to-know",
+  "date": "2026-11-25",
+  "category": "spain",
+  "dossier": "plan-ia360",
+  "title": "Spain's €600m AI voucher: what it will fund and when it opens",
+  "dek": "Plan IA360's business AI voucher will fund AI services from European tech firms, not licences. A pilot comes in H1 2027 and the general call before end-2027.",
+  "key_facts": [
+    [
+      "Instrument",
+      "Business AI voucher (Plan IA360, project 11)"
+    ],
+    [
+      "Budget",
+      "€600 million"
+    ],
+    [
+      "Funds",
+      "AI-based services and solutions from European technology companies"
+    ],
+    [
+      "Excludes",
+      "Mere subscriptions to licences"
+    ],
+    [
+      "Pilot",
+      "Regulatory design and controlled pilot, first half of 2027"
+    ],
+    [
+      "General call",
+      "Before the end of 2027"
+    ],
+    [
+      "Target",
+      "25,000 companies transformed"
+    ]
+  ],
+  "body": [
+    "The business AI voucher is project 11 of Plan IA360. It will finance AI-based services and solutions offered by European technology companies that use foundation models as an input and add their own value, such as development, integration, sector knowledge, data processing or process redesign.",
+    "Simple licence subscriptions are excluded: only services that transform the beneficiary's production processes qualify. The design foresees milestone-based payments, conditions on AI training for staff and on embedding AI in internal processes, a prior maturity diagnosis, a concrete use case and later measurement of productivity impact.",
+    "The voucher is linked to Red NEURONA and will subsidise the solutions that its centres offer to SMEs. The plan sets regulatory design and a controlled pilot in the first half of 2027, and a general call with €600 million before the end of 2027, with a target of 25,000 companies."
+  ],
+  "why": "Ullswater Investments analysis: the voucher cannot be requested yet and no bases have been published. Technology providers should prepare concrete, measurable use cases now, since the voucher pays for process transformation and milestones rather than software licences.",
+  "tags": [
+    "Plan IA360",
+    "AI voucher",
+    "SMEs",
+    "Red NEURONA",
+    "Spain"
+  ],
+  "source_name": "La Moncloa – Plan IA360 (PDF)",
+  "source_url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+  "es": {
+    "title": "Bono IA de 600 millones: qué financiará y cuándo se abrirá",
+    "dek": "El bono empresarial de IA del Plan IA360 financiará servicios de IA de empresas tecnológicas europeas, no licencias. Piloto en el primer semestre de 2027 y convocatoria general antes de final de 2027.",
+    "key_facts": [
+      [
+        "Instrumento",
+        "Bono empresarial de IA (Plan IA360, proyecto 11)"
+      ],
+      [
+        "Presupuesto",
+        "600 millones de euros"
+      ],
+      [
+        "Financia",
+        "Servicios y soluciones basados en IA de empresas tecnológicas europeas"
+      ],
+      [
+        "Excluye",
+        "La mera suscripción a licencias"
+      ],
+      [
+        "Piloto",
+        "Diseño normativo y piloto controlado, primer semestre de 2027"
+      ],
+      [
+        "Convocatoria general",
+        "Antes de final de 2027"
+      ],
+      [
+        "Objetivo",
+        "25.000 empresas transformadas"
+      ]
+    ],
+    "body": [
+      "El bono empresarial de IA es el proyecto 11 del Plan IA360. Financiará servicios y soluciones basados en IA ofrecidos por empresas tecnológicas europeas que usan modelos fundacionales como insumo y aportan valor propio, como desarrollo, integración, conocimiento sectorial, tratamiento de datos o rediseño de procesos.",
+      "Quedan fuera las simples suscripciones a licencias: solo cuentan los servicios que transforman los procesos productivos de la empresa beneficiaria. El diseño prevé pagos por hitos, condiciones sobre formación en IA de la plantilla y sobre la incorporación de la IA a los procesos internos, un diagnóstico previo de madurez, un caso de uso concreto y la medición posterior del impacto en la productividad.",
+      "El bono está vinculado a la Red NEURONA y subvencionará las soluciones que sus centros ofrezcan a las pymes. El plan fija el diseño normativo y un piloto controlado en el primer semestre de 2027, y una convocatoria general de 600 millones de euros antes de final de 2027, con un objetivo de 25.000 empresas."
+    ],
+    "why": "Análisis de Ullswater Investments: el bono aún no se puede solicitar y no hay bases publicadas. Los proveedores tecnológicos deberían preparar ya casos de uso concretos y medibles, porque el bono paga la transformación de procesos y por hitos, no licencias de software.",
+    "tags": [
+      "Plan IA360",
+      "Bono IA",
+      "Pymes",
+      "Red NEURONA",
+      "España"
+    ]
+  }
+}

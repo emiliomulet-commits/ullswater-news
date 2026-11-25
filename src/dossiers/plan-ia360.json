@@ -1,0 +1,113 @@
+{
+  "slug": "plan-ia360",
+  "nav": "Plan IA360",
+  "title": "Plan IA360 & Red NEURONA: news and key dates",
+  "intro": [
+    "Plan IA360 is the Spanish Government's 12-month roadmap for artificial intelligence, presented on 21 September 2026. It groups 14 projects, from a candidacy for an EU AI gigafactory to Red NEURONA, a network of centres where SMEs can test AI with their own data, and a €600 million AI voucher for companies.",
+    "This dossier collects our verified news on the plan and the dates companies should watch. Every item links to its source."
+  ],
+  "timeline": [
+    {
+      "sort": "2026-09-21",
+      "when": "21 Sep 2026",
+      "status": "done",
+      "text": "Plan IA360 presented at La Moncloa: 14 projects.",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "source": "La Moncloa"
+    },
+    {
+      "sort": "2026-11-05",
+      "when": "5 Nov 2026",
+      "status": "done",
+      "text": "EuroHPC extends Lot 1 of the AI Gigafactories call; all tenders must be recreated and resubmitted.",
+      "url": "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+      "source": "EuroHPC JU"
+    },
+    {
+      "sort": "2026-11-23",
+      "when": "23 Nov 2026",
+      "status": "done",
+      "text": "Red NEURONA constitutive session in Olivenza (Badajoz): Extremadura pilot with 28 interested companies.",
+      "url": "https://ondacerosur.es/2026/11/el-gobierno-inicia-en-extremadura-la-red-neurona-para-acercar-la-inteligencia-artificial-a-las-pequenas-empresas/",
+      "source": "Europa Press"
+    },
+    {
+      "sort": "2026-12-03",
+      "when": "3 Dec 2026, 17:00",
+      "status": "upcoming",
+      "text": "AI Gigafactories call (EUROHPC-2026-CEI-AIGF-01): Lot 2 deadline.",
+      "url": "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+      "source": "EuroHPC JU"
+    },
+    {
+      "sort": "2026-12-31",
+      "when": "Before end of 2026",
+      "status": "upcoming",
+      "text": "Red NEURONA: first pilot with 100 SMEs in two autonomous communities.",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "source": "Plan IA360"
+    },
+    {
+      "sort": "2027-02-04",
+      "when": "4 Feb 2027, 17:00",
+      "status": "upcoming",
+      "text": "AI Gigafactories call: Lot 1 deadline.",
+      "url": "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+      "source": "EuroHPC JU"
+    },
+    {
+      "sort": "2027-06-30",
+      "when": "First half of 2027",
+      "status": "upcoming",
+      "text": "AI voucher (bono IA): regulatory design and controlled pilot.",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "source": "Plan IA360"
+    },
+    {
+      "sort": "2027-12-30",
+      "when": "2027",
+      "status": "upcoming",
+      "text": "Red NEURONA: roll-out to 10 autonomous communities and 5,000 companies.",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "source": "Plan IA360"
+    },
+    {
+      "sort": "2027-12-31",
+      "when": "Before end of 2027",
+      "status": "upcoming",
+      "text": "AI voucher: general call, €600 million.",
+      "url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+      "source": "Plan IA360"
+    }
+  ],
+  "es": {
+    "nav": "Plan IA360",
+    "title": "Plan IA360 y Red NEURONA: noticias y fechas clave",
+    "intro": [
+      "El Plan IA360 es la hoja de ruta de 12 meses del Gobierno de España para la inteligencia artificial, presentada el 21 de septiembre de 2026. Agrupa 14 proyectos, desde la candidatura a una gigafactoría europea de IA hasta la Red NEURONA, una red de centros donde las pymes pueden probar la IA con sus propios datos, y un bono de IA para empresas de 600 millones de euros.",
+      "Este dosier reúne nuestras noticias verificadas sobre el plan y las fechas que las empresas deben vigilar. Cada elemento enlaza a su fuente."
+    ],
+    "timeline": [
+      "Presentación del Plan IA360 en La Moncloa: 14 proyectos.",
+      "EuroHPC amplía el lote 1 de la convocatoria de gigafactorías de IA; todas las ofertas deben volver a crearse y presentarse.",
+      "Sesión constitutiva de la Red NEURONA en Olivenza (Badajoz): piloto en Extremadura con 28 empresas interesadas.",
+      "Convocatoria de gigafactorías de IA (EUROHPC-2026-CEI-AIGF-01): plazo del lote 2.",
+      "Red NEURONA: primer piloto con 100 pymes en dos comunidades autónomas.",
+      "Convocatoria de gigafactorías de IA: plazo del lote 1.",
+      "Bono IA: diseño normativo y piloto controlado.",
+      "Red NEURONA: réplica hasta 10 comunidades autónomas y 5.000 empresas.",
+      "Bono IA: convocatoria general, 600 millones de euros."
+    ],
+    "when": [
+      "21 sep 2026",
+      "5 nov 2026",
+      "23 nov 2026",
+      "3 dic 2026, 17:00",
+      "Antes de final de 2026",
+      "4 feb 2027, 17:00",
+      "Primer semestre de 2027",
+      "2027",
+      "Antes de final de 2027"
+    ]
+  }
+}

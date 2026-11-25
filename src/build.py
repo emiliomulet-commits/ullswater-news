@@ -135,6 +135,8 @@ UI = {  # English → Spanish interface strings
     "EU Funding Advisors": "Asesores de financiación europea", "Editorial policy": "Política editorial", "Author": "Autor", "Latest articles": "Últimas noticias",
     "Contact": "Contacto", "Categories": "Categorías", "Page not found": "Página no encontrada", "Language": "Idioma",
     "This news item is only available in English for now.": "Esta noticia de momento solo está disponible en inglés.",
+    "Dossier": "Dosier", "Part of the dossier": "Forma parte del dosier", "Key dates and events": "Fechas clave y eventos", "News in this dossier": "Noticias del dosier",
+    "Date": "Fecha", "What": "Qué", "Done": "Hecho", "Upcoming": "Próximo",
 }
 def T(s): return UI.get(s, s) if ES() else s
 
@@ -200,6 +202,8 @@ table.calls td.dl{white-space:nowrap;font-weight:600}
 .faq h3{font-size:17px;color:var(--navy);margin:16px 0 4px}.faq p{margin:0}
 .notice{background:#fff4d6;border-radius:8px;padding:12px 16px;margin:16px 0}
 .byline a{color:var(--muted)}
+.dossier{background:#fff8e6;border-left:4px solid var(--gold);border-radius:6px;padding:10px 14px;margin:14px 0;font-size:15px}.dossier span{font-weight:700;color:#8a6a1c;text-transform:uppercase;font-size:12px;letter-spacing:.06em;margin-right:6px}
+nav.cats a.dnav{color:var(--gold);font-weight:700}
 .author-card{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-top:28px}
 .avatar{flex:0 0 56px;height:56px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
 .vthumb{display:block;position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}.vthumb img{width:100%;height:100%;object-fit:cover;display:block}
@@ -232,7 +236,8 @@ ULANG = _ulang()
 def page(title, desc, path, body, ld=None, og_type="website", extra_head="", cur=None, noindex=False, bilingual=True):
     """path is the English path; the Spanish page lives at /es + path."""
     canon = SITE["url"] + P(path)
-    navs = "".join(f'<a href="{P("/" + k + "/")}"{" aria-current=\"page\"" if k == cur else ""}>{E(CAT(k)[0])}</a>' for k in CATEGORIES if k in ACTIVE)
+    navs = "".join(f'<a class="dnav" href="{P(d["path"])}"{" aria-current=\"page\"" if cur == "dossier-" + d["slug"] else ""}>{E(D(d, "nav"))}</a>' for d in DOSSIERS)
+    navs += "".join(f'<a href="{P("/" + k + "/")}"{" aria-current=\"page\"" if k == cur else ""}>{E(CAT(k)[0])}</a>' for k in CATEGORIES if k in ACTIVE)
     if HAS_VIDEOS: navs += f'<a href="{P("/videos/")}"{" aria-current=\"page\"" if cur == "videos" else ""}>{T("Videos")}</a>'
     alt = (f'<link rel="alternate" hreflang="en" href="{SITE["url"]}{path}"><link rel="alternate" hreflang="es" href="{SITE["url"]}/es{path}"><link rel="alternate" hreflang="x-default" href="{SITE["url"]}{path}">'
            if bilingual else "")
@@ -306,6 +311,27 @@ def load_videos():
     vids.sort(key=lambda v: (v["d"], v["slug"]), reverse=True)
     return vids
 
+def load_dossiers():
+    """src/dossiers/*.json: topic folders (news + key dates) at /dossier/<slug>/."""
+    out = []
+    for f in sorted((SRC / "dossiers").glob("*.json")) if (SRC / "dossiers").exists() else []:
+        d = json.loads(f.read_text(encoding="utf-8"))
+        for k in ("slug", "nav", "title", "intro", "timeline"):
+            if not d.get(k): raise SystemExit(f"{f.name}: missing {k}")
+        d["path"] = f"/dossier/{d['slug']}/"
+        d["timeline"].sort(key=lambda t: t["sort"])
+        out.append(d)
+    return out
+
+def D(d, key):
+    """Dossier field in the current language."""
+    return ((d.get("es") or {}).get(key) or d[key]) if ES() else d[key]
+
+def dossier_box(a):
+    d = next((x for x in DOSSIERS if x["slug"] == a.get("dossier")), None)
+    if not d: return ""
+    return (f'<aside class="dossier"><span>{T("Part of the dossier")}</span> <a href="{P(d["path"])}">{E(D(d, "title"))} →</a></aside>')
+
 def vcard(v):
     return (f'<article class="card"><a class="vthumb" href="{P(v["path"])}" aria-label="{T("Video")}: {E(F(v, "title"))}"><img src="{v["thumb"]}" alt="" loading="lazy" width="480" height="360"><span>▶</span></a>'
             f'<h2><a href="{P(v["path"])}">{E(F(v, "title"))}</a></h2>'
@@ -362,6 +388,7 @@ def write(path, text):
 
 ACTIVE = set()
 HAS_VIDEOS = False
+DOSSIERS = []
 
 def lang_pages(arts, vids, live):
     """All reader-facing pages in the current LANG (English paths, /es prefix for Spanish)."""
@@ -409,6 +436,7 @@ def lang_pages(arts, vids, live):
 {only_en(a)}<p class="kicker">{E(cat)}</p>
 <h1>{E(F(a, 'title'))}</h1>
 <p class="dek">{E(F(a, 'dek'))}</p>
+{dossier_box(a)}
 <div class="meta">{T('Published')} <time datetime="{a['date']}">{nice(a['d'])}</time> · {T('By')} <a href="{P(AUTHOR_PATH)}">{AUTHOR['name']}</a> · {T('Source')}: <a href="{E(a['source_url'])}" rel="noopener">{E(a['source_name'])}</a></div>
 {f'<section class="facts" aria-label="{T("Key facts")}"><h2>{T("Key facts")}</h2><dl>{facts}</dl>{act_btn}</section>' if facts else act_btn}
 <div class="body">{body}</div>
@@ -446,6 +474,26 @@ def lang_pages(arts, vids, live):
                 f'<div class="wrap"><div class="grid">{"".join(card(a) for a in items)}</div></div>')
         ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": f"{name} · {S('short')}", "url": url(f"/{k}/"), "description": desc, "inLanguage": LANG, "publisher": org_ld()}]
         write(P(f"/{k}/"), page(f"{name} · {S('short')} | Ullswater Investments", desc, f"/{k}/", body, ld, cur=k))
+
+    # ---- Dossiers (topic folders: news + key dates) ----
+    for d in DOSSIERS:
+        items = [a for a in arts if a.get("dossier") == d["slug"]]
+        es = d.get("es") or {}
+        rows = ""
+        for i, t in enumerate(d["timeline"]):
+            when = es["when"][i] if ES() and es.get("when") else t["when"]
+            text = es["timeline"][i] if ES() and es.get("timeline") else t["text"]
+            st = t["status"]
+            rows += (f'<tr><td class="dl">{E(when)}</td><td>{E(text)} <a href="{E(t["url"])}" rel="noopener">{E(t["source"])}</a></td>'
+                     f'<td><span class="st st-{"Closed" if st == "done" else "Forthcoming"}">{T("Done") if st == "done" else T("Upcoming")}</span></td></tr>')
+        intro = "".join(f'<p class="lead">{E(x)}</p>' for x in D(d, "intro"))
+        body = (f'<section class="hero"><div class="wrap"><p class="kicker">{T("Dossier")}</p><h1>{E(D(d, "title"))}</h1>{intro}</div></section>'
+                f'<div class="wrap"><section class="section"><h2>{T("Key dates and events")}</h2><div style="overflow-x:auto"><table class="calls"><thead><tr><th>{T("Date")}</th><th>{T("What")}</th><th>{T("Status")}</th></tr></thead><tbody>{rows}</tbody></table></div></section>'
+                f'<section class="section"><h2>{T("News in this dossier")}</h2><div class="grid">{"".join(card(a) for a in items)}</div></section></div>')
+        desc = D(d, "intro")[0]
+        ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": D(d, "title"), "url": url(d["path"]), "description": desc, "inLanguage": LANG, "publisher": org_ld(),
+               "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": url(a["path"]), "name": F(a, "title")} for i, a in enumerate(items)]}}]
+        write(P(d["path"]), page(f"{D(d, 'title')} · {S('short')} | Ullswater Investments", desc, d["path"], body, ld, cur="dossier-" + d["slug"]))
 
     # ---- Videos ----
     if vids:
@@ -536,6 +584,9 @@ def build():
     arts = load()
     vids = load_videos()
     HAS_VIDEOS = bool(vids)
+    DOSSIERS[:] = load_dossiers()
+    for a in arts:
+        if a.get("dossier") and a["dossier"] not in {d["slug"] for d in DOSSIERS}: raise SystemExit(f"{a['slug']}: unknown dossier {a['dossier']}")
     ACTIVE.update(a["category"] for a in arts)
     TODAY = datetime.date.today()
     calls, feed_updated = load_calls(TODAY, offline=bool(os.environ.get("OFFLINE")))
@@ -586,6 +637,7 @@ def build():
     # Sitemaps (regular + Google News for the last 2 days)
     urls = [("/", arts[0]["updated"] if arts else today), ("/about/", today)] + [(f"/{k}/", next(a["updated"] for a in arts if a["category"] == k)) for k in CATEGORIES if k in ACTIVE] + [(a["path"], a["updated"]) for a in arts] \
         + [(AUTHOR_PATH, arts[0]["updated"] if arts else today)] \
+        + [(d["path"], max(a["updated"] for a in arts if a.get("dossier") == d["slug"])) for d in DOSSIERS if any(a.get("dossier") == d["slug"] for a in arts)] \
         + ([("/videos/", vids[0]["date"])] + [(v["path"], v["date"]) for v in vids] if vids else [])
     alts = lambda p: (f'<xhtml:link rel="alternate" hreflang="en" href="{SITE["url"]}{p}"/><xhtml:link rel="alternate" hreflang="es" href="{SITE["url"]}/es{p}"/>'
                       f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE["url"]}{p}"/>')
@@ -605,7 +657,7 @@ def build():
     # llms.txt + llms-full.txt (plain-text versions for AI assistants)
     llms = [f"# {SITE['name']}", "", f"> {SITE['description']} Published by {SITE['org_legal']} (Madrid), EU funding advisors. Every article cites and links an official source.", "",
             "Key facts:", f"- Publisher: {SITE['org_legal']} · {SITE['org_url']}", f"- Contact: {SITE['email']} · Madrid: {SITE['address']} · Brussels: {SITE['address_brussels']}", f"- Languages: English (this site) and Spanish ({SITE['url']}/es/, RSS {SITE['url']}/es/feed.xml). Updated on working days.", "",
-            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + (["", "## Videos", "", f"- [All videos]({SITE['url']}/videos/): official recordings of EU research, innovation and funding events."] + [f"- [{v['title']}]({SITE['url']}{v['path']}) ({v['date']}): {v['summary']}" for v in vids[:20]] if vids else []) + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
+            "## Sections", ""] + [f"- [{v[0]}]({SITE['url']}/{k}/): {v[1]}" for k, v in CATEGORIES.items() if k in ACTIVE] + [f"- [Dossier: {d['title']}]({SITE['url']}{d['path']}): {d['intro'][0]}" for d in DOSSIERS] + ["", "## EU funding calls (updated daily)", "", f"- [All open and forthcoming EU calls]({CALLS}/): one page per call with deadline, budget, partners and official links, updated daily.", f"- [Closing soon]({CALLS}/closing-soon/)", f"- [Calls by theme]({CALLS}/theme/)"] + (["", "## Videos", "", f"- [All videos]({SITE['url']}/videos/): official recordings of EU research, innovation and funding events."] + [f"- [{v['title']}]({SITE['url']}{v['path']}) ({v['date']}): {v['summary']}" for v in vids[:20]] if vids else []) + ["", f"## Author", "", f"- [{AUTHOR['name']}]({SITE['url']}{AUTHOR_PATH}): {AUTHOR['role']}"] + ["", "## Latest articles", ""] + \
            [f"- [{a['title']}]({SITE['url']}{a['path']}) ({a['date']}): {a['dek']}" for a in arts[:50]] + ["", "## Optional", "", f"- [Full text of recent articles]({SITE['url']}/llms-full.txt)", f"- [Editorial policy]({SITE['url']}/about/)", f"- [RSS feed]({SITE['url']}/feed.xml)"]
     (OUT / "llms.txt").write_text("\n".join(llms) + "\n", encoding="utf-8")
     full = [f"# {SITE['name']} — full text of recent articles", ""]

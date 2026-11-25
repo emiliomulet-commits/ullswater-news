@@ -1,0 +1,95 @@
+{
+  "slug": "eurohpc-ai-gigafactories-call-deadlines-resubmission",
+  "date": "2026-11-05",
+  "category": "digital-ai",
+  "dossier": "plan-ia360",
+  "title": "AI Gigafactories call: Lot 1 extended to February, tenders must be resubmitted",
+  "dek": "EuroHPC moves the Lot 1 deadline to 4 February 2027, keeps Lot 2 at 3 December 2026 and asks all bidders to recreate and resubmit their tenders.",
+  "key_facts": [
+    [
+      "Call",
+      "EUROHPC-2026-CEI-AIGF-01"
+    ],
+    [
+      "Published",
+      "30 July 2026"
+    ],
+    [
+      "Lot 1 deadline",
+      "4 February 2027, 17:00 (Luxembourg time)"
+    ],
+    [
+      "Lot 2 deadline",
+      "3 December 2026, 17:00 (unchanged)"
+    ],
+    [
+      "Resubmission",
+      "Draft and submitted tenders will not be considered; use the new submission links"
+    ],
+    [
+      "Notice",
+      "5 November 2026"
+    ]
+  ],
+  "body": [
+    "The EuroHPC Joint Undertaking has extended the deadline for Lot 1 of its call for tenders to select AI Gigafactory consortia to 4 February 2027 at 17:00. The aim is to give all Member States time to complete national budgetary procedures and submit their financial commitments. The Lot 2 deadline is unchanged at 3 December 2026, 17:00.",
+    "All draft and already submitted tenders in the system, for either lot, will not be considered. Bidders must recreate and resubmit them through new submission links on the EU Funding & Tenders Portal. Only the links have changed; the published call documents are unaffected."
+  ],
+  "why": "Ullswater Investments analysis: Spain's Plan IA360 counts on a gigafactory candidacy, so these dates set its pace. Suppliers and partners of any consortium should check that the tender has been resubmitted through the new links before the relevant deadline.",
+  "tags": [
+    "EuroHPC",
+    "AI Gigafactories",
+    "Plan IA360",
+    "Supercomputing",
+    "Tender"
+  ],
+  "action": {
+    "label": "Open the call on the Funding & Tenders Portal",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/bc712395-692d-41ab-aa25-8e254ae86eb2-CN"
+  },
+  "source_name": "EuroHPC Joint Undertaking",
+  "source_url": "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+  "es": {
+    "title": "Gigafactorías de IA: el lote 1 se amplía a febrero y hay que volver a presentar las ofertas",
+    "dek": "EuroHPC traslada el plazo del lote 1 al 4 de febrero de 2027, mantiene el lote 2 el 3 de diciembre de 2026 y pide a todos los licitadores que vuelvan a crear y presentar sus ofertas.",
+    "key_facts": [
+      [
+        "Convocatoria",
+        "EUROHPC-2026-CEI-AIGF-01"
+      ],
+      [
+        "Publicación",
+        "30 de julio de 2026"
+      ],
+      [
+        "Plazo del lote 1",
+        "4 de febrero de 2027, 17:00 (hora de Luxemburgo)"
+      ],
+      [
+        "Plazo del lote 2",
+        "3 de diciembre de 2026, 17:00 (sin cambios)"
+      ],
+      [
+        "Nueva presentación",
+        "No se tendrán en cuenta los borradores ni las ofertas ya presentadas; hay que usar los nuevos enlaces"
+      ],
+      [
+        "Aviso",
+        "5 de noviembre de 2026"
+      ]
+    ],
+    "body": [
+      "La Empresa Común EuroHPC ha ampliado hasta el 4 de febrero de 2027 a las 17:00 el plazo del lote 1 de su licitación para seleccionar consorcios de gigafactorías de IA. El objetivo es dar tiempo a todos los Estados miembros para completar sus procedimientos presupuestarios nacionales y presentar sus compromisos financieros. El plazo del lote 2 se mantiene el 3 de diciembre de 2026 a las 17:00.",
+      "No se tendrán en cuenta los borradores ni las ofertas ya presentadas en el sistema, en ninguno de los dos lotes. Los licitadores deben volver a crearlas y presentarlas a través de nuevos enlaces en el Portal de Financiación y Licitaciones de la UE. Solo han cambiado los enlaces; los documentos publicados de la convocatoria no se modifican."
+    ],
+    "why": "Análisis de Ullswater Investments: el Plan IA360 de España cuenta con una candidatura a gigafactoría, así que estas fechas marcan su ritmo. Los proveedores y socios de cualquier consorcio deben comprobar que la oferta se ha vuelto a presentar por los nuevos enlaces antes del plazo correspondiente.",
+    "tags": [
+      "EuroHPC",
+      "Gigafactorías de IA",
+      "Plan IA360",
+      "Supercomputación",
+      "Licitación"
+    ],
+    "action_label": "Abrir la convocatoria en el Portal de Financiación y Licitaciones"
+  }
+}

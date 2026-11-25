@@ -99,3 +99,8 @@ Videos are embedded with the YouTube player (youtube-nocookie.com) and always cr
 
 ## External links open in a new tab (Nov 2026)
 `src/extlinks.py` runs at the end of every build: links outside the Ullswater network get `target="_blank" rel="noopener noreferrer"`, a small ↗ icon and a hidden "(opens in a new tab)" / "(se abre en una pestaña nueva)" label. Links between our own sites (`*.ullswaterinvestments.com`) stay in the same tab, and links marked `data-noext` are skipped. Check with `python3 src/extlinks.py docs --check`. Same file as in events-site.
+
+## Dossiers (topic folders with news + key dates) — Nov 2026
+`src/dossiers/<slug>.json` creates a topic page at `/dossier/<slug>/` (and `/es/dossier/<slug>/`) with an intro, a "Key dates and events" table and every article whose JSON has `"dossier": "<slug>"`. Dossiers appear first in the category bar (gold), get a "Part of the dossier" box on each article, and are added to the sitemap and llms.txt.
+Fields: `slug`, `nav`, `title`, `intro` (list), `timeline` (list of `{sort: YYYY-MM-DD, when, status: done|upcoming, text, url, source}`, kept in date order), and `es` with `nav`, `title`, `intro`, plus `timeline` and `when` lists in the same order. Every timeline item links to its source; update `status` when a date passes.
+First dossier: `plan-ia360` (Plan IA360, Red NEURONA, AI voucher, EuroHPC AI Gigafactories).

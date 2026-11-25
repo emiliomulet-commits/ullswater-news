@@ -1,0 +1,94 @@
+{
+  "slug": "spain-plan-ia360-ai-roadmap-14-projects",
+  "date": "2026-09-21",
+  "category": "digital-ai",
+  "dossier": "plan-ia360",
+  "title": "Spain's Plan IA360: 14 AI projects, from a gigafactory to SME support",
+  "dek": "Spain presents a 12-month AI roadmap with a €5 billion gigafactory candidacy, the Red NEURONA demonstration network and a €600 million AI voucher.",
+  "key_facts": [
+    [
+      "Presented",
+      "21 September 2026, La Moncloa"
+    ],
+    [
+      "Scope",
+      "14 projects"
+    ],
+    [
+      "AI gigafactory",
+      "€5,000 million public-private, €719 million public; works from February 2027 if selected"
+    ],
+    [
+      "Red NEURONA",
+      "Pilot with 100 SMEs in two regions before end-2026; 10 regions and 5,000 firms in 2027"
+    ],
+    [
+      "AI voucher",
+      "€600 million; general call before end-2027"
+    ],
+    [
+      "Adoption target",
+      "From 21.1% to 55% of companies using AI by 2030"
+    ]
+  ],
+  "body": [
+    "The Spanish Government has presented Plan IA360, a roadmap of 14 projects for the next 12 months covering infrastructure, adoption, talent, governance and public services.",
+    "The largest project is an AI gigafactory with €5,000 million of public-private investment, of which €719 million is public. The plan sets construction from February 2027, opening in 2028 and a target of 100,000 AI accelerators in 2028/2029.",
+    "For companies, the key measures are Red NEURONA, a public-private network of AI demonstration and deployment centres within 50 km of any firm, and a €600 million business AI voucher. NEURONA starts with a pilot of 100 SMEs in two autonomous communities before the end of 2026; the voucher gets a controlled pilot in the first half of 2027 and a general call before the end of 2027.",
+    "Other milestones include an initial technical core of an AI Safety Institute within AESIA before the end of 2026 and the launch of an Ibero-American AI Alliance on 3 November 2026."
+  ],
+  "why": "Ullswater Investments analysis: the plan is a roadmap, not a regulation, so there is nothing to apply for yet. Companies and technology providers should watch the NEURONA pilots and the voucher's regulatory design, which will decide who can supply and who can benefit.",
+  "tags": [
+    "Plan IA360",
+    "Red NEURONA",
+    "AI voucher",
+    "AI gigafactory",
+    "Spain"
+  ],
+  "source_name": "La Moncloa – Plan IA360 (PDF)",
+  "source_url": "https://www.lamoncloa.gob.es/presidente/actividades/Documents/2026/20260920%20Plan%20IA360.pdf",
+  "es": {
+    "title": "Plan IA360: 14 proyectos de IA, de la gigafactoría al apoyo a pymes",
+    "dek": "España presenta una hoja de ruta de IA a 12 meses con una gigafactoría de 5.000 millones, la red de demostración Red NEURONA y un bono de IA de 600 millones.",
+    "key_facts": [
+      [
+        "Presentación",
+        "21 de septiembre de 2026, La Moncloa"
+      ],
+      [
+        "Alcance",
+        "14 proyectos"
+      ],
+      [
+        "Gigafactoría de IA",
+        "5.000 millones público-privados, 719 millones públicos; obras desde febrero de 2027 si es seleccionada"
+      ],
+      [
+        "Red NEURONA",
+        "Piloto con 100 pymes en dos comunidades antes de final de 2026; 10 comunidades y 5.000 empresas en 2027"
+      ],
+      [
+        "Bono IA",
+        "600 millones de euros; convocatoria general antes de final de 2027"
+      ],
+      [
+        "Objetivo de adopción",
+        "Del 21,1 % al 55 % de empresas que usan IA en 2030"
+      ]
+    ],
+    "body": [
+      "El Gobierno de España ha presentado el Plan IA360, una hoja de ruta de 14 proyectos para los próximos 12 meses que abarca infraestructura, adopción, talento, gobernanza y servicios públicos.",
+      "El proyecto más grande es una gigafactoría de IA con 5.000 millones de euros de inversión público-privada, de los que 719 millones son públicos. El plan fija el inicio de las obras en febrero de 2027, la apertura en 2028 y un objetivo de 100.000 aceleradores de IA en 2028/2029.",
+      "Para las empresas, las medidas clave son la Red NEURONA, una red público-privada de centros de demostración y despliegue de IA a menos de 50 km de cualquier empresa, y un bono empresarial de IA de 600 millones de euros. NEURONA arranca con un piloto de 100 pymes en dos comunidades autónomas antes de final de 2026; el bono tendrá un piloto controlado en el primer semestre de 2027 y una convocatoria general antes de final de 2027.",
+      "Otros hitos son un núcleo técnico inicial del Instituto de Seguridad de la IA en la AESIA antes de final de 2026 y el lanzamiento de una Alianza Iberoamericana de la IA el 3 de noviembre de 2026."
+    ],
+    "why": "Análisis de Ullswater Investments: el plan es una hoja de ruta, no una norma, así que aún no hay nada que solicitar. Empresas y proveedores tecnológicos deben seguir los pilotos de NEURONA y el diseño normativo del bono, que decidirán quién puede suministrar y quién puede beneficiarse.",
+    "tags": [
+      "Plan IA360",
+      "Red NEURONA",
+      "Bono IA",
+      "Gigafactoría de IA",
+      "España"
+    ]
+  }
+}
