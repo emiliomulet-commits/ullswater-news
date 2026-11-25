@@ -1,7 +1,7 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-25 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/call/cef-dig-2026-cable-repair-capacities-works/
+CEF-DIG-2026-CABLE-REPAIR-CAPACITIES-WORKS | Submarine Cable Repair Capacities - Works | Open | 2026-06-23 | 2026-11-25 | €40M (topic total) | https://calls.ullswaterinvestments.com/
 HORIZON-CL6-2026-04-GOVERNANCE-01 | Additional activities for the European Partnership of Agriculture of Data | Open | 2026-08-25 | 2026-11-26 | €60M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-cl6-2026-04-governance-01/
 CREA-MEDIA-2027-DEVSLATE | European slate development | Open | 2026-09-30 | 2026-12-01 | €22.4M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-devslate/
 DIGITAL-JU-CHIPS-2026-AI-GFP | AI compute evaluation and deployment platform for EU infrastructure | Open | 2026-07-07 | 2026-12-01 | ≈ €50M–€70M / project | https://calls.ullswaterinvestments.com/call/digital-ju-chips-2026-ai-gfp/
@@ -130,7 +130,7 @@ CERV-2026-CITIZENS-REM-HOLOCAUSTJEW | Strengthening the remembrance of the Holoc
 CERV-2026-CITIZENS-REM-TRANSITION | Remembering democratic transitions, the (re-)building of democratic institutions, and strengthening society based on the rule of law, democracy, and fundamental rights. | Open | 2026-10-21 | 2027-02-24 | €28M (topic total) | https://calls.ullswaterinvestments.com/call/cerv-2026-citizens-rem-transition/
 CERV-2026-CITIZENS-VALUES | CERV-2026-CITIZENS-VALUES | Open | 2026-10-27 | 2027-02-24 | €114M (topic total) | https://calls.ullswaterinvestments.com/call/cerv-2026-citizens-values/
 EUBA-EFSA-2027-ENREL-01 | Selection of hosting sites and fellows for EFSA's European Food Risk Assessment Fellowship (EU-FORA) Programme | Open | 2026-11-04 | 2027-02-24 | €825k (topic total) | https://calls.ullswaterinvestments.com/call/euba-efsa-2027-enrel-01/
-HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | Forthcoming | 2026-11-25 | 2027-02-25 | ≈ €1M–€5M / project | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-pathfinderopen-two-stage/
+HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | Open | 2026-11-25 | 2027-02-25 | ≈ €1M–€5M / project | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-pathfinderopen-two-stage/
 CREA-MEDIA-2027-AUDFILMEDU | Audience Development and Film Education | Open | 2026-09-30 | 2027-03-02 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-audfilmedu/
 CREA-MEDIA-2027-CODEV | European co-development | Open | 2026-09-30 | 2027-03-02 | €12.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-codev/
 HORIZON-BRIDGING-2027-05-01 | Skills for innovative SMEs | Forthcoming | 2026-12-01 | 2027-03-03 | €30M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-05-01/
@@ -145,6 +145,7 @@ HORIZON-CL5-2027-01-D1-13 | Next generation scenarios for informing climate and 
 HORIZON-EURATOM-2027-01-01 | Key enabling technologies for fusion power plants (European Partnership on Fusion Energy) | Open | 2026-09-15 | 2027-03-04 | ≈ €10M / project | https://calls.ullswaterinvestments.com/call/horizon-euratom-2027-01-01/
 HORIZON-WIDERA-2027-04-WIDENING-01 | Excellence Hubs | Open | 2026-09-02 | 2027-03-04 | ≈ €1.5M–€4.5M / project | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-04-widening-01/
 JUST-2027-JTRA | Call for proposals for action grants to support transnational projects on judicial training covering civil law, criminal law or fundamental rights | Open | 2026-10-28 | 2027-03-04 | €4.1M (topic total) | https://calls.ullswaterinvestments.com/call/just-2027-jtra/
+ERASMUS-EDU-2027-PCOOP-ENGO | Partnerships for Cooperation - Cooperation Partnerships in the field of education and training submitted by European NGOs | Forthcoming | 2026-12-02 | 2027-03-09 | €5M (topic total) | https://calls.ullswaterinvestments.com/
 ERASMUS-SPORT-2027-CB | ERASMUS-SPORT-2027-CB - Capacity Building in the Field of Sport | Forthcoming | 2026-12-17 | 2027-03-09 | €2.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-cb/
 ERASMUS-SPORT-2027-SCP | Cooperation Partnerships | Forthcoming | 2026-12-17 | 2027-03-09 | €69.2M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-scp/
 ERASMUS-SPORT-2027-SSCP | Small-scale Partnerships | Forthcoming | 2026-12-17 | 2027-03-09 | €69.2M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-sscp/

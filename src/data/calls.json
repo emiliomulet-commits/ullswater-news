@@ -1040,6 +1040,25 @@
    "title": "European Universities",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-eur-univ"
   },
+  "ERASMUS-EDU-2027-PCOOP-ENGO": {
+   "budget": "€5M (topic total)",
+   "code": "ERASMUS-EDU-2027-PCOOP-ENGO",
+   "deadline": "2027-03-09",
+   "first_seen": "2026-11-25",
+   "keywords": [
+    "Cooperation Partnerships",
+    "Cooperation Partnerships submitted by European NGO",
+    "ENGO",
+    "European NGO",
+    "European NGOs"
+   ],
+   "last_seen": "2026-11-25",
+   "listed": true,
+   "opens": "2026-12-02",
+   "status": "forthcoming",
+   "title": "Partnerships for Cooperation - Cooperation Partnerships in the field of education and training submitted by European NGOs",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-pcoop-engo"
+  },
   "ERASMUS-EDU-2027-PEX-COVE-TOP1": {
    "budget": "€73M (topic total)",
    "code": "ERASMUS-EDU-2027-PEX-COVE-TOP1",
@@ -5117,7 +5136,7 @@
    "last_seen": "2026-11-25",
    "listed": true,
    "opens": "2026-11-25",
-   "status": "forthcoming",
+   "status": "open",
    "title": "HORIZON-EIC-2027-PATHFINDEROPEN-two-stage",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/horizon-eic-2027-pathfinderopen-two-stage"
   },
@@ -5127,9 +5146,9 @@
    "deadline": "2027-11-24",
    "first_seen": "2026-11-10",
    "keywords": [
+    "STEP-Cleantech",
     "STEP-Biotech",
-    "STEP-Digital/deep tech",
-    "STEP-Cleantech"
+    "STEP-Digital/deep tech"
    ],
    "last_seen": "2026-11-25",
    "listed": true,
@@ -7259,5 +7278,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-25T09:30:27.174Z"
+ "feed_updated": "2026-11-25T12:49:35.026Z"
 }
