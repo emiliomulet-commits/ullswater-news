@@ -1,7 +1,6 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
 # Checked 2026-11-26 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
-HORIZON-CL6-2026-04-GOVERNANCE-01 | Additional activities for the European Partnership of Agriculture of Data | Open | 2026-08-25 | 2026-11-26 | €60M (topic total) | https://calls.ullswaterinvestments.com/theme/food-environment/
 CREA-MEDIA-2027-DEVSLATE | European slate development | Open | 2026-09-30 | 2026-12-01 | €22.4M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-devslate/
 DIGITAL-JU-CHIPS-2026-AI-GFP | AI compute evaluation and deployment platform for EU infrastructure | Open | 2026-07-07 | 2026-12-01 | ≈ €50M–€70M / project | https://calls.ullswaterinvestments.com/call/digital-ju-chips-2026-ai-gfp/
 DIGITAL-JU-CHIPS-2026-AI1-SG | AI chip demonstrators for EU compute infrastructure | Open | 2026-07-07 | 2026-12-01 | ≈ €500k–€1M / project | https://calls.ullswaterinvestments.com/call/digital-ju-chips-2026-ai1-sg/
@@ -94,6 +93,17 @@ ERASMUS-JMO-2027-OFET-LEARNING-EU | Jean Monnet Actions for other fields of Educ
 ERASMUS-JMO-2027-OFET-TT | Jean Monnet Actions for other fields of Education and Training: Teacher Training | Open | 2026-11-26 | 2027-02-03 | €5.1M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-jmo-2027-ofet-tt/
 CREA-CROSS-2027-JOURPART-COLLABORATIONS | NEWS - JOURNALISM PARTNERSHIPS - COLLABORATIONS | Open | 2026-10-22 | 2027-02-04 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-jourpart-collaborations/
 CREA-CROSS-2027-JOURPART-PLURALISM | NEWS - JOURNALISM PARTNERSHIPS - PLURALISM | Open | 2026-10-22 | 2027-02-04 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-cross-2027-jourpart-pluralism/
+ERASMUS-EDU-2027-CBHE-CROSS-REGIONAL | Capacity Building in Higher Education: Cross-Regional | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-1 | Capacity Building in Higher Education: Western Balkans | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-10 | Capacity Building in Higher Education: Latin America | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-11 | Capacity Building in Higher Education: Caribbean | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-2 | Capacity Building in Higher Education: Neighbourhood East | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-3 | Capacity Building in Higher Education: South Mediterranean | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-5a | Capacity Building in Higher Education: Asia | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-6 | Capacity Building in Higher Education: Central Asia | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-7a | Capacity Building in Higher Education: Middle East | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-8a | Capacity Building in Higher Education: Pacific | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-EDU-2027-CBHE-REGION-9 | Capacity Building in Higher Education: Sub-Saharan Africa | Forthcoming | 2026-12-03 | 2027-02-09 | €106.1M (topic total) | https://calls.ullswaterinvestments.com/
 CREA-MEDIA-2027-TVONLINE-1 | TV and online content Animation projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-1/
 CREA-MEDIA-2027-TVONLINE-2 | TV and online content Documentary projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-2/
 CREA-MEDIA-2027-TVONLINE-3 | TV and online content Fiction projects | Open | 2026-09-30 | 2027-02-10 | €23.3M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-tvonline-3/
@@ -153,6 +163,11 @@ EUBA-EFSA-2027-ENREL-01 | Selection of hosting sites and fellows for EFSA's Euro
 HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | HORIZON-EIC-2027-PATHFINDEROPEN-two-stage | Open | 2026-11-25 | 2027-02-25 | ≈ €1M–€5M / project | https://calls.ullswaterinvestments.com/call/horizon-eic-2027-pathfinderopen-two-stage/
 CREA-MEDIA-2027-AUDFILMEDU | Audience Development and Film Education | Open | 2026-09-30 | 2027-03-02 | €7M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-audfilmedu/
 CREA-MEDIA-2027-CODEV | European co-development | Open | 2026-09-30 | 2027-03-02 | €12.5M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-codev/
+ERASMUS-YOUTH-2027-CB-NE | Capacity Building in the field of Youth in Neighborhood East | Forthcoming | 2026-12-02 | 2027-03-02 | €2.9M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-YOUTH-2027-CB-SMC | Capacity Building in the field of Youth in South Mediterranean Countries | Forthcoming | 2026-12-02 | 2027-03-02 | €3M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-YOUTH-2027-CB-SSA | Capacity Building in the field of Youth in Sub-Saharan Africa | Forthcoming | 2026-12-02 | 2027-03-02 | €9M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-YOUTH-2027-CB-WB | Capacity Building in the field of Youth in Western Balkans | Forthcoming | 2026-12-02 | 2027-03-02 | €3M (topic total) | https://calls.ullswaterinvestments.com/
+ERASMUS-YOUTH-2027-YOUTH-TOG | European Youth Together 2027 | Forthcoming | 2026-12-02 | 2027-03-02 | €9.3M (topic total) | https://calls.ullswaterinvestments.com/
 HORIZON-BRIDGING-2027-05-01 | Skills for innovative SMEs | Forthcoming | 2026-12-01 | 2027-03-03 | €30M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-bridging-2027-05-01/
 ERASMUS-EDU-2027-EUR-UNIV | European Universities | Open | 2026-10-29 | 2027-03-04 | €218.4M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-edu-2027-eur-univ/
 ESC-SOLID-2027-VTHPA | ESC-SOLID-2027-VTHPA | Forthcoming | 2026-11-26 | 2027-03-04 | €5.5M (topic total) | https://calls.ullswaterinvestments.com/call/esc-solid-2027-vthpa/
@@ -170,6 +185,7 @@ ERASMUS-EDU-2027-PCOOP-ENGO | Partnerships for Cooperation - Cooperation Partner
 ERASMUS-SPORT-2027-CB | ERASMUS-SPORT-2027-CB - Capacity Building in the Field of Sport | Forthcoming | 2026-12-17 | 2027-03-09 | €2.6M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-cb/
 ERASMUS-SPORT-2027-SCP | Cooperation Partnerships | Forthcoming | 2026-12-17 | 2027-03-09 | €69.2M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-scp/
 ERASMUS-SPORT-2027-SSCP | Small-scale Partnerships | Forthcoming | 2026-12-17 | 2027-03-09 | €69.2M (topic total) | https://calls.ullswaterinvestments.com/call/erasmus-sport-2027-sscp/
+ERASMUS-YOUTH-2027-PCOOP-ENGO | Partnerships for Cooperation - Cooperation Partnerships in the field of Youth submitted by European NGOs 2027 | Forthcoming | 2026-12-02 | 2027-03-09 | €2M (topic total) | https://calls.ullswaterinvestments.com/
 ERC-2027-POC | Proof of Concept Grant | Open | 2026-11-12 | 2027-03-10 | ≈ €150k / project | https://calls.ullswaterinvestments.com/call/erc-2027-poc/
 HORIZON-WIDERA-2027-05-ERA-01 | Pillar I: Facilitating development of institutional open access policies through the retention of intellectual property rights | Forthcoming | 2026-12-08 | 2027-03-11 | €2M (topic total) | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-05-era-01/
 HORIZON-WIDERA-2027-05-ERA-02 | Pillar II: Talent ecosystems for attractive early research careers | Forthcoming | 2026-12-08 | 2027-03-11 | ≈ €2M / project | https://calls.ullswaterinvestments.com/call/horizon-widera-2027-05-era-02/
