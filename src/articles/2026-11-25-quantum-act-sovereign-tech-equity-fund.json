@@ -1,0 +1,87 @@
+{
+  "slug": "quantum-act-sovereign-tech-equity-fund",
+  "date": "2026-11-25",
+  "category": "digital-ai",
+  "title": "Quantum Act proposed, with a path to a Sovereign Tech Equity Fund",
+  "dek": "The Commission's Quantum Act sets no fixed budget but lets it create a Sovereign Tech Equity Fund, plus national quantum centres and shared testbeds.",
+  "key_facts": [
+    [
+      "Proposed by",
+      "European Commission"
+    ],
+    [
+      "Published",
+      "25 November 2026"
+    ],
+    [
+      "Budget",
+      "No fixed budget in the proposal"
+    ],
+    [
+      "New fund",
+      "Sovereign Tech Equity Fund (STEF), to be operational by the start of the next MFF"
+    ],
+    [
+      "Security rule",
+      "Post-quantum cryptography in certain public digital procurement, six months after entry into force"
+    ]
+  ],
+  "body": [
+    "The European Commission has proposed a Quantum Act, a regulation meant to move quantum research into industrial products and services, secure supply chains and prepare public digital systems for post-quantum cryptography. It will now be examined by the European Parliament and the Council under the ordinary legislative procedure.",
+    "The proposal does not carry a fixed budget of its own. Instead, it empowers the Commission to set up a Sovereign Tech Equity Fund (STEF), an equity vehicle that would make large-scale investments in strategic European companies and industrial projects in technologies essential for the Union's technological sovereignty and economic security, quantum among them. The Union should be able to take part as a shareholder alongside member states and other public or private investors, and the aim is for the fund to be operational by the start of the next Multiannual Financial Framework.",
+    "On the ground, each member state would set up at least one quantum competence and acceleration centre as an entry point for public and private users, and the Act supports shared access to costly infrastructures such as testbeds and pilot lines. Implementation would run mainly through the EuroHPC Joint Undertaking, with quantum chips handled under the Chips Joint Undertaking.",
+    "The Act also introduces a requirement covering certain digital procurements by public administrations to which NIS2 applies, which would apply to procurement procedures launched six months after the regulation enters into force. Governance would rely on a Quantum Strategy Board of member states, chaired by the Commission, and a European Quantum Alliance gathering mainly industry."
+  ],
+  "why": "Ullswater Investments analysis: for quantum start-ups and scale-ups, the most relevant element is the planned equity fund, which signals that EU support for strategic technologies will increasingly combine grants with equity. Companies preparing growth rounds or industrial projects should follow how the fund is designed during the legislative process, and suppliers of security technology should note that post-quantum cryptography is becoming a public procurement requirement.",
+  "tags": [
+    "Quantum Act",
+    "Quantum technologies",
+    "Sovereign Tech Equity Fund",
+    "EuroHPC",
+    "Post-quantum cryptography",
+    "MFF 2028-2034"
+  ],
+  "source_name": "European Commission – Shaping Europe's digital future",
+  "source_url": "https://digital-strategy.ec.europa.eu/en/faqs/quantum-act-explained",
+  "es": {
+    "title": "La Comisión propone la Ley de Cuántica y un fondo soberano de capital",
+    "dek": "La Ley de Cuántica no fija presupuesto propio, pero permite crear un Sovereign Tech Equity Fund, además de centros cuánticos nacionales y bancos de pruebas compartidos.",
+    "key_facts": [
+      [
+        "Propuesta por",
+        "Comisión Europea"
+      ],
+      [
+        "Publicación",
+        "25 de noviembre de 2026"
+      ],
+      [
+        "Presupuesto",
+        "Sin presupuesto fijo en la propuesta"
+      ],
+      [
+        "Nuevo fondo",
+        "Sovereign Tech Equity Fund (STEF), operativo al inicio del próximo MFP"
+      ],
+      [
+        "Requisito de seguridad",
+        "Criptografía poscuántica en determinadas compras públicas digitales, seis meses después de la entrada en vigor"
+      ]
+    ],
+    "body": [
+      "La Comisión Europea ha propuesto una Ley de Cuántica (Quantum Act), un reglamento que busca llevar la investigación cuántica a productos y servicios industriales, asegurar las cadenas de suministro y preparar los sistemas digitales públicos para la criptografía poscuántica. Ahora la examinarán el Parlamento Europeo y el Consejo por el procedimiento legislativo ordinario.",
+      "La propuesta no tiene un presupuesto fijo propio. En su lugar, faculta a la Comisión para crear un Sovereign Tech Equity Fund (STEF), un vehículo de capital que haría grandes inversiones en empresas y proyectos industriales europeos estratégicos en tecnologías esenciales para la soberanía tecnológica y la seguridad económica de la Unión, entre ellas la cuántica. La Unión debería poder participar como accionista junto a los Estados miembros y otros inversores públicos o privados, y el objetivo es que el fondo esté operativo al inicio del próximo Marco Financiero Plurianual.",
+      "Sobre el terreno, cada Estado miembro crearía al menos un centro de competencia y aceleración cuántica como punto de entrada para usuarios públicos y privados, y la Ley apoya el acceso compartido a infraestructuras costosas como bancos de pruebas y líneas piloto. La ejecución recaería principalmente en la Empresa Común EuroHPC, y los chips cuánticos en la Empresa Común Chips.",
+      "La Ley introduce además un requisito para determinadas compras digitales de las administraciones públicas sujetas a NIS2, que se aplicaría a los procedimientos de contratación iniciados seis meses después de la entrada en vigor del reglamento. La gobernanza se apoyaría en un Quantum Strategy Board de los Estados miembros, presidido por la Comisión, y en una European Quantum Alliance formada principalmente por la industria."
+    ],
+    "why": "Análisis de Ullswater Investments: para las start-ups y scale-ups cuánticas, lo más relevante es el fondo de capital previsto, que indica que el apoyo de la UE a las tecnologías estratégicas combinará cada vez más subvenciones con capital. Las empresas que preparen rondas de crecimiento o proyectos industriales deben seguir cómo se diseña el fondo durante la tramitación legislativa, y los proveedores de tecnología de seguridad deben tener en cuenta que la criptografía poscuántica pasa a ser un requisito de la contratación pública.",
+    "tags": [
+      "Ley de Cuántica",
+      "Tecnologías cuánticas",
+      "Sovereign Tech Equity Fund",
+      "EuroHPC",
+      "Criptografía poscuántica",
+      "MFP 2028-2034"
+    ]
+  }
+}
