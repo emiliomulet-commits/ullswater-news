@@ -894,7 +894,7 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2026-eued"
   },
   "ERASMUS-EDU-2027-CB-VET-CA": {
-   "budget": "€300k (topic total)",
+   "budget": "€500k (topic total)",
    "code": "ERASMUS-EDU-2027-CB-VET-CA",
    "deadline": "2027-05-12",
    "first_seen": "2026-11-20",
@@ -930,7 +930,7 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-edu-2027-cb-vet-la"
   },
   "ERASMUS-EDU-2027-CB-VET-NE": {
-   "budget": "€3.8M (topic total)",
+   "budget": "€3.6M (topic total)",
    "code": "ERASMUS-EDU-2027-CB-VET-NE",
    "deadline": "2027-05-12",
    "first_seen": "2026-11-20",
@@ -1220,7 +1220,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "ERASMUS-JMO-2027-CHAIR",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-chair"
   },
@@ -1233,7 +1233,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "ERASMUS-JMO-2027-CoE",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-coe"
   },
@@ -1246,7 +1246,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "ERASMUS-JMO-2027-MODULE",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-hei-tch-rsch-module"
   },
@@ -1259,7 +1259,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Networks on internal policy: Strategic autonomy of the European political area – digital and economic independence",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-eu-dig-eco"
   },
@@ -1272,7 +1272,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Network on internal policy: The role of education and culture for integration and cooperation in Europe",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-eu-edu-cul"
   },
@@ -1285,7 +1285,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Network on external policy: EU-Canada",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-non-eu-canada"
   },
@@ -1298,7 +1298,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Network on external policy: EU-Ukraine-Moldova",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-hei-non-eu-ua-mld"
   },
@@ -1311,9 +1311,22 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Networks in other fields of education and training",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-networks-schools"
+  },
+  "ERASMUS-JMO-2027-OFET-LEARNING-EU": {
+   "budget": "€3.9M (topic total)",
+   "code": "ERASMUS-JMO-2027-OFET-LEARNING-EU",
+   "deadline": "2027-02-03",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Jean Monnet Actions for other fields of Education and Training: Learning EU",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-ofet-learning-eu"
   },
   "ERASMUS-JMO-2027-OFET-TT": {
    "budget": "€5.1M (topic total)",
@@ -1324,7 +1337,7 @@
    "last_seen": "2026-11-26",
    "listed": true,
    "opens": "2026-11-26",
-   "status": "forthcoming",
+   "status": "open",
    "title": "Jean Monnet Actions for other fields of Education and Training: Teacher Training",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erasmus-jmo-2027-ofet-tt"
   },
@@ -1441,6 +1454,206 @@
    "status": "open",
    "title": "Proof of Concept Grant",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/erc-2027-poc"
+  },
+  "ESC-HUMAID-2027-QUAL-LABEL": {
+   "budget": null,
+   "code": "ESC-HUMAID-2027-QUAL-LABEL",
+   "deadline": "2027-09-21",
+   "first_seen": "2026-11-26",
+   "keywords": [
+    "Humanitarian Aid",
+    "Quality Label",
+    "Solidarity Corps",
+    "Volunteer",
+    "Volunteering"
+   ],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Quality Label Humanitarian Aid Strand",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/esc-humaid-2027-qual-label"
+  },
+  "ESC-HUMAID-2027-VOLUN": {
+   "budget": "€11.4M (topic total)",
+   "code": "ESC-HUMAID-2027-VOLUN",
+   "deadline": "2027-04-22",
+   "first_seen": "2026-11-26",
+   "keywords": [
+    "Humanitarian Aid",
+    "Solidarity Corps",
+    "Volunteer",
+    "Volunteering",
+    "Volunteering team"
+   ],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "Volunteering in support of humanitarian aid operations",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/esc-humaid-2027-volun"
+  },
+  "ESC-SOLID-2027-VTHPA": {
+   "budget": "€5.5M (topic total)",
+   "code": "ESC-SOLID-2027-VTHPA",
+   "deadline": "2027-03-04",
+   "first_seen": "2026-11-26",
+   "keywords": [
+    "Positive Learning",
+    "community-based activities",
+    "different generations",
+    "fewer opportunities",
+    "intergenerational fairness"
+   ],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "forthcoming",
+   "title": "ESC-SOLID-2027-VTHPA",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/esc-solid-2027-vthpa"
+  },
+  "EU4H-2027-SANTE-01-PJ-01": {
+   "budget": "€450k (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-01",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to support action for addressing health inequalities in people with intellectual and developmental disabilities across the EU, focusing on cardiovascular health (DG SANTE) - DP-g-26-09",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-01"
+  },
+  "EU4H-2027-SANTE-01-PJ-02": {
+   "budget": "€1M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-02",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to address the broader impacts of social media on health and well-being, focusing on the mental health of children and young people (DG SANTE) - DP-g-26-10",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-02"
+  },
+  "EU4H-2027-SANTE-01-PJ-03": {
+   "budget": "€3M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-03",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to support dissemination and evaluating the awareness level of the 5th edition of the European Code Against Cancer (DG SANTE) - CR/CV&NCD-g-26-13",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-03"
+  },
+  "EU4H-2027-SANTE-01-PJ-04": {
+   "budget": "€2.4M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-04",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to support the continued implementation and sustainability of the inter-specialty cancer training programme (DG SANTE) - CR/CV&NCD-g-26-14",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-04"
+  },
+  "EU4H-2027-SANTE-01-PJ-05": {
+   "budget": "€20M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-05",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to support an EU flagship programme on cardiovascular diseases: a multidisciplinary and patient-centred approach to prevention, early detection, treatment and care (DG SANTE) - CR/CV&NCD-g-26-15",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-05"
+  },
+  "EU4H-2027-SANTE-01-PJ-06": {
+   "budget": "€2.5M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-06",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to facilitate the use of emerging AI tools in primary care and the required health workforce skills (DG SANTE) - HS-g-26-16",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-06"
+  },
+  "EU4H-2027-SANTE-01-PJ-07": {
+   "budget": "€14.4M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-07",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals for European Health Data Space Readiness Package for secondary use of health data (DG SANTE) - DI-g-26-23",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-07"
+  },
+  "EU4H-2027-SANTE-01-PJ-08": {
+   "budget": "€3M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-08",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals for Artificial Intelligence for smart European Health Data Space compliance support (DG SANTE) - DI-g-26-24",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-08"
+  },
+  "EU4H-2027-SANTE-01-PJ-09": {
+   "budget": "€1M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-09",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals for advancing Artificial Intelligence in healthcare through local performance assessment (DG SANTE) - DI-g-26-25",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-09"
+  },
+  "EU4H-2027-SANTE-01-PJ-10": {
+   "budget": "€1M (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-10",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals for designing the ecosystem for multimodal Artificial Intelligence driven prevention and early detection of neurodegenerative diseases (DG SANTE) - DI-g-26-26",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-10"
+  },
+  "EU4H-2027-SANTE-01-PJ-11": {
+   "budget": "€600k (topic total)",
+   "code": "EU4H-2027-SANTE-01-PJ-11",
+   "deadline": "2027-02-24",
+   "first_seen": "2026-11-26",
+   "keywords": [],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-11-26",
+   "status": "open",
+   "title": "Call for proposals to contribute to the organisation of conferences (DG SANTE) - OA-g-26-27",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/eu4h-2027-sante-01-pj-11"
   },
   "EU4H-2027-SANTE-OG": {
    "budget": "€1.8M (topic total)",
@@ -7305,6 +7518,44 @@
    "title": "Standalone projects",
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/jtm-2026-pslf-standalone-projects"
   },
+  "JUST-2027-JCOO-CIVIL-EJN": {
+   "budget": "€5.8M (topic total)",
+   "code": "JUST-2027-JCOO-CIVIL-EJN",
+   "deadline": "2027-04-21",
+   "first_seen": "2026-11-26",
+   "keywords": [
+    "child protection",
+    "civil justice",
+    "commercial law",
+    "cross-border litigation",
+    "debt recovery"
+   ],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-12-09",
+   "status": "forthcoming",
+   "title": "Call for proposals for action grants to promote judicial cooperation in civil and criminal matters. Priorities Civil Matters and EJN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/just-2027-jcoo-civil-ejn"
+  },
+  "JUST-2027-JCOO-CRIMINAL": {
+   "budget": "€5.8M (topic total)",
+   "code": "JUST-2027-JCOO-CRIMINAL",
+   "deadline": "2027-04-21",
+   "first_seen": "2026-11-26",
+   "keywords": [
+    "child protection",
+    "criminal justice",
+    "cross-border litigation",
+    "detention",
+    "e-evidence"
+   ],
+   "last_seen": "2026-11-26",
+   "listed": true,
+   "opens": "2026-12-09",
+   "status": "forthcoming",
+   "title": "Call for proposals for action grants to promote judicial cooperation in civil and criminal matters. Priority Criminal Matters",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/just-2027-jcoo-criminal"
+  },
   "JUST-2027-JTRA": {
    "budget": "€4.1M (topic total)",
    "code": "JUST-2027-JTRA",
@@ -7395,5 +7646,5 @@
    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/socpl-2026-info-repr"
   }
  },
- "feed_updated": "2026-11-25T21:59:57.638Z"
+ "feed_updated": "2026-11-26T15:18:23.119Z"
 }
