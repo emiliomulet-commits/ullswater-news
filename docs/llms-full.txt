@@ -1,5 +1,44 @@
 # EU Funding News · Ullswater Investments — full text of recent articles
 
+## EU4Health 2026: 11 calls open, with AI and health data topics
+URL: https://news.ullswaterinvestments.com/2026/11/eu4health-2026-calls-11-topics-ai-health-data/
+Date: 2026-11-26 · Category: Health & Health Data · Source: European Health and Digital Executive Agency (HaDEA) (https://hadea.ec.europa.eu/news/eu4health-2026-calls-proposals-2026-11-26_en)
+
+HaDEA has published the calls under the EU4Health 2026 work programme: 11 topics, from cardiovascular health to AI in primary care, open until 24 February 2027.
+
+- Programme: EU4Health – 2026 Work Programme
+- Topics: 11 calls, EU4H-2027-SANTE-01-PJ-01 to PJ-11
+- Deadline: 24 February 2027, 17:00 (Brussels time)
+- Info session: 9 December 2026
+
+The European Health and Digital Executive Agency (HaDEA) announced on 26 November 2026 that the Commission has published the calls for proposals under the EU4Health 2026 Work Programme. The eleven topics, coded EU4H-2027-SANTE-01-PJ-01 to PJ-11 all under DG SANTE, are listed on the EU Funding and Tenders Portal, and applications must be submitted by 24 February 2027 at 17:00 Brussels time.
+Several topics focus on digital health. One supports a European Health Data Space readiness package for the secondary use of health data, another uses artificial intelligence to help organisations comply with the EHDS, and others cover the local performance assessment of AI in healthcare, the use of emerging AI tools in primary care together with the workforce skills they require, and a multimodal AI ecosystem for the prevention and early detection of neurodegenerative diseases.
+The remaining calls address health inequalities in people with intellectual and developmental disabilities with a focus on cardiovascular health, an EU flagship programme on cardiovascular diseases, the broader effects of social media on the mental health of children and young people, the dissemination of the 5th edition of the European Code Against Cancer, the inter-specialty cancer training programme and support for organising conferences. HaDEA will hold a dedicated information session on 9 December.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: EU4Health funds national authorities, health organisations and other bodies, so hospitals, health data holders, research centres and health technology companies working with public partners should check eligibility for each topic early. The AI and EHDS topics are a natural fit for consortia already preparing for the secondary use of health data, and the info session is the best moment to clarify scope and partnership requirements before the February deadline.
+
+---
+
+## EIC STEP Scale Up picks seven firms for up to €113 million in equity
+URL: https://news.ullswaterinvestments.com/2026/11/eic-step-scale-up-seven-companies-113-million/
+Date: 2026-11-26 · Category: EIC, Defence & Equity · Source: European Innovation Council (https://eic.ec.europa.eu/news/eic-step-scale-new-companies-selected-investment-support-2026-11-26_en)
+
+Seven deep tech scale-ups in quantum, aviation, space, energy and health were selected for EIC Fund investments of €10–30 million each, subject to due diligence.
+
+- Selected: 7 companies from France, Ireland and the Netherlands
+- Equity: Up to €113 million in total, €10–30 million per company
+- Competition: 24 proposals, 19 interviewed
+- STEP Seal: The 7 selected plus 4 more excellent companies
+- Budget: €300 million in 2026, €290 million for 2027, plus €100 million STEP Scaleup Defence
+
+The European Innovation Council announced on 26 November 2026 that seven companies have been selected under the EIC STEP Scale Up scheme and could receive up to €113 million in equity, between €10 million and €30 million each. They will now go to the EIC Fund for investment decisions, subject to due diligence. In this round 24 companies submitted proposals and 19 were interviewed by independent high-level experts.
+The selected companies are Ascendance Flight Technologies (France, hybrid-electric aviation), Equal 1 (Ireland, rack-based quantum computing), Exotrail (France, electric propulsion and orbital mobility for satellites), Priothera (Ireland, treatments for haematological malignancies), Qblox (the Netherlands, control stacks for quantum computers), Beyond Aerospace (France, a hydrogen-powered electric business aircraft) and Thorizon Holding (the Netherlands, modular reactors). Together with four further companies judged excellent but not funded because of the limited STEP budget, they will receive the STEP Seal, which helps them access other funding and EIC Business Acceleration Services.
+STEP Scale Up aims to leverage private co-investment to reach financing rounds of €50 million to €150 million or more, in digital, clean and resource-efficient, and biotechnologies. The call has €300 million for 2026 and a further €290 million allocated for 2027, with another €100 million available through the STEP Scaleup Defence call. It remains open on a continuous basis, and the new EIC STEP call under the 2027 Work Programme opened on 18 November 2026 with batching dates on 28 January, 29 April, 6 September and 24 November 2027.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: STEP Scale Up is designed for companies that are already raising large rounds, so applicants need committed or advanced talks with private co-investors, not just strong technology. The fact that excellent companies were left out for budget reasons shows how competitive the scheme is; for them, the STEP Seal is a practical tool to approach national promotional banks and other investors. Scale-ups planning to apply in 2027 should align their fundraising timeline with one of the batching dates.
+
+---
+
 ## €86 million for investment projects in Teruel through the 2026 FITE fund
 URL: https://news.ullswaterinvestments.com/2026/11/teruel-investment-fund-fite-2026-86-million/
 Date: 2026-11-25 · Category: Spain · Source: La Moncloa – Council of Ministers (https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20261124-referencia-rueda-de-consejo-ministros.aspx)
@@ -211,6 +250,26 @@ The Community of Madrid has presented its draft 2027 budget to the business comm
 The draft also earmarks more than €16 million for the 2026–2029 Family Business Support Strategy and €27 million for training in biotechnology, artificial intelligence and quantum computing. The total regional budget is €32.9 billion, up 7.3%. The regional parliament has yet to approve it.
 
 Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: the figures show which Madrid support lines will grow in 2027. Industrial SMEs planning equipment or digitalisation investments can expect larger calls next year.
+
+---
+
+## Innovation Fund: ten more IF24 projects sign €477 million in grants
+URL: https://news.ullswaterinvestments.com/2026/11/innovation-fund-if24-ten-more-projects-477-million/
+Date: 2026-11-25 · Category: Climate & Energy · Source: European Climate, Infrastructure and Environment Executive Agency (CINEA) (https://cinea.ec.europa.eu/news-events/news/commission-awards-eur477-million-grants-cleantech-projects-under-innovation-fund-2026-11-25_en)
+
+Ten projects from the IF24 reserve list have signed grant agreements with CINEA, bringing the number of funded projects under the 2024 call to 64.
+
+- Programme: Innovation Fund – IF24 Call
+- New grants: Around €477 million for 10 projects in 7 countries
+- Total under IF24: 64 projects with signed grant agreements
+- Expected impact: Almost 28 million tonnes of CO2 avoided in the first ten years
+- Demand: 359 applications, more than nine times the budget
+
+Ten additional projects selected under the Innovation Fund 2024 call (IF24) signed grant agreements with the European Climate, Infrastructure and Environment Executive Agency (CINEA) on 25 November 2026. They share around €477 million, funded by revenues from the EU Emissions Trading System, and join the 54 projects that signed in March 2026, bringing the total under the call to 64.
+The new projects come from the reserve list and are spread across seven European countries. Four are in the manufacturing of components, two in chemicals, and one each in glass, ceramics and construction materials, intra-day energy storage, road transport and hydrogen. Together they are expected to avoid almost 28 million tonnes of CO2 emissions over their first ten years of operation.
+The Commission had initially selected 61 projects under IF24 with a total budget of around €2.4 billion, but some did not complete grant preparation, so further projects were invited from the reserve list to make full use of the funding. The call received 359 applications and was oversubscribed more than nine times. Across all its calls, the Innovation Fund has awarded around €16.5 billion to over 290 projects, including those still in grant preparation.
+
+Why it matters (Ullswater Investments analysis): Ullswater Investments analysis: being placed on the Innovation Fund reserve list is not the end of the road, because projects that fail to complete grant preparation free up budget for those next in line. Applicants should therefore keep reserve-list projects ready to move quickly, with permits, financing and partners in place. The strong oversubscription also confirms that only mature, well-documented projects with credible emission-reduction calculations and a solid business case stand a real chance.
 
 ---
 
@@ -943,69 +1002,5 @@ Researchers in 11 countries can now publish in Open Research Europe, the Europea
 The official announcement lists the eligible countries and the conditions.
 
 Why it matters (Ullswater Investments analysis): Open-access publication is mandatory for Horizon Europe results. A fee-free route reduces the dissemination costs that consortia must budget for, so it is worth checking eligibility before fixing the dissemination budget in a proposal.
-
----
-
-## EU and Bpifrance plan €150 million guarantee for Ukraine partnerships
-URL: https://news.ullswaterinvestments.com/2026/11/bpifrance-eu-guarantees-ukraine-dual-use-partnerships/
-Date: 2026-11-03 · Category: EIC, Defence & Equity · Source: European Commission – Enlargement and Eastern Neighbourhood (https://enlargement.ec.europa.eu/news/bpifrance-et-la-commission-europeenne-signent-un-accord-pour-accelerer-les-partenariats-industriels-2026-11-03_en)
-
-The arrangement under the Ukraine Investment Framework targets French–Ukrainian industrial ties in defence and dual-use technology.
-
-- Instrument: Ukraine Investment Framework
-- EU support: €150 million in guarantees and €13 million in grants
-- Bpifrance target: More than €480 million in financial interventions over three years
-- Partnerships: 30 over three years, French companies and Ukrainian startups
-- Status: Envisaged; final legal agreements still pending
-
-Bpifrance and the European Commission's Directorate-General for Enlargement and Eastern Neighbourhood announced the arrangement during European Defence Week in Paris, which runs from 2 to 6 November 2026. Under the Ukraine Investment Framework, the EU would provide €150 million in guarantees and €13 million in grants, with Bpifrance aiming for more than €480 million in financial interventions over three years.
-The instruments would be aimed at French companies developing in Ukraine, Ukrainian companies buying French goods and equipment, and French firms partnering with local companies. Priority sectors include aerial, land and maritime drones, electronic protection, space, communications, navigation and critical components, with a focus on dual-use technologies. Energy, digital and industrial equipment are also covered.
-A non-financial strand foresees 30 partnerships over three years between French companies and Ukrainian startups in defence and dual-use technologies, supported by EuroQuity, Bpifrance's international matchmaking platform.
-The deal is not final. Legal agreements depend on the Commission's inter-service consultation being completed and on the contractual documentation being finalised.
-
-Why it matters (Ullswater Investments analysis): The scheme is reserved for French-linked operations, so most European applicants cannot use it directly. Its interest lies in the model: an EU guarantee channelled through a national promotional bank to support dual-use industrial partnerships with Ukraine. Companies elsewhere in Europe may want to ask their own national institutions whether similar routes exist. The announcement gives no detailed eligibility criteria, so French firms should wait for the final terms.
-
----
-
-## Commission proposes €31.7 billion for Ukraine's defence industry
-URL: https://news.ullswaterinvestments.com/2026/10/ukraine-support-loan-2027-defence-industry/
-Date: 2026-10-30 · Category: EIC, Defence & Equity · Source: European Commission – Enlargement and Eastern Neighbourhood (https://enlargement.ec.europa.eu/news/commission-takes-key-step-forward-2027-financial-support-ukraine-2026-10-30_en)
-
-The proposal covers 2027 under the €90 billion Ukraine Support Loan. The Council still has to adopt it before disbursements start.
-
-- Proposal date: 30 October 2026
-- 2027 tranche: €45 billion remaining under the €90 billion loan
-- Defence industrial capacity 2027: €31.7 billion
-- Budget support 2027: Up to €13.3 billion
-- 2026 defence allocation: €28.3 billion, of which €15.8 billion disbursed for defence procurement
-- Next step: Council implementing decision; disbursements planned for early 2027
-
-The European Commission adopted a package on 30 October 2026 that asks the Council to approve the remaining €45 billion for 2027 under the €90 billion Ukraine Support Loan. Of that sum, €31.7 billion would go to Ukraine's defence industrial capacity and up to €13.3 billion to budget support, split equally between the Ukraine Facility and Macro-Financial Assistance.
-Across 2026 and 2027 the loan reserves €60 billion for defence capabilities and defence industrial capacity and €30 billion for budget support. The Council allocated €28.3 billion to defence industrial capacity for 2026 in a decision of 23 April 2026, and €15.8 billion of that has been disbursed for defence procurement.
-The package follows Ukraine's Financing Strategy, submitted on 26 October 2026 and assessed positively by the Commission. The Council must now adopt the implementing decision, after which Member States will decide the allocations. Disbursements are planned for early 2027 once the assistance is adopted. Budget support remains tied to conditions on the rule of law, anti-corruption, economic resilience and sustainability.
-
-Why it matters (Ullswater Investments analysis): This is a sizeable defence-industrial envelope, but it is not a grant call: nothing here opens for applications. Companies in defence and dual-use supply chains should treat it as a demand signal and watch the Council decision and the allocation stage. The practical question for suppliers is how procurement under the loan will be organised, so they should follow the official rules rather than assume access.
-
----
-
-## Canada joins EuroHPC as a Participating State
-URL: https://news.ullswaterinvestments.com/2026/10/canada-joins-eurohpc-supercomputing-network/
-Date: 2026-10-30 · Category: Digital & AI · Source: European Commission – Shaping Europe's digital future (https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum)
-
-Agreed at the EU–Canada Summit in Montreal, the move opens Europe's public supercomputing, AI and quantum resources to Canada.
-
-- Announced: 30 October 2026, EU–Canada Summit, Montreal
-- New status: Canada is a Participating State in the EuroHPC JU
-- EuroHPC JU network: 12 supercomputers procured, 19 AI Factories, 13 AI Factory Antennas
-- Governing board: European Commission and 39 Participating States
-- Horizon Europe link: Canada associated since 2024
-- Legal basis of wider mandate: Council Regulation (EU) 2026/150
-
-Canada became a Participating State in the European High-Performance Computing Joint Undertaking (EuroHPC JU) on 30 October 2026, during the EU–Canada Summit in Montreal. The step gives Canada use of the joint undertaking's high-performance computing, AI and quantum resources, and lets Canadian scientists work alongside European counterparts.
-The two sides say they want closer cooperation across supercomputing, AI infrastructure and quantum technology, with a view to developing scientific applications and raising the innovation potential of companies. It builds on research cooperation going back to 1996; Canada has also been associated with Horizon Europe since 2024.
-EuroHPC JU has so far procured 12 supercomputers, oversees 19 AI Factories and 13 AI Factory Antennas, and is deploying a European quantum computing infrastructure. The European Commission and 39 Participating States sit on its governing board, and Council Regulation (EU) 2026/150 extended its mandate to AI Gigafactories and quantum technologies.
-The summit produced related digital outcomes: Destination Earth will take on Canadian cooperation in AI-powered climate modelling, and the parties discussed Arctic connectivity and the interoperability of EU and Canadian digital identities.
-
-Why it matters (Ullswater Investments analysis): For consortia in AI, HPC and quantum, Canadian partners now sit closer to the same compute ecosystem as their European counterparts, on top of the existing Horizon Europe association. That can make EU–Canada collaboration more practical to design into a proposal. Applicants should still check the access rules and eligibility conditions of each specific call before building a work plan around EuroHPC resources.
 
 ---
