@@ -1,5 +1,5 @@
 # Open and forthcoming EU funding calls · EU Funding News · Ullswater Investments
-# Checked 2026-11-27 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
+# Checked 2026-11-28 from the EU Funding & Tenders Portal. Columns: identifier | title | status | opens | deadline | budget | page
 
 CREA-MEDIA-2027-DEVSLATE | European slate development | Open | 2026-09-30 | 2026-12-01 | €22.4M (topic total) | https://calls.ullswaterinvestments.com/call/crea-media-2027-devslate/
 DIGITAL-JU-CHIPS-2026-AI-GFP | AI compute evaluation and deployment platform for EU infrastructure | Open | 2026-07-07 | 2026-12-01 | ≈ €50M–€70M / project | https://calls.ullswaterinvestments.com/call/digital-ju-chips-2026-ai-gfp/
